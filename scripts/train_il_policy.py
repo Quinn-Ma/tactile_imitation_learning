@@ -17,16 +17,18 @@ Feature keys expected in the dataset:
 
 Quick start
 -----------
-# Train ACT
+# Train ACT (local dataset)
 python scripts/train_il_policy.py \\
     --policy act \\
     --repo_id myorg/grasp_demos \\
+    --root ./data/grasp_demos \\
     --output_dir outputs/act_grasp
 
-# Train Diffusion Policy
+# Train Diffusion Policy (local dataset)
 python scripts/train_il_policy.py \\
     --policy diffusion \\
     --repo_id myorg/grasp_demos \\
+    --root ./data/grasp_demos \\
     --output_dir outputs/diffusion_grasp
 
 # Resume from checkpoint
@@ -79,7 +81,9 @@ def train(args: argparse.Namespace) -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logger.info("Training on %s", device)
 
-    ds_meta = LeRobotDatasetMetadata(args.repo_id)
+    root = Path(args.root) if args.root else None
+
+    ds_meta = LeRobotDatasetMetadata(args.repo_id, root=root)
     policy_cfg = _build_policy_cfg(args.policy, ds_meta)
 
     # delta_timestamps: one frame per obs step; full action chunk
@@ -91,7 +95,7 @@ def train(args: argparse.Namespace) -> None:
         **{k: obs_delta for k in ds_meta.features if k.startswith("observation.")},
     }
 
-    dataset = LeRobotDataset(args.repo_id, delta_timestamps=delta_timestamps)
+    dataset = LeRobotDataset(args.repo_id, root=root, delta_timestamps=delta_timestamps)
 
     drop_last_n = getattr(policy_cfg, "drop_n_last_frames", 0)
     sampler = EpisodeAwareSampler(
@@ -161,7 +165,10 @@ def main():
     parser.add_argument("--policy", choices=["act", "diffusion"], default="act",
                         help="IL policy architecture")
     parser.add_argument("--repo_id", required=True,
-                        help="LeRobot dataset repo-id or local root path")
+                        help="LeRobot dataset repo-id (e.g. myorg/grasp_demos)")
+    parser.add_argument("--root", default=None,
+                        help="Local dataset root directory; skips HuggingFace Hub download "
+                             "(e.g. ./data/grasp_demos)")
     parser.add_argument("--output_dir", default="outputs/il_policy")
     parser.add_argument("--steps",    type=int,   default=80_000)
     parser.add_argument("--batch_size", type=int, default=64)

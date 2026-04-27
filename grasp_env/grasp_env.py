@@ -138,18 +138,21 @@ class GraspEnv(MujocoGymApp):
         seed: Optional[int] = None,
         options: Optional[dict] = None,
     ) -> Tuple[Dict, Dict]:
-        super().reset(seed=seed)
-        mujoco.mj_resetData(self.model, self.data)
+        # MujocoEnv.reset() seeds np_random, calls _reset_simulation(),
+        # then calls reset_model() which we implement below.
+        obs, info = super().reset(seed=seed, options=options)
+        return obs, info
 
+    def reset_model(self) -> Dict:
+        """Required by MujocoEnv; called after mj_resetData to set initial state."""
         # Reset arm to home configuration
         for i, jid in enumerate(self._arm_joint_ids):
             qadr = self.model.jnt_qposadr[jid]
             self.data.qpos[qadr] = HOME_JOINTS[i]
 
-        # Choose object type for this episode
-        rng = np.random.default_rng(seed)
+        # Choose object type using np_random (seeded by MujocoEnv.reset())
         if self._object_type == "random":
-            use_steel = rng.integers(0, 2) == 0
+            use_steel = bool(self.np_random.integers(0, 2))
         else:
             use_steel = self._object_type == "steel"
 
@@ -162,19 +165,17 @@ class GraspEnv(MujocoGymApp):
             self._active_obj_name = "foam_ball"
             hide_joint_id = self._steel_ball_joint_id
 
-        # Place active object on table within reach of arm
-        xy = rng.uniform([-0.12, -0.12], [0.12, 0.12])
+        # Place active object randomly on table within arm reach
+        xy = self.np_random.uniform(-0.12, 0.12, size=2)
         obj_pos = np.array([0.65 + xy[0], xy[1], OBJ_Z])
         self._place_free_body(self._active_obj_joint_id, pos=obj_pos)
         self._initial_obj_z = OBJ_Z
 
-        # Move inactive object below ground (hide it)
+        # Hide inactive object below ground
         self._place_free_body(hide_joint_id, pos=np.array([0.0, 0.0, -1.0]))
 
         mujoco.mj_forward(self.model, self.data)
-
-        obs = self._get_obs()
-        return obs, {}
+        return self._get_obs()
 
     def step(self, action: np.ndarray) -> Tuple[Dict, float, bool, bool, Dict]:
         action = np.clip(action, self.action_space.low, self.action_space.high)

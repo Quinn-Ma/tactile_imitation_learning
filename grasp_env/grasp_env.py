@@ -127,10 +127,19 @@ class GraspEnv(MujocoGymApp):
         self._active_obj_name: str = "steel_ball"
         self._initial_obj_z: float = OBJ_Z
 
+        # Dedicated offscreen renderer for the wrist camera (bypasses gymnasium's
+        # render() API whose signature changed between versions)
+        self._wrist_renderer = mujoco.Renderer(self.model, height=IMG_H, width=IMG_W)
+
     # ── MujocoGymApp abstract property ─────────────────────────────────────
     @property
     def default_start_pt(self):
         return None
+
+    def close(self):
+        if hasattr(self, '_wrist_renderer'):
+            self._wrist_renderer.close()
+        super().close()
 
     # ── Gymnasium interface ─────────────────────────────────────────────────
     def reset(
@@ -257,20 +266,9 @@ class GraspEnv(MujocoGymApp):
 
         state = np.concatenate([q_arm, gripper_aperture, ft, tactile])
 
-        # Wrist camera image — gymnasium 1.x changed the render() signature
-        try:
-            img = self.mujoco_renderer.render(
-                render_mode="rgb_array",
-                camera_name="wrist_cam",
-            )
-        except TypeError:
-            # Older gymnasium: render() takes no kwargs; use camera_id instead
-            img = self.mujoco_renderer.render(
-                render_mode="rgb_array",
-                camera_id=self._wrist_cam_id,
-            )
-        if img is None:
-            img = np.zeros((IMG_H, IMG_W, 3), dtype=np.uint8)
+        # Wrist camera image via mujoco.Renderer (stable API, version-independent)
+        self._wrist_renderer.update_scene(self.data, camera="wrist_cam")
+        img = self._wrist_renderer.render().copy()
 
         return {
             "observation.state": state,

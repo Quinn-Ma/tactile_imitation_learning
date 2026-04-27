@@ -179,19 +179,24 @@ def collect(args: argparse.Namespace) -> None:
 
     root = Path(args.root)
 
-    if (root / "meta" / "info.json").exists():
-        logger.info("Resuming existing dataset at %s", root)
-        dataset = LeRobotDataset.resume(repo_id=args.repo_id, root=root)
-    else:
-        logger.info("Creating new dataset at %s", root)
-        dataset = LeRobotDataset.create(
-            repo_id=args.repo_id,
-            fps=args.fps,
-            features=FEATURES,
-            root=root,
-            robot_type="sim_ur5_robotiq85",
-            use_videos=True,
+    if root.exists() and not args.overwrite:
+        raise FileExistsError(
+            f"{root} already exists. Delete it or pass --overwrite to start fresh."
         )
+    if root.exists() and args.overwrite:
+        import shutil
+        shutil.rmtree(root)
+        logger.info("Removed existing dataset at %s", root)
+
+    logger.info("Creating new dataset at %s", root)
+    dataset = LeRobotDataset.create(
+        repo_id=args.repo_id,
+        fps=args.fps,
+        features=FEATURES,
+        root=root,
+        robot_type="sim_ur5_robotiq85",
+        use_videos=True,
+    )
 
     env = GraspEnv(
         object_type=args.object_type,
@@ -269,6 +274,8 @@ def main():
                         help="Discard episodes where object was not lifted")
     parser.add_argument("--render",       action="store_true",
                         help="Render simulation in a window (slower)")
+    parser.add_argument("--overwrite",    action="store_true",
+                        help="Delete existing dataset directory and start fresh")
     parser.add_argument("--push_to_hub",  action="store_true")
     args = parser.parse_args()
     collect(args)

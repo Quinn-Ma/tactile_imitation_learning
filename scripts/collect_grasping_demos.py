@@ -87,7 +87,9 @@ class ScriptedGraspController:
     """
 
     ABOVE, DESCEND, CLOSE, LIFT, DONE = range(5)
-    PHASE_STEPS = {0: 80, 1: 80, 2: 60, 3: 80}   # steps per phase
+    # Steps per phase. OSC with kp=300 moves ~13 mm/step; reach distance
+    # is ≤ 0.5 m, so 120 steps gives plenty of settling time.
+    PHASE_STEPS = {0: 120, 1: 100, 2: 60, 3: 100}
 
     def __init__(self, env, gripper_joint_max: float = 0.8):
         self.env = env
@@ -143,12 +145,13 @@ class ScriptedGraspController:
         for force_idx, force in zip(*ctrlr_output):
             ctrl[force_idx] = force
 
-        # PD torque for gripper
+        # Gripper PD. Joint inertia ≈ 0.00022 kg⋅m², dt=0.009 s →
+        # max stable kp ≈ I/dt² ≈ 2.7; kd set for critical damping.
         g_target = gripper_cmd * self.gripper_joint_max
         g_qadr   = env.model.jnt_qposadr[env._gripper_joint_id]
         g_vadr   = env.model.jnt_dofadr[env._gripper_joint_id]
-        ctrl[6]  = 50.0 * (g_target - env.data.qpos[g_qadr]) \
-                 - 5.0  * env.data.qvel[g_vadr]
+        ctrl[6]  = 2.0 * (g_target - env.data.qpos[g_qadr]) \
+                 - 0.1 * env.data.qvel[g_vadr]
 
         env.do_simulation(ctrl, env.frame_skip)
 
@@ -228,16 +231,17 @@ def collect(args: argparse.Namespace) -> None:
             logger.info("  Episode failed (obj_z=%.3f) — discarding", obj_z)
             continue
 
-        # Save frames to dataset
+        # Save frames to dataset (task must be per-frame, not in save_episode)
+        task_tag = f"Grasp {env._active_obj_name} and lift"
         for obs_t, action_t in frames:
             dataset.add_frame({
                 "observation.state":        obs_t["observation.state"],
                 "observation.images.wrist": obs_t["observation.images.wrist"],
                 "action":                   action_t,
+                "task":                     task_tag,
             })
 
-        task_tag = f"Grasp {env._active_obj_name} and lift"
-        dataset.save_episode(episode_data={"task": task_tag})
+        dataset.save_episode()
         logger.info("  Saved %d frames  lifted=%s  obj_z=%.3f",
                     len(frames), lifted, obj_z)
 

@@ -15,10 +15,10 @@ robots:
 
 controller_configs:
     -   name: "arm_osc"
-        kp: 20
-        kv: 10
+        kp: 300
+        kv: 60
         ki: 1
-        ko: 20
+        ko: 50
         k: [1, 2, 3]
         d: [0.5, 1, 1]
     -   name: "nullspace"

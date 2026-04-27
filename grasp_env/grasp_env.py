@@ -279,8 +279,9 @@ class GraspEnv(MujocoGymApp):
         """PD torque controller for joint-space action."""
         KP_ARM = 300.0
         KD_ARM = 30.0
-        KP_GRIP = 50.0
-        KD_GRIP = 5.0
+        # Gripper inertia ≈ 0.00022 kg⋅m², dt=0.009 s → max stable kp ≈ 2.7
+        KP_GRIP = 2.0
+        KD_GRIP = 0.1
 
         ctrl = np.zeros(self.model.nu)
 

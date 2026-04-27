@@ -6,17 +6,17 @@ Each episode contains the full 4-stage sequence:
   Stage 3  Micro-lift and F/T recording           (stored in observation.state)
   Stage 4  PINN grip-force command                (stored as action channel)
 
-Observation state vector layout (example, 25-dim)
----------------------------------------------------
-  [0 : 7]   arm joint positions
-  [7]       gripper aperture
-  [8 :14]   wrist F/T sensor  [Fx Fy Fz Tx Ty Tz]
-  [14:26]   tactile sensor array (12 taxels)
+Observation state vector layout (25-dim)
+-----------------------------------------
+  [0 : 6]   arm joint positions  (UR5, 6-DOF)
+  [6]       gripper aperture
+  [7 :13]   wrist F/T sensor  [Fx Fy Fz Tx Ty Tz]
+  [13:25]   tactile sensor array (12 taxels, 6 per fingerpad)
 
-Action vector layout (8-dim)
+Action vector layout (7-dim)
 -----------------------------
-  [0:7]    target arm joint positions
-  [7]      target grip force command (N)
+  [0:6]    target arm joint positions
+  [6]      gripper aperture command  ∈ [0, 1]
 
 Usage
 -----
@@ -46,10 +46,10 @@ logger = logging.getLogger(__name__)
 # Dataset feature schema
 # ---------------------------------------------------------------------------
 
-STATE_DIM   = 26   # joints (7) + gripper (1) + FT (6) + tactile (12)
-ACTION_DIM  = 8    # joint targets (7) + grip force (1)
-IMAGE_H     = 480
-IMAGE_W     = 640
+STATE_DIM   = 25   # joints (6) + gripper (1) + FT (6) + tactile (12)
+ACTION_DIM  = 7    # joint targets (6) + gripper aperture (1)
+IMAGE_H     = 120
+IMAGE_W     = 160
 FPS         = 30
 
 FEATURES = {
@@ -57,7 +57,7 @@ FEATURES = {
         "dtype": "float32",
         "shape": (STATE_DIM,),
         "names": (
-            ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6", "joint_7"]
+            ["joint_0", "joint_1", "joint_2", "joint_3", "joint_4", "joint_5"]
             + ["gripper_aperture"]
             + ["ft_fx", "ft_fy", "ft_fz", "ft_tx", "ft_ty", "ft_tz"]
             + [f"tactile_{i}" for i in range(12)]
@@ -74,8 +74,8 @@ FEATURES = {
         "dtype": "float32",
         "shape": (ACTION_DIM,),
         "names": (
-            ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6", "joint_7"]
-            + ["grip_force_n"]
+            ["joint_0", "joint_1", "joint_2", "joint_3", "joint_4", "joint_5"]
+            + ["gripper_aperture"]
         ),
     },
 }

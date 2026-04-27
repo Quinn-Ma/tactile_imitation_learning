@@ -1,0 +1,59 @@
+# ACT (Action Chunking Transformer) config for tactile grasping.
+# Pass to train_il_policy.py via --policy act, or use with lerobot-train.
+#
+# Input:
+#   observation.state  (26,)  = joints(7) + gripper(1) + F/T(6) + tactile(12)
+#   observation.images.wrist  (3, 480, 640)
+# Output:
+#   action  (8,)  = joint targets(7) + grip_force(1)
+
+policy:
+  type: act
+
+  # Temporal
+  n_obs_steps: 1
+  chunk_size: 50          # action chunk length (steps)
+  n_action_steps: 50      # steps executed per inference call
+
+  # Vision backbone
+  vision_backbone: resnet18
+  pretrained_backbone_weights: ResNet18_Weights.IMAGENET1K_V1
+
+  # Transformer
+  dim_model: 256
+  n_heads: 8
+  dim_feedforward: 1024
+  n_encoder_layers: 4
+  n_decoder_layers: 1
+  feedforward_activation: relu
+  dropout: 0.1
+  pre_norm: false
+
+  # VAE
+  use_vae: true
+  latent_dim: 32
+  n_vae_encoder_layers: 4
+  kl_weight: 10.0
+
+  # Temporal ensembling (disabled — enable for smoother trajectories)
+  temporal_ensemble_coeff: null
+
+  # Normalization
+  normalization_mapping:
+    STATE: MEAN_STD
+    VISUAL: MEAN_STD
+    ACTION: MEAN_STD
+
+  # Optimizer (used by lerobot-train CLI)
+  optimizer_lr: 1.0e-5
+  optimizer_weight_decay: 1.0e-4
+  optimizer_lr_backbone: 1.0e-5
+
+training:
+  steps: 80000
+  batch_size: 64
+  save_freq: 10000
+  log_freq: 200
+  num_workers: 4
+  seed: 42
+  grad_clip_norm: 10.0

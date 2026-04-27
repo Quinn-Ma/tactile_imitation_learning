@@ -257,11 +257,18 @@ class GraspEnv(MujocoGymApp):
 
         state = np.concatenate([q_arm, gripper_aperture, ft, tactile])
 
-        # Wrist camera image
-        img = self.mujoco_renderer.render(
-            render_mode="rgb_array",
-            camera_name="wrist_cam",
-        )
+        # Wrist camera image — gymnasium 1.x changed the render() signature
+        try:
+            img = self.mujoco_renderer.render(
+                render_mode="rgb_array",
+                camera_name="wrist_cam",
+            )
+        except TypeError:
+            # Older gymnasium: render() takes no kwargs; use camera_id instead
+            img = self.mujoco_renderer.render(
+                render_mode="rgb_array",
+                camera_id=self._wrist_cam_id,
+            )
         if img is None:
             img = np.zeros((IMG_H, IMG_W, 3), dtype=np.uint8)
 
@@ -313,33 +320,34 @@ class GraspEnv(MujocoGymApp):
         """Aggregate contact forces on one fingerpad geom → 6-dim vector."""
         fx, fy, fz = 0.0, 0.0, 0.0
         count = 0
+        contact_force_buf = np.zeros(6)  # [fx,fy,fz,tx,ty,tz] in contact frame
         for c_idx in range(self.data.ncon):
             con = self.data.contact[c_idx]
-            g1, g2 = con.geom1, con.geom2
-            if g1 != geom_id and g2 != geom_id:
+            if con.geom1 != geom_id and con.geom2 != geom_id:
                 continue
-            # Contact frame forces are in con.frame and con.dist / con.pos
-            # Use cfrc_ext if geom is part of a body; here we read contact force via jacp
-            # Simpler: read from data.contact[c_idx].frame and .dist
-            # Normal direction is con.frame[0:3]; frame[0:3] = contact normal in world frame
-            normal = con.frame[0:3]
-            # Lambda = contact impulse (not force); approximate force from impulse / dt
-            # MuJoCo doesn't expose per-contact forces directly in older APIs.
-            # Use the geom's body contact force instead.
+            # Use mj_contactForce for accurate per-contact forces
+            mujoco.mj_contactForce(self.model, self.data, c_idx, contact_force_buf)
+            # contact_force_buf[0] = normal force (along contact frame z)
+            # contact_force_buf[1:3] = tangential (friction) forces
+            # Rotate from contact frame to world frame using con.frame (3×3 row-major)
+            frame = con.frame.reshape(3, 3)   # rows = contact x, y, z axes in world
+            f_world = frame.T @ contact_force_buf[:3]
+            # Flip sign if this geom is geom2 (force is reported on geom1's body)
+            if con.geom2 == geom_id:
+                f_world = -f_world
+            fx += float(f_world[0])
+            fy += float(f_world[1])
+            fz += float(f_world[2])
             count += 1
-            # Accumulate world-frame normal direction weighted by penetration depth
-            scale = abs(con.dist)
-            fx += normal[0] * scale
-            fy += normal[1] * scale
-            fz += normal[2] * scale
 
         net = np.array([fx, fy, fz])
-        net_norm = float(np.linalg.norm(net))
         shear = float(np.linalg.norm(net[:2]))
         normal_f = abs(fz)
         coverage = min(count / 4.0, 1.0)
 
-        return np.array([fx, fy, fz, coverage, shear, normal_f], dtype=np.float32)
+        return np.array([fx / TACTILE_FMAX, fy / TACTILE_FMAX, fz / TACTILE_FMAX,
+                         coverage, shear / TACTILE_FMAX, normal_f / TACTILE_FMAX],
+                        dtype=np.float32)
 
     def _get_arm_joint_ids(self) -> np.ndarray:
         """Return MuJoCo joint IDs for the 6 UR5 arm joints (joint0..5)."""
@@ -350,7 +358,17 @@ class GraspEnv(MujocoGymApp):
         ], dtype=np.int32)
 
     def _get_device(self, name: str):
-        """Retrieve an irl_control Device by name."""
+        """Retrieve an irl_control Device by name.
+
+        With a single-arm setup, MujocoGymApp places 'ur5right' as a sub-device
+        inside Robot('SingleUR5'), so _irl_devices only contains the Robot wrapper.
+        Look up through self.robot first, then fall back to top-level _irl_devices.
+        """
+        if hasattr(self, 'robot') and self.robot is not None:
+            try:
+                return self.robot.get_device(name)
+            except KeyError:
+                pass
         for dev in self._irl_devices:
             if dev.name == name:
                 return dev

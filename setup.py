@@ -12,6 +12,7 @@ setup(
         "scipy",
         "mujoco>=3.0",
         "gymnasium>=0.28",
+        "transforms3d",
     ],
     author="Quinn Ma",
     license="MIT",

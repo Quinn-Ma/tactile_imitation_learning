@@ -16,3 +16,4 @@ scipy>=1.13
 # Utilities
 tqdm
 pyyaml
+transforms3d

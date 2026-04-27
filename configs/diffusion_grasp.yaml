@@ -1,0 +1,62 @@
+# Diffusion Policy config for tactile grasping.
+# Pass to train_il_policy.py via --policy diffusion.
+#
+# Input:
+#   observation.state  (26,)  = joints(7) + gripper(1) + F/T(6) + tactile(12)
+#   observation.images.wrist  (3, 480, 640)
+# Output:
+#   action  (8,)  = joint targets(7) + grip_force(1)
+
+policy:
+  type: diffusion
+
+  # Temporal
+  n_obs_steps: 2
+  horizon: 16             # diffusion action prediction window
+  n_action_steps: 8       # steps executed per inference call
+  drop_n_last_frames: 7   # drop last frames per episode during training
+
+  # Vision backbone
+  vision_backbone: resnet18
+  pretrained_backbone_weights: null
+  use_group_norm: true
+  spatial_softmax_num_keypoints: 32
+  use_separate_rgb_encoder_per_camera: false
+
+  # UNet
+  down_dims: [512, 1024, 2048]
+  kernel_size: 5
+  n_groups: 8
+  diffusion_step_embed_dim: 128
+
+  # Noise scheduler
+  noise_scheduler_type: DDPM
+  num_train_timesteps: 100
+  beta_schedule: squaredcos_cap_v2
+  beta_start: 0.0001
+  beta_end: 0.02
+  prediction_type: epsilon
+  clip_sample: true
+  clip_sample_range: 1.0
+
+  # Normalization
+  normalization_mapping:
+    STATE: MIN_MAX
+    VISUAL: MEAN_STD
+    ACTION: MIN_MAX
+
+  # Optimizer
+  optimizer_lr: 1.0e-4
+  optimizer_weight_decay: 1.0e-6
+  optimizer_betas: [0.95, 0.999]
+  scheduler_name: cosine
+  scheduler_warmup_steps: 500
+
+training:
+  steps: 80000
+  batch_size: 64
+  save_freq: 10000
+  log_freq: 200
+  num_workers: 4
+  seed: 42
+  grad_clip_norm: 10.0

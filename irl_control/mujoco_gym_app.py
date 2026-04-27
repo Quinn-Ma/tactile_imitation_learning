@@ -60,16 +60,25 @@ class MujocoGymApp(MujocoEnv, ABC):
         else:
             create_mjpy_env()
 
-        # Tmp fix: _create_overlay throws error about the *solver_iter* attribute
-        # You can change the gymnasium source code, but this shouldn't be necessary
-        gym_major_version = int(gym.__version__.split(".")[1])
-        if gym_major_version >= 27:
-            viewer = self.mujoco_renderer._get_viewer(render_mode)
-        else:
-            viewer = self._get_viewer(render_mode)
-
-        viewer._create_overlay = lambda: None
-        self._viewer_setup(viewer)
+        # Patch _create_overlay to avoid solver_iter attribute error in older gymnasium.
+        # gymnasium 1.x changed the viewer API; skip gracefully if not available.
+        try:
+            parts = gym.__version__.split(".")
+            gym_ver_major = int(parts[0])
+            gym_ver_minor = int(parts[1])
+            if gym_ver_major >= 1:
+                # gymnasium 1.x: viewer obtained differently; overlay fix not needed
+                pass
+            elif gym_ver_minor >= 27:
+                viewer = self.mujoco_renderer._get_viewer(render_mode)
+                viewer._create_overlay = lambda: None
+                self._viewer_setup(viewer)
+            else:
+                viewer = self._get_viewer(render_mode)
+                viewer._create_overlay = lambda: None
+                self._viewer_setup(viewer)
+        except Exception:
+            pass
 
         # Reset the action space to the "true" action space (not based on mujoco's xml)
         self.ctrl_action_space = self.action_space

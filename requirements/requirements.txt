@@ -1,0 +1,19 @@
+# Core robot learning framework
+lerobot>=0.4.0
+
+# Deep learning
+torch>=2.0
+torchvision>=0.15
+
+# Physics / simulation
+mujoco>=3.0
+gymnasium>=0.28
+
+# Numerics
+numpy>=1.26
+scipy>=1.13
+
+# Utilities
+tqdm
+pyyaml
+transforms3d

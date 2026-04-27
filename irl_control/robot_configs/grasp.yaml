@@ -1,0 +1,25 @@
+devices:
+    -   id: 0
+        name: "ur5right"
+        max_vel: [0.15, 2]
+        EE: "ur_EE_ur5right"
+        ctrlr_dof_xyz: [True, True, True]
+        ctrlr_dof_abg: [True, True, True]
+        num_gripper_joints: 6
+        start_angles: [0, -1.5708, 1.5708, -1.5708, -1.5708, 0]
+
+robots:
+    -   id: 0
+        name: "SingleUR5"
+        device_ids: [0]
+
+controller_configs:
+    -   name: "arm_osc"
+        kp: 300
+        kv: 60
+        ki: 1
+        ko: 50
+        k: [1, 2, 3]
+        d: [0.5, 1, 1]
+    -   name: "nullspace"
+        kv: 30

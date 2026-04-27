@@ -60,15 +60,10 @@ TACTILE_FMAX = 50.0
 
 
 class GraspEnv(MujocoGymApp):
-    """
-    Gymnasium environment for tabletop grasping with a single UR5 + Robotiq 85.
+    """Gymnasium environment for tabletop grasping with a single UR5 + Robotiq 85."""
 
-    Parameters
-    ----------
-    object_type : "random" | "steel" | "foam"
-        Which ball to use each episode.
-    render_mode : "human" | "rgb_array" | None
-    """
+    # timestep=0.003 × frameskip=3 → dt=0.009 → render_fps must equal round(1/dt)=111
+    metadata = {"render_modes": ["human", "rgb_array", "depth_array"], "render_fps": 111}
 
     def __init__(
         self,

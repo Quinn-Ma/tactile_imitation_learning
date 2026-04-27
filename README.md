@@ -39,9 +39,15 @@ tactile_imitation_learning/
 │   ├── pinn_grip.py                # Stage 4: PINN grip force optimizer
 │   └── grasp_pipeline.py          # Integrated 3-stage pipeline
 │
+├── grasp_env/
+│   ├── __init__.py                 # Gymnasium registration (GraspEnv-v0)
+│   └── grasp_env.py               # MuJoCo simulation environment
+│
 ├── scripts/
 │   ├── collect_grasping_demos.py  # Record demonstrations → LeRobot dataset
-│   └── train_il_policy.py         # Train ACT or Diffusion Policy (Stage 1)
+│   ├── train_il_policy.py         # Train ACT or Diffusion Policy (Stage 1)
+│   ├── train_pinn.py              # Train PINN grip optimizer (Stage 4)
+│   └── eval_grasp_policy.py       # Full pipeline evaluation in simulation
 │
 ├── configs/
 │   ├── act_grasp.yaml             # ACT hyperparameters for grasping
@@ -50,7 +56,9 @@ tactile_imitation_learning/
 ├── irl_control/                   # MuJoCo OSC robot controller
 │   ├── robot.py                   # Robot state management
 │   ├── osc.py                     # Operational space controller
-│   └── assets/                    # Robot URDF/XML meshes (UR5 + Robotiq)
+│   └── assets/
+│       ├── grasp_scene.xml        # Single-arm grasping scene
+│       └── meshes/                # UR5 + Robotiq 85 STL meshes
 │
 └── requirements/
     └── requirements.txt
@@ -62,9 +70,10 @@ tactile_imitation_learning/
 git clone https://github.com/Quinn-Ma/tactile_imitation_learning.git
 cd tactile_imitation_learning
 pip install -e .
+pip install lerobot>=0.4.0
 ```
 
-**Dependencies** (installed automatically):
+**Dependencies** (installed automatically via `setup.py`):
 - [LeRobot](https://github.com/huggingface/lerobot) ≥ 0.4.0 — IL policies and dataset management
 - PyTorch ≥ 2.0
 - MuJoCo ≥ 3.0
@@ -83,14 +92,14 @@ python scripts/collect_grasping_demos.py \
     --n_episodes 50
 ```
 
-The dataset stores per-frame observations as a 26-dim state vector:
+The dataset stores per-frame observations as a **25-dim state vector**:
 
 | Indices | Content |
 |---------|---------|
-| `[0:7]` | Arm joint positions |
-| `[7]` | Gripper aperture |
-| `[8:14]` | Wrist F/T sensor `[Fx Fy Fz Tx Ty Tz]` |
-| `[14:26]` | Tactile array (12 taxels) |
+| `[0:6]` | Arm joint positions (UR5, 6-DOF) |
+| `[6]` | Gripper aperture ∈ [0, 1] |
+| `[7:13]` | Wrist F/T sensor `[Fx Fy Fz Tx Ty Tz]` |
+| `[13:25]` | Tactile array (12 values, 6 per fingerpad) |
 
 Connect your hardware by implementing `RobotInterface` and `TeleopController` in the script.
 
@@ -118,6 +127,18 @@ Hyperparameters are in [`configs/act_grasp.yaml`](configs/act_grasp.yaml) and [`
 
 ### Step 3 — Train the PINN Grip Optimizer (Stage 4)
 
+Prepare a `.npz` dataset with fields `tactile_features`, `delta_m`, `f_target`, `m_eff`, `is_compliant` (see `GripDataset` in `scripts/train_pinn.py`), then:
+
+```bash
+python scripts/train_pinn.py \
+    --data_path  data/pinn_dataset.npz \
+    --output_dir outputs/pinn_grip \
+    --epochs 200 \
+    --lambda_physics 1.0
+```
+
+Or train programmatically:
+
 ```python
 from grasp_control.pinn_grip import GripPINN, train_pinn
 
@@ -138,42 +159,85 @@ The PINN loss combines supervised MSE with three physics penalty terms:
 L = L_data + λ · (L_friction + L_range + L_pressure)
 ```
 
-### Step 4 — Run the Full Pipeline
+### Step 4 — Evaluate in Simulation
+
+Run the full pipeline in `GraspEnv` (MuJoCo):
+
+```bash
+python scripts/eval_grasp_policy.py \
+    --il_checkpoint  outputs/act_grasp/last \
+    --pinn_checkpoint outputs/pinn_grip/pinn_best.pt \
+    --n_episodes 50 \
+    --object_type random
+```
+
+Or use the pipeline API directly:
 
 ```python
+import torch
 from lerobot.policies.act.modeling_act import ACTPolicy
 from grasp_control import GraspPipeline, GripPINN
+from grasp_env import GraspEnv
 
 # Load trained models
 il_policy = ACTPolicy.from_pretrained("outputs/act_grasp/last")
-pinn      = GripPINN(tactile_dim=12)
-# ... load pinn weights ...
+pinn = GripPINN(tactile_dim=12)
+pinn.load_state_dict(torch.load("outputs/pinn_grip/pinn_best.pt"))
 
-# Build pipeline
 pipeline = GraspPipeline(il_policy=il_policy, pinn=pinn, m_prior=0.0)
+env = GraspEnv(object_type="random", render_mode="human")
 
-# At each episode
+obs, _ = env.reset()
 pipeline.reset_episode()
 
 # Stage 1: arm approach (call in control loop)
-action = pipeline.select_arm_action({
-    "observation.state":         obs_state_tensor,   # (1, 26)
-    "observation.images.wrist":  wrist_image_tensor, # (1, 3, H, W)
-})
-robot.send_action(action)
+import numpy as np
+done = False
+while not done:
+    batch = {k: torch.from_numpy(v).float().unsqueeze(0)
+             for k, v in obs.items() if "state" in k}
+    batch["observation.images.wrist"] = (
+        torch.from_numpy(obs["observation.images.wrist"])
+        .permute(2, 0, 1).float().unsqueeze(0) / 255.0
+    )
+    action = pipeline.select_arm_action(batch).squeeze(0).numpy()
+    obs, reward, done, _, info = env.step(action)
 
-# Stage 3 + 4: after initial contact, perform micro-lift and optimize grip
-result = pipeline.grip(
-    ft_baseline=ft_before_lift,   # (6,) F/T before 8 mm lift
-    ft_lifted=ft_after_lift,      # (6,) F/T after lift
-    tactile_features=taxel_array, # (12,) tactile readings
-    is_compliant=False,
-)
-print(f"F_grip={result.f_grip:.1f} N  m_real={result.m_real:.3f} kg  slip_risk={result.slip_risk}")
-robot.set_grip_force(result.f_grip)
+    # Detect contact → Stage 3 + 4
+    ft = env.get_ft_reading()
+    if np.linalg.norm(ft[:3]) > 1.0:
+        ft_baseline = ft.copy()
+        env.micro_lift(delta_z=0.008)
+        result = pipeline.grip(
+            ft_baseline=ft_baseline,
+            ft_lifted=env.get_ft_reading(),
+            tactile_features=env.get_tactile_reading(),
+            is_compliant=(info["object"] == "foam_ball"),
+        )
+        print(f"F_grip={result.f_grip:.1f} N  m_real={result.m_real:.3f} kg  "
+              f"slip_risk={result.slip_risk}")
+        break
 ```
 
 ## Module Reference
+
+### `grasp_env.GraspEnv`
+
+MuJoCo Gymnasium environment for single-arm grasping.
+
+| Property | Value |
+|----------|-------|
+| Observation | Dict: `observation.state` (25,) + `observation.images.wrist` (120×160×3) |
+| Action | (7,): 6 joint position targets + 1 gripper aperture ∈ [0, 1] |
+| Reward | +10 lift success, −0.1/step, −5 drop |
+| Scene | UR5 + Robotiq 85, table, steel ball, foam ball |
+
+```python
+env = GraspEnv(object_type="random")  # or "steel" / "foam"
+ft  = env.get_ft_reading()            # (6,) [Fx Fy Fz Tx Ty Tz]
+tac = env.get_tactile_reading()       # (12,) fingerpad contact forces
+env.micro_lift(delta_z=0.008)         # trigger Stage 3 micro-lift
+```
 
 ### `grasp_control.tactile_microlift.TactileMassEstimator`
 
@@ -182,7 +246,7 @@ Estimates object mass from a pair of F/T readings bracketing the micro-lift.
 ```python
 estimator = TactileMassEstimator(ft_noise_threshold=0.05)
 
-m_real = estimator.estimate_mass(ft_baseline, ft_lifted)   # kg
+m_real = estimator.estimate_mass(ft_baseline, ft_lifted)        # kg
 delta_m = estimator.compute_mismatch_residual(m_real, m_prior)  # kg
 
 # Or in one call:

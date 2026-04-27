@@ -1,5 +1,5 @@
 """
-Stage 3: Tactile micro-lift mass estimation.
+Stage 2: Tactile micro-lift mass estimation.
 
 The robot performs an ~8 mm vertical lift immediately after initial finger
 contact.  Force-torque (F/T) readings before and after the lift are used to

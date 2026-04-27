@@ -1,6 +1,6 @@
 """
-Main grasp pipeline — integrates Stage 1 (LeRobot IL policy), Stage 3
-(tactile micro-lift), and Stage 4 (PINN grip force optimiser).
+Main grasp pipeline — integrates Stage 1 (LeRobot IL policy), Stage 2
+(tactile micro-lift), and Stage 3 (PINN grip force optimiser).
 
 Stage 1  IL policy  (lerobot.policies.act.ACTPolicy  OR
                      lerobot.policies.diffusion.DiffusionPolicy)
@@ -9,10 +9,10 @@ Stage 1  IL policy  (lerobot.policies.act.ACTPolicy  OR
              policy.reset()
              action = policy.select_action(batch)
 
-Stage 3  TactileMassEstimator
+Stage 2  TactileMassEstimator
          8 mm vertical micro-lift → Δ F/T → m_real, Δm
 
-Stage 4  GripPINN
+Stage 3  GripPINN
          [tactile_features, Δm] → optimal grip force F_grip
 
 Usage
@@ -58,7 +58,7 @@ class GraspResult:
 class GraspPipeline:
     """
     Online grasp controller integrating Stage 1 (LeRobot IL policy) with
-    the tactile micro-lift (Stage 3) and PINN grip optimiser (Stage 4).
+    the tactile micro-lift (Stage 2) and PINN grip optimiser (Stage 3).
 
     Parameters
     ----------
@@ -111,7 +111,7 @@ class GraspPipeline:
         return self.il_policy.select_action(obs_batch)
 
     # ------------------------------------------------------------------
-    # Stage 3 + 4 — grip force decision after initial contact
+    # Stage 2 + 3 — grip force decision after initial contact
     # ------------------------------------------------------------------
 
     def grip(
@@ -122,7 +122,7 @@ class GraspPipeline:
         is_compliant: bool = False,
     ) -> GraspResult:
         """
-        Run Stage 3 (micro-lift) → Stage 4 (PINN) and return grip decision.
+        Run Stage 2 (micro-lift) → Stage 3 (PINN) and return grip decision.
 
         Parameters
         ----------
@@ -131,10 +131,10 @@ class GraspPipeline:
         tactile_features : (D,) processed tactile sensor features
         is_compliant     : True if object is soft / deformable
         """
-        # Stage 3
+        # Stage 2
         m_real, delta_m = self._mass_estimator.run(ft_baseline, ft_lifted, self.m_prior)
 
-        # Stage 4
+        # Stage 3
         with torch.no_grad():
             tf = torch.tensor(tactile_features, dtype=torch.float32, device=self.device)
             dm = torch.tensor([delta_m], dtype=torch.float32, device=self.device)

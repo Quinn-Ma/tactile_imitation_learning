@@ -1,9 +1,9 @@
 """
-Stage 4: Physics-Informed Neural Network (PINN) grip-force optimizer.
+Stage 3: Physics-Informed Neural Network (PINN) grip-force optimizer.
 
 Architecture
 ------------
-Input  : [tactile_features (D,), Δm (1,)]  ← mismatch residual from Stage 3
+Input  : [tactile_features (D,), Δm (1,)]  ← mismatch residual from Stage 2
 Output : optimal grip force F_grip (N)
 
 Three physics constraints are encoded as differentiable soft penalties and

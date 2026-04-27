@@ -1,5 +1,5 @@
 """
-Train the PINN grip-force optimizer (Stage 4) on recorded grasp data.
+Train the PINN grip-force optimizer (Stage 3) on recorded grasp data.
 
 Input data format (torch Dataset)
 -----------------------------------
@@ -154,7 +154,7 @@ def train(args: argparse.Namespace) -> None:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Train GripPINN (Stage 4)")
+    parser = argparse.ArgumentParser(description="Train GripPINN (Stage 3)")
     parser.add_argument("--data_path",    required=True, help=".npz file with grip dataset")
     parser.add_argument("--output_dir",   default="outputs/pinn_grip")
     parser.add_argument("--epochs",       type=int,   default=200)

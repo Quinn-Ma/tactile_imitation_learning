@@ -12,11 +12,11 @@ The pipeline consists of three active stages executed sequentially at grasp time
 │           ACT or Diffusion Policy (via LeRobot)                 │
 │           → drives arm to object, closes fingers to contact     │
 ├─────────────────────────────────────────────────────────────────┤
-│  Stage 3  Tactile Micro-Lift                                    │
+│  Stage 2  Tactile Micro-Lift                                    │
 │           8 mm vertical lift + F/T sensor reading               │
 │           → estimates true mass m_real, computes Δm residual    │
 ├─────────────────────────────────────────────────────────────────┤
-│  Stage 4  PINN Grip Optimizer                                   │
+│  Stage 3  PINN Grip Optimizer                                   │
 │           Physics-Informed Neural Network                       │
 │           → optimal grip force F_grip with 3 hard constraints:  │
 │              · Friction cone   (prevents slip)                  │
@@ -35,8 +35,8 @@ The pipeline consists of three active stages executed sequentially at grasp time
 ```
 tactile_imitation_learning/
 ├── grasp_control/                  # Core paper contributions
-│   ├── tactile_microlift.py        # Stage 3: F/T-based mass estimation
-│   ├── pinn_grip.py                # Stage 4: PINN grip force optimizer
+│   ├── tactile_microlift.py        # Stage 2: F/T-based mass estimation
+│   ├── pinn_grip.py                # Stage 3: PINN grip force optimizer
 │   └── grasp_pipeline.py          # Integrated 3-stage pipeline
 │
 ├── grasp_env/
@@ -46,7 +46,7 @@ tactile_imitation_learning/
 ├── scripts/
 │   ├── collect_grasping_demos.py  # Record demonstrations → LeRobot dataset
 │   ├── train_il_policy.py         # Train ACT or Diffusion Policy (Stage 1)
-│   ├── train_pinn.py              # Train PINN grip optimizer (Stage 4)
+│   ├── train_pinn.py              # Train PINN grip optimizer (Stage 3)
 │   └── eval_grasp_policy.py       # Full pipeline evaluation in simulation
 │
 ├── configs/
@@ -125,7 +125,7 @@ python scripts/train_il_policy.py \
 
 Hyperparameters are in [`configs/act_grasp.yaml`](configs/act_grasp.yaml) and [`configs/diffusion_grasp.yaml`](configs/diffusion_grasp.yaml).
 
-### Step 3 — Train the PINN Grip Optimizer (Stage 4)
+### Step 3 — Train the PINN Grip Optimizer (Stage 3)
 
 Prepare a `.npz` dataset with fields `tactile_features`, `delta_m`, `f_target`, `m_eff`, `is_compliant` (see `GripDataset` in `scripts/train_pinn.py`), then:
 
@@ -203,7 +203,7 @@ while not done:
     action = pipeline.select_arm_action(batch).squeeze(0).numpy()
     obs, reward, done, _, info = env.step(action)
 
-    # Detect contact → Stage 3 + 4
+    # Detect contact → Stage 2 + 3
     ft = env.get_ft_reading()
     if np.linalg.norm(ft[:3]) > 1.0:
         ft_baseline = ft.copy()
@@ -236,7 +236,7 @@ MuJoCo Gymnasium environment for single-arm grasping.
 env = GraspEnv(object_type="random")  # or "steel" / "foam"
 ft  = env.get_ft_reading()            # (6,) [Fx Fy Fz Tx Ty Tz]
 tac = env.get_tactile_reading()       # (12,) fingerpad contact forces
-env.micro_lift(delta_z=0.008)         # trigger Stage 3 micro-lift
+env.micro_lift(delta_z=0.008)         # trigger Stage 2 micro-lift
 ```
 
 ### `grasp_control.tactile_microlift.TactileMassEstimator`
@@ -275,7 +275,7 @@ Integrates all active stages. Wraps a LeRobot `PreTrainedPolicy` for Stage 1.
 |--------|-------------|
 | `reset_episode()` | Calls `il_policy.reset()` before each grasp |
 | `select_arm_action(obs_batch)` | Stage 1 inference via `il_policy.select_action()` |
-| `grip(ft_baseline, ft_lifted, tactile_features)` | Stage 3 + 4: returns `GraspResult` |
+| `grip(ft_baseline, ft_lifted, tactile_features)` | Stage 2 + 3: returns `GraspResult` |
 | `update_prior(m_prior)` | Update visual mass prior at runtime |
 
 ## Citation

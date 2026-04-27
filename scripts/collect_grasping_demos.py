@@ -3,8 +3,8 @@ Collect grasping demonstrations and save them as a LeRobot v3.0 dataset.
 
 Each episode contains the full 4-stage sequence:
   Stage 1  IL approach + initial finger closure   (arm joint actions)
-  Stage 3  Micro-lift and F/T recording           (stored in observation.state)
-  Stage 4  PINN grip-force command                (stored as action channel)
+  Stage 2  Micro-lift and F/T recording           (stored in observation.state)
+  Stage 3  PINN grip-force command                (stored as action channel)
 
 Observation state vector layout (25-dim)
 -----------------------------------------

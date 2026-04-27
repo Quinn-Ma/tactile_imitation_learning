@@ -2,8 +2,8 @@
 Evaluate the full 4-stage grasp pipeline in the GraspEnv simulation.
 
 Stage 1  IL policy   → drives arm to object, closes fingers
-Stage 3  Micro-lift  → F/T reading before/after 8 mm lift
-Stage 4  PINN        → optimal grip force from tactile + Δm
+Stage 2  Micro-lift  → F/T reading before/after 8 mm lift
+Stage 3  PINN        → optimal grip force from tactile + Δm
 
 Reported metrics
 -----------------
@@ -129,12 +129,12 @@ def evaluate(args: argparse.Namespace) -> None:
                 contact_detected = True
                 ft_baseline = ft.copy()
 
-                # Stage 3: micro-lift
+                # Stage 2: micro-lift
                 env.micro_lift(delta_z=0.008)
                 ft_lifted = env.get_ft_reading()
                 tactile   = env.get_tactile_reading()
 
-                # Stage 4: PINN grip decision
+                # Stage 3: PINN grip decision
                 is_compliant = (info.get("object") == "foam_ball")
                 result = pipeline.grip(
                     ft_baseline=ft_baseline,

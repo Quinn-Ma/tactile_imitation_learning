@@ -1,0 +1,13 @@
+{
+  "rgb": 0.0,
+  "tactile": 0.0,
+  "proprio": 0.0,
+  "height": 0.0,
+  "substep_normal_peak": 0.0,
+  "action_max_abs_error": 0.0,
+  "half_size": [
+    0.021184340710261363,
+    0.021703098901018705,
+    0.020551336861558217
+  ]
+}

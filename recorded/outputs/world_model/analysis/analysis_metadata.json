@@ -1,0 +1,15 @@
+{
+  "arguments": {
+    "world_runs": "outputs/world_model/runs",
+    "controls": "outputs/simulation",
+    "executed_forecasts": "outputs/world_model/executed_forecasts",
+    "output": "outputs/world_model/analysis",
+    "bootstrap": 2000,
+    "seed": 90210,
+    "primary_takeover": 44,
+    "no_plots": false,
+    "dry_run": false
+  },
+  "warnings": [],
+  "missing_data_policy": "Never impute absent experiments or metrics; exclude unverified pairing."
+}

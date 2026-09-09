@@ -1,0 +1,10 @@
+# Versions observed in the Python 3.12 simulator environment.
+# This is a direct-dependency list, not a complete resolver lock.
+robosuite==1.5.1
+mujoco==3.3.7
+numpy==2.5.3
+scipy==1.18.1
+imageio==2.37.4
+glfw==2.10.2
+PyOpenGL==3.1.10
+Pillow==12.3.0

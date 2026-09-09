@@ -1,0 +1,4 @@
+# Versions observed in the Python 3.14 data-preparation/plotting environment.
+numpy==2.4.2
+matplotlib==3.10.8
+Pillow==12.1.1

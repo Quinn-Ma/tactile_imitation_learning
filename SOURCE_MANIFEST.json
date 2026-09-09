@@ -1,0 +1,1400 @@
+{
+  "purpose": "Ancillary code and numerical results for the empirical preprint; no training data or weights.",
+  "numerical_policy": "Result numbers are copied unchanged; paths are portable metadata only.",
+  "original_experiment_files_modified": false,
+  "files": [
+    {
+      "source": "outputs/research/download_public_data.py",
+      "source_sha256": "fabb1b08de610e2424c56eb2b1f5ba27f902e8f258f0cd63597f421733457408",
+      "packaged": "outputs/research/download_public_data.py",
+      "packaged_sha256": "1c2a4455d5a58fe153323ef66ecd4b3e6fcab4217a98131f2903c4fc15bc2c70",
+      "changes": "Default to the included 50-file SHA-256 manifest and fixed source revision."
+    },
+    {
+      "source": "outputs/research/prepare_public_force_data.py",
+      "source_sha256": "55cafaedc27ff69d90db9ee0537c9519b3cc56c4e8d4df0866523f306d774ef7",
+      "packaged": "outputs/research/prepare_public_force_data.py",
+      "packaged_sha256": "c7bf0025d84fe12ecc738a61a9ec5c414511b1f426ce9b9c8bc224b19e7092a6",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/research/train_force_envelopes.py",
+      "source_sha256": "26677d8e940aa17fe80ad12695fc3162c1435294d220bb9b1e7b052bf1eae56c",
+      "packaged": "outputs/research/train_force_envelopes.py",
+      "packaged_sha256": "d44900032fd7a9e2caf7acaae9d705b75540c36899e401dfd3ff927cd3d9a1a0",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/research/analyze_force_envelopes.py",
+      "source_sha256": "419674edf335a60070d8bdb10abb298d92fa2899804fcdbb8737b4da6452e15a",
+      "packaged": "outputs/research/analyze_force_envelopes.py",
+      "packaged_sha256": "7c39c41eb68ff987b88cd78eb9a99ac958751ce5424ab43e285c9adf2f26970c",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/model.py",
+      "source_sha256": "a875e616d64c64dcece4c57a4b619fd621f2c56b8b0da7a6109e013e9619322b",
+      "packaged": "outputs/world_model/model.py",
+      "packaged_sha256": "9a1101eacb6c79f480131f536f3a4e24a25b2acc77cfc914eda5f71cf0b2873b",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/data.py",
+      "source_sha256": "6ee5d678ce8339d409c1ae9e137bd09be83c4c46bdc40e17b7f92725f110d05d",
+      "packaged": "outputs/world_model/data.py",
+      "packaged_sha256": "42ad941192674d2d857ed46d601ee97e04b1cbde562fe609665b0d25dfdfb834",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/tdmpc2_layers.py",
+      "source_sha256": "0d59a2513aaabd52edd31d7842299a853065dce14c9bf4a09831e58e2006da8b",
+      "packaged": "outputs/world_model/tdmpc2_layers.py",
+      "packaged_sha256": "68d2ea8e332235559bbb8baa64b4452230fa68b9b0610c5dd757ce7b81b86a1f",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/train.py",
+      "source_sha256": "1b117e63e52a277e5a938701ed84d18f598633f45824491c7a38002cb5a5c736",
+      "packaged": "outputs/world_model/train.py",
+      "packaged_sha256": "6dd371f4daa3f106f08a68d8141cd531fef54db9aece524724645cad21a581df",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/train_imagination_rl.py",
+      "source_sha256": "1387694675078e0842e0515541f8ea9b6a38624dc293ee739689f6912f803324",
+      "packaged": "outputs/world_model/train_imagination_rl.py",
+      "packaged_sha256": "ced01089c8005bd8a12ea7947a49aaba128c6c08b1c04917272f58a7fee3f766",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/controller_server.py",
+      "source_sha256": "fb80e01c96c79af12d0bd1e083396d62b06f20022b60070d2e58468f1a275078",
+      "packaged": "outputs/world_model/controller_server.py",
+      "packaged_sha256": "89de207a5471fc3737b52d69029227571a6aa6a807299bf5061b9ba805fb6325",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/run_pilot_matrix.py",
+      "source_sha256": "353c3ea41eafc8c3c0f202ba2a6a9119068b02dda4f0988ecb2fec9ede46409c",
+      "packaged": "outputs/world_model/run_pilot_matrix.py",
+      "packaged_sha256": "7f1442a0e462b7bf5796608539d8969afe20a66d844f7102bd69d9a4704ebb3a",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/run_goal_aligned_matrix.py",
+      "source_sha256": "99eb33d20e1d358377bc26b4583283cad741a05eb71b49ec1cb931c1305abd0e",
+      "packaged": "outputs/world_model/run_goal_aligned_matrix.py",
+      "packaged_sha256": "70fdb4ffada5e3556e21618be0003177da564151d7d18dac933c90f7fe1c77e8",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/analyze_results.py",
+      "source_sha256": "1ee97195ff76bb0f01184b15293190b8ab27bfe226b028b426d6b1fcf8ef7090",
+      "packaged": "outputs/world_model/analyze_results.py",
+      "packaged_sha256": "4d5834510e4b019e312a2adaeda86b5f406268fbb6409e15354ecee938f4abd5",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/world_model/evaluate_executed_forecasts.py",
+      "source_sha256": "8f10dce3576a2841949377d4fede3d9001bc0448fe608a81e59128927f995ff0",
+      "packaged": "outputs/world_model/evaluate_executed_forecasts.py",
+      "packaged_sha256": "34f83d77b8120628c6327e3b10f9e027ea52081841cc0bd1228d9f67d3b714c6",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/simulation/sim_adapter.py",
+      "source_sha256": "6d8189ac2c7fd27d0c67074e6ca9a06fc042f8be88993411df85ed0d8f8a5847",
+      "packaged": "outputs/simulation/sim_adapter.py",
+      "packaged_sha256": "407a7ba79fd2b4ec29219740e185a34b497ddf643b6565ab290b823e9591c321",
+      "changes": "Remove bundled-runtime wording; dynamics and rendering configuration unchanged."
+    },
+    {
+      "source": "outputs/simulation/generate_dataset.py",
+      "source_sha256": "653e476e4a37716668dd448bb351b8d447c37766c776d7c48a370d6043d7ad83",
+      "packaged": "outputs/simulation/generate_dataset.py",
+      "packaged_sha256": "2d0055f5be3c8ce2572885669dd039d023811dbdc4a86b784c15466e5edf2b38",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/simulation/audit_dataset.py",
+      "source_sha256": "5a9a6889ba3e92f57a642442376036eeb58525b68c5f49d6c8d8f585b4c78fee",
+      "packaged": "outputs/simulation/audit_dataset.py",
+      "packaged_sha256": "fbf13c3fa8cfa6f015d12c620e5225b9cea83f8f94b9e39cb067ab2419813c61",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/simulation/evaluate_controller.py",
+      "source_sha256": "6dffa2b51195b6e096d56f83337ffd82ebad14a6e05fec61b72dd1b232bcb1ef",
+      "packaged": "outputs/simulation/evaluate_controller.py",
+      "packaged_sha256": "04e73211d5fcfef8b8233f713b806a048050a14eab7b2b83a5e0970abdbd1238",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/simulation/audit_control_pairing.py",
+      "source_sha256": "5603b15f9a4f6017735e69622eb63683931d05e651b49f1c127a0bb82a12b3fe",
+      "packaged": "outputs/simulation/audit_control_pairing.py",
+      "packaged_sha256": "ba073e99e3431666d97bdf7be64fe2d982e7df5b46eec1936d1c06d262ee5b14",
+      "changes": "Unmodified scientific implementation; normalized text encoding."
+    },
+    {
+      "source": "outputs/simulation/run_policy_matrix.py",
+      "source_sha256": "87ef0b00471dcc89623c6fcd63812289ee6e00a75f0c76716c613cda7484273e",
+      "packaged": "outputs/simulation/run_policy_matrix.py",
+      "packaged_sha256": "eeb9c14107b64e2ef829b432222568aafab94ec249cfcd04e4315432814b3c78",
+      "changes": "Require explicit --gpu-python instead of a private machine path."
+    },
+    {
+      "source": "outputs/simulation/run_goal_aligned_matrix.py",
+      "source_sha256": "b44dafc062c60362c31bd1231ddfda8fef068f6c6018d14ba3287ac08369d34b",
+      "packaged": "outputs/simulation/run_goal_aligned_matrix.py",
+      "packaged_sha256": "23c2b5de0c05d306949b19f6a915fbd93e04ce8d6882972f41b4b10d82a70426",
+      "changes": "Require explicit --gpu-python instead of a private machine path."
+    },
+    {
+      "source": "outputs/world_model/LICENSE_TDMPC2.txt",
+      "source_sha256": "440d4088a83d19c522dff58918bd92ccb9701c278a35295b92db2456373c4759",
+      "packaged": "outputs/world_model/LICENSE_TDMPC2.txt",
+      "packaged_sha256": "440d4088a83d19c522dff58918bd92ccb9701c278a35295b92db2456373c4759",
+      "changes": "Unmodified upstream notice or download integrity manifest."
+    },
+    {
+      "source": "outputs/research/data_download_manifest.json",
+      "source_sha256": "b63f7f37c1f35f9e7891ecee3528eb41b1fde65104a1caae10c59a1936b9ef9a",
+      "packaged": "outputs/research/data_download_manifest.json",
+      "packaged_sha256": "b63f7f37c1f35f9e7891ecee3528eb41b1fde65104a1caae10c59a1936b9ef9a",
+      "changes": "Unmodified upstream notice or download integrity manifest."
+    },
+    {
+      "source": "outputs/research/data_download_manifest.json",
+      "source_sha256": "b63f7f37c1f35f9e7891ecee3528eb41b1fde65104a1caae10c59a1936b9ef9a",
+      "packaged": "recorded/outputs/research/data_download_manifest.json",
+      "packaged_sha256": "b625c349184e2b0edf5c98498ae2d58d665c1ade6c4eef474f50431498094a2f",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_alignment_sensitivity.csv",
+      "source_sha256": "6e7079f3d2a480492326a72e24fb4952ef14633243e30a7a0cdd6aa8e1da443a",
+      "packaged": "recorded/outputs/research/real_force_alignment_sensitivity.csv",
+      "packaged_sha256": "6e7079f3d2a480492326a72e24fb4952ef14633243e30a7a0cdd6aa8e1da443a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_analysis_audit.json",
+      "source_sha256": "10af83d8ea155c1e1b4e831557afcc3832c0b71a12d64a2257889815d436b628",
+      "packaged": "recorded/outputs/research/real_force_analysis_audit.json",
+      "packaged_sha256": "acc29839c3364744987ec6c89b034659c280d1f4556e7a64b08ad7f6d3f96076",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_bootstrap_intervals.csv",
+      "source_sha256": "f0bec1a8c25054dbf34e196165a0ac9ac23744e9ee3acbc0ccfabcae38640d37",
+      "packaged": "recorded/outputs/research/real_force_bootstrap_intervals.csv",
+      "packaged_sha256": "f0bec1a8c25054dbf34e196165a0ac9ac23744e9ee3acbc0ccfabcae38640d37",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_calibration.csv",
+      "source_sha256": "6aee86fba1a2e905652e28154b7c3a390f98c03d77de173886612ed37df56823",
+      "packaged": "recorded/outputs/research/real_force_calibration.csv",
+      "packaged_sha256": "6aee86fba1a2e905652e28154b7c3a390f98c03d77de173886612ed37df56823",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_data_audit.json",
+      "source_sha256": "4370784a09af990b547d3e4e034871707cd0c3b4149e58565a614965039a3887",
+      "packaged": "recorded/outputs/research/real_force_data_audit.json",
+      "packaged_sha256": "e849f0c8b48418af7d85def0b0aad42fd2881884080f8271f014e3eb22ac8773",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_envelope_metrics.csv",
+      "source_sha256": "ac2a733da4268b9ef6204bc2abdd5775ac0e6abafe9561d853e73b23453cd6a1",
+      "packaged": "recorded/outputs/research/real_force_envelope_metrics.csv",
+      "packaged_sha256": "ac2a733da4268b9ef6204bc2abdd5775ac0e6abafe9561d853e73b23453cd6a1",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_predictor_metrics.csv",
+      "source_sha256": "2bca7c679f2d9b25cef9c0fc42c83b7c8343d132a381abe66fd6395012b5e1ba",
+      "packaged": "recorded/outputs/research/real_force_predictor_metrics.csv",
+      "packaged_sha256": "2bca7c679f2d9b25cef9c0fc42c83b7c8343d132a381abe66fd6395012b5e1ba",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_run_metadata.json",
+      "source_sha256": "bc9f21b1b473a605530f7e36f6d756e8d6baaa7396991793f913b9c78dcd9247",
+      "packaged": "recorded/outputs/research/real_force_run_metadata.json",
+      "packaged_sha256": "f5ad779ebeaffb1db1b2d17e3ef81e29f31c8069cacdc8247ec0d0292d401f8c",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_selective_metrics.csv",
+      "source_sha256": "0f9de9e2c970b8905fb29e2ba1d18e9ff8132146d784a9019448661daf8c3cdd",
+      "packaged": "recorded/outputs/research/real_force_selective_metrics.csv",
+      "packaged_sha256": "0f9de9e2c970b8905fb29e2ba1d18e9ff8132146d784a9019448661daf8c3cdd",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_splits.json",
+      "source_sha256": "12083db1b3d76ff3140307b6366b5b004aa38bdeed186876a51855d7acd204c1",
+      "packaged": "recorded/outputs/research/real_force_splits.json",
+      "packaged_sha256": "475d6d2b839e14671a0de8acf73e4bc729a6ccca095b005b5e3a188179538de6",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_summary_alpha10.csv",
+      "source_sha256": "0217f3d3bf572dbadfbf7d0eb76dbf37c47e2edf0c8bf9d9f7bc0672dc0c4c3d",
+      "packaged": "recorded/outputs/research/real_force_summary_alpha10.csv",
+      "packaged_sha256": "0217f3d3bf572dbadfbf7d0eb76dbf37c47e2edf0c8bf9d9f7bc0672dc0c4c3d",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/research/real_force_training_log.csv",
+      "source_sha256": "1245539ea1034e1b34f1745744fbbbc7ce2d5de7c032bba4b3c98a958505be0a",
+      "packaged": "recorded/outputs/research/real_force_training_log.csv",
+      "packaged_sha256": "1245539ea1034e1b34f1745744fbbbc7ce2d5de7c032bba4b3c98a958505be0a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/dataset_audit.json",
+      "source_sha256": "3e0b24c97d6414a67ad0f939fdaa12fc356ebc108dd0146b67e72978633bbd7a",
+      "packaged": "recorded/outputs/simulation/dataset_audit.json",
+      "packaged_sha256": "6e821721d8f8b41c0de72b1031ca230f9fcbdb88b3070a2fc427132437a52864",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/force_feedback/episodes.jsonl",
+      "source_sha256": "ce0a71245432b478ca953f3a1520277b8da9c67ed49fc35c40dffb6f75909b0b",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/force_feedback/episodes.jsonl",
+      "packaged_sha256": "ce0a71245432b478ca953f3a1520277b8da9c67ed49fc35c40dffb6f75909b0b",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/force_feedback/summary.json",
+      "source_sha256": "8c33021bac6690619a1af1c78888e54345605aa94ea8fdb0c7aa6589092715af",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/force_feedback/summary.json",
+      "packaged_sha256": "232366fb548878281cf28f1cec45d0759777a4def97c25a1e9770ab86be2defe",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/goal_aligned_evaluation_plan.json",
+      "source_sha256": "7c7e10a28dfd9f2e32ba1782c5720e70f7364ade54260a82e8aab7755e5e44f1",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/goal_aligned_evaluation_plan.json",
+      "packaged_sha256": "e5ca26fb97a375230483ef92d6321f780aa4d023602a264df3628f62f4e696f8",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/pairing_audit.json",
+      "source_sha256": "e6fa7ebea180f53a9c6f0406615889350f10babc151b3e776784b1d7ab3f258e",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/pairing_audit.json",
+      "packaged_sha256": "cb38806e04202963d4c72297b47c72ffe4eabc8e6ace289688aef671427b7480",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/script/episodes.jsonl",
+      "source_sha256": "355e1e2b6ed48f7fb21de015ff4f708c1580a83d33d14f0c30a0b80f5b6d254e",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/script/episodes.jsonl",
+      "packaged_sha256": "355e1e2b6ed48f7fb21de015ff4f708c1580a83d33d14f0c30a0b80f5b6d254e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/script/summary.json",
+      "source_sha256": "286abb64dbf37f34cd5c06012ceaba86227b4542aeb7802d9493d126a1747fba",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/script/summary.json",
+      "packaged_sha256": "5e87cdf9c7862ba932e078ecdfc3c4bd662ff947053f165382909f941c82b547",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed0_rl/episodes.jsonl",
+      "source_sha256": "68963778a854082ed53767de59352a0531c7c79a73a716a2b8393c483b89b2a2",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "68963778a854082ed53767de59352a0531c7c79a73a716a2b8393c483b89b2a2",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed0_rl/summary.json",
+      "source_sha256": "5840c2a821cffe3e1a160ee1841ac7df1b220af99d0d03e921c5abe0782decee",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed0_rl/summary.json",
+      "packaged_sha256": "359157771d57c56443eff91f9c1ad6ba966a70ebfd55ff196bb75364b0491fec",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed1_rl/episodes.jsonl",
+      "source_sha256": "b85d9bf6d0e2ad70053658e5fb288faeb2b828b0f1d8db0a835ef999f78638a5",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "b85d9bf6d0e2ad70053658e5fb288faeb2b828b0f1d8db0a835ef999f78638a5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed1_rl/summary.json",
+      "source_sha256": "57f1b1b09cd7c8b8f8ddc80998dfbdd2efaec9dd34005330bb93f288d0a83769",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed1_rl/summary.json",
+      "packaged_sha256": "6987f6e9b351217112ffe49b14369f7ade5ad702c650c319f3303bbccafd9376",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed2_rl/episodes.jsonl",
+      "source_sha256": "fe3e71dd17f70f6c0100c6e8a53a577abefc3074b7f29176c427ea73ae5694aa",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "fe3e71dd17f70f6c0100c6e8a53a577abefc3074b7f29176c427ea73ae5694aa",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed2_rl/summary.json",
+      "source_sha256": "1a3076657becc2d095ca0411a50ad29bcca0b5fe553939e0020dfe0b0b712969",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_height_seed2_rl/summary.json",
+      "packaged_sha256": "432f6543a7e9c10411f5e778f8358e11a0272e2b53019ff444d237fa7948fa80",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed0_rl/episodes.jsonl",
+      "source_sha256": "07f0bf702df74a441b929936a093f8519d3be52e7e06417c90f66ea002f89ec3",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "07f0bf702df74a441b929936a093f8519d3be52e7e06417c90f66ea002f89ec3",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed0_rl/summary.json",
+      "source_sha256": "4a23a5086192768ac0d9bcdde2c4a004223b04da330ed5c2f945023f8f741216",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed0_rl/summary.json",
+      "packaged_sha256": "46852af7105af6c63b0a44d143e81940f221ce3dff0cfff7f435821cca43c0dd",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed1_rl/episodes.jsonl",
+      "source_sha256": "6dce6d9c4738708391f42d9fa76fc62dff12322c2c470f6246b093a0a41fcd80",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "6dce6d9c4738708391f42d9fa76fc62dff12322c2c470f6246b093a0a41fcd80",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed1_rl/summary.json",
+      "source_sha256": "e6e0fef39f22fc960392523328eab42c24ba183d11d8ad67a81b5ca5540668be",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed1_rl/summary.json",
+      "packaged_sha256": "dcfc4adb3111a9d4b6df1dc0aca7450924c87c6019df740c5242132f29d5bfac",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed2_rl/episodes.jsonl",
+      "source_sha256": "3b8752d0e453238561264d71d9e0bad669276bbc90fcd0d1c5dd5ab0ab40cd05",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "3b8752d0e453238561264d71d9e0bad669276bbc90fcd0d1c5dd5ab0ab40cd05",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed2_rl/summary.json",
+      "source_sha256": "7c8c81755d9e44c73ac05d7680f8f772d4b1f95c541da913b102fb4375c78e01",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_height_seed2_rl/summary.json",
+      "packaged_sha256": "dc3f5b475402d6b7fa033b7a289cffba8ae3b422a8d69af8ed13d2a8728f2ec4",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed0_rl/episodes.jsonl",
+      "source_sha256": "cde55941a6dd359af69aed58d00f7624a3a3bd985b2f914b230e7710f001ad04",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "cde55941a6dd359af69aed58d00f7624a3a3bd985b2f914b230e7710f001ad04",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed0_rl/summary.json",
+      "source_sha256": "497f330cc075a65d41cbde488fb3f3150e3f8439ec04df23f552273aeebe78c6",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed0_rl/summary.json",
+      "packaged_sha256": "ed7a8304838898b9f5c429a33d33642836718659116a6dc959ac300ed8a01934",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed1_rl/episodes.jsonl",
+      "source_sha256": "49bbc08c43aa7fdeb0eedd71beb950c011113165b8ea48dd4bdb1c316400be27",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "49bbc08c43aa7fdeb0eedd71beb950c011113165b8ea48dd4bdb1c316400be27",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed1_rl/summary.json",
+      "source_sha256": "8e6af4f52280239023a94bf7882df84900e07f9b9fb062f3ee29b6de3c649cdc",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed1_rl/summary.json",
+      "packaged_sha256": "40180ce1733e318fa956414b1ee0762ed7e5f30dd94d344ecf3f461394c75a6b",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed2_rl/episodes.jsonl",
+      "source_sha256": "83df898440a81cba36f9bd6eba268a1576fe35f9ff453da09c32bda20fc45e29",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "83df898440a81cba36f9bd6eba268a1576fe35f9ff453da09c32bda20fc45e29",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed2_rl/summary.json",
+      "source_sha256": "fe2f247e3247b30c882a057ce8f908d975f1e038938df66fd1fd03d53f0f0873",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_margin_native_seed2_rl/summary.json",
+      "packaged_sha256": "8312d0b92f1a1cb311fcc67b67705449b78126c2f99724e5d87bc47f8e4fe812",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed0_rl/episodes.jsonl",
+      "source_sha256": "d34f91058003fe4dcb5d0ed2760d62107c6cda52054624d30d10ee83c12d4212",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "d34f91058003fe4dcb5d0ed2760d62107c6cda52054624d30d10ee83c12d4212",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed0_rl/summary.json",
+      "source_sha256": "b998f164389d3acb1e6842fa9c050fa0a745ad64a1488686dd15a1e5723703a5",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed0_rl/summary.json",
+      "packaged_sha256": "d4824359fdd9505e08085e1882af1ad1cec58f533ef53e0cc780902149d48455",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed1_rl/episodes.jsonl",
+      "source_sha256": "7d1f72787fa33c3491d0965969543e5d7b523ebc4072f35b503cf45a00e117d9",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "7d1f72787fa33c3491d0965969543e5d7b523ebc4072f35b503cf45a00e117d9",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed1_rl/summary.json",
+      "source_sha256": "34ee66d975d93267818b459a3d0d36ed7edf650eca01616f0f3d3e7a1bba0fe6",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed1_rl/summary.json",
+      "packaged_sha256": "387086a9dc3eb41d19fa2cb87460b04855c3caa81c1caba339852ed50d2ff923",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed2_rl/episodes.jsonl",
+      "source_sha256": "94ca7ba882b62db4b13acc52ab0dcea0571c1b618cbf0db0afb295abcdb7f4ec",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "94ca7ba882b62db4b13acc52ab0dcea0571c1b618cbf0db0afb295abcdb7f4ec",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed2_rl/summary.json",
+      "source_sha256": "d0e47cd1996cf525e9cf163a152d4acdd76ea562aca688a316d7ad6080e6b8d2",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_native_seed2_rl/summary.json",
+      "packaged_sha256": "d24658dbcfc8a4914aeb985e940683b5de535ea270a0b9b8b6508e5e9734b28f",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_seed0_bc/episodes.jsonl",
+      "source_sha256": "e4bcc09b7710280e4559f36c64c433cf471f8abb2cdfa5219c9e0d99432da673",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_seed0_bc/episodes.jsonl",
+      "packaged_sha256": "e4bcc09b7710280e4559f36c64c433cf471f8abb2cdfa5219c9e0d99432da673",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_seed0_bc/summary.json",
+      "source_sha256": "092377d87b6ee2d60b23d5ccff482af8cdb756d7dbecd029909cfb36d62b36b8",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_seed0_bc/summary.json",
+      "packaged_sha256": "e1f78afbec292425b348c2964cfa927d2ba1770ae52e9db6106e1971ce48adac",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_seed1_bc/episodes.jsonl",
+      "source_sha256": "549417a8d0365b424a9fa11d5ead831a8d0f96364a86ae60c1cdaa641de84eb9",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_seed1_bc/episodes.jsonl",
+      "packaged_sha256": "549417a8d0365b424a9fa11d5ead831a8d0f96364a86ae60c1cdaa641de84eb9",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_seed1_bc/summary.json",
+      "source_sha256": "d56d398506c63310bee4ef3f8908acd0e3bb82826022853990731caf282e8535",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_seed1_bc/summary.json",
+      "packaged_sha256": "255017b87cb57dae9fcb6f0cecaa7be9188d0c0e2e21728e8d36e762f1b2d0c4",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_seed2_bc/episodes.jsonl",
+      "source_sha256": "e219b081bf9c30a7d80e63f784627667a7edd2fff5ded82a9347e6db930d58d0",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_seed2_bc/episodes.jsonl",
+      "packaged_sha256": "e219b081bf9c30a7d80e63f784627667a7edd2fff5ded82a9347e6db930d58d0",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_goal_aligned/visuotactile_seed2_bc/summary.json",
+      "source_sha256": "7c2b4d8979c91fa0841cc578a551ab27144f027075844be848bb33204dd22197",
+      "packaged": "recorded/outputs/simulation/evaluation_goal_aligned/visuotactile_seed2_bc/summary.json",
+      "packaged_sha256": "3a5a8dd976c4f4ced6d6ff462afd1c44b57277622ae54fae2f2e5e06c208346c",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/force_feedback/episodes.jsonl",
+      "source_sha256": "c8808568bdd92c173f5ad403e6b5761b0308d3e66447ded3bbac3891d1dd9de8",
+      "packaged": "recorded/outputs/simulation/evaluation_main/force_feedback/episodes.jsonl",
+      "packaged_sha256": "c8808568bdd92c173f5ad403e6b5761b0308d3e66447ded3bbac3891d1dd9de8",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/force_feedback/summary.json",
+      "source_sha256": "4029a08c4dea3f62de1157bcaaa2af0782a42007b709e5c69d10499c2de2807b",
+      "packaged": "recorded/outputs/simulation/evaluation_main/force_feedback/summary.json",
+      "packaged_sha256": "0c457d4d97a959ad6c0f711b8c816ea86d09dd6797008a88d6dabecab6324d7d",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/pairing_audit.json",
+      "source_sha256": "b76e2953a14ed467a41fe2717ad312b779c9d20e188fb3d4c7b8703cba1f93ae",
+      "packaged": "recorded/outputs/simulation/evaluation_main/pairing_audit.json",
+      "packaged_sha256": "95df2931dcfe91e87061b265bbe54e3c2f5569688a6e003e6e485c2a56be861f",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/policy_evaluation_plan.json",
+      "source_sha256": "50cfe33626fffb88403ad15a212b1ddc395d27b3aa347d1ef93a1d6d48feb5f1",
+      "packaged": "recorded/outputs/simulation/evaluation_main/policy_evaluation_plan.json",
+      "packaged_sha256": "491152f41b3da1ba7438539e917db8f9ca788d77fa283afbf46be0528ebf5faf",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/script/episodes.jsonl",
+      "source_sha256": "19c6e730dd463595326044853b1debdc6c3c7a911cde59f3c71e299c97253be7",
+      "packaged": "recorded/outputs/simulation/evaluation_main/script/episodes.jsonl",
+      "packaged_sha256": "19c6e730dd463595326044853b1debdc6c3c7a911cde59f3c71e299c97253be7",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/script/summary.json",
+      "source_sha256": "fb63fdaa6a86047a87f93c5dd472d8f41cbc2e0006c7627d909ef602e3f7c777",
+      "packaged": "recorded/outputs/simulation/evaluation_main/script/summary.json",
+      "packaged_sha256": "e0d54c7add64533e959f6df38f932883395972d0358a63aef9096258c7926015",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed0_bc/episodes.jsonl",
+      "source_sha256": "5cfc848f1a899860d3cebadd7e6bcf19a9cf52a2a1928774289103fa3b502970",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed0_bc/episodes.jsonl",
+      "packaged_sha256": "5cfc848f1a899860d3cebadd7e6bcf19a9cf52a2a1928774289103fa3b502970",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed0_bc/summary.json",
+      "source_sha256": "dd8cb5b339e7614987e0302a03a591f028641139e3fbbf19542521354bc2e2ef",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed0_bc/summary.json",
+      "packaged_sha256": "9cc94eb7bc45286dd32340ac7a59eff7374b161aea1b06b33f4d99948b0c0a72",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed0_rl/episodes.jsonl",
+      "source_sha256": "2799934ceeadfd7fd937f3012705bdffeb446c2f20b34570096fb2e6ff4258d0",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "2799934ceeadfd7fd937f3012705bdffeb446c2f20b34570096fb2e6ff4258d0",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed0_rl/summary.json",
+      "source_sha256": "ade48e4b90404486230e94d8ae0d04ac89434b55aba5ce7d829d7d9c44b45690",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed0_rl/summary.json",
+      "packaged_sha256": "84c5db47fd99da5467c8fc7d632b3ab9171c9ced016eb03081e147cc01ff6359",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed1_bc/episodes.jsonl",
+      "source_sha256": "98ac9f9fe48a0df32d4b93ebd0ba7ad68405eb2e8ee4b144526cfe47ab7f82cf",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed1_bc/episodes.jsonl",
+      "packaged_sha256": "98ac9f9fe48a0df32d4b93ebd0ba7ad68405eb2e8ee4b144526cfe47ab7f82cf",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed1_bc/summary.json",
+      "source_sha256": "c89aa057f940601a4418ae94820a3c8896918d933d93a286494130f28bb64637",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed1_bc/summary.json",
+      "packaged_sha256": "561d336b6800f4b8be9b843bf7aa59340ad52e4b49611b0825492ee2d218b003",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed1_rl/episodes.jsonl",
+      "source_sha256": "d43ee62d5ab831e08ff8846282115016f780967af6b64a2899bb7c960494d9a9",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "d43ee62d5ab831e08ff8846282115016f780967af6b64a2899bb7c960494d9a9",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed1_rl/summary.json",
+      "source_sha256": "8995c98db02b2abf34ec9defe665aec8e9dd5ec8c312e6210fe2f1067f86bbc2",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed1_rl/summary.json",
+      "packaged_sha256": "ef704b42fc2c6ba214f933195fcc9d8b6af1ecb8bbd5118687e4fa6ad6edf62a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed2_bc/episodes.jsonl",
+      "source_sha256": "c4ea1836e6fcca96dae0d655d3f2e2728bf0709f88021caaddf85ee012b655dc",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed2_bc/episodes.jsonl",
+      "packaged_sha256": "c4ea1836e6fcca96dae0d655d3f2e2728bf0709f88021caaddf85ee012b655dc",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed2_bc/summary.json",
+      "source_sha256": "efb270c7a08d134a3e2d84d65ae70325ced2cfccb64338df57f0ae55f62c364a",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed2_bc/summary.json",
+      "packaged_sha256": "8b9f60561eb19a3dca485d863e5fe53de9fa9251fb4d9988adc4b912c5202600",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed2_rl/episodes.jsonl",
+      "source_sha256": "670dedde48fd61a8e5a272c04b9e8054dd5a6a0a515e53f0aac380b305c6c8f7",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "670dedde48fd61a8e5a272c04b9e8054dd5a6a0a515e53f0aac380b305c6c8f7",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/vision_seed2_rl/summary.json",
+      "source_sha256": "33795168dfcc1ee3bca1f1ae4fcd493fd851ccc229f8d0c4696eba988356f15d",
+      "packaged": "recorded/outputs/simulation/evaluation_main/vision_seed2_rl/summary.json",
+      "packaged_sha256": "954c5ee494c805dcd594495f44ed13e73f2e3827db54c932152aa894ee16c85b",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_margin_seed0_rl/episodes.jsonl",
+      "source_sha256": "1dcb7a930ec68db082ca81e858870c05428ba633f550375fcebf95a65c01e4c5",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_margin_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "1dcb7a930ec68db082ca81e858870c05428ba633f550375fcebf95a65c01e4c5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_margin_seed0_rl/summary.json",
+      "source_sha256": "c688150c2a4661fbe48ea2895affd3daf3e9e6b95d52eb7e608dd0808b6fbd5a",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_margin_seed0_rl/summary.json",
+      "packaged_sha256": "26051dd7901fe73aa397feb388ded5add05ea51c9c280cc054674316024eb207",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_margin_seed1_rl/episodes.jsonl",
+      "source_sha256": "33368645baa1a4fc2f08c4e9005ec8d4b84759dc43b04c2446dd0254f45be9e2",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_margin_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "33368645baa1a4fc2f08c4e9005ec8d4b84759dc43b04c2446dd0254f45be9e2",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_margin_seed1_rl/summary.json",
+      "source_sha256": "2c613464fb78a9b1ecac7e4d2faf0c7d2d43bc9e0605fb35319f82f731833619",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_margin_seed1_rl/summary.json",
+      "packaged_sha256": "fd335b3849eed308383ed802453bde8d03562f17546c7ea44a67e4b731e15c3e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_margin_seed2_rl/episodes.jsonl",
+      "source_sha256": "5480880e7d348ffb82c2810bc43892b5b52944f477ab75ef7aa04c001e5cc720",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_margin_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "5480880e7d348ffb82c2810bc43892b5b52944f477ab75ef7aa04c001e5cc720",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_margin_seed2_rl/summary.json",
+      "source_sha256": "8c1dd9640d95af44c8bf9fcca8bcb7385d81f743640203da183d54a03757fa98",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_margin_seed2_rl/summary.json",
+      "packaged_sha256": "21d31029470b7a3fdf4e9c0c0d480217293ebae0778e12439553bdaa9f48c766",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed0_bc/episodes.jsonl",
+      "source_sha256": "b899932dc3e61894058e6cc378b7df0d7e074f4ec074cdeef69231d9c45097e7",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed0_bc/episodes.jsonl",
+      "packaged_sha256": "b899932dc3e61894058e6cc378b7df0d7e074f4ec074cdeef69231d9c45097e7",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed0_bc/summary.json",
+      "source_sha256": "1e8d9e0da7eff99cd4c1966b949483ecad420a3f51093bdbc751a87df38b0b25",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed0_bc/summary.json",
+      "packaged_sha256": "5bbf12b5a41fa54e1c7687864b2f97f8c484a110c4903de6b53d0ab7b731b20a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed0_rl/episodes.jsonl",
+      "source_sha256": "8fcd177308052bedafbb107e32a7fd92e95420a4646789e5f6787b290e64387e",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed0_rl/episodes.jsonl",
+      "packaged_sha256": "8fcd177308052bedafbb107e32a7fd92e95420a4646789e5f6787b290e64387e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed0_rl/summary.json",
+      "source_sha256": "94615188ba41530dab825638c1faa131a43a3a604e2a582db17b36a4bc7e42de",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed0_rl/summary.json",
+      "packaged_sha256": "a920f10f361541606dc5194c044b7f6aa8d62394ed67f2325fc2adbbab4cf7da",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed1_bc/episodes.jsonl",
+      "source_sha256": "e41d89852aeb803490ef32721590c2fd91828aa7f2e63fedf10efc280b1441a6",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed1_bc/episodes.jsonl",
+      "packaged_sha256": "e41d89852aeb803490ef32721590c2fd91828aa7f2e63fedf10efc280b1441a6",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed1_bc/summary.json",
+      "source_sha256": "a39fdf5f7619515ba996ec70771b76470d7dd83083aef7ecf3c495831f72cb58",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed1_bc/summary.json",
+      "packaged_sha256": "fdc5dc97885675f74fe536cfbb116f542beb7a296a6afa61279b7d7353a2e341",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed1_rl/episodes.jsonl",
+      "source_sha256": "7c3f42bd241cc6dde3dd3e940518e6634b0c68547c382513fa31f32cd136a818",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed1_rl/episodes.jsonl",
+      "packaged_sha256": "7c3f42bd241cc6dde3dd3e940518e6634b0c68547c382513fa31f32cd136a818",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed1_rl/summary.json",
+      "source_sha256": "622c9014917cab5030a95b67535d36b3403473852c60a25a0ee6e112fd1eefc3",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed1_rl/summary.json",
+      "packaged_sha256": "00ef07e2d754c222519708e1173c2cfd881de6b06ed839120739123c225c6c74",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed2_bc/episodes.jsonl",
+      "source_sha256": "2f3f54578531294ab48846ced99175595132cb42ec793bac97812a400f2bb0fe",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed2_bc/episodes.jsonl",
+      "packaged_sha256": "2f3f54578531294ab48846ced99175595132cb42ec793bac97812a400f2bb0fe",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed2_bc/summary.json",
+      "source_sha256": "b903fac59a5ddebc9974a6632c5c6079aea92bcf56fc673b8ad65579317fae5f",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed2_bc/summary.json",
+      "packaged_sha256": "d65b34df8507a9592789ea297b428600a86f33ebd95aefbef0865332a03dd2a0",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed2_rl/episodes.jsonl",
+      "source_sha256": "7a7c9792a2e8456fcb2653363f8975a229c3af06e52cc9372001b37ee6a3f317",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed2_rl/episodes.jsonl",
+      "packaged_sha256": "7a7c9792a2e8456fcb2653363f8975a229c3af06e52cc9372001b37ee6a3f317",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/evaluation_main/visuotactile_seed2_rl/summary.json",
+      "source_sha256": "cc80d9716f66ab623bdbfa22c4fb9fca2a9882abb8c0a7053edf0a9eea262ce2",
+      "packaged": "recorded/outputs/simulation/evaluation_main/visuotactile_seed2_rl/summary.json",
+      "packaged_sha256": "21468e466b1389f282f0b2bd418502bccdb6b24d1f95d9ffad08e79b5fe07826",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/generation_log.jsonl",
+      "source_sha256": "ac90d6fd24df109efc41f3662a865a87db083d761d3e381ff0b830d380d1042e",
+      "packaged": "recorded/outputs/simulation/generation_log.jsonl",
+      "packaged_sha256": "ac90d6fd24df109efc41f3662a865a87db083d761d3e381ff0b830d380d1042e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/manifest.json",
+      "source_sha256": "b6943753be3bd955fb6f9996de4ff862dd2c8d7c3be7549380ebec94f94d5cea",
+      "packaged": "recorded/outputs/simulation/manifest.json",
+      "packaged_sha256": "d0523d234d6a4a3f412001f774d5096355227b7daa6bd4339e05ef28703acfef",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/simulation/reproducibility_check.json",
+      "source_sha256": "67b0a4bed0f9ee8c3d02b7c5f5dafb6267f3cd379ba03f9500797359ee5215dc",
+      "packaged": "recorded/outputs/simulation/reproducibility_check.json",
+      "packaged_sha256": "65490d6306f5993ff75d42eae2d0c2f6c553e218d8d2c36913a21bc947ad9c8c",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/analysis_metadata.json",
+      "source_sha256": "dc4812c173de791ce33b27e5d08f91983667e75cd7415b8909ae5715d99ba565",
+      "packaged": "recorded/outputs/world_model/analysis/analysis_metadata.json",
+      "packaged_sha256": "21e6b1f7ff1c841845851521967bb03a40a5d4c0c76cf35581b5101c300dbdb6",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/control_analysis.json",
+      "source_sha256": "b00bd8e70d41daa9a02578b8191614fe268bb1b1cfa30c9df58e19acdb4d19b6",
+      "packaged": "recorded/outputs/world_model/analysis/control_analysis.json",
+      "packaged_sha256": "b46a5206b64b4560d2297a0e8260a89cdbb3a80ea10facc632d008539700ad9f",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/controller_method_metrics.csv",
+      "source_sha256": "b5b5163ee38eaf10bfc977959cf3cbd868a88f5397e963ee10b854ed4105d6ff",
+      "packaged": "recorded/outputs/world_model/analysis/controller_method_metrics.csv",
+      "packaged_sha256": "02e20c254d9afdb0b27787e1dbfd3b544428b28bd7040c7ca950a7221f133a38",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/controller_method_paired_differences.csv",
+      "source_sha256": "b396ae4ae5b8505bc84d0a4dce7ff73db22bc42c268936c07c450d265c1b6306",
+      "packaged": "recorded/outputs/world_model/analysis/controller_method_paired_differences.csv",
+      "packaged_sha256": "ea2f615abfc7a19532edecc2b22809ae9ad1d7b17cc32712368529166b4aa03f",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/controller_metrics.csv",
+      "source_sha256": "ec1752429565c4a0354af6c9c6d9357c11ad6232f4d5b586eb6719471953f44b",
+      "packaged": "recorded/outputs/world_model/analysis/controller_metrics.csv",
+      "packaged_sha256": "c7ba28989b671aea9a7d2e1cd08b9f0c773d1f73bf923d1e69cbc1b0a14846ac",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/controller_paired_differences.csv",
+      "source_sha256": "3dcff8067462c0f1205c4f403c9512d3a54a803d156c1512e1a0a3ba26c75b1d",
+      "packaged": "recorded/outputs/world_model/analysis/controller_paired_differences.csv",
+      "packaged_sha256": "be1cd0337c3831e64ee24477feb987a7337c5a8df712ab22e5e0fdfb7a692e79",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/executed_forecast_analysis.json",
+      "source_sha256": "e29947daf08bcfd5be94dd882a104ffa97b6b14009f1b7cc57197897cda4c203",
+      "packaged": "recorded/outputs/world_model/analysis/executed_forecast_analysis.json",
+      "packaged_sha256": "3decf298f14eb9a10e407cdc945d652d1960b2638028ded693e1a183026cdce2",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/world_model_analysis.json",
+      "source_sha256": "cd1286092226dcdd8d5bf2dd7e612b06c1e03656dbe2f2424c3ecace12f6d3dc",
+      "packaged": "recorded/outputs/world_model/analysis/world_model_analysis.json",
+      "packaged_sha256": "f56b408ff5c7df7c13284f22d91e22695ec6adf970c6fdda80775adff9d0fe1c",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/world_model_calibration.csv",
+      "source_sha256": "cc78363e1a46de8fa3cb1c91f608f8b0107ea9421d5d05372238fb22ecc00d37",
+      "packaged": "recorded/outputs/world_model/analysis/world_model_calibration.csv",
+      "packaged_sha256": "4f3d2f9920bac054089b7eb7a562e9d5dbe0b4ed7e01e770a4d2ffbb223c33cc",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/world_model_paired_modality.csv",
+      "source_sha256": "ca45024387795a461450697a3924f6af4e30ae28c00aa5ebb1f8b54430cf1540",
+      "packaged": "recorded/outputs/world_model/analysis/world_model_paired_modality.csv",
+      "packaged_sha256": "ed2963e10edbdfe1e3de15a125e678faa43bb2068996a4973c86e9b85fc572ae",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis/world_model_run_metrics.csv",
+      "source_sha256": "3645e302eb0d1e5b28ddf65ea7cca5d30fa4d12c85267446a118fecf74ed769c",
+      "packaged": "recorded/outputs/world_model/analysis/world_model_run_metrics.csv",
+      "packaged_sha256": "49b90c4c9f26386d67b4d3a4ae1bb16941920b8d04404245e13b5840854dd64e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/analysis_metadata.json",
+      "source_sha256": "8dd89559778e5669fdb1da4416529209440cb5c363a0d5db13185e1f4d95b426",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/analysis_metadata.json",
+      "packaged_sha256": "3ccb37015751c6d3119cb65252620e7500feadd7a7b5db6a9381ed27117b2ac7",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/control_analysis.json",
+      "source_sha256": "f5a998d14098a21629c67bbd755a043f1936d00d9fefc59d80919590444d01d9",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/control_analysis.json",
+      "packaged_sha256": "bce6f4ae15779310899d06369048832e9e883f7c67e3d326143b5ae67bee0833",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/controller_method_metrics.csv",
+      "source_sha256": "a9abbac22b080fe50fc12c77366cdacf9341cf27110de40dd0d3bf6cb2d7334e",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/controller_method_metrics.csv",
+      "packaged_sha256": "97c76fb904fb0239a6bd47a6a96ed1a2dbee536fda9dfe88170c0b7e0a39e16b",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/controller_method_paired_differences.csv",
+      "source_sha256": "2ba9cb8af33488cb2f8a6e387a7cc5615473854eadb2f686538ff3c01f09668e",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/controller_method_paired_differences.csv",
+      "packaged_sha256": "daec03ed79392225106ccc1afcd349855454d8e9a9020ea1b99f400d97a275f8",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/controller_metrics.csv",
+      "source_sha256": "fa825f88991c9bddbbf89859321f28831ae3ff69ea11ae9b06d2c238f84907d0",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/controller_metrics.csv",
+      "packaged_sha256": "413dd7346d55a39ac65a191b4661bf883ed70d18aa21df484385222932ce8985",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/controller_paired_differences.csv",
+      "source_sha256": "7350253d6f324af0a20b994fff461afa9e1ab09f5badf3181acdd00384bb38da",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/controller_paired_differences.csv",
+      "packaged_sha256": "e34d437c15663c6fc8cfb434331b2bce8ebc7b7e75d7002e8a718d557cf8b139",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/executed_forecast_analysis.json",
+      "source_sha256": "2bb2789d3b5f0962ac342f54c2ec0ece0be5abf043e586424408bbf7c3aa7220",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/executed_forecast_analysis.json",
+      "packaged_sha256": "50e3345ef4ba4ea0de6c7209e3a04513faa4a383be44d7ca765f9b145cdb7bdc",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/world_model_analysis.json",
+      "source_sha256": "cd1286092226dcdd8d5bf2dd7e612b06c1e03656dbe2f2424c3ecace12f6d3dc",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/world_model_analysis.json",
+      "packaged_sha256": "f56b408ff5c7df7c13284f22d91e22695ec6adf970c6fdda80775adff9d0fe1c",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/world_model_calibration.csv",
+      "source_sha256": "cc78363e1a46de8fa3cb1c91f608f8b0107ea9421d5d05372238fb22ecc00d37",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/world_model_calibration.csv",
+      "packaged_sha256": "4f3d2f9920bac054089b7eb7a562e9d5dbe0b4ed7e01e770a4d2ffbb223c33cc",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/world_model_paired_modality.csv",
+      "source_sha256": "ca45024387795a461450697a3924f6af4e30ae28c00aa5ebb1f8b54430cf1540",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/world_model_paired_modality.csv",
+      "packaged_sha256": "ed2963e10edbdfe1e3de15a125e678faa43bb2068996a4973c86e9b85fc572ae",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/analysis_goal_aligned/world_model_run_metrics.csv",
+      "source_sha256": "3645e302eb0d1e5b28ddf65ea7cca5d30fa4d12c85267446a118fecf74ed769c",
+      "packaged": "recorded/outputs/world_model/analysis_goal_aligned/world_model_run_metrics.csv",
+      "packaged_sha256": "49b90c4c9f26386d67b4d3a4ae1bb16941920b8d04404245e13b5840854dd64e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/executed_forecasts/metrics.csv",
+      "source_sha256": "3347b182f853e60e7868a8f86dd5704a097d8bac89ffc21591ab6fbbe8eab09a",
+      "packaged": "recorded/outputs/world_model/executed_forecasts/metrics.csv",
+      "packaged_sha256": "3347b182f853e60e7868a8f86dd5704a097d8bac89ffc21591ab6fbbe8eab09a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/executed_forecasts/provenance.json",
+      "source_sha256": "7af52de7b7022c4ffc043a910d79d83e3ad752b2490c86955650061314af6a07",
+      "packaged": "recorded/outputs/world_model/executed_forecasts/provenance.json",
+      "packaged_sha256": "2efc66d9ad810f492bd0356b9f94346f2b2cb5ec2b5b5fca00be4a24742e6075",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/executed_forecasts_goal_aligned/metrics.csv",
+      "source_sha256": "789a8ff61f8169f84925006ed0a6b588129107a2d194d4cab2f65f27d4238038",
+      "packaged": "recorded/outputs/world_model/executed_forecasts_goal_aligned/metrics.csv",
+      "packaged_sha256": "789a8ff61f8169f84925006ed0a6b588129107a2d194d4cab2f65f27d4238038",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/executed_forecasts_goal_aligned/provenance.json",
+      "source_sha256": "7af52de7b7022c4ffc043a910d79d83e3ad752b2490c86955650061314af6a07",
+      "packaged": "recorded/outputs/world_model/executed_forecasts_goal_aligned/provenance.json",
+      "packaged_sha256": "2efc66d9ad810f492bd0356b9f94346f2b2cb5ec2b5b5fca00be4a24742e6075",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/batch_complete.json",
+      "source_sha256": "01e22db21a858e6e86c5c3ac6c0603c2206638e1f92dd64bc4160e726b440089",
+      "packaged": "recorded/outputs/world_model/rl/batch_complete.json",
+      "packaged_sha256": "f1d92f7cb80cad3be5c211e3ae54ed3db86dccda01f1c579ecd830bdaad36265",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/vision_seed0/run_metadata.json",
+      "source_sha256": "7d1bd6f4c5bae1f9ac493f903ab47ee11a018f23b88576951488225e0e342c61",
+      "packaged": "recorded/outputs/world_model/rl/vision_seed0/run_metadata.json",
+      "packaged_sha256": "dd2bc63f58f6e5a79499734547b7d6f7598840b1475c9f800f0d7fb012355203",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/vision_seed0/training_log.csv",
+      "source_sha256": "c8f5e996834565c36c13b8eb535b9d4b9a16e4fff80e47a25349b8e6dec5883d",
+      "packaged": "recorded/outputs/world_model/rl/vision_seed0/training_log.csv",
+      "packaged_sha256": "c8f5e996834565c36c13b8eb535b9d4b9a16e4fff80e47a25349b8e6dec5883d",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/vision_seed1/run_metadata.json",
+      "source_sha256": "a8440b8e74ef4c410a34c1a9f16585d11eb588dbf9a9867a22b9cffcf56e34a7",
+      "packaged": "recorded/outputs/world_model/rl/vision_seed1/run_metadata.json",
+      "packaged_sha256": "9749170b95d645da206b0883c07bba56ecea5f7cc9cd08a0b8e91ee08a812841",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/vision_seed1/training_log.csv",
+      "source_sha256": "0ab06ce39052e4895d4a172bf57c08f392a01fdf370642f3c819fb62b87fbfb6",
+      "packaged": "recorded/outputs/world_model/rl/vision_seed1/training_log.csv",
+      "packaged_sha256": "0ab06ce39052e4895d4a172bf57c08f392a01fdf370642f3c819fb62b87fbfb6",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/vision_seed2/run_metadata.json",
+      "source_sha256": "cc945a6c595d0769060608330d75ef2984ed9f6e54831bea5e22cc45c89525be",
+      "packaged": "recorded/outputs/world_model/rl/vision_seed2/run_metadata.json",
+      "packaged_sha256": "5d546dec9e89c55d645459348f8a6533440dfdbb551b57b11f8aab12cd061f5a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/vision_seed2/training_log.csv",
+      "source_sha256": "7f6ef214c2f1942466a6da553ce68602916ad19177b1670595c64fd178728801",
+      "packaged": "recorded/outputs/world_model/rl/vision_seed2/training_log.csv",
+      "packaged_sha256": "7f6ef214c2f1942466a6da553ce68602916ad19177b1670595c64fd178728801",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_margin_seed0/run_metadata.json",
+      "source_sha256": "97049afe66f419d0656f6ea6a04795f05a914cd929f83735df551feacad0cf9c",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_margin_seed0/run_metadata.json",
+      "packaged_sha256": "1358b8480c279d55526fb0b1d072d702043e010ffbb55c9758de910f162591ce",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_margin_seed0/training_log.csv",
+      "source_sha256": "afb9f322b8ecd7870de5a7d87ac13cb96a168e9d5c5d4a292d6d909cef1c2f65",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_margin_seed0/training_log.csv",
+      "packaged_sha256": "afb9f322b8ecd7870de5a7d87ac13cb96a168e9d5c5d4a292d6d909cef1c2f65",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_margin_seed1/run_metadata.json",
+      "source_sha256": "62b81d384622adeef8e52f509a8580e5f6320e2ea339a7cf2d64e7d0af95fe8e",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_margin_seed1/run_metadata.json",
+      "packaged_sha256": "bab1c6e958b9c05c0e953706d53865fc900f67bda8d5c4d752886021b0b3cac3",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_margin_seed1/training_log.csv",
+      "source_sha256": "bc0b98ac9df31ba291f67f0886dbcffe6aa22abedb43504ac7797068c2408dc5",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_margin_seed1/training_log.csv",
+      "packaged_sha256": "bc0b98ac9df31ba291f67f0886dbcffe6aa22abedb43504ac7797068c2408dc5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_margin_seed2/run_metadata.json",
+      "source_sha256": "097dff30ccd8885e30cc94a685ca92701d999a2d96362041c4b0bd6402d5101a",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_margin_seed2/run_metadata.json",
+      "packaged_sha256": "c7c8364e5bda72d052543abca891931660cc1b16b582ff518f999b682e4a84db",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_margin_seed2/training_log.csv",
+      "source_sha256": "998e4b3274e72d0dbf1cb5c632f9ac201a97ad6735cb044858a182db89d4e073",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_margin_seed2/training_log.csv",
+      "packaged_sha256": "998e4b3274e72d0dbf1cb5c632f9ac201a97ad6735cb044858a182db89d4e073",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_seed0/run_metadata.json",
+      "source_sha256": "84e5fa3a22f019eebf40d861ccdb1e6d56fe4aa0dc480e6056ed9b4cb143a7ce",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_seed0/run_metadata.json",
+      "packaged_sha256": "7e3616257d19d170890f4322b0bc374c742c8eee2cd53486395cdcd4ec548a00",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_seed0/training_log.csv",
+      "source_sha256": "8a7e840c361af0a384675e6bf756a83e8ad576161f6b989cddc79efecc30ebad",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_seed0/training_log.csv",
+      "packaged_sha256": "8a7e840c361af0a384675e6bf756a83e8ad576161f6b989cddc79efecc30ebad",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_seed1/run_metadata.json",
+      "source_sha256": "8afdc996551cb802f05bfc45b96035b1ba41799e8554169b74cb31cf5550396b",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_seed1/run_metadata.json",
+      "packaged_sha256": "77d38cc78fca67b23e707bbc16a3dac16aaae6445acdd2a478a9ddf1ab0c274a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_seed1/training_log.csv",
+      "source_sha256": "a181661910a630dff868df1ce349ffc6f57043f466f8b5e112e494098ac28a79",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_seed1/training_log.csv",
+      "packaged_sha256": "a181661910a630dff868df1ce349ffc6f57043f466f8b5e112e494098ac28a79",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_seed2/run_metadata.json",
+      "source_sha256": "398c0e40aa0c92cdf21d5ab3a1ad83ba784b29b5815cec6ea139fc8b8e646de2",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_seed2/run_metadata.json",
+      "packaged_sha256": "366e4c8f84697c10a7d2af5d776ccd81dd81229948f29d81ec37a1153ecaec47",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl/visuotactile_seed2/training_log.csv",
+      "source_sha256": "29fb1c9a6a8caea2ea4305a8971bd3bc4441a5f33f4c3603408724dc509df490",
+      "packaged": "recorded/outputs/world_model/rl/visuotactile_seed2/training_log.csv",
+      "packaged_sha256": "29fb1c9a6a8caea2ea4305a8971bd3bc4441a5f33f4c3603408724dc509df490",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/batch_complete.json",
+      "source_sha256": "75a7a5efbfc40435f0dd61b3867db7c50076414bc8bbc5e067a4e4163346c2b2",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/batch_complete.json",
+      "packaged_sha256": "48781598cc2f2cefc877165fe62dc6691b988b86b28c90d21d68e4cd95b2a199",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/fixed_plan.json",
+      "source_sha256": "70047f75edb8520edd0bbaeeea494092d7c37b0e7fc9364c6f2b8c2cf6ca6ad4",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/fixed_plan.json",
+      "packaged_sha256": "3b51c07e8dd3079e7fac5369daf8ec9940f71cd01a317a32610b781b437d3719",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/initialization_audit.json",
+      "source_sha256": "ea5a71d1b6ab881f319d634b3a0eed01e9b43dcbec35809254a9e8c3c2c03394",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/initialization_audit.json",
+      "packaged_sha256": "f820ba3d96479f18b1e6edd3d21c22cd7702a23b9e82a0bc01247af094cfad2e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed0/run_metadata.json",
+      "source_sha256": "11f3d99e7a2610c45724cc6e8970e7f7c1e4f0e94e0c140d9fa3785e2d2dfadd",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_margin_seed0/run_metadata.json",
+      "packaged_sha256": "cbb2be0b25a0a5c5527881df2426e2d59580ce03965d84ba7271747ca26f191d",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed0/training_log.csv",
+      "source_sha256": "dd72015b7d0106c3eccd94bd51aec7d336f573c0ea8ad5cd8895cf0eb9fd8444",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_margin_seed0/training_log.csv",
+      "packaged_sha256": "dd72015b7d0106c3eccd94bd51aec7d336f573c0ea8ad5cd8895cf0eb9fd8444",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed1/run_metadata.json",
+      "source_sha256": "5b4476f78ae28dd47c9448c2a4846d489a95ad1bfe15d4e866f8bbc943e418a8",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_margin_seed1/run_metadata.json",
+      "packaged_sha256": "0b417573bf7a2ab0d873b53e5f61b9b26017d422d27bb704c596ad3371f0e515",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed1/training_log.csv",
+      "source_sha256": "5fd300b67e6b017b245c52967872630779cb01fac5a026d38d910f5d693a0ce9",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_margin_seed1/training_log.csv",
+      "packaged_sha256": "5fd300b67e6b017b245c52967872630779cb01fac5a026d38d910f5d693a0ce9",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed2/run_metadata.json",
+      "source_sha256": "5ba62ac3d296fbee647324ce76aa8bf95b3da5ef1f453fea9605dd465ee8edf7",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_margin_seed2/run_metadata.json",
+      "packaged_sha256": "591fbd052d06efd4b3cb1623c385ae2c0e332948e8bab03d6ae79f7abcc40f12",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed2/training_log.csv",
+      "source_sha256": "24125447a2ac99735d9aadb0daba64f400e01d3b20c69653b40c51532fdf5bc8",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_margin_seed2/training_log.csv",
+      "packaged_sha256": "24125447a2ac99735d9aadb0daba64f400e01d3b20c69653b40c51532fdf5bc8",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_seed0/run_metadata.json",
+      "source_sha256": "172a454c61bc6774745de735ade45ad036887ef8749431313b0eed70d189da18",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_seed0/run_metadata.json",
+      "packaged_sha256": "f4845c15e6c01e7f0e36d737c9f81b0ac8741f9fe244b2f4b24c53a27749ff65",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_seed0/training_log.csv",
+      "source_sha256": "3d4aa0e57e1f5ad4905c28677c485e07b5190831ad0d17739d08abf8197d346e",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_seed0/training_log.csv",
+      "packaged_sha256": "3d4aa0e57e1f5ad4905c28677c485e07b5190831ad0d17739d08abf8197d346e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_seed1/run_metadata.json",
+      "source_sha256": "fd6ecbaf1b3faea605a9696b07023137b34e9a3c59af55d693e4722fd5e40461",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_seed1/run_metadata.json",
+      "packaged_sha256": "e84cf43c79f00619caf5edc5edc4fd75bf8a034b1b5a6b136ece1beb686e31c5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_seed1/training_log.csv",
+      "source_sha256": "5d709dd46a9274c46acb87c363a2e9df3cb73d4bdf2ee65bf393030d76141395",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_seed1/training_log.csv",
+      "packaged_sha256": "5d709dd46a9274c46acb87c363a2e9df3cb73d4bdf2ee65bf393030d76141395",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_seed2/run_metadata.json",
+      "source_sha256": "a282a77a318ae22636e2582427ed55a345a8ca4e5620175ec1fe2faadae8f870",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_seed2/run_metadata.json",
+      "packaged_sha256": "4e22d705461e470866965ec2314542bf686e2da5c1e7fb010343263fe8cca6e5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/rl_goal_aligned/visuotactile_seed2/training_log.csv",
+      "source_sha256": "e4e38753ec89b876d4b8bba0b621a444148c36c17e28e7a6ce053c40e035af5a",
+      "packaged": "recorded/outputs/world_model/rl_goal_aligned/visuotactile_seed2/training_log.csv",
+      "packaged_sha256": "e4e38753ec89b876d4b8bba0b621a444148c36c17e28e7a6ce053c40e035af5a",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/all_runs.json",
+      "source_sha256": "69d2bc1692d844a1e7ef0d83c99bc0dfaa95a5e6cfed05727d182b1067f2a335",
+      "packaged": "recorded/outputs/world_model/runs/all_runs.json",
+      "packaged_sha256": "f01d2556786d5a109d810d780801a0a0e65d95e14b8136f033d7c198ebee09d3",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/data_manifest.json",
+      "source_sha256": "5e41a17e6ffbd057f8385a3d364bc0b91b913874ce53067bf723de310959b2e5",
+      "packaged": "recorded/outputs/world_model/runs/data_manifest.json",
+      "packaged_sha256": "83b92130d6aac43d1f9545effa4d0d0f20d5b09219294c89466a31bc96b9c5f8",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/normalization.json",
+      "source_sha256": "fb4e010f8b18aae78cc71203c8c82082ad264ac88fa1be40d5fe169033d07ea2",
+      "packaged": "recorded/outputs/world_model/runs/normalization.json",
+      "packaged_sha256": "bebfd7d185cd4723fb33040fe4730b6127271164fc40fcf137680ba434b9e962",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed0/calibration.json",
+      "source_sha256": "86e297d937d9600a3230d185187dca73460f3bc45dcbd9be53dc4a5f66b5417e",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed0/calibration.json",
+      "packaged_sha256": "49ffd60e1625413d9d377783d23ad652cc218bf52ef7ee6f432956504dea6666",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed0/evaluation.json",
+      "source_sha256": "e6b6c2c7dc37e828cc3ea39e489d7f0ea689de4bac2e3abfb1fd03719040cc59",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed0/evaluation.json",
+      "packaged_sha256": "30fac729eb9e7d90e6a8faabfc7d65f6544f89841e3241cc8fc3ce3345ea3256",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed0/summary.json",
+      "source_sha256": "56fdd79d08104a3209f4f865438d6b56a3a9b413641802a6e9ddbed5df3f5065",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed0/summary.json",
+      "packaged_sha256": "f918c8711dffba1d7e109784282abc0b3bd5b22ec13fc59fb8a56685c04addd5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed0/training.jsonl",
+      "source_sha256": "271ebc12fa06f2c20ef7800ee91453a9f0b017ad3616cc90d841096c5e2050c5",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed0/training.jsonl",
+      "packaged_sha256": "271ebc12fa06f2c20ef7800ee91453a9f0b017ad3616cc90d841096c5e2050c5",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed1/calibration.json",
+      "source_sha256": "4c1191319021a7b3ffe37f6fa4edabf923e98db88864121294153b72eab373e3",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed1/calibration.json",
+      "packaged_sha256": "fbfae85a59058712d9045387e150874fa9e64083383b9ea1de84f1b6eb9b737e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed1/evaluation.json",
+      "source_sha256": "af41db3da80f92542997a5ce15c3697f255b9397828991e5ae30da78b5394b1c",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed1/evaluation.json",
+      "packaged_sha256": "5178f1c7c2bcbb96b71312639fbc351cf123e5cd38956ddd4cf322195f05b7a0",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed1/summary.json",
+      "source_sha256": "0f0d36d4a161d71c1fde7af5984deac5c2e42dcb40620f76db5deae0e581df5a",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed1/summary.json",
+      "packaged_sha256": "dd1d11459f94b3f3beed64807fcb1aebe935c391968858616a37a499feb780bb",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed1/training.jsonl",
+      "source_sha256": "8c555d8de02129338a53a1cba1446eea0725f73c263e2a3d1dcd4bf58fc10d3f",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed1/training.jsonl",
+      "packaged_sha256": "8c555d8de02129338a53a1cba1446eea0725f73c263e2a3d1dcd4bf58fc10d3f",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed2/calibration.json",
+      "source_sha256": "5b106803cb975ab338fc7f299f9d7995824021b2e3d0b96e45d84d8d9abcc7a4",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed2/calibration.json",
+      "packaged_sha256": "92a2c442a1efefcbdc0432f96d586d83a5f654b6004a819bad4c4409e7506faa",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed2/evaluation.json",
+      "source_sha256": "3e50a815a13549abb7e484d4178459edd7717e0b89a61a9016a1950f78ab58e3",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed2/evaluation.json",
+      "packaged_sha256": "6e9985c77cdd45e98631f3f313bc78ae7ca7126bb88dca4d952bb489bb6b3571",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed2/summary.json",
+      "source_sha256": "c19ad522a0c87a5b569bddae73418ea8868ee314b0a224067174817ce3073fb6",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed2/summary.json",
+      "packaged_sha256": "67400a229ee43de97922614bc08624cc41242357280bed8d4a83669f17443499",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/vision_seed2/training.jsonl",
+      "source_sha256": "19d5f70b079ee90651171701f56f2a3325f605aed0e935a2f09e0bcec9a7bb4e",
+      "packaged": "recorded/outputs/world_model/runs/vision_seed2/training.jsonl",
+      "packaged_sha256": "19d5f70b079ee90651171701f56f2a3325f605aed0e935a2f09e0bcec9a7bb4e",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed0/calibration.json",
+      "source_sha256": "2051eeae4524ba4a73abad2b0e30a865ec2eaa04e021bfcf525b10376b10814d",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed0/calibration.json",
+      "packaged_sha256": "df4f70739894909184c78140c51db00a60e30dd61d2f960e78f867217d1a7f30",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed0/evaluation.json",
+      "source_sha256": "3aa01f5a4291f525598d7a655f0bb80a6fe001783918b1e0fc0866e0f52832b9",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed0/evaluation.json",
+      "packaged_sha256": "a3a0658671c0baadd29fd436bfbfd99f57ee03e5295eb9c193efe0cf681a2d38",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed0/summary.json",
+      "source_sha256": "1d80dc63ab4d794d62673e7096677f5f64422e310b1e30529179901cc767207c",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed0/summary.json",
+      "packaged_sha256": "9745afd5e87008127ef38ddd1728479377823e0a18fdbe5c655561d6f02b344b",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed0/training.jsonl",
+      "source_sha256": "0c3e24e2fc7d643ad76528cc62ad22f09d98d3d140f695b80313743a5a360981",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed0/training.jsonl",
+      "packaged_sha256": "0c3e24e2fc7d643ad76528cc62ad22f09d98d3d140f695b80313743a5a360981",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed1/calibration.json",
+      "source_sha256": "bcce1b74f764c46aba0ecf38f93990b484fc3def1d1be2aec21bf3a72ef9bc93",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed1/calibration.json",
+      "packaged_sha256": "0bb1409f51e1767f72c2c0f909f4ed53191a03c4faab7cfa42df014c95c93d41",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed1/evaluation.json",
+      "source_sha256": "8a04bb1d6b9d09d2f0f1dd1691b465ea22b180afe69637d32dce3b2a4bb9b727",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed1/evaluation.json",
+      "packaged_sha256": "31e43b3bfdb47c82d0b6d6b495c4a38cf84bf0c91f46d3926657c98a240757dd",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed1/summary.json",
+      "source_sha256": "41a2ccf94f9c477aac3b66b91fd9b0cc5fd8cf62a4eab96c0d1dfae44d2b9e1b",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed1/summary.json",
+      "packaged_sha256": "5e60faca11a30605e07601717d34ffddfd6dc46848f7eacc3f29bea4b22aa33d",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed1/training.jsonl",
+      "source_sha256": "5004c9d80137ec2bfe39201da0b89a02d0848ac30c6edb03378083b935ffa7eb",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed1/training.jsonl",
+      "packaged_sha256": "5004c9d80137ec2bfe39201da0b89a02d0848ac30c6edb03378083b935ffa7eb",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed2/calibration.json",
+      "source_sha256": "a1ed00a7dd7d0cc978b636b4eadaabba48c53cb596bff94c462a111203a67ba7",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed2/calibration.json",
+      "packaged_sha256": "794c3abbe378341d93bbf16e96e7c565b1fd06c0cceb2606f7decdacf58f8914",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed2/evaluation.json",
+      "source_sha256": "31844f3af16029085497fa2905182137de85989387c008ba669fb5029859ab09",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed2/evaluation.json",
+      "packaged_sha256": "a81ed488c53d1c50a2c3d789f6f1aca76428a56ee80984ef07ac89d710fe6022",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed2/summary.json",
+      "source_sha256": "78935daa58b899f65cf71a01eeb7182c387ad5e48946779171161e515ac57a85",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed2/summary.json",
+      "packaged_sha256": "65d0b801a21b614d628429af29aa8675cdd0d79703de0d18ac274d1d48a3613b",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    },
+    {
+      "source": "outputs/world_model/runs/visuotactile_seed2/training.jsonl",
+      "source_sha256": "3995561d7ebd2ef331938c824ad03c545001690d238b9681e26a551e47f3d102",
+      "packaged": "recorded/outputs/world_model/runs/visuotactile_seed2/training.jsonl",
+      "packaged_sha256": "3995561d7ebd2ef331938c824ad03c545001690d238b9681e26a551e47f3d102",
+      "changes": "Host paths replaced by relative references; numerical values preserved."
+    }
+  ]
+}

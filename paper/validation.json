@@ -1,0 +1,101 @@
+{
+  "compiler": "pdfTeX 3.141592653-2.6-1.40.28 (TeX Live 2025)",
+  "passes": 2,
+  "shell_escape": false,
+  "compiled_from_fresh_zip_extraction": true,
+  "source_matches_uploaded_archive": true,
+  "pages": 8,
+  "figures": 2,
+  "bibliography_entries": 10,
+  "errors": 0,
+  "overfull_boxes": 0,
+  "undefined_references_or_citations": 0,
+  "missing_characters": 0,
+  "embedded_fonts": {
+    "/DFDWWE+NimbusRomNo9L-Medi": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/CBBWPM+NimbusRomNo9L-Regu": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/CGCFOU+CMR8": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/QVCFWU+NimbusRomNo9L-MediItal": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/XTJZVU+CMR6": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/FFRZPJ+NimbusMonL-Regu": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/AUNPTN+NimbusRomNo9L-ReguItal": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/CYIMXR+CMR10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/MMVRVK+CMSY10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/EUGFDH+CMMI10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/MRIVQL+CMMI7": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/PXBGHL+CMSY7": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/HRDMRM+CMR7": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/ISMROX+CMEX10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/OSRJKA+CMMI8": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/FFHPFP+CMSY8": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/ZNGCPC+CMR9": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/PQILTH+CMMI9": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/MFOMKL+CMSY9": {
+      "subtype": "/Type1",
+      "embedded": true
+    }
+  },
+  "author_metadata_checked": true,
+  "abstract_characters": 1461,
+  "pdf_sha256": "e31cd55adb0ae979e242f2df954ce3a556fb5f360555f4848b4a321c160d1f53",
+  "zip_sha256": "7beaf7b73d9666e20922dd8d923078303f0abe953d270e184e96dfcc0903d4be",
+  "source_sha256": "4fb277921241e04b1cb2920681bc4e43c4f91e852bb44839f09418a9592880b4",
+  "arxiv_server_build_verified": false,
+  "public_submission_performed": false,
+  "scope": "Local source, content consistency, fonts, and package checks. The arXiv-generated preview must still be checked during submission.",
+  "visual_qa": "All 8 final pages reviewed: pages 1-5 pixel-identical to the first reviewed render; pages 6-8 reviewed after final figure and appendix changes."
+}

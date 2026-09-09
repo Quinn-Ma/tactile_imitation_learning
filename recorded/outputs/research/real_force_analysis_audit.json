@@ -1,0 +1,18 @@
+{
+  "split_trajectory_overlap": false,
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "labels_are_measured_force": true,
+  "friction_and_normal_ceiling_are_assumed": true,
+  "slip_label_not_used_as_independent_ground_truth": true,
+  "zero_certification_violation_rate": "undefined, never treated as zero",
+  "bootstrap": "2000 trajectory-cluster resamples, shared indices across 3 seed models",
+  "alignment_offsets_reported_without_selection": [
+    -5,
+    0,
+    5
+  ]
+}

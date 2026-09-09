@@ -1,0 +1,65 @@
+{
+  "jobs": [
+    {
+      "name": "visuotactile_seed0",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "seed": 0,
+      "force_margin": 0.0
+    },
+    {
+      "name": "visuotactile_margin_seed0",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "seed": 0,
+      "force_margin": 13.204450607299805
+    },
+    {
+      "name": "visuotactile_seed1",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "seed": 1,
+      "force_margin": 0.0
+    },
+    {
+      "name": "visuotactile_margin_seed1",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "seed": 1,
+      "force_margin": 6.944602966308594
+    },
+    {
+      "name": "visuotactile_seed2",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "seed": 2,
+      "force_margin": 0.0
+    },
+    {
+      "name": "visuotactile_margin_seed2",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "seed": 2,
+      "force_margin": 9.437637329101562
+    }
+  ],
+  "task_reward": "clip(predicted_relative_height / 0.10, 0, 1)",
+  "all_other_training_arguments": "same as first pilot",
+  "evaluation_seeds": [
+    20291000,
+    20291001,
+    20291002,
+    20291003,
+    20291004,
+    20291005,
+    20291006,
+    20291007,
+    20291008,
+    20291009,
+    20291010,
+    20291011,
+    20291012,
+    20291013,
+    20291014,
+    20291015,
+    20291016,
+    20291017,
+    20291018,
+    20291019
+  ],
+  "interpretation": "exploratory goal-alignment correction; no test-based tuning"
+}

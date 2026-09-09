@@ -1,0 +1,656 @@
+{
+  "rows": [
+    {
+      "controller": "visuotactile_height_seed0_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5658918619155884,
+      "interval_peak_mae_N": 1.1661840677261353,
+      "height_mae_m": 0.013254004530608654,
+      "fixed_calibration_joint_coverage": 0.1,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_height_seed0_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.6015183925628662,
+      "interval_peak_mae_N": 1.6615207195281982,
+      "height_mae_m": 0.002065911190584302,
+      "fixed_calibration_joint_coverage": 0.8,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_height_seed1_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.41608479619026184,
+      "interval_peak_mae_N": 0.942656397819519,
+      "height_mae_m": 0.0066850152797997,
+      "fixed_calibration_joint_coverage": 0.8,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_height_seed1_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.8021084070205688,
+      "interval_peak_mae_N": 1.9760535955429077,
+      "height_mae_m": 0.0016176776262000203,
+      "fixed_calibration_joint_coverage": 0.5,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_height_seed2_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.6217747926712036,
+      "interval_peak_mae_N": 1.4780316352844238,
+      "height_mae_m": 0.007483921013772488,
+      "fixed_calibration_joint_coverage": 0.8,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_height_seed2_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.6984636783599854,
+      "interval_peak_mae_N": 1.8545496463775635,
+      "height_mae_m": 0.0020617356058210135,
+      "fixed_calibration_joint_coverage": 0.7,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_margin_height_seed0_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.1657545119524002,
+      "interval_peak_mae_N": 0.8477684855461121,
+      "height_mae_m": 0.003373738843947649,
+      "fixed_calibration_joint_coverage": 0.9,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_margin_height_seed0_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.2131209373474121,
+      "interval_peak_mae_N": 0.9720233678817749,
+      "height_mae_m": 0.002864361274987459,
+      "fixed_calibration_joint_coverage": 0.9,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_margin_height_seed1_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.4685506522655487,
+      "interval_peak_mae_N": 1.0051257610321045,
+      "height_mae_m": 0.05128844454884529,
+      "fixed_calibration_joint_coverage": 0.4,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_margin_height_seed1_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.49672719836235046,
+      "interval_peak_mae_N": 1.3182635307312012,
+      "height_mae_m": 0.001526090083643794,
+      "fixed_calibration_joint_coverage": 0.5,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_margin_height_seed2_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.06717362999916077,
+      "interval_peak_mae_N": 0.23495040833950043,
+      "height_mae_m": 0.0033565484918653965,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_margin_height_seed2_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.11405734717845917,
+      "interval_peak_mae_N": 0.3785715401172638,
+      "height_mae_m": 0.007879151031374931,
+      "fixed_calibration_joint_coverage": 0.7,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_margin_native_seed0_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.19100037217140198,
+      "interval_peak_mae_N": 0.638918399810791,
+      "height_mae_m": 0.002920615253970027,
+      "fixed_calibration_joint_coverage": 0.8,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_margin_native_seed0_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.1660088300704956,
+      "interval_peak_mae_N": 0.7336575388908386,
+      "height_mae_m": 0.002399103483185172,
+      "fixed_calibration_joint_coverage": 0.9,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_margin_native_seed1_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.508196234703064,
+      "interval_peak_mae_N": 1.0329641103744507,
+      "height_mae_m": 0.062479257583618164,
+      "fixed_calibration_joint_coverage": 0.2,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_margin_native_seed1_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5135743021965027,
+      "interval_peak_mae_N": 1.328140139579773,
+      "height_mae_m": 0.0014369686832651496,
+      "fixed_calibration_joint_coverage": 0.5,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_margin_native_seed2_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.10158781707286835,
+      "interval_peak_mae_N": 0.11852522194385529,
+      "height_mae_m": 0.0006995010189712048,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_margin_native_seed2_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.13616763055324554,
+      "interval_peak_mae_N": 0.25264447927474976,
+      "height_mae_m": 0.0010042847134172916,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_native_seed0_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5072349309921265,
+      "interval_peak_mae_N": 1.0968021154403687,
+      "height_mae_m": 0.011362593621015549,
+      "fixed_calibration_joint_coverage": 0.0,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_native_seed0_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5902928113937378,
+      "interval_peak_mae_N": 1.5113056898117065,
+      "height_mae_m": 0.0027319251094013453,
+      "fixed_calibration_joint_coverage": 0.9,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_native_seed1_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.49218305945396423,
+      "interval_peak_mae_N": 1.0048755407333374,
+      "height_mae_m": 0.011553612537682056,
+      "fixed_calibration_joint_coverage": 0.6,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_native_seed1_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.734277069568634,
+      "interval_peak_mae_N": 1.8100491762161255,
+      "height_mae_m": 0.0019652273040264845,
+      "fixed_calibration_joint_coverage": 0.5,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_native_seed2_rl",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5846290588378906,
+      "interval_peak_mae_N": 1.4153780937194824,
+      "height_mae_m": 0.007384465541690588,
+      "fixed_calibration_joint_coverage": 0.5,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_native_seed2_rl",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.6904476284980774,
+      "interval_peak_mae_N": 2.0739622116088867,
+      "height_mae_m": 0.0023675591219216585,
+      "fixed_calibration_joint_coverage": 0.8,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_seed0_bc",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5061942934989929,
+      "interval_peak_mae_N": 0.8486199975013733,
+      "height_mae_m": 0.0029569831676781178,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_seed0_bc",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.7500835657119751,
+      "interval_peak_mae_N": 1.6757981777191162,
+      "height_mae_m": 0.002767903497442603,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 13.204450607299805
+    },
+    {
+      "controller": "visuotactile_seed1_bc",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.4864117205142975,
+      "interval_peak_mae_N": 1.1708465814590454,
+      "height_mae_m": 0.0044135781936347485,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_seed1_bc",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.9003792405128479,
+      "interval_peak_mae_N": 2.1430656909942627,
+      "height_mae_m": 0.0027175173163414,
+      "fixed_calibration_joint_coverage": 0.5,
+      "calibration_peak_radius_N": 6.944602966308594
+    },
+    {
+      "controller": "visuotactile_seed2_bc",
+      "domain": "id",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.5994945168495178,
+      "interval_peak_mae_N": 1.135543942451477,
+      "height_mae_m": 0.0017528608441352844,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 9.437637329101562
+    },
+    {
+      "controller": "visuotactile_seed2_bc",
+      "domain": "ood",
+      "episodes": 10,
+      "windows": 180,
+      "endpoint_force_mae_N": 0.8184758424758911,
+      "interval_peak_mae_N": 1.7807353734970093,
+      "height_mae_m": 0.002027980051934719,
+      "fixed_calibration_joint_coverage": 1.0,
+      "calibration_peak_radius_N": 9.437637329101562
+    }
+  ],
+  "grouped": [
+    {
+      "method": "visuotactile_bc",
+      "domain": "id",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.5307001769542694,
+        "training_seed_sd": 0.060393157308514064
+      },
+      "interval_peak_mae_N": {
+        "mean": 1.0516701738039653,
+        "training_seed_sd": 0.1767303020214981
+      },
+      "height_mae_m": {
+        "mean": 0.0030411407351493835,
+        "training_seed_sd": 0.0013323535850531096
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 1.0,
+        "training_seed_sd": 0.0
+      }
+    },
+    {
+      "method": "visuotactile_bc",
+      "domain": "ood",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        1.0,
+        0.5,
+        1.0
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.8229795495669047,
+        "training_seed_sd": 0.0752489866983846
+      },
+      "interval_peak_mae_N": {
+        "mean": 1.8665330807367961,
+        "training_seed_sd": 0.24516457159689267
+      },
+      "height_mae_m": {
+        "mean": 0.002504466955239574,
+        "training_seed_sd": 0.0004134180917391963
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.8333333333333334,
+        "training_seed_sd": 0.28867513459481287
+      }
+    },
+    {
+      "method": "visuotactile_height_rl",
+      "domain": "id",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.1,
+        0.8,
+        0.8
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.5345838169256846,
+        "training_seed_sd": 0.1063590096037935
+      },
+      "interval_peak_mae_N": {
+        "mean": 1.1956240336100261,
+        "training_seed_sd": 0.2688990422372015
+      },
+      "height_mae_m": {
+        "mean": 0.009140980274726948,
+        "training_seed_sd": 0.0035843115085113764
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.5666666666666668,
+        "training_seed_sd": 0.40414518843273806
+      }
+    },
+    {
+      "method": "visuotactile_height_rl",
+      "domain": "ood",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.8,
+        0.5,
+        0.7
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.7006968259811401,
+        "training_seed_sd": 0.1003136515448358
+      },
+      "interval_peak_mae_N": {
+        "mean": 1.8307079871495564,
+        "training_seed_sd": 0.1586160491866427
+      },
+      "height_mae_m": {
+        "mean": 0.0019151081408684452,
+        "training_seed_sd": 0.00025759084255650854
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.6666666666666666,
+        "training_seed_sd": 0.1527525231651947
+      }
+    },
+    {
+      "method": "visuotactile_margin_height_rl",
+      "domain": "id",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.9,
+        0.4,
+        1.0
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.23382626473903656,
+        "training_seed_sd": 0.20916787790299404
+      },
+      "interval_peak_mae_N": {
+        "mean": 0.6959482183059057,
+        "training_seed_sd": 0.4069146883960568
+      },
+      "height_mae_m": {
+        "mean": 0.019339577294886112,
+        "training_seed_sd": 0.02766853199910288
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.7666666666666666,
+        "training_seed_sd": 0.32145502536643183
+      }
+    },
+    {
+      "method": "visuotactile_margin_height_rl",
+      "domain": "ood",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.9,
+        0.5,
+        0.7
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.2746351609627406,
+        "training_seed_sd": 0.19861282317998216
+      },
+      "interval_peak_mae_N": {
+        "mean": 0.8896194795767466,
+        "training_seed_sd": 0.47523474190323745
+      },
+      "height_mae_m": {
+        "mean": 0.004089867463335395,
+        "training_seed_sd": 0.003349140921886675
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.6999999999999998,
+        "training_seed_sd": 0.2
+      }
+    },
+    {
+      "method": "visuotactile_margin_native_rl",
+      "domain": "id",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.8,
+        0.2,
+        1.0
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.2669281413157781,
+        "training_seed_sd": 0.2136735147774851
+      },
+      "interval_peak_mae_N": {
+        "mean": 0.5968025773763657,
+        "training_seed_sd": 0.458671916562418
+      },
+      "height_mae_m": {
+        "mean": 0.022033124618853133,
+        "training_seed_sd": 0.03504497954006847
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.6666666666666666,
+        "training_seed_sd": 0.41633319989322654
+      }
+    },
+    {
+      "method": "visuotactile_margin_native_rl",
+      "domain": "ood",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.9,
+        0.5,
+        1.0
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.2719169209400813,
+        "training_seed_sd": 0.2098126348291271
+      },
+      "interval_peak_mae_N": {
+        "mean": 0.7714807192484537,
+        "training_seed_sd": 0.5387445346015196
+      },
+      "height_mae_m": {
+        "mean": 0.0016134522932892044,
+        "training_seed_sd": 0.0007139605721463461
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.7999999999999999,
+        "training_seed_sd": 0.2645751311064591
+      }
+    },
+    {
+      "method": "visuotactile_native_rl",
+      "domain": "id",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.0,
+        0.6,
+        0.5
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.5280156830946604,
+        "training_seed_sd": 0.04960287737605004
+      },
+      "interval_peak_mae_N": {
+        "mean": 1.1723519166310628,
+        "training_seed_sd": 0.2154272866816104
+      },
+      "height_mae_m": {
+        "mean": 0.010100223900129398,
+        "training_seed_sd": 0.0023538542122875424
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.3666666666666667,
+        "training_seed_sd": 0.32145502536643183
+      }
+    },
+    {
+      "method": "visuotactile_native_rl",
+      "domain": "ood",
+      "fixed_policy_runs": 3,
+      "episodes_per_policy": [
+        10,
+        10,
+        10
+      ],
+      "per_policy_coverage": [
+        0.9,
+        0.5,
+        0.8
+      ],
+      "endpoint_force_mae_N": {
+        "mean": 0.671672503153483,
+        "training_seed_sd": 0.07380545812690763
+      },
+      "interval_peak_mae_N": {
+        "mean": 1.7984390258789062,
+        "training_seed_sd": 0.28150788101466145
+      },
+      "height_mae_m": {
+        "mean": 0.002354903845116496,
+        "training_seed_sd": 0.00038350553870174865
+      },
+      "fixed_calibration_joint_coverage": {
+        "mean": 0.7333333333333334,
+        "training_seed_sd": 0.2081665999466133
+      }
+    }
+  ],
+  "provenance": {
+    "controller_runs": 15,
+    "horizon": 5,
+    "stride": 5,
+    "window": "starts >=44, last transition <=135",
+    "scope": "retrospective action-conditioned forecasts of held-out executed trajectories",
+    "calibration": "unchanged original recording-split quantiles; no closed-loop recalibration",
+    "not_claimed": "online replanning accuracy without supplying future actions; closed-loop safety guarantee"
+  },
+  "scope": "retrospective forecasts conditioned on actually executed future actions; original calibration unchanged"
+}

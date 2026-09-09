@@ -1,0 +1,9 @@
+{
+  "controller_runs": 15,
+  "horizon": 5,
+  "stride": 5,
+  "window": "starts >=44, last transition <=135",
+  "scope": "retrospective action-conditioned forecasts of held-out executed trajectories",
+  "calibration": "unchanged original recording-split quantiles; no closed-loop recalibration",
+  "not_claimed": "online replanning accuracy without supplying future actions; closed-loop safety guarantee"
+}

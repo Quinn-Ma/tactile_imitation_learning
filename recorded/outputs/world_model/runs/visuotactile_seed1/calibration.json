@@ -1,0 +1,12 @@
+{
+  "available": true,
+  "alpha_joint": 0.1,
+  "calibration_episodes": 24,
+  "order_statistic_rank": 24,
+  "peak_radius_N": 6.944602966308594,
+  "height_radius_m": 0.03540525957942009,
+  "force_target": "per-finger maximum normal force over each control interval physical substeps",
+  "infinite_radius": false,
+  "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+  "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+}

@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    "vision_seed0",
+    "visuotactile_seed0",
+    "visuotactile_margin_seed0",
+    "vision_seed1",
+    "visuotactile_seed1",
+    "visuotactile_margin_seed1",
+    "vision_seed2",
+    "visuotactile_seed2",
+    "visuotactile_margin_seed2"
+  ]
+}

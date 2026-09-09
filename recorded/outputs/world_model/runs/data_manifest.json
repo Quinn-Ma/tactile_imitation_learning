@@ -1,0 +1,1122 @@
+[
+  {
+    "episode_id": "ep_0000",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0000.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0001",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0001.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0002",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0002.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0003",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0003.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0004",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0004.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0005",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0005.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0006",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0006.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0007",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0007.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0008",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0008.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0009",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0009.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0010",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0010.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0011",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0011.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0012",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0012.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0013",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0013.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0014",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0014.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0015",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0015.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0016",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0016.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0017",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0017.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0018",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0018.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0019",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0019.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0020",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0020.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0021",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0021.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0022",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0022.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0023",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0023.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0024",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0024.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0025",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0025.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0026",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0026.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0027",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0027.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0028",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0028.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0029",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0029.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0030",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0030.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0031",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0031.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0032",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0032.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0033",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0033.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0034",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0034.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0035",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0035.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0036",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0036.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0037",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0037.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0038",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0038.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0039",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0039.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0040",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0040.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0041",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0041.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0042",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0042.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0043",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0043.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0044",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0044.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0045",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0045.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0046",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0046.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0047",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0047.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0048",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0048.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0049",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0049.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0050",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0050.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0051",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0051.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0052",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0052.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0053",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0053.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0054",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0054.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0055",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0055.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0056",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0056.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0057",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0057.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0058",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0058.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0059",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0059.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0060",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0060.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0061",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0061.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0062",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0062.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0063",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0063.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0064",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0064.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0065",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0065.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0066",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0066.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0067",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0067.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0068",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0068.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0069",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0069.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0070",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0070.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0071",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0071.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0072",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0072.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0073",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0073.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0074",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0074.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0075",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0075.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0076",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0076.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0077",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0077.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0078",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0078.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0079",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0079.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0080",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0080.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0081",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0081.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0082",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0082.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0083",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0083.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0084",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0084.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0085",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0085.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0086",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0086.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0087",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0087.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0088",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0088.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0089",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0089.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0090",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0090.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0091",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0091.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0092",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0092.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0093",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0093.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0094",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0094.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0095",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0095.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0096",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0096.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0097",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0097.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0098",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0098.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0099",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0099.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0100",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0100.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0101",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0101.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0102",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0102.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0103",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0103.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0104",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0104.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0105",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0105.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0106",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0106.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0107",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0107.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0108",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0108.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0109",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0109.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0110",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0110.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0111",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0111.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0112",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0112.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0113",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0113.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0114",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0114.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0115",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0115.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0116",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0116.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0117",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0117.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0118",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0118.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0119",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0119.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0120",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0120.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0121",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0121.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0122",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0122.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0123",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0123.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0124",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0124.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0125",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0125.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0126",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0126.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0127",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0127.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0128",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0128.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0129",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0129.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0130",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0130.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0131",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0131.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0132",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0132.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0133",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0133.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0134",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0134.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0135",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0135.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0136",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0136.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0137",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0137.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0138",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0138.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0139",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0139.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0140",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0140.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0141",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0141.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0142",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0142.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0143",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0143.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0144",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0144.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0145",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0145.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0146",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0146.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0147",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0147.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0148",
+    "split": "calibration",
+    "path": "outputs/simulation/episodes/ep_0148.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0149",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0149.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0150",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0150.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0151",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0151.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0152",
+    "split": "val",
+    "path": "outputs/simulation/episodes/ep_0152.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0153",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0153.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0154",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0154.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0155",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0155.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0156",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0156.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0157",
+    "split": "train",
+    "path": "outputs/simulation/episodes/ep_0157.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0158",
+    "split": "test_id",
+    "path": "outputs/simulation/episodes/ep_0158.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "ep_0159",
+    "split": "test_ood",
+    "path": "outputs/simulation/episodes/ep_0159.npz",
+    "steps": 150,
+    "has_reward": true
+  }
+]

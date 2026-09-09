@@ -1,0 +1,210 @@
+{
+  "completed_runs": 17,
+  "checks": "PASS: paired parameters, bit-identical pre-intervention RGB/proprio/tactile/height/actions, exact zero excluded actions",
+  "runs": [
+    {
+      "run": "force_feedback",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "script",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "vision_seed0_bc",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "vision_seed0_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "vision_seed1_bc",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "vision_seed1_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "vision_seed2_bc",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "vision_seed2_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_margin_seed0_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_margin_seed1_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_margin_seed2_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_seed0_bc",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_seed0_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_seed1_bc",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_seed1_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_seed2_bc",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    },
+    {
+      "run": "visuotactile_seed2_rl",
+      "episodes": 20,
+      "max_shared_setup_error": {
+        "rgb": 0.0,
+        "proprio": 0.0,
+        "tactile": 0.0,
+        "height": 0.0,
+        "action": 0.0
+      },
+      "restricted_dimensions_exact_zero": true
+    }
+  ]
+}

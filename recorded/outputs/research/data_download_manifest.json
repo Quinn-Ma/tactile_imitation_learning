@@ -1,0 +1,307 @@
+{
+  "repository": "facebook/gelsight-force-estimation",
+  "revision": "136db55485b6501605b1d2648ce0fe44740e302e",
+  "license": "CC-BY-NC-4.0",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/README.md",
+      "bytes": 3290,
+      "sha256": "d5e60a854b68027462dc0bbb243739a1b3b543a664da9f4b37958403149097e4"
+    },
+    {
+      "path": "flat/batch_1/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_1/dataset_gelsight_00.pkl",
+      "bytes": 65405631,
+      "sha256": "c67b8bb3ecdfd890760cd7ff27f459b20cefb61ce85ec41d70b7bfb9c575dc11"
+    },
+    {
+      "path": "flat/batch_1/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_1/dataset_gelsight_01.pkl",
+      "bytes": 65359656,
+      "sha256": "e60b458f31cb192f56576153a0cdd9dbbe9712d66c2102999ed1144458e941f8"
+    },
+    {
+      "path": "flat/batch_1/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_1/dataset_gelsight_02.pkl",
+      "bytes": 65430986,
+      "sha256": "b1ff63f3a0873af9e8cfd3ec0ce12d5ea8e6c05bf4a3aedcfedbc50bc3c0f6a6"
+    },
+    {
+      "path": "flat/batch_1/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_1/dataset_gelsight_03.pkl",
+      "bytes": 3388510,
+      "sha256": "6836c42d35623fc86d98cfb5958fb60ca0cac61cc5875beca7eadda275e5db40"
+    },
+    {
+      "path": "flat/batch_1/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_1/dataset_slip_forces.pkl",
+      "bytes": 1197081,
+      "sha256": "346cbb110874306f641aa4bf800c23fa591b6ef2205be34d2674a639bff318ae"
+    },
+    {
+      "path": "flat/batch_2/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_2/dataset_gelsight_00.pkl",
+      "bytes": 65396145,
+      "sha256": "74297d8d6b7d6eba5d7021b3d181071206b653606be43911307da0490581fc6f"
+    },
+    {
+      "path": "flat/batch_2/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_2/dataset_gelsight_01.pkl",
+      "bytes": 65351568,
+      "sha256": "0207d3d4f97bde5fb8943d6c95c04921cc76add37c5388b035b1dc17d0e0ca1a"
+    },
+    {
+      "path": "flat/batch_2/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_2/dataset_gelsight_02.pkl",
+      "bytes": 59568644,
+      "sha256": "02da917df8f97c2fa746320906866b5bca7ed899d4af73924fbb31215519016e"
+    },
+    {
+      "path": "flat/batch_2/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/flat/batch_2/dataset_slip_forces.pkl",
+      "bytes": 1132155,
+      "sha256": "1a5182add98ad5d8d2a8dc0e9589751752265588e5b8d5dfee6290209cddd419"
+    },
+    {
+      "path": "sharp/batch_1/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_1/dataset_gelsight_00.pkl",
+      "bytes": 67444546,
+      "sha256": "f59b7eeae1a4d6d258c60093b4dccca2fc96d62166eeec292e08feb14eb84c6d"
+    },
+    {
+      "path": "sharp/batch_1/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_1/dataset_gelsight_01.pkl",
+      "bytes": 67481873,
+      "sha256": "824fee211c7a8ab47a6b8717351d4b13b40674d714a19892dd47f79be90389b1"
+    },
+    {
+      "path": "sharp/batch_1/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_1/dataset_gelsight_02.pkl",
+      "bytes": 67666942,
+      "sha256": "bf59c903a23405953389238983eedd4e956b7c74dad920fc4fd0fd2fe8fac447"
+    },
+    {
+      "path": "sharp/batch_1/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_1/dataset_gelsight_03.pkl",
+      "bytes": 45661543,
+      "sha256": "c2b5de34d87e66679142511b796114e195e0f0a48459c311fe46c0afeb51b809"
+    },
+    {
+      "path": "sharp/batch_1/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_1/dataset_slip_forces.pkl",
+      "bytes": 1811765,
+      "sha256": "c5db850385097cbfab5642ed713ea2cfbbb1e1931046e4ccb346e078852c0ef8"
+    },
+    {
+      "path": "sharp/batch_2/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_2/dataset_gelsight_00.pkl",
+      "bytes": 59539090,
+      "sha256": "11eb0e127d629538149e45e12b706f1832bb1603eacbf3f90643f14dd2429530"
+    },
+    {
+      "path": "sharp/batch_2/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_2/dataset_gelsight_01.pkl",
+      "bytes": 59640804,
+      "sha256": "f7fb6ee96bfec1d3fdef8b7fd89d66a485c6048bd3f4c8369484fc042c1a7a77"
+    },
+    {
+      "path": "sharp/batch_2/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_2/dataset_gelsight_02.pkl",
+      "bytes": 60085490,
+      "sha256": "efc65d622b7361e0577804765380e78dd9eddd872a2cc870b344368ac2f7e791"
+    },
+    {
+      "path": "sharp/batch_2/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_2/dataset_gelsight_03.pkl",
+      "bytes": 23605346,
+      "sha256": "c378bbec62583d916ef0f69640b35769c18f540b54413fb8ba0909ee2ef1e415"
+    },
+    {
+      "path": "sharp/batch_2/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sharp/batch_2/dataset_slip_forces.pkl",
+      "bytes": 1604788,
+      "sha256": "5758f27580930cbeec6eac6618ec1f0656d6c956a505fbedb970138bade87fd0"
+    },
+    {
+      "path": "sphere/batch_1/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_1/dataset_gelsight_00.pkl",
+      "bytes": 67099919,
+      "sha256": "5826e399c3b91493ef27b55be8aaf37962447123658a5387b2d06bf0e8487b1d"
+    },
+    {
+      "path": "sphere/batch_1/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_1/dataset_gelsight_01.pkl",
+      "bytes": 67259002,
+      "sha256": "77247a5da6ce0dd166560efd4d61c525e64701c4102533910ad2699530d1c75e"
+    },
+    {
+      "path": "sphere/batch_1/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_1/dataset_gelsight_02.pkl",
+      "bytes": 67199959,
+      "sha256": "c28a6dcf77279d05dfa9baffa9454e17ee84fdbd6cea1e242d446dc3b349bab9"
+    },
+    {
+      "path": "sphere/batch_1/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_1/dataset_gelsight_03.pkl",
+      "bytes": 30772422,
+      "sha256": "60007f9f7dbfed707ad2efa41d177bc8dc69e5d9b3be26e5a7dd69587c88585f"
+    },
+    {
+      "path": "sphere/batch_1/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_1/dataset_slip_forces.pkl",
+      "bytes": 1654631,
+      "sha256": "261712be260d70d84085ce7d1e93faa4105a7f30b721f48fd8c46f1685059288"
+    },
+    {
+      "path": "sphere/batch_2/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_2/dataset_gelsight_00.pkl",
+      "bytes": 67299224,
+      "sha256": "ed1e403a880fcccd7b06513534a2e4457b386ac9b9fc7ccce29d22eb4c9371b1"
+    },
+    {
+      "path": "sphere/batch_2/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_2/dataset_gelsight_01.pkl",
+      "bytes": 67289840,
+      "sha256": "c222c435a83728870736d26fae59f8fa17d47621fdf70dc06afebc35c1e4fa06"
+    },
+    {
+      "path": "sphere/batch_2/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_2/dataset_gelsight_02.pkl",
+      "bytes": 67279771,
+      "sha256": "81539714a640bc4489ffd39af42987f55fc51b20e8ebdc8af4fcd5fce85bdc19"
+    },
+    {
+      "path": "sphere/batch_2/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_2/dataset_gelsight_03.pkl",
+      "bytes": 48676882,
+      "sha256": "341d4b62abf6072a35b43923e94b521897bc9cd73a22fd6cc10ed9e6c6a040f7"
+    },
+    {
+      "path": "sphere/batch_2/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_2/dataset_slip_forces.pkl",
+      "bytes": 1770133,
+      "sha256": "055b2cd5267e49f7698c40283b03dae99519098047fe3a26b603f1d1ad616b9c"
+    },
+    {
+      "path": "sphere/batch_3/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_3/dataset_gelsight_00.pkl",
+      "bytes": 67244492,
+      "sha256": "90a092fb8d789abc4a45a97210828fd834f9036c5b05cef20164aee38cfb99d4"
+    },
+    {
+      "path": "sphere/batch_3/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_3/dataset_gelsight_01.pkl",
+      "bytes": 67206279,
+      "sha256": "054cb51d1c79bce085d027c28f77667ab5c968709e46ebad997cfda86ac59c43"
+    },
+    {
+      "path": "sphere/batch_3/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_3/dataset_gelsight_02.pkl",
+      "bytes": 67099255,
+      "sha256": "7babce2439d86c7af6437bbc2737b9cd2cdc78fcd47c77ebe242601573d47b58"
+    },
+    {
+      "path": "sphere/batch_3/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_3/dataset_gelsight_03.pkl",
+      "bytes": 38499554,
+      "sha256": "ab8a2815b4a823782d2ec6f9b862d1b9406813b82fb9f8425d9a0e46099caa61"
+    },
+    {
+      "path": "sphere/batch_3/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_3/dataset_slip_forces.pkl",
+      "bytes": 1665584,
+      "sha256": "1da4ea1796a315a52acd144e2a7dbc76d66f98ed42dd44bd4dd4c860958bb13f"
+    },
+    {
+      "path": "sphere/batch_4/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_4/dataset_gelsight_00.pkl",
+      "bytes": 67311183,
+      "sha256": "16557aa4eff7f4427736279706b1aebbf9bdedaf7ae75423058b98ee44778bc4"
+    },
+    {
+      "path": "sphere/batch_4/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_4/dataset_gelsight_01.pkl",
+      "bytes": 67275522,
+      "sha256": "eb4ddf16fcc5931b9a9bf49718cb954659ad4ac6b56e46aa93f230e08feca785"
+    },
+    {
+      "path": "sphere/batch_4/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_4/dataset_gelsight_02.pkl",
+      "bytes": 67286182,
+      "sha256": "35661c0f6b1e17e9371b8a94fa6002e11415cd200bdc78c625cf0e039027b36a"
+    },
+    {
+      "path": "sphere/batch_4/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_4/dataset_gelsight_03.pkl",
+      "bytes": 51068051,
+      "sha256": "2e839473c6a9e15d0edc54690e60bde664647fc8195c46de04d5591eba2662fb"
+    },
+    {
+      "path": "sphere/batch_4/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_4/dataset_slip_forces.pkl",
+      "bytes": 1834429,
+      "sha256": "6769186f17f716c7383090f1d0c9ed56d2331238904bac0af315784dd36c1d86"
+    },
+    {
+      "path": "sphere/batch_5/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_5/dataset_gelsight_00.pkl",
+      "bytes": 67339079,
+      "sha256": "6f95f60f28e69067e3ddbb58a682f03c39da3e5084fa0ecf3bdb1fed5021b895"
+    },
+    {
+      "path": "sphere/batch_5/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_5/dataset_gelsight_01.pkl",
+      "bytes": 67289675,
+      "sha256": "68bba250555d96987292d0f5c1fa47fa85f79cb9bae6fd6155e8a3ea6494c883"
+    },
+    {
+      "path": "sphere/batch_5/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_5/dataset_gelsight_02.pkl",
+      "bytes": 67354622,
+      "sha256": "77a69e7a75d1c251efb2992a4e3628c32d1eb0b8a889bde13eca87fc82df1f23"
+    },
+    {
+      "path": "sphere/batch_5/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_5/dataset_gelsight_03.pkl",
+      "bytes": 53789972,
+      "sha256": "2c82407bf59f2af46c160b7f9515d4213657fbad4464858842692ec003a078a3"
+    },
+    {
+      "path": "sphere/batch_5/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_5/dataset_slip_forces.pkl",
+      "bytes": 1865675,
+      "sha256": "58d4ccca625c6a63f0b7285726bbf6f192761d21d599ca037e1b5d87a200d38b"
+    },
+    {
+      "path": "sphere/batch_6/dataset_gelsight_00.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_6/dataset_gelsight_00.pkl",
+      "bytes": 67347006,
+      "sha256": "4fa8f4f87cb5da4aad2bd2d34a5ca9bc5b2872753922fbe8700307fd4b4caec3"
+    },
+    {
+      "path": "sphere/batch_6/dataset_gelsight_01.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_6/dataset_gelsight_01.pkl",
+      "bytes": 67317034,
+      "sha256": "e5e0a449f3d4f6384d6df38b858cefb96b151f6517c6a1f349f6512606c2561c"
+    },
+    {
+      "path": "sphere/batch_6/dataset_gelsight_02.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_6/dataset_gelsight_02.pkl",
+      "bytes": 67374330,
+      "sha256": "ec8946a7fa7253f27c61de745a3541a562e881b91cfda1bf017cc17cfee6479b"
+    },
+    {
+      "path": "sphere/batch_6/dataset_gelsight_03.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_6/dataset_gelsight_03.pkl",
+      "bytes": 42132217,
+      "sha256": "a049a1471d0c80b322750107e11b8d43e725f4eb8e98c3a670da26ada83627ce"
+    },
+    {
+      "path": "sphere/batch_6/dataset_slip_forces.pkl",
+      "url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation/resolve/136db55485b6501605b1d2648ce0fe44740e302e/sphere/batch_6/dataset_slip_forces.pkl",
+      "bytes": 1746057,
+      "sha256": "786130eafaeae4c4dee0450c36fb4a1349cfde1978f8fec866236fef120dc3aa"
+    }
+  ]
+}

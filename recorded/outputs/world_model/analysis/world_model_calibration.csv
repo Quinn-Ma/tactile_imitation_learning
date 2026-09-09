@@ -1,0 +1,13 @@
+run,variant,seed,split,covered_episodes,episodes,joint_episode_coverage,wilson_low,wilson_high,peak_radius_N,height_radius_m,calibration_episodes,nominal_coverage,scope
+vision_seed0,vision,0,test_id,18,20,0.9,0.6989663547715128,0.9721335187862319,13.775102615356445,0.03872133046388626,24,0.9,empirical held-out recording distribution; not deployed policy coverage
+vision_seed0,vision,0,test_ood,11,20,0.55,0.34208534245034233,0.7418021417443759,13.775102615356445,0.03872133046388626,24,0.9,empirical OOD stress test; exchangeable guarantee not inherited
+visuotactile_seed0,visuotactile,0,test_id,16,20,0.8,0.5839825677481064,0.919342337420202,13.204450607299805,0.020057251676917076,24,0.9,empirical held-out recording distribution; not deployed policy coverage
+visuotactile_seed0,visuotactile,0,test_ood,13,20,0.65,0.43285427668523624,0.818808175898918,13.204450607299805,0.020057251676917076,24,0.9,empirical OOD stress test; exchangeable guarantee not inherited
+vision_seed1,vision,1,test_id,20,20,1.0,0.8388748419471806,1.0,15.088003158569336,0.0431395024061203,24,0.9,empirical held-out recording distribution; not deployed policy coverage
+vision_seed1,vision,1,test_ood,17,20,0.85,0.6395811352592431,0.9476312541037835,15.088003158569336,0.0431395024061203,24,0.9,empirical OOD stress test; exchangeable guarantee not inherited
+visuotactile_seed1,visuotactile,1,test_id,17,20,0.85,0.6395811352592431,0.9476312541037835,6.944602966308594,0.03540525957942009,24,0.9,empirical held-out recording distribution; not deployed policy coverage
+visuotactile_seed1,visuotactile,1,test_ood,10,20,0.5,0.2992980081982123,0.7007019918017877,6.944602966308594,0.03540525957942009,24,0.9,empirical OOD stress test; exchangeable guarantee not inherited
+vision_seed2,vision,2,test_id,19,20,0.95,0.763868806553258,0.9911185511992047,11.992208480834961,0.03269338980317116,24,0.9,empirical held-out recording distribution; not deployed policy coverage
+vision_seed2,vision,2,test_ood,9,20,0.45,0.2581978582556243,0.6579146575496577,11.992208480834961,0.03269338980317116,24,0.9,empirical OOD stress test; exchangeable guarantee not inherited
+visuotactile_seed2,visuotactile,2,test_id,18,20,0.9,0.6989663547715128,0.9721335187862319,9.437637329101562,0.026551948860287666,24,0.9,empirical held-out recording distribution; not deployed policy coverage
+visuotactile_seed2,visuotactile,2,test_ood,9,20,0.45,0.2581978582556243,0.6579146575496577,9.437637329101562,0.026551948860287666,24,0.9,empirical OOD stress test; exchangeable guarantee not inherited

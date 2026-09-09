@@ -1,0 +1,32 @@
+{
+  "scope": "offline force prediction / calibrated proxy-constraint analysis on public real tactile recordings; no executed robot control",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "LOCAL_PYTHON",
+  "torch": "2.14.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5090 Laptop GPU",
+  "elapsed_seconds": 45.949297200000046,
+  "gpu_peak_allocated_MiB": 1084.2431640625,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "epochs": 30,
+  "batch_size": 256,
+  "parameters": 361091,
+  "split_seed": 314159,
+  "assumed_mus": [
+    0.3,
+    0.5,
+    0.8
+  ],
+  "assumed_normal_ceilings_N": [
+    0.5,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "script_sha256": "26677d8e940aa17fe80ad12695fc3162c1435294d220bb9b1e7b052bf1eae56c",
+  "data_source_revision": "136db55485b6501605b1d2648ce0fe44740e302e"
+}

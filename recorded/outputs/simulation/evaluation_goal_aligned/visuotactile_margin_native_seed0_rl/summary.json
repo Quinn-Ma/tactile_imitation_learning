@@ -1,0 +1,92 @@
+{
+  "controller": "policy",
+  "metrics": {
+    "all": {
+      "n": 20,
+      "any_native_success": 0.1,
+      "sustained_native_success": 0.05,
+      "final_native_success": 0.05,
+      "force_budget_exceeded": 0.0,
+      "sustained_success_within_force_budget": 0.05,
+      "setup_force_budget_exceeded": 0.0,
+      "full_episode_peak_normal_N": 2.760492515563965,
+      "sustained_10cm_lift_success": 0.0,
+      "sustained_10cm_lift_within_force_budget": 0.0,
+      "native_shaped_return": 48.92289602446346,
+      "bilateral_contact_at_takeover": 0.0
+    },
+    "id": {
+      "n": 10,
+      "any_native_success": 0.2,
+      "sustained_native_success": 0.1,
+      "final_native_success": 0.1,
+      "force_budget_exceeded": 0.0,
+      "sustained_success_within_force_budget": 0.1,
+      "setup_force_budget_exceeded": 0.0,
+      "full_episode_peak_normal_N": 1.8281399726867675,
+      "sustained_10cm_lift_success": 0.0,
+      "sustained_10cm_lift_within_force_budget": 0.0,
+      "native_shaped_return": 50.7896661354499,
+      "bilateral_contact_at_takeover": 0.0
+    },
+    "ood": {
+      "n": 10,
+      "any_native_success": 0.0,
+      "sustained_native_success": 0.0,
+      "final_native_success": 0.0,
+      "force_budget_exceeded": 0.0,
+      "sustained_success_within_force_budget": 0.0,
+      "setup_force_budget_exceeded": 0.0,
+      "full_episode_peak_normal_N": 3.6928450584411623,
+      "sustained_10cm_lift_success": 0.0,
+      "sustained_10cm_lift_within_force_budget": 0.0,
+      "native_shaped_return": 47.05612591347701,
+      "bilateral_contact_at_takeover": 0.0
+    }
+  },
+  "seeds": [
+    20291000,
+    20291001,
+    20291002,
+    20291003,
+    20291004,
+    20291005,
+    20291006,
+    20291007,
+    20291008,
+    20291009,
+    20291010,
+    20291011,
+    20291012,
+    20291013,
+    20291014,
+    20291015,
+    20291016,
+    20291017,
+    20291018,
+    20291019
+  ],
+  "takeover": 44,
+  "intervention_end": 135,
+  "setup": "Common privileged scripted approach before takeover; reset same seed per controller; no state snapshot branching",
+  "intervention": "Only z/gripper allowed; delta xy/rotation identically zero for all controllers; common scripted lowering after intervention_end",
+  "control_dimensions": [
+    2,
+    6
+  ],
+  "zero_dimensions_during_intervention": [
+    0,
+    1,
+    3,
+    4,
+    5
+  ],
+  "success": "Native robosuite1.5.1 Lift cube center z > table z +0.04m for >=10 consecutive macrosteps ending by step135; strict10cm relative-lift metric reported separately",
+  "force": "Maximum of per-finger summed normal contact force at all 0.002s substeps over complete150-step episode; 8N budget",
+  "caveat": "Rigid-body simulation extension, not real robot, physical damage, or deployed safety guarantee",
+  "source_sha256": "6d8189ac2c7fd27d0c67074e6ca9a06fc042f8be88993411df85ed0d8f8a5847",
+  "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+  "actor": "outputs/world_model/rl/visuotactile_margin_seed0/rl_actor.pt",
+  "elapsed_sec": 30.045475959777832,
+  "resumed_episodes": 0
+}

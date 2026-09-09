@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the visuotactile study, cite the accompanying manuscript and the upstream resources used."
+type: software
+title: "Compact Visuotactile World Models for Lifting: Code and Experimental Results"
+authors:
+  - family-names: Ma
+    given-names: Qinzhen
+    affiliation: Rice University
+  - family-names: Peng
+    given-names: Sida
+    affiliation: Zhejiang University
+repository-code: "https://github.com/Quinn-Ma/compact-visuotactile-world-models"
+url: "https://github.com/Quinn-Ma/compact-visuotactile-world-models"
+preferred-citation:
+  type: unpublished
+  title: "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints"
+  authors:
+    - family-names: Ma
+      given-names: Qinzhen
+    - family-names: Peng
+      given-names: Sida
+  year: 2026
+  url: "https://github.com/Quinn-Ma/compact-visuotactile-world-models/blob/main/paper/preprint.pdf"

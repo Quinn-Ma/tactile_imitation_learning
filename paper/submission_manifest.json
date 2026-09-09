@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "main.tex",
+      "bytes": 42299,
+      "sha256": "4fb277921241e04b1cb2920681bc4e43c4f91e852bb44839f09418a9592880b4"
+    },
+    {
+      "path": "ieeeconf.cls",
+      "bytes": 202167,
+      "sha256": "4befef671c2a996889d325f5170d3387bf42aac9a37dcaa93724ad49816e4ec2"
+    },
+    {
+      "path": "architecture.png",
+      "bytes": 226955,
+      "sha256": "cd9c3c6f4b8436f87a528c667c11bcd8e6a558741ce7a15d866deb27fb27b1e2"
+    },
+    {
+      "path": "reward_alignment_id.png",
+      "bytes": 102915,
+      "sha256": "0c0e1d42010832d66186e676f3b944488303303c153aba9a872fcbc57f6321e2"
+    },
+    {
+      "path": "anc/reproducibility.zip",
+      "bytes": 953474,
+      "sha256": "e3530d9b86171c1a033c2d2f92c42c5de38e88da2f671074db56fe7bc4d5049d"
+    }
+  ],
+  "zip_sha256": "7beaf7b73d9666e20922dd8d923078303f0abe953d270e184e96dfcc0903d4be"
+}

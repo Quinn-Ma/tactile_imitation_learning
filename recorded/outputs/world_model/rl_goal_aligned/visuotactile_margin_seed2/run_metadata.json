@@ -1,0 +1,440 @@
+{
+  "claim_scope": "frozen learned-model imagination RL pilot; simulator evaluation required",
+  "model_sha256": "4ada35ce39c3e861f4b92fbd22e2161738055dbde7165480e9b1f7dedc2203c4",
+  "replay_states": 3520,
+  "training_episodes": [
+    {
+      "file": "outputs/simulation/episodes/ep_0000.npz",
+      "num_starts": 44,
+      "sha256": "de2ae3c9cdf79b61c8f394f81d2721b1a009462c3c8a69f4208c6e8417ab881e"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0001.npz",
+      "num_starts": 44,
+      "sha256": "74dd3893f4830de315855d4dbb6ff215f1f7bdbd7f88e01383f3e6cd971fdd69"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0003.npz",
+      "num_starts": 44,
+      "sha256": "8c9d7ea6b0680a7221e4dcba50ee93ce1799c7a4c7fa1c8671766b04237ef29e"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0005.npz",
+      "num_starts": 44,
+      "sha256": "8bfab8740880f4aa65c20d036ab9ba98b12301df0e9d6ad58ba5d3f0e09efb87"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0007.npz",
+      "num_starts": 44,
+      "sha256": "4ddaa71ac74b05383395e297eb963b3ba47f5dad734e1e352152071abc1b4ac8"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0010.npz",
+      "num_starts": 44,
+      "sha256": "03c94f46861331a15206140296e18fa2224c9044efa3d031aba917107e2c4a9b"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0011.npz",
+      "num_starts": 44,
+      "sha256": "169f5583b9907f4cf7afe5dc6d432be7ecd8c57ba0e90977b1a9166ba694c5f0"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0013.npz",
+      "num_starts": 44,
+      "sha256": "3d7e5b3b2fd9e32fcfc3e41902e1cf6bee387b294389030c749886c44868a126"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0015.npz",
+      "num_starts": 44,
+      "sha256": "d14108b04834eeb54324dca2fe2147e85d0da6eab0264da7d651f46b703652ba"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0017.npz",
+      "num_starts": 44,
+      "sha256": "e390bb02276a0166ec5039d4a990783bbcda272eefe61af788250afeb10c953e"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0020.npz",
+      "num_starts": 44,
+      "sha256": "be8d54003bfc452f427e27077605beb3c7b2be9de38dcc0620dc4a704591f548"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0021.npz",
+      "num_starts": 44,
+      "sha256": "65dc7a0eb34f48c1aa4ea8777c722cf152158e095a118e8b06fe605cf00bf318"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0023.npz",
+      "num_starts": 44,
+      "sha256": "be8e6f6fce473718fb25040e5b904da318c6908bced9cdbc406408b831f9a07a"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0025.npz",
+      "num_starts": 44,
+      "sha256": "1e2282dbe3ba99017af143bbb44df703d0ad87304a61811c6f1f14695b2a1cc6"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0027.npz",
+      "num_starts": 44,
+      "sha256": "1891efd030a8fc9a92eda35acf929d0699a2e50932982fd01d60a6d6a15670fe"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0030.npz",
+      "num_starts": 44,
+      "sha256": "f3f42031f916cf06e1f6b931329303d59b5f7d711982d0f920343b026ee729e3"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0031.npz",
+      "num_starts": 44,
+      "sha256": "3f34f2917b18d7e94575cc11151a5c94d6fcde35a470df20c2655a60d9c874e8"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0033.npz",
+      "num_starts": 44,
+      "sha256": "e9282d103e7d2bee6cca3b4f7e7e925b5ea0255db701db5ca2f7a78eaf7f8d09"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0035.npz",
+      "num_starts": 44,
+      "sha256": "aec82329312767ee65d15fe810e4685eeeddf1d3992b08cc4f1e589c9c8909c4"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0037.npz",
+      "num_starts": 44,
+      "sha256": "1dda73dc1dd3531bc445895694e6c3a1c5275b198a5362e74bed7cc3e929db54"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0040.npz",
+      "num_starts": 44,
+      "sha256": "2cd0ef22703f60db88dba8fb4a54b3f6ebc56e48d2e657b112e1f89fc0f0f117"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0041.npz",
+      "num_starts": 44,
+      "sha256": "91513d85cdf4462f62efef6f53722e65d530c9db0b303772611c919fd6df620c"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0043.npz",
+      "num_starts": 44,
+      "sha256": "79ecea9c842ce3771813dacb70686186e33259d5c3afad3fa71f66e96721a008"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0045.npz",
+      "num_starts": 44,
+      "sha256": "34b23e01b75ab7705879a9a653c65cfd247862684450efc6ea665263ba4161b8"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0047.npz",
+      "num_starts": 44,
+      "sha256": "8cecada2326e5d59a4b97d6b864316c466be54051a12ca1d377d9b4abb40675e"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0050.npz",
+      "num_starts": 44,
+      "sha256": "163b49b0ab1d7f32359a443131a5041f3c6c96efc9324bfc4d88ce899ef7509f"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0051.npz",
+      "num_starts": 44,
+      "sha256": "9301cd63866d8597836640d2d6c02859c4e5e6929428627737073a488fd29da1"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0053.npz",
+      "num_starts": 44,
+      "sha256": "4dd79fdfabd563aace867fbb99efc0583e7c79c8f8cd35d1eb4b73789a1525fb"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0055.npz",
+      "num_starts": 44,
+      "sha256": "0bdcabd18b8d40d5bb2c2ec9b6b14a0d195a726b274cf19faea11cc7e05e0211"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0057.npz",
+      "num_starts": 44,
+      "sha256": "aa5295a8366a37bfbef6a86af6cc988a3b1e24db888df23f07bd501d14dcb476"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0060.npz",
+      "num_starts": 44,
+      "sha256": "b4c10bac6dfbc911321383831d3770c2d4e7522ce7639e160667fc3eda5fb590"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0061.npz",
+      "num_starts": 44,
+      "sha256": "3babed32ef8f89be5cfdce50f691bb526850c850a40ee23b044c6c3a12b0bca4"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0063.npz",
+      "num_starts": 44,
+      "sha256": "6e61816391075f51fde3ee1f8fc92bc532269c8a191940ea8ea185e49749ebfe"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0065.npz",
+      "num_starts": 44,
+      "sha256": "7e7bc91afbfe2b9c0704c243d2e67e73f212c7b192adf3b16b8eb50840dfe0fd"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0067.npz",
+      "num_starts": 44,
+      "sha256": "38883b80457eee339b87a3cd5a6e2d288af5eb545e35064e73364db01f235c62"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0070.npz",
+      "num_starts": 44,
+      "sha256": "3ed0ba348f344d52bffc82235ce9beef27c40b9c508ec929bf8742c575256984"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0071.npz",
+      "num_starts": 44,
+      "sha256": "8acc6d3077e18edfc6a89195bd8bbe1d40ead4626b3ddd196999dcc96378bae9"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0073.npz",
+      "num_starts": 44,
+      "sha256": "243b63cb3d12e6be569adaa7c5ed2aafa6674bc9e09e8b005f75ee4aaae49ae5"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0075.npz",
+      "num_starts": 44,
+      "sha256": "83c9c5f75f7d6135588edcbafd44ce37c4b394fa486f5866138c46704c91ac0a"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0077.npz",
+      "num_starts": 44,
+      "sha256": "f5d20c8e57aceadc506703b2f47af88a2d711bd41f0cdc007971a02959ce23fe"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0080.npz",
+      "num_starts": 44,
+      "sha256": "a70fbe7256734eab7924ea023c175168cd018b7ed807a7aabb26ff6bb793d744"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0081.npz",
+      "num_starts": 44,
+      "sha256": "026ab13f684eb002ff32eef6d81c48ce682ddbe265f77ce0a67ba1fceecfeabd"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0083.npz",
+      "num_starts": 44,
+      "sha256": "7e7abab5dcb31801e6363cc02a636636c3ddc378003f45c9d14166de65b82a7d"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0085.npz",
+      "num_starts": 44,
+      "sha256": "8f1c6210e77240e751768ff1f864b08698f9f8c560b83a431ca3dc4ce89f592f"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0087.npz",
+      "num_starts": 44,
+      "sha256": "2abeb2dfc03e90de3719bfadb50de84b66c4dc94ec61549b2ff3cb2c93cd2790"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0090.npz",
+      "num_starts": 44,
+      "sha256": "cccf1bc1c62a2216bdbcd3c8880638a4756315f0a0a84f019f3ddda0b4801490"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0091.npz",
+      "num_starts": 44,
+      "sha256": "df69c2bd9a6295944a1dc81e1d2ccac83ccda798e289f9bde84e2363a889c0e2"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0093.npz",
+      "num_starts": 44,
+      "sha256": "8e3f3b0219a631a6dd0af6331d3153bbebbcc19643f9b4600bd5a2880aac04fd"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0095.npz",
+      "num_starts": 44,
+      "sha256": "4f13c65df493bae0aced4e87a22e850026efad79d278219952f4fce459f4220a"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0097.npz",
+      "num_starts": 44,
+      "sha256": "4567ab4ebf3aeb8202b6d5d26b1405a447956a46040e2de922dede474dd9888d"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0100.npz",
+      "num_starts": 44,
+      "sha256": "57f1302b8501753a62901ecad2fdd59dd4721ed5f4c6d9461fe299761cb2dcbc"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0101.npz",
+      "num_starts": 44,
+      "sha256": "ec3dab764fdfbe66c902597b0779699f502a43690cb6e5eb6b223142413b9305"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0103.npz",
+      "num_starts": 44,
+      "sha256": "a852469a4d85670567926d5101c3e4f3c706a94138724da58ead15ef7de50655"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0105.npz",
+      "num_starts": 44,
+      "sha256": "6d482ae5f2a0a90bc08a2348c6c534ca2090471a2acb9501470f90ba0fb643dc"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0107.npz",
+      "num_starts": 44,
+      "sha256": "d1c1df18791994f1fdb226bc3b86c7ba5c46b6f8749dc18f0f6dbce5227056c0"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0110.npz",
+      "num_starts": 44,
+      "sha256": "1edd33517fdd79607ab721d68d45bfbfa20f02972f9a850ee41a7e553032d1ef"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0111.npz",
+      "num_starts": 44,
+      "sha256": "409410f49fa5fdc1fd0bef8e854c1b1495a4bd5b0dccb6ea017676991138312d"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0113.npz",
+      "num_starts": 44,
+      "sha256": "b4b1b87684e63e1ce79e63d8d4493a69e3e829a926ba3e2c48e59abb65c4cec7"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0115.npz",
+      "num_starts": 44,
+      "sha256": "3cf93d95d85fe57557a97bbff97730cb7f9ef02aefa7fc5bc7b209edc5e91237"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0117.npz",
+      "num_starts": 44,
+      "sha256": "186091f1d90a981107b33367cd0b98b7746d46613f28c555a7846c564c6312b4"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0120.npz",
+      "num_starts": 44,
+      "sha256": "8c364c8751927e0756a3891d5948a010e49feb0963ed978b50f3964d9823e93b"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0121.npz",
+      "num_starts": 44,
+      "sha256": "4fd87d1a64dff602fae8019d1a549ef58e668db71177bf1da2f3cafff6d29d43"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0123.npz",
+      "num_starts": 44,
+      "sha256": "5a134cac0d8f0f440cb14db1a2f5840e0b6b31c21865e4a6bd35e0f6443d4d69"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0125.npz",
+      "num_starts": 44,
+      "sha256": "8eb7354153f47945cf1c5f0d86764e19114bf643155e7cef8bc372387e691d15"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0127.npz",
+      "num_starts": 44,
+      "sha256": "fed13e1bc3e8b1545d9ac6828171a3b2b58d5054277ef7052b46a1c4845be404"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0130.npz",
+      "num_starts": 44,
+      "sha256": "b03e1e5039bae5db80482930643319ff52a4c1cfa4aeb4d6e7f35ebfeba0f112"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0131.npz",
+      "num_starts": 44,
+      "sha256": "a8af9bc747a47953f741324609b46ff4578dd621c42935937c9b5e05802d3655"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0133.npz",
+      "num_starts": 44,
+      "sha256": "1feed9850f6ca4944d556484437ef1c69819d4f8a3254a8dbc4e80ae9f0954d0"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0135.npz",
+      "num_starts": 44,
+      "sha256": "55cd596045ddff8ca536ce060b62edf501f82289b3e06d6e281d4cd854c2a8f6"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0137.npz",
+      "num_starts": 44,
+      "sha256": "95c1f2cd0855dc1d510fe3ab573b77b78015a3454b90bd3cf4520b7afa3145b2"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0140.npz",
+      "num_starts": 44,
+      "sha256": "6441f9d6775b1564736b5ba5de9f6dbbda5b06a2e2ceb0654c9adebb1fa40723"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0141.npz",
+      "num_starts": 44,
+      "sha256": "78af10c08f0e123f639da2cd04e04dbf7d306c3f60a6230f9ab6f628087ceb17"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0143.npz",
+      "num_starts": 44,
+      "sha256": "e00ca0b1f4b29a7cff5b8d9f4bde30f5cc1b2feff217780fad0a166f39e329fc"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0145.npz",
+      "num_starts": 44,
+      "sha256": "e69c6940ff581a282122783098c5ab68285aa7352568c1ea6c5da9e23e91249e"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0147.npz",
+      "num_starts": 44,
+      "sha256": "225f81563bd163cbe6293f6ed4df9ef569bbc221654e08f49242ca474d49eac5"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0150.npz",
+      "num_starts": 44,
+      "sha256": "518cb30e8a655194a8cc451a3062fb722b1127915b857d107b408bf2b9c66ae6"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0151.npz",
+      "num_starts": 44,
+      "sha256": "4a7dcc115d21d336a33fa9e9e186d590c57b6f7d6345026ebbed1bb96688abe6"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0153.npz",
+      "num_starts": 44,
+      "sha256": "0451d935c1f220476edde41f67fb4a68874f9baa791d2853a369d2a774ff4a41"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0155.npz",
+      "num_starts": 44,
+      "sha256": "2df5c80d38b82e3d3bf2496c667bf2f999ddbbe549bd02eb4996920a1e2e535c"
+    },
+    {
+      "file": "outputs/simulation/episodes/ep_0157.npz",
+      "num_starts": 44,
+      "sha256": "200a17f1dc5aa3d60e67ac8d00655eedbc2916389f952dbeaf720ce46749d041"
+    }
+  ],
+  "action_low": [
+    -0.011331216432154179,
+    -0.20000000298023224
+  ],
+  "action_high": [
+    0.430813729763031,
+    1.0
+  ],
+  "actor_parameters": 33282,
+  "gpu": "NVIDIA GeForce RTX 5090 Laptop GPU",
+  "elapsed_seconds": 22.72793320000028,
+  "python": "LOCAL_PYTHON",
+  "torch": "2.14.0+cu130",
+  "arguments": {
+    "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+    "data": "outputs/simulation/episodes",
+    "splits": "outputs/world_model/runs/data_manifest.json",
+    "out": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed2",
+    "seed": 2,
+    "start_step": 44,
+    "control_end": 135,
+    "bc_steps": 1000,
+    "rl_steps": 1500,
+    "batch_size": 256,
+    "horizon": 5,
+    "force_cap": 8.0,
+    "force_margin": 9.437637329101562,
+    "force_weight": 1.0,
+    "task_reward": "height",
+    "target_height": 0.1,
+    "behavior_weight": 2.0,
+    "device": "cuda"
+  }
+}

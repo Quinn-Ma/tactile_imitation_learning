@@ -1,0 +1,96 @@
+{
+  "models": [
+    {
+      "name": "vision_seed0_bc",
+      "model": "outputs/world_model/runs/vision_seed0/best.pt",
+      "actor": "outputs/world_model/rl/vision_seed0/bc_actor.pt"
+    },
+    {
+      "name": "vision_seed0_rl",
+      "model": "outputs/world_model/runs/vision_seed0/best.pt",
+      "actor": "outputs/world_model/rl/vision_seed0/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed0_bc",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed0/bc_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed0_rl",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed0/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_seed0_rl",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_margin_seed0/rl_actor.pt"
+    },
+    {
+      "name": "vision_seed1_bc",
+      "model": "outputs/world_model/runs/vision_seed1/best.pt",
+      "actor": "outputs/world_model/rl/vision_seed1/bc_actor.pt"
+    },
+    {
+      "name": "vision_seed1_rl",
+      "model": "outputs/world_model/runs/vision_seed1/best.pt",
+      "actor": "outputs/world_model/rl/vision_seed1/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed1_bc",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed1/bc_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed1_rl",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed1/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_seed1_rl",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_margin_seed1/rl_actor.pt"
+    },
+    {
+      "name": "vision_seed2_bc",
+      "model": "outputs/world_model/runs/vision_seed2/best.pt",
+      "actor": "outputs/world_model/rl/vision_seed2/bc_actor.pt"
+    },
+    {
+      "name": "vision_seed2_rl",
+      "model": "outputs/world_model/runs/vision_seed2/best.pt",
+      "actor": "outputs/world_model/rl/vision_seed2/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed2_bc",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed2/bc_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed2_rl",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed2/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_seed2_rl",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_margin_seed2/rl_actor.pt"
+    }
+  ],
+  "episodes": 20,
+  "seed_start": 20281000,
+  "domain": "mixed",
+  "takeover": 44,
+  "intervention_end": 135,
+  "control_dimensions": [
+    2,
+    6
+  ],
+  "zero_dimensions": [
+    0,
+    1,
+    3,
+    4,
+    5
+  ],
+  "no_adaptation": "All hyperparameters/checkpoints fixed before testing; no tuning from evaluation results"
+}

@@ -1,0 +1,127 @@
+{
+  "experiment": "goal_aligned_round2",
+  "models": [
+    {
+      "name": "script",
+      "controller": "script"
+    },
+    {
+      "name": "force_feedback",
+      "controller": "force_feedback"
+    },
+    {
+      "name": "visuotactile_seed0_bc",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed0/bc_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed1_bc",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed1/bc_actor.pt"
+    },
+    {
+      "name": "visuotactile_seed2_bc",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed2/bc_actor.pt"
+    },
+    {
+      "name": "visuotactile_native_seed0_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed0/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_native_seed0_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_margin_seed0/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_native_seed1_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed1/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_native_seed1_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_margin_seed1/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_native_seed2_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_seed2/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_native_seed2_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl/visuotactile_margin_seed2/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_height_seed0_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl_goal_aligned/visuotactile_seed0/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_height_seed0_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "actor": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed0/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_height_seed1_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl_goal_aligned/visuotactile_seed1/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_height_seed1_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "actor": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed1/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_height_seed2_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl_goal_aligned/visuotactile_seed2/rl_actor.pt"
+    },
+    {
+      "name": "visuotactile_margin_height_seed2_rl",
+      "controller": "policy",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "actor": "outputs/world_model/rl_goal_aligned/visuotactile_margin_seed2/rl_actor.pt"
+    }
+  ],
+  "episodes": 20,
+  "seed_start": 20291000,
+  "domain": "mixed",
+  "takeover": 44,
+  "intervention_end": 135,
+  "control_dimensions": [
+    2,
+    6
+  ],
+  "zero_dimensions": [
+    0,
+    1,
+    3,
+    4,
+    5
+  ],
+  "single_intended_change": "Imagined actor task reward changes from predicted native reward to clamp(pred_height/0.1,0,1); other specified training settings fixed",
+  "prior_observation": "Round1 native Lift height threshold is lower than strict10cm evaluation; results and failure cases retained",
+  "no_adaptation": "Round2 settings and new environment seeds fixed before reading round2 test outcomes; no test-driven parameter changes",
+  "revision_reason": "Expanded11 to17 runs for paired reward-only comparison on identical new environment seeds; completed baselines and BC episode prefixes retained",
+  "prior_plan": "goal_aligned_evaluation_plan_initial11.json",
+  "simulator_sha256": "6d8189ac2c7fd27d0c67074e6ca9a06fc042f8be88993411df85ed0d8f8a5847",
+  "evaluator_sha256": "6dffa2b51195b6e096d56f83337ffd82ebad14a6e05fec61b72dd1b232bcb1ef",
+  "created_utc": "2026-09-08T22:32:26.089753+00:00"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "visuotactile_seed0",
+    "bc_max_parameter_difference": 0.0,
+    "same_world_model_sha256": "cc861230bcff70868914eca50f4c89e4af6aa7f8a5a784b0cf998c5ef19b7f04",
+    "same_hyperparameters_except_task_reward": true
+  },
+  {
+    "name": "visuotactile_seed1",
+    "bc_max_parameter_difference": 0.0,
+    "same_world_model_sha256": "49d90ed712c4d000a7dde4f7c4eb3cf0b14a93334b741b1435dfb5a7300f6773",
+    "same_hyperparameters_except_task_reward": true
+  },
+  {
+    "name": "visuotactile_seed2",
+    "bc_max_parameter_difference": 0.0,
+    "same_world_model_sha256": "4ada35ce39c3e861f4b92fbd22e2161738055dbde7165480e9b1f7dedc2203c4",
+    "same_hyperparameters_except_task_reward": true
+  },
+  {
+    "name": "visuotactile_margin_seed0",
+    "bc_max_parameter_difference": 0.0,
+    "same_world_model_sha256": "cc861230bcff70868914eca50f4c89e4af6aa7f8a5a784b0cf998c5ef19b7f04",
+    "same_hyperparameters_except_task_reward": true
+  },
+  {
+    "name": "visuotactile_margin_seed1",
+    "bc_max_parameter_difference": 0.0,
+    "same_world_model_sha256": "49d90ed712c4d000a7dde4f7c4eb3cf0b14a93334b741b1435dfb5a7300f6773",
+    "same_hyperparameters_except_task_reward": true
+  },
+  {
+    "name": "visuotactile_margin_seed2",
+    "bc_max_parameter_difference": 0.0,
+    "same_world_model_sha256": "4ada35ce39c3e861f4b92fbd22e2161738055dbde7165480e9b1f7dedc2203c4",
+    "same_hyperparameters_except_task_reward": true
+  }
+]

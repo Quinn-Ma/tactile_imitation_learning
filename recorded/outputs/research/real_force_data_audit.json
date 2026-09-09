@@ -1,0 +1,242 @@
+{
+  "dataset": "facebook/gelsight-force-estimation",
+  "revision": "136db55485b6501605b1d2648ce0fe44740e302e",
+  "source_url": "https://huggingface.co/datasets/facebook/gelsight-force-estimation",
+  "label_schema": "released trajectories: forces already Newtons and positive normal; no rescaling/sign flip",
+  "axes": [
+    "Fx",
+    "Fy",
+    "Fn"
+  ],
+  "total_frames": 102628,
+  "total_trajectories": 1513,
+  "image_shape_CHW": [
+    3,
+    64,
+    48
+  ],
+  "flat_sharp_caveat": "five trailing indexes lack labels; follow official sample-index pairing; shape OOD exploratory",
+  "batches": [
+    {
+      "batch": "flat/batch_1",
+      "source_frames": 15259,
+      "retained_frames": 6732,
+      "trajectories": 151,
+      "index_minus_label_lengths": [
+        5
+      ],
+      "force_min_N": [
+        -1.1128249168395996,
+        -0.8666888475418091,
+        0.09117608517408371
+      ],
+      "force_max_N": [
+        0.7755999565124512,
+        0.7559076547622681,
+        1.4874852895736694
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "346cbb110874306f641aa4bf800c23fa591b6ef2205be34d2674a639bff318ae"
+    },
+    {
+      "batch": "flat/batch_2",
+      "source_frames": 14550,
+      "retained_frames": 6313,
+      "trajectories": 147,
+      "index_minus_label_lengths": [
+        5
+      ],
+      "force_min_N": [
+        -0.9756062030792236,
+        -0.9894357323646545,
+        0.10191943496465683
+      ],
+      "force_max_N": [
+        0.7810329794883728,
+        0.7161859273910522,
+        1.1710948944091797
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "1a5182add98ad5d8d2a8dc0e9589751752265588e5b8d5dfee6290209cddd419"
+    },
+    {
+      "batch": "sharp/batch_1",
+      "source_frames": 18380,
+      "retained_frames": 11183,
+      "trajectories": 153,
+      "index_minus_label_lengths": [
+        5
+      ],
+      "force_min_N": [
+        -1.1971606016159058,
+        -1.1753357648849487,
+        0.07427017390727997
+      ],
+      "force_max_N": [
+        0.8623233437538147,
+        1.136804461479187,
+        1.3313963413238525
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "c5db850385097cbfab5642ed713ea2cfbbb1e1931046e4ccb346e078852c0ef8"
+    },
+    {
+      "batch": "sharp/batch_2",
+      "source_frames": 16976,
+      "retained_frames": 9725,
+      "trajectories": 151,
+      "index_minus_label_lengths": [
+        5
+      ],
+      "force_min_N": [
+        -1.5547904968261719,
+        -1.4069199562072754,
+        0.07973259687423706
+      ],
+      "force_max_N": [
+        0.9097200632095337,
+        1.5854467153549194,
+        1.7657678127288818
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "5758f27580930cbeec6eac6618ec1f0656d6c956a505fbedb970138bade87fd0"
+    },
+    {
+      "batch": "sphere/batch_1",
+      "source_frames": 17288,
+      "retained_frames": 10740,
+      "trajectories": 148,
+      "index_minus_label_lengths": [
+        0
+      ],
+      "force_min_N": [
+        -1.6739600896835327,
+        -0.8506156206130981,
+        0.06330264359712601
+      ],
+      "force_max_N": [
+        0.8495346903800964,
+        1.0316120386123657,
+        1.8881099224090576
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "261712be260d70d84085ce7d1e93faa4105a7f30b721f48fd8c46f1685059288"
+    },
+    {
+      "batch": "sphere/batch_2",
+      "source_frames": 18619,
+      "retained_frames": 11515,
+      "trajectories": 154,
+      "index_minus_label_lengths": [
+        0
+      ],
+      "force_min_N": [
+        -1.2529438734054565,
+        -1.1650301218032837,
+        0.07242950052022934
+      ],
+      "force_max_N": [
+        0.9526320099830627,
+        0.867676317691803,
+        1.5188417434692383
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "055b2cd5267e49f7698c40283b03dae99519098047fe3a26b603f1d1ad616b9c"
+    },
+    {
+      "batch": "sphere/batch_3",
+      "source_frames": 17865,
+      "retained_frames": 10813,
+      "trajectories": 152,
+      "index_minus_label_lengths": [
+        0
+      ],
+      "force_min_N": [
+        -1.7151906490325928,
+        -1.1279817819595337,
+        0.061523351818323135
+      ],
+      "force_max_N": [
+        0.9434072971343994,
+        1.3139859437942505,
+        1.6600255966186523
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "1da4ea1796a315a52acd144e2a7dbc76d66f98ed42dd44bd4dd4c860958bb13f"
+    },
+    {
+      "batch": "sphere/batch_4",
+      "source_frames": 18800,
+      "retained_frames": 12015,
+      "trajectories": 152,
+      "index_minus_label_lengths": [
+        0
+      ],
+      "force_min_N": [
+        -1.782360553741455,
+        -1.4312348365783691,
+        0.08071654289960861
+      ],
+      "force_max_N": [
+        0.9092004895210266,
+        1.0976608991622925,
+        1.674744725227356
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "6769186f17f716c7383090f1d0c9ed56d2331238904bac0af315784dd36c1d86"
+    },
+    {
+      "batch": "sphere/batch_5",
+      "source_frames": 18999,
+      "retained_frames": 12228,
+      "trajectories": 152,
+      "index_minus_label_lengths": [
+        0
+      ],
+      "force_min_N": [
+        -1.6955411434173584,
+        -0.8498185276985168,
+        0.0638275295495987
+      ],
+      "force_max_N": [
+        0.7969931960105896,
+        1.163731336593628,
+        1.7821159362792969
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "58d4ccca625c6a63f0b7285726bbf6f192761d21d599ca037e1b5d87a200d38b"
+    },
+    {
+      "batch": "sphere/batch_6",
+      "source_frames": 18130,
+      "retained_frames": 11364,
+      "trajectories": 153,
+      "index_minus_label_lengths": [
+        0
+      ],
+      "force_min_N": [
+        -1.1011465787887573,
+        -0.9394564032554626,
+        0.06518068164587021
+      ],
+      "force_max_N": [
+        0.8752498626708984,
+        0.8765113949775696,
+        1.2701860666275024
+      ],
+      "negative_normal_labels": 0,
+      "alignment": "force[j] <-> indexes[j]",
+      "label_file_sha256": "786130eafaeae4c4dee0450c36fb4a1349cfde1978f8fec866236fef120dc3aa"
+    }
+  ],
+  "elapsed_seconds": 18.15031900000008
+}

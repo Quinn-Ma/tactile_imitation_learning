@@ -1,0 +1,28 @@
+{
+  "observed_on": "2026-09-08",
+  "platform": "Windows x64",
+  "gpu_training": {
+    "python": "3.14.2",
+    "torch": "2.14.0+cu130",
+    "cuda": "13.0",
+    "numpy": "2.5.2",
+    "device": "NVIDIA GeForce RTX 5090 Laptop GPU",
+    "total_memory_MiB": 24463
+  },
+  "simulator": {
+    "python": "3.12.14",
+    "mujoco": "3.3.7",
+    "robosuite": "1.5.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "dependencies": "work/sim_deps",
+    "rendering": "hidden GLFW; 64x64 RGB"
+  },
+  "plotting_and_data_preparation": {
+    "python": "3.14.2",
+    "numpy": "2.4.2",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.1.1"
+  },
+  "note": "Observed execution versions; cross-platform bitwise equivalence is not claimed."
+}

@@ -1,0 +1,60 @@
+{
+  "episodes": 160,
+  "transitions": 24000,
+  "states": 24160,
+  "bytes": 29316349,
+  "unique_seeds": 160,
+  "fixed_compiled_half_size_m": [
+    0.021184340710261363,
+    0.021703098901018705,
+    0.020551336861558217
+  ],
+  "checks": "PASS: 160 hashes, disjoint episode seeds, required shapes/dtypes, finite states/actions/rewards, action bounds, fixed geometry",
+  "groups": {
+    "train": {
+      "n": 80,
+      "native": 57,
+      "strict10cm": 57,
+      "force_exceeded": 43,
+      "safe_strict10cm": 14,
+      "setup44_exceeded": 0,
+      "mean_full_episode_peak_N": 9.885927580296993
+    },
+    "val": {
+      "n": 16,
+      "native": 12,
+      "strict10cm": 12,
+      "force_exceeded": 11,
+      "safe_strict10cm": 1,
+      "setup44_exceeded": 0,
+      "mean_full_episode_peak_N": 11.134381057694554
+    },
+    "calibration": {
+      "n": 24,
+      "native": 18,
+      "strict10cm": 18,
+      "force_exceeded": 12,
+      "safe_strict10cm": 6,
+      "setup44_exceeded": 0,
+      "mean_full_episode_peak_N": 9.298290898402533
+    },
+    "test_id": {
+      "n": 20,
+      "native": 15,
+      "strict10cm": 15,
+      "force_exceeded": 9,
+      "safe_strict10cm": 7,
+      "setup44_exceeded": 0,
+      "mean_full_episode_peak_N": 8.834409630298614
+    },
+    "test_ood": {
+      "n": 20,
+      "native": 2,
+      "strict10cm": 2,
+      "force_exceeded": 14,
+      "safe_strict10cm": 0,
+      "setup44_exceeded": 0,
+      "mean_full_episode_peak_N": 11.826943302154541
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "jobs": [
+    {
+      "name": "visuotactile_seed0",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "seed": 0,
+      "force_margin": 0.0
+    },
+    {
+      "name": "visuotactile_margin_seed0",
+      "model": "outputs/world_model/runs/visuotactile_seed0/best.pt",
+      "seed": 0,
+      "force_margin": 13.204450607299805
+    },
+    {
+      "name": "visuotactile_seed1",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "seed": 1,
+      "force_margin": 0.0
+    },
+    {
+      "name": "visuotactile_margin_seed1",
+      "model": "outputs/world_model/runs/visuotactile_seed1/best.pt",
+      "seed": 1,
+      "force_margin": 6.944602966308594
+    },
+    {
+      "name": "visuotactile_seed2",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "seed": 2,
+      "force_margin": 0.0
+    },
+    {
+      "name": "visuotactile_margin_seed2",
+      "model": "outputs/world_model/runs/visuotactile_seed2/best.pt",
+      "seed": 2,
+      "force_margin": 9.437637329101562
+    }
+  ]
+}

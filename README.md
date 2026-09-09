@@ -1,5 +1,9 @@
 # Compact Visuotactile World Models for Lifting
 
+**[Project website](https://compact-visuotactile-world-models.thumbnodirosving.chatgpt.site/) · [Paper PDF](paper/preprint.pdf) · [Code and results](outputs/) · [Reproduction guide](README_reproduction.md)**
+
+**arXiv status:** Submitted; a public arXiv identifier has not yet been issued. The manuscript is available through the PDF link above.
+
 Code and recorded results for **Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints**.
 
 **Qinzhen Ma** (Rice University) and **Sida Peng** (Zhejiang University). Correspondence: [qm18@rice.edu](mailto:qm18@rice.edu).
@@ -66,4 +70,4 @@ The [installation guide](INSTALL.md) separates simulation, data analysis, and CU
 
 See [LICENSE](LICENSE) for software terms and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream attribution. The adapted TD-MPC2 layers retain their [MIT notice](outputs/world_model/LICENSE_TDMPC2.txt). Public GelSight data are downloaded from their original host under CC BY-NC 4.0; the software license does not replace those dataset terms. The manuscript's publication license is separate.
 
-The repository includes a prepared preprint and submission materials. No arXiv identifier or conference acceptance is claimed.
+The manuscript has been submitted to arXiv. A public arXiv identifier is pending; no conference acceptance is claimed. See [publication metadata](publication.json) for the current links. The [project website source](website/) is included in this repository.

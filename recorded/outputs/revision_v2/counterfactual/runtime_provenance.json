@@ -1,0 +1,250 @@
+{
+  "device": "cpu",
+  "runtime_provenance": {
+    "simulator_python_executable": "<PYTHON_EXECUTABLE>",
+    "simulator_python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "simulator_numpy_version": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "model_inference": {
+      "python_executable": "<PYTHON_EXECUTABLE>",
+      "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+      "torch_version": "2.14.0+cu130",
+      "numpy_version": "2.5.2",
+      "requested_device": "cpu",
+      "resolved_device": "cpu",
+      "torch_num_threads": 4,
+      "cuda_build_version": "13.0",
+      "accelerator_name": null,
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel"
+    }
+  },
+  "mujoco_version": "3.3.7",
+  "robosuite_version": "1.5.1",
+  "bridges": [
+    {
+      "ready": true,
+      "mode": "model_guard",
+      "config": {
+        "horizon": 5,
+        "target_force_N": 5.0,
+        "force_gain": 0.12,
+        "force_cap_N": 8.0,
+        "guard_buffer_N": 0.75,
+        "force_margin_N": 0.0,
+        "grip_low": -0.25,
+        "grip_high": 0.35,
+        "vertical_limit": 0.6,
+        "vertical_gain": 12.0,
+        "target_eef_lift_m": 0.14,
+        "grasp_steps": 18,
+        "lift_ramp_steps": 50,
+        "min_bilateral_normal_N": 0.25,
+        "vertical_offsets": [
+          0.0,
+          -0.06,
+          0.06
+        ],
+        "gripper_offsets": [
+          0.0,
+          -0.1,
+          0.1
+        ],
+        "scoring_target_height_m": 0.1,
+        "force_cost": 0.02,
+        "action_deviation_cost": 0.002,
+        "force_anchor": true
+      },
+      "model_parameters": 652157,
+      "source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "model_sha256": "a1d8cd5d8c2c050237930c78cba88a2b0e62b1b70a2c71644632f5aa43f6b45f"
+    },
+    {
+      "ready": true,
+      "mode": "model_guard",
+      "config": {
+        "horizon": 5,
+        "target_force_N": 5.0,
+        "force_gain": 0.12,
+        "force_cap_N": 8.0,
+        "guard_buffer_N": 0.75,
+        "force_margin_N": 0.0,
+        "grip_low": -0.25,
+        "grip_high": 0.35,
+        "vertical_limit": 0.6,
+        "vertical_gain": 12.0,
+        "target_eef_lift_m": 0.14,
+        "grasp_steps": 18,
+        "lift_ramp_steps": 50,
+        "min_bilateral_normal_N": 0.25,
+        "vertical_offsets": [
+          0.0,
+          -0.06,
+          0.06
+        ],
+        "gripper_offsets": [
+          0.0,
+          -0.1,
+          0.1
+        ],
+        "scoring_target_height_m": 0.1,
+        "force_cost": 0.02,
+        "action_deviation_cost": 0.002,
+        "force_anchor": true
+      },
+      "model_parameters": 652157,
+      "source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "model_sha256": "a60da3d6e913f995aa679b55d9ce30f306d23052a17d16f69a3d04b14893d910"
+    },
+    {
+      "ready": true,
+      "mode": "model_guard",
+      "config": {
+        "horizon": 5,
+        "target_force_N": 5.0,
+        "force_gain": 0.12,
+        "force_cap_N": 8.0,
+        "guard_buffer_N": 0.75,
+        "force_margin_N": 0.0,
+        "grip_low": -0.25,
+        "grip_high": 0.35,
+        "vertical_limit": 0.6,
+        "vertical_gain": 12.0,
+        "target_eef_lift_m": 0.14,
+        "grasp_steps": 18,
+        "lift_ramp_steps": 50,
+        "min_bilateral_normal_N": 0.25,
+        "vertical_offsets": [
+          0.0,
+          -0.06,
+          0.06
+        ],
+        "gripper_offsets": [
+          0.0,
+          -0.1,
+          0.1
+        ],
+        "scoring_target_height_m": 0.1,
+        "force_cost": 0.02,
+        "action_deviation_cost": 0.002,
+        "force_anchor": true
+      },
+      "model_parameters": 652157,
+      "source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "model_sha256": "cf2f44623d8b9458c71b82ff1c7927e6885ad07739d2635f99fd486db723eef3"
+    },
+    {
+      "ready": true,
+      "mode": "model_guard",
+      "config": {
+        "horizon": 5,
+        "target_force_N": 5.0,
+        "force_gain": 0.12,
+        "force_cap_N": 8.0,
+        "guard_buffer_N": 0.75,
+        "force_margin_N": 0.0,
+        "grip_low": -0.25,
+        "grip_high": 0.35,
+        "vertical_limit": 0.6,
+        "vertical_gain": 12.0,
+        "target_eef_lift_m": 0.14,
+        "grasp_steps": 18,
+        "lift_ramp_steps": 50,
+        "min_bilateral_normal_N": 0.25,
+        "vertical_offsets": [
+          0.0,
+          -0.06,
+          0.06
+        ],
+        "gripper_offsets": [
+          0.0,
+          -0.1,
+          0.1
+        ],
+        "scoring_target_height_m": 0.1,
+        "force_cost": 0.02,
+        "action_deviation_cost": 0.002,
+        "force_anchor": true
+      },
+      "model_parameters": 652157,
+      "source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "model_sha256": "6fc892f9fce27db3b7a6f9d2f7205a5a721a1eec7f023ffc7aa5d89e55dda877"
+    },
+    {
+      "ready": true,
+      "mode": "model_guard",
+      "config": {
+        "horizon": 5,
+        "target_force_N": 5.0,
+        "force_gain": 0.12,
+        "force_cap_N": 8.0,
+        "guard_buffer_N": 0.75,
+        "force_margin_N": 0.0,
+        "grip_low": -0.25,
+        "grip_high": 0.35,
+        "vertical_limit": 0.6,
+        "vertical_gain": 12.0,
+        "target_eef_lift_m": 0.14,
+        "grasp_steps": 18,
+        "lift_ramp_steps": 50,
+        "min_bilateral_normal_N": 0.25,
+        "vertical_offsets": [
+          0.0,
+          -0.06,
+          0.06
+        ],
+        "gripper_offsets": [
+          0.0,
+          -0.1,
+          0.1
+        ],
+        "scoring_target_height_m": 0.1,
+        "force_cost": 0.02,
+        "action_deviation_cost": 0.002,
+        "force_anchor": true
+      },
+      "model_parameters": 652157,
+      "source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "model_sha256": "4e2dc3ae9c7864ba2a55b5b3ffd0f9ed0f4a95cba84b42ddebe8fe3f57471768"
+    },
+    {
+      "ready": true,
+      "mode": "model_guard",
+      "config": {
+        "horizon": 5,
+        "target_force_N": 5.0,
+        "force_gain": 0.12,
+        "force_cap_N": 8.0,
+        "guard_buffer_N": 0.75,
+        "force_margin_N": 0.0,
+        "grip_low": -0.25,
+        "grip_high": 0.35,
+        "vertical_limit": 0.6,
+        "vertical_gain": 12.0,
+        "target_eef_lift_m": 0.14,
+        "grasp_steps": 18,
+        "lift_ramp_steps": 50,
+        "min_bilateral_normal_N": 0.25,
+        "vertical_offsets": [
+          0.0,
+          -0.06,
+          0.06
+        ],
+        "gripper_offsets": [
+          0.0,
+          -0.1,
+          0.1
+        ],
+        "scoring_target_height_m": 0.1,
+        "force_cost": 0.02,
+        "action_deviation_cost": 0.002,
+        "force_anchor": true
+      },
+      "model_parameters": 652157,
+      "source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "model_sha256": "733e6fda4659ea30b7209e3d657f92d13a28c2906b4226b10e741b11f0b039b3"
+    }
+  ],
+  "manifest_sha256": "0ce4f79e3ee5efd38de791d958d985ac889d3d6ed4f0853e84b04e168d30b6cf"
+}

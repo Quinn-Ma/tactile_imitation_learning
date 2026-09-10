@@ -1,0 +1,14 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+Traceback (most recent call last):
+  File "outputs\revision_v2\counterfactual_audit.py", line 481, in <module>
+    main()
+  File "outputs\revision_v2\counterfactual_audit.py", line 457, in main
+    bridges.append(ForecastBridge(args.gpu_python, checkpoint, args.device, args.out/f'{modality}_seed{seed}_stderr.log'))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "outputs\revision_v2\counterfactual_audit.py", line 55, in __init__
+    self.metadata = self._read()
+                    ^^^^^^^^^^^^
+  File "outputs\revision_v2\counterfactual_audit.py", line 65, in _read
+    raise RuntimeError('Model bridge stopped; inspect its stderr log.')
+RuntimeError: Model bridge stopped; inspect its stderr log.

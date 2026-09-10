@@ -1,0 +1,3992 @@
+{
+  "kind": "held-out counterfactual action diagnostic",
+  "environment_count": 12,
+  "environment_seeds": [
+    20364000,
+    20364001,
+    20364002,
+    20364003,
+    20364004,
+    20364005,
+    20364006,
+    20364007,
+    20364008,
+    20364009,
+    20364010,
+    20364011
+  ],
+  "state_count": 36,
+  "branch_count": 324,
+  "independent_statistical_unit": "environment; model seeds, prefixes, actions, horizons and fingers are nested repeated observations",
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 20401010,
+  "run_manifest_sha256": "0ce4f79e3ee5efd38de791d958d985ac889d3d6ed4f0853e84b04e168d30b6cf",
+  "device": "cpu",
+  "runtime_provenance": {
+    "simulator_python_executable": "<PYTHON_EXECUTABLE>",
+    "simulator_python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "simulator_numpy_version": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "model_inference": {
+      "python_executable": "<PYTHON_EXECUTABLE>",
+      "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+      "torch_version": "2.14.0+cu130",
+      "numpy_version": "2.5.2",
+      "requested_device": "cpu",
+      "resolved_device": "cpu",
+      "torch_num_threads": 4,
+      "cuda_build_version": "13.0",
+      "accelerator_name": null,
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel"
+    }
+  },
+  "metrics": {
+    "persistence": {
+      "height_MAE_m": {
+        "mean": 0.00422065033732603,
+        "ci95_environment_bootstrap": [
+          0.003882560508403306,
+          0.004544443709892221
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.006933389736029009,
+        "ci95_environment_bootstrap": [
+          0.006355181190883741,
+          0.007491125149923998
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.3711588258544604,
+        "ci95_environment_bootstrap": [
+          0.3397013043363889,
+          0.4037830684954921
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.17231251361469427,
+        "ci95_environment_bootstrap": [
+          0.1470741100764523,
+          0.20093823905723782
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.4164971237381299,
+        "ci95_environment_bootstrap": [
+          0.38146390616893766,
+          0.4542001515006025
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0008642654526435459,
+        "ci95_environment_bootstrap": [
+          0.0008486289232678246,
+          0.0008742769880579241
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.41263913611570996,
+        "ci95_environment_bootstrap": [
+          0.3804054910937945,
+          0.44478846738735833
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.18468803664048514,
+        "ci95_environment_bootstrap": [
+          0.16000040508806707,
+          0.2126645271355907
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 0.01080460639463531,
+        "ci95_environment_bootstrap": [
+          0.01067514489663558,
+          0.010901870943295458
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05038462361941735,
+        "ci95_environment_bootstrap": [
+          0.046779964088151854,
+          0.05346366975766917
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "normal_force_persistence": {
+      "height_MAE_m": {
+        "mean": 0.00422065033732603,
+        "ci95_environment_bootstrap": [
+          0.003882560508403306,
+          0.004544443709892221
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.006933389736029009,
+        "ci95_environment_bootstrap": [
+          0.006355181190883741,
+          0.007491125149923998
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.37109491725762683,
+        "ci95_environment_bootstrap": [
+          0.33967565248409903,
+          0.4037368522956967
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.17231251361469427,
+        "ci95_environment_bootstrap": [
+          0.1470741100764523,
+          0.20093823905723782
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.4164971237381299,
+        "ci95_environment_bootstrap": [
+          0.38146390616893766,
+          0.4542001515006025
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0008642654526435459,
+        "ci95_environment_bootstrap": [
+          0.0008486289232678246,
+          0.0008742769880579241
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.41263913611570996,
+        "ci95_environment_bootstrap": [
+          0.3804054910937945,
+          0.44478846738735833
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.18468803664048514,
+        "ci95_environment_bootstrap": [
+          0.16000040508806707,
+          0.2126645271355907
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 0.01080460639463531,
+        "ci95_environment_bootstrap": [
+          0.01067514489663558,
+          0.010901870943295458
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05038462361941735,
+        "ci95_environment_bootstrap": [
+          0.046779964088151854,
+          0.05346366975766917
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_raw_seed0": {
+      "height_MAE_m": {
+        "mean": 0.004767152702084718,
+        "ci95_environment_bootstrap": [
+          0.0029126769293824186,
+          0.007203810627810256
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.0060808107923268255,
+        "ci95_environment_bootstrap": [
+          0.003830464124958207,
+          0.008980687599588224
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.909261922483091,
+        "ci95_environment_bootstrap": [
+          1.504179484750386,
+          2.3451376038090683
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.7754475478979607,
+        "ci95_environment_bootstrap": [
+          0.6405562498543202,
+          0.9114752707412581
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.8377234871740695,
+        "ci95_environment_bootstrap": [
+          1.447344649071679,
+          2.2572672482037253
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0014836386892663237,
+        "ci95_environment_bootstrap": [
+          0.0012907132589124455,
+          0.001681173136112193
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.753215966290898,
+        "ci95_environment_bootstrap": [
+          1.36568055935411,
+          2.156849339200804
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.6474159459972152,
+        "ci95_environment_bootstrap": [
+          0.513257735917336,
+          0.7905547094670526
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.3334831548667388,
+        "ci95_environment_bootstrap": [
+          0.23516983604862232,
+          0.42395787177874983
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.5590277777777777,
+        "ci95_environment_bootstrap": [
+          0.44236111111111104,
+          0.6500173611111111
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 2.5461841788556836e-06,
+        "ci95_environment_bootstrap": [
+          9.574151287476222e-07,
+          4.685142387946447e-06
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05137870336572329,
+        "ci95_environment_bootstrap": [
+          0.047640137343357,
+          0.054514334180081885
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_anchored_seed0": {
+      "height_MAE_m": {
+        "mean": 0.004767152702084718,
+        "ci95_environment_bootstrap": [
+          0.0029126769293824186,
+          0.007203810627810256
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.0060808107923268255,
+        "ci95_environment_bootstrap": [
+          0.003830464124958207,
+          0.008980687599588224
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.6276167475147012,
+        "ci95_environment_bootstrap": [
+          1.262268953786956,
+          2.002910047745631
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.702881261812887,
+        "ci95_environment_bootstrap": [
+          0.5810789935487891,
+          0.8281435440501839
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.6200246289188478,
+        "ci95_environment_bootstrap": [
+          1.261603498044941,
+          1.9878516248677984
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0014836386892663237,
+        "ci95_environment_bootstrap": [
+          0.0012907132589124455,
+          0.001681173136112193
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.6973610795206495,
+        "ci95_environment_bootstrap": [
+          1.3311157044851119,
+          2.0960608039920525
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.6275725810211447,
+        "ci95_environment_bootstrap": [
+          0.4955182621510706,
+          0.7681464572835327
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.3334831548667388,
+        "ci95_environment_bootstrap": [
+          0.23516983604862232,
+          0.42395787177874983
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.5464744054120038,
+        "ci95_environment_bootstrap": [
+          0.4354153323575222,
+          0.6387834784664854
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 2.9910459286636774e-06,
+        "ci95_environment_bootstrap": [
+          1.1460001890858018e-06,
+          5.1568676200177915e-06
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.051468838627139725,
+        "ci95_environment_bootstrap": [
+          0.0478597860938559,
+          0.054551979030172025
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_raw_seed1": {
+      "height_MAE_m": {
+        "mean": 0.003732079308049576,
+        "ci95_environment_bootstrap": [
+          0.0027217161828259214,
+          0.004888313186252331
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.004322279948206011,
+        "ci95_environment_bootstrap": [
+          0.003213876395979983,
+          0.005559758966967226
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.3998707826490755,
+        "ci95_environment_bootstrap": [
+          1.1509961074130772,
+          1.6499876980170796
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.6184687352624181,
+        "ci95_environment_bootstrap": [
+          0.5156420617495121,
+          0.726446355113069
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.3983157766454013,
+        "ci95_environment_bootstrap": [
+          1.1549047308222011,
+          1.6497230694084253
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.001540801329186555,
+        "ci95_environment_bootstrap": [
+          0.0012250036015858414,
+          0.0018500932168101115
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.1965908774899112,
+        "ci95_environment_bootstrap": [
+          0.9462344878022042,
+          1.4502996218307977
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.474240183628409,
+        "ci95_environment_bootstrap": [
+          0.3832510354562958,
+          0.5666488752353412
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.31992028466391914,
+        "ci95_environment_bootstrap": [
+          0.16668092500789575,
+          0.45208659124449485
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.3673611111111111,
+        "ci95_environment_bootstrap": [
+          0.11178819444444445,
+          0.5764236111111108
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.565772410896089e-06,
+        "ci95_environment_bootstrap": [
+          1.7234163048366705e-06,
+          1.4118590236951902e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146848099927107,
+        "ci95_environment_bootstrap": [
+          0.04785870072276642,
+          0.0545519218314439
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_anchored_seed1": {
+      "height_MAE_m": {
+        "mean": 0.003732079308049576,
+        "ci95_environment_bootstrap": [
+          0.0027217161828259214,
+          0.004888313186252331
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.004322279948206011,
+        "ci95_environment_bootstrap": [
+          0.003213876395979983,
+          0.005559758966967226
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.1880712574646795,
+        "ci95_environment_bootstrap": [
+          0.9833526279933658,
+          1.3970135982500178
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.557889634704612,
+        "ci95_environment_bootstrap": [
+          0.4729673044291478,
+          0.645636976075194
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.216578474971983,
+        "ci95_environment_bootstrap": [
+          1.020415294026887,
+          1.4106239928157978
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.001540801329186555,
+        "ci95_environment_bootstrap": [
+          0.0012250036015858414,
+          0.0018500932168101115
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.181395953728093,
+        "ci95_environment_bootstrap": [
+          0.9291523053910999,
+          1.4415704115521575
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.46894133236356134,
+        "ci95_environment_bootstrap": [
+          0.37823838289559986,
+          0.5629116551106853
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.31992028466391914,
+        "ci95_environment_bootstrap": [
+          0.16668092500789575,
+          0.45208659124449485
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.3590277777777778,
+        "ci95_environment_bootstrap": [
+          0.11449652777777777,
+          0.5604687499999997
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 5.927712966998418e-06,
+        "ci95_environment_bootstrap": [
+          1.408421020540926e-06,
+          1.3294702188836194e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146854463964701,
+        "ci95_environment_bootstrap": [
+          0.047858790618677934,
+          0.05455220304429531
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_raw_seed2": {
+      "height_MAE_m": {
+        "mean": 0.003455739601039242,
+        "ci95_environment_bootstrap": [
+          0.0027076945952876482,
+          0.004269903525668673
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.003477151760913936,
+        "ci95_environment_bootstrap": [
+          0.0027679491798024195,
+          0.004298266996556776
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.576100673646103,
+        "ci95_environment_bootstrap": [
+          1.2988295132455265,
+          1.8280232593122825
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.6702153776051675,
+        "ci95_environment_bootstrap": [
+          0.5644245654760971,
+          0.7737499434234709
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.5186104932684958,
+        "ci95_environment_bootstrap": [
+          1.2445004393049965,
+          1.7643173701509278
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0013294257313342921,
+        "ci95_environment_bootstrap": [
+          0.0011373754849066447,
+          0.0015424827910798437
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.2739249208735093,
+        "ci95_environment_bootstrap": [
+          0.9971896416135135,
+          1.5427652190315222
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.47216983910390176,
+        "ci95_environment_bootstrap": [
+          0.3723078014298695,
+          0.5687377803426343
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7248256077708825,
+        "ci95_environment_bootstrap": [
+          0.6019797014975345,
+          0.8158437616681679
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.6465277777777777,
+        "ci95_environment_bootstrap": [
+          0.5965104166666667,
+          0.6972222222222221
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 4.568499409490162e-06,
+        "ci95_environment_bootstrap": [
+          4.722322854730818e-07,
+          1.2007614390717613e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0514677424604694,
+        "ci95_environment_bootstrap": [
+          0.04782563759169231,
+          0.05458640689030289
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.027777777777777776,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.08333333333333333
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_anchored_seed2": {
+      "height_MAE_m": {
+        "mean": 0.003455739601039242,
+        "ci95_environment_bootstrap": [
+          0.0027076945952876482,
+          0.004269903525668673
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.003477151760913936,
+        "ci95_environment_bootstrap": [
+          0.0027679491798024195,
+          0.004298266996556776
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.509289539449009,
+        "ci95_environment_bootstrap": [
+          1.2005715460652187,
+          1.8706788321336107
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.6610328626619543,
+        "ci95_environment_bootstrap": [
+          0.5432576239244766,
+          0.7960936847896973
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.4910629484388567,
+        "ci95_environment_bootstrap": [
+          1.1854284330429854,
+          1.8601857177674035
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0013294257313342921,
+        "ci95_environment_bootstrap": [
+          0.0011373754849066447,
+          0.0015424827910798437
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.26808883373936,
+        "ci95_environment_bootstrap": [
+          0.9914759288355709,
+          1.5377691615310807
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.46940061760047613,
+        "ci95_environment_bootstrap": [
+          0.3695367535642426,
+          0.5656422884990587
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7248256077708825,
+        "ci95_environment_bootstrap": [
+          0.6019797014975345,
+          0.8158437616681679
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.6527777777777777,
+        "ci95_environment_bootstrap": [
+          0.6006944444444444,
+          0.7027951388888887
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 4.568499409490162e-06,
+        "ci95_environment_bootstrap": [
+          4.722322854730818e-07,
+          1.2007614390717613e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146868092318376,
+        "ci95_environment_bootstrap": [
+          0.04785899284761399,
+          0.054552245403950414
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_raw_seed0": {
+      "height_MAE_m": {
+        "mean": 0.0017652899263002498,
+        "ci95_environment_bootstrap": [
+          0.001269212566607851,
+          0.0024034136639496818
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.002334737337510034,
+        "ci95_environment_bootstrap": [
+          0.0016594908499832348,
+          0.003197780877365594
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.36289843387073945,
+        "ci95_environment_bootstrap": [
+          0.3368845108261814,
+          0.3907287959920035
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.18154632125011302,
+        "ci95_environment_bootstrap": [
+          0.16093290030808824,
+          0.20401323930270615
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.40082954094733725,
+        "ci95_environment_bootstrap": [
+          0.3692585376070605,
+          0.43350733652894874
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0003398796295692187,
+        "ci95_environment_bootstrap": [
+          0.0003146161387960294,
+          0.00036736528514059807
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.3278642923467689,
+        "ci95_environment_bootstrap": [
+          0.30127193807727765,
+          0.35656667207264237
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.15941466158569706,
+        "ci95_environment_bootstrap": [
+          0.1380666061040696,
+          0.1850344393079576
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7941078909225259,
+        "ci95_environment_bootstrap": [
+          0.6975878678178421,
+          0.8569545682165042
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.90625,
+        "ci95_environment_bootstrap": [
+          0.8916666666666666,
+          0.9249999999999999
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.993145992358525e-06,
+        "ci95_environment_bootstrap": [
+          2.2749701100918984e-06,
+          1.4399583192749142e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146843877931436,
+        "ci95_environment_bootstrap": [
+          0.04785868942271918,
+          0.05455190264619887
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_anchored_seed0": {
+      "height_MAE_m": {
+        "mean": 0.0017652899263002498,
+        "ci95_environment_bootstrap": [
+          0.001269212566607851,
+          0.0024034136639496818
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.002334737337510034,
+        "ci95_environment_bootstrap": [
+          0.0016594908499832348,
+          0.003197780877365594
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.3669366818151356,
+        "ci95_environment_bootstrap": [
+          0.3263868501800814,
+          0.40887938236564764
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.18016958361430038,
+        "ci95_environment_bootstrap": [
+          0.15963209353999316,
+          0.20357700286175007
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.3966993280398992,
+        "ci95_environment_bootstrap": [
+          0.366886349508056,
+          0.42875333389198333
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0003398796295692187,
+        "ci95_environment_bootstrap": [
+          0.0003146161387960294,
+          0.00036736528514059807
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.32647605198952884,
+        "ci95_environment_bootstrap": [
+          0.29985841820430426,
+          0.3549612235319283
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.15894460589076378,
+        "ci95_environment_bootstrap": [
+          0.13763488720896125,
+          0.18454978737063638
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7941078909225259,
+        "ci95_environment_bootstrap": [
+          0.6975878678178421,
+          0.8569545682165042
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.9034722222222222,
+        "ci95_environment_bootstrap": [
+          0.8881944444444444,
+          0.9208333333333334
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.993145992358525e-06,
+        "ci95_environment_bootstrap": [
+          2.2749701100918984e-06,
+          1.4399583192749142e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146843877931436,
+        "ci95_environment_bootstrap": [
+          0.04785868942271918,
+          0.05455190264619887
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_raw_seed1": {
+      "height_MAE_m": {
+        "mean": 0.0030537176852355775,
+        "ci95_environment_bootstrap": [
+          0.0024147924335464963,
+          0.0036978060079716807
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.003653686199744877,
+        "ci95_environment_bootstrap": [
+          0.002763870081819025,
+          0.004440827783486226
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.3572596781783634,
+        "ci95_environment_bootstrap": [
+          0.3271570207877659,
+          0.38738261949316954
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.17688169704407364,
+        "ci95_environment_bootstrap": [
+          0.15720559376380816,
+          0.1978473604202855
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.3968295560942756,
+        "ci95_environment_bootstrap": [
+          0.3675680453541838,
+          0.42416352785111944
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.00039261275827205585,
+        "ci95_environment_bootstrap": [
+          0.00034522972625786175,
+          0.00044728431887859995
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.3286392062074608,
+        "ci95_environment_bootstrap": [
+          0.30133192708094914,
+          0.35769316465697354
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.1543617987833251,
+        "ci95_environment_bootstrap": [
+          0.13403329583580462,
+          0.1796624498529709
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.759305696047571,
+        "ci95_environment_bootstrap": [
+          0.6731744900209021,
+          0.8185294663945348
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.8874999999999998,
+        "ci95_environment_bootstrap": [
+          0.873611111111111,
+          0.9013888888888889
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.993145992358525e-06,
+        "ci95_environment_bootstrap": [
+          2.2749701100918984e-06,
+          1.4399583192749142e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.051464944146573544,
+        "ci95_environment_bootstrap": [
+          0.04785178752305607,
+          0.05454849537927657
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_anchored_seed1": {
+      "height_MAE_m": {
+        "mean": 0.0030537176852355775,
+        "ci95_environment_bootstrap": [
+          0.0024147924335464963,
+          0.0036978060079716807
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.003653686199744877,
+        "ci95_environment_bootstrap": [
+          0.002763870081819025,
+          0.004440827783486226
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.36549369913560376,
+        "ci95_environment_bootstrap": [
+          0.3336266460977955,
+          0.39967545262641363
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.16966676112910392,
+        "ci95_environment_bootstrap": [
+          0.14922037214694203,
+          0.19226463203934327
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.37518474834936644,
+        "ci95_environment_bootstrap": [
+          0.34309386941017933,
+          0.4109558207808453
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.00039261275827205585,
+        "ci95_environment_bootstrap": [
+          0.00034522972625786175,
+          0.00044728431887859995
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.325792334559891,
+        "ci95_environment_bootstrap": [
+          0.29855980972448987,
+          0.35482423146358794
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.15291911532278932,
+        "ci95_environment_bootstrap": [
+          0.13273579426588858,
+          0.17834450361161752
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.759305696047571,
+        "ci95_environment_bootstrap": [
+          0.6731744900209021,
+          0.8185294663945348
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.8840277777777777,
+        "ci95_environment_bootstrap": [
+          0.8722222222222222,
+          0.8951388888888889
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.993145992358525e-06,
+        "ci95_environment_bootstrap": [
+          2.2749701100918984e-06,
+          1.4399583192749142e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.051464944146573544,
+        "ci95_environment_bootstrap": [
+          0.04785178752305607,
+          0.05454849537927657
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_raw_seed2": {
+      "height_MAE_m": {
+        "mean": 0.001965212558352954,
+        "ci95_environment_bootstrap": [
+          0.0016431223714401732,
+          0.002297100078219585
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.002472397412099253,
+        "ci95_environment_bootstrap": [
+          0.0019466177696566224,
+          0.003020021898420829
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.39162492347352296,
+        "ci95_environment_bootstrap": [
+          0.3623210281427996,
+          0.42268337944591483
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.1900271081348761,
+        "ci95_environment_bootstrap": [
+          0.1686088745302954,
+          0.21277724367433085
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.43117880055933827,
+        "ci95_environment_bootstrap": [
+          0.3950219977858626,
+          0.4705606480697055
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0004569273038214306,
+        "ci95_environment_bootstrap": [
+          0.00041270952800813475,
+          0.0005074222436410814
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.35892701604300076,
+        "ci95_environment_bootstrap": [
+          0.33234572553386293,
+          0.3882533397380677
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.16704216466399616,
+        "ci95_environment_bootstrap": [
+          0.14503411230623603,
+          0.19345246667125282
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7516074694464793,
+        "ci95_environment_bootstrap": [
+          0.6108699982752025,
+          0.8851848500038579
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.8881944444444444,
+        "ci95_environment_bootstrap": [
+          0.8742881944444443,
+          0.9020833333333332
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.069067037767835e-06,
+        "ci95_environment_bootstrap": [
+          1.6376699527932538e-06,
+          1.3460018413348322e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146853098024925,
+        "ci95_environment_bootstrap": [
+          0.047858779318630695,
+          0.05455218385905027
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_anchored_seed2": {
+      "height_MAE_m": {
+        "mean": 0.001965212558352954,
+        "ci95_environment_bootstrap": [
+          0.0016431223714401732,
+          0.002297100078219585
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.002472397412099253,
+        "ci95_environment_bootstrap": [
+          0.0019466177696566224,
+          0.003020021898420829
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.3597093418056582,
+        "ci95_environment_bootstrap": [
+          0.33570513407205355,
+          0.38474593397091933
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.17970351149645958,
+        "ci95_environment_bootstrap": [
+          0.16036918632508884,
+          0.20119609794490223
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.40020801064408856,
+        "ci95_environment_bootstrap": [
+          0.37696035741104017,
+          0.4258416421564273
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0004569273038214306,
+        "ci95_environment_bootstrap": [
+          0.00041270952800813475,
+          0.0005074222436410814
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.35634577034248244,
+        "ci95_environment_bootstrap": [
+          0.32996737974178464,
+          0.3854131058437956
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.16628533948844593,
+        "ci95_environment_bootstrap": [
+          0.14429890276776725,
+          0.1926214939679188
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7516074694464793,
+        "ci95_environment_bootstrap": [
+          0.6108699982752025,
+          0.8851848500038579
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.8798611111111111,
+        "ci95_environment_bootstrap": [
+          0.8687499999999999,
+          0.8902777777777778
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.069067037767835e-06,
+        "ci95_environment_bootstrap": [
+          1.6376699527932538e-06,
+          1.3460018413348322e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05146853098024925,
+        "ci95_environment_bootstrap": [
+          0.047858779318630695,
+          0.05455218385905027
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_raw": {
+      "height_MAE_m": {
+        "mean": 0.003984990537057846,
+        "ci95_environment_bootstrap": [
+          0.0030134959912901816,
+          0.005249080221493262
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.004626747500482258,
+        "ci95_environment_bootstrap": [
+          0.003608754458521919,
+          0.005982904820447262
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.6284111262594232,
+        "ci95_environment_bootstrap": [
+          1.3579852051848982,
+          1.8855226394613827
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.6880438869218487,
+        "ci95_environment_bootstrap": [
+          0.589969599765718,
+          0.7831821610702615
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.5848832523626555,
+        "ci95_environment_bootstrap": [
+          1.3264792643229903,
+          1.8252457012088947
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0014512885832623907,
+        "ci95_environment_bootstrap": [
+          0.0012807342947460845,
+          0.001624449598579371
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.4079105882181062,
+        "ci95_environment_bootstrap": [
+          1.1370602602973856,
+          1.6766958281563389
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.5312753229098419,
+        "ci95_environment_bootstrap": [
+          0.43581309912880184,
+          0.6267673625561502
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.4594096824338469,
+        "ci95_environment_bootstrap": [
+          0.37285686346581,
+          0.5395741885141146
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.5243055555555555,
+        "ci95_environment_bootstrap": [
+          0.40138310185185183,
+          0.6305613425925924
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 4.560151999747312e-06,
+        "ci95_environment_bootstrap": [
+          1.2879057235463901e-06,
+          9.632296860218042e-06
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.05143830894182127,
+        "ci95_environment_bootstrap": [
+          0.04774094437921626,
+          0.05452118378080842
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.009259259259259259,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.027777777777777776
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_vision_raw_minus_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0002356598002681848,
+        "ci95_environment_bootstrap": [
+          -0.0014283507172285865,
+          0.001243901423221931
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.002306642235546751,
+        "ci95_environment_bootstrap": [
+          -0.003748894268270164,
+          -0.0005538477672959482
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.2572523004049627,
+        "ci95_environment_bootstrap": [
+          0.9777765816723,
+          1.5168268641903075
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.5157313733071545,
+        "ci95_environment_bootstrap": [
+          0.423814815243791,
+          0.6083063850385915
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.1683861286245256,
+        "ci95_environment_bootstrap": [
+          0.9097004131637053,
+          1.408892396948925
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0005870231306188443,
+        "ci95_environment_bootstrap": [
+          0.0004231738927297489,
+          0.000755606915665373
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.9952714521023962,
+        "ci95_environment_bootstrap": [
+          0.7120290740910504,
+          1.266495549700878
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.34658728626935686,
+        "ci95_environment_bootstrap": [
+          0.2532493352474075,
+          0.4369403617357708
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.01080004624263556,
+        "ci95_environment_bootstrap": [
+          -0.010898509214597717,
+          -0.010671149377486911
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010536853224039084,
+        "ci95_environment_bootstrap": [
+          0.0009615528216171592,
+          0.0011466694918150706
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.009259259259259259,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.027777777777777776
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_vision_raw_minus_normal_force_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0002356598002681848,
+        "ci95_environment_bootstrap": [
+          -0.0014283507172285865,
+          0.001243901423221931
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.002306642235546751,
+        "ci95_environment_bootstrap": [
+          -0.003748894268270164,
+          -0.0005538477672959482
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.2573162090017964,
+        "ci95_environment_bootstrap": [
+          0.9778158044467062,
+          1.5168488890999627
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.5157313733071545,
+        "ci95_environment_bootstrap": [
+          0.423814815243791,
+          0.6083063850385915
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.1683861286245256,
+        "ci95_environment_bootstrap": [
+          0.9097004131637053,
+          1.408892396948925
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0005870231306188443,
+        "ci95_environment_bootstrap": [
+          0.0004231738927297489,
+          0.000755606915665373
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.9952714521023962,
+        "ci95_environment_bootstrap": [
+          0.7120290740910504,
+          1.266495549700878
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.34658728626935686,
+        "ci95_environment_bootstrap": [
+          0.2532493352474075,
+          0.4369403617357708
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.01080004624263556,
+        "ci95_environment_bootstrap": [
+          -0.010898509214597717,
+          -0.010671149377486911
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010536853224039084,
+        "ci95_environment_bootstrap": [
+          0.0009615528216171592,
+          0.0011466694918150706
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.009259259259259259,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.027777777777777776
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_vision_anchored": {
+      "height_MAE_m": {
+        "mean": 0.003984990537057846,
+        "ci95_environment_bootstrap": [
+          0.0030134959912901816,
+          0.005249080221493262
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.004626747500482258,
+        "ci95_environment_bootstrap": [
+          0.003608754458521919,
+          0.005982904820447262
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.44165918147613,
+        "ci95_environment_bootstrap": [
+          1.1938966422126371,
+          1.6979999819263019
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.6406012530598177,
+        "ci95_environment_bootstrap": [
+          0.5456209309619235,
+          0.7403993898498631
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.4425553507765623,
+        "ci95_environment_bootstrap": [
+          1.1902307820326261,
+          1.7036778358035867
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0014512885832623907,
+        "ci95_environment_bootstrap": [
+          0.0012807342947460845,
+          0.001624449598579371
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 1.3822819556627008,
+        "ci95_environment_bootstrap": [
+          1.1164439899295018,
+          1.6470553004431228
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.5219715103283941,
+        "ci95_environment_bootstrap": [
+          0.4284371908922271,
+          0.617822431646209
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.4594096824338469,
+        "ci95_environment_bootstrap": [
+          0.37285686346581,
+          0.5395741885141146
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.519426653655853,
+        "ci95_environment_bootstrap": [
+          0.40058895856086796,
+          0.6187553422673221
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 4.495752768384085e-06,
+        "ci95_environment_bootstrap": [
+          1.3863443638439532e-06,
+          9.497329247770482e-06
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0514686880633235,
+        "ci95_environment_bootstrap": [
+          0.04785918985338261,
+          0.05455214249280591
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_vision_anchored_minus_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0002356598002681848,
+        "ci95_environment_bootstrap": [
+          -0.0014283507172285865,
+          0.001243901423221931
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.002306642235546751,
+        "ci95_environment_bootstrap": [
+          -0.003748894268270164,
+          -0.0005538477672959482
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.0705003556216697,
+        "ci95_environment_bootstrap": [
+          0.8267637172861046,
+          1.3362172374342387
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.46828873944512345,
+        "ci95_environment_bootstrap": [
+          0.37989498394846694,
+          0.5673078679611514
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.0260582270384326,
+        "ci95_environment_bootstrap": [
+          0.778441355408403,
+          1.2961892109151176
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0005870231306188443,
+        "ci95_environment_bootstrap": [
+          0.0004231738927297489,
+          0.000755606915665373
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.969642819546991,
+        "ci95_environment_bootstrap": [
+          0.6936166378020964,
+          1.2448968376371041
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.33728347368790895,
+        "ci95_environment_bootstrap": [
+          0.2464554792352052,
+          0.4282514921589366
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.010800110641866924,
+        "ci95_environment_bootstrap": [
+          -0.010898500173438894,
+          -0.01067099128547987
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010840644439061489,
+        "ci95_environment_bootstrap": [
+          0.001078099229683479,
+          0.001090367557480932
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_vision_anchored_minus_normal_force_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0002356598002681848,
+        "ci95_environment_bootstrap": [
+          -0.0014283507172285865,
+          0.001243901423221931
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.002306642235546751,
+        "ci95_environment_bootstrap": [
+          -0.003748894268270164,
+          -0.0005538477672959482
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 1.0705642642185031,
+        "ci95_environment_bootstrap": [
+          0.8268757260241257,
+          1.3362720478787526
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.46828873944512345,
+        "ci95_environment_bootstrap": [
+          0.37989498394846694,
+          0.5673078679611514
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 1.0260582270384326,
+        "ci95_environment_bootstrap": [
+          0.778441355408403,
+          1.2961892109151176
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.0005870231306188443,
+        "ci95_environment_bootstrap": [
+          0.0004231738927297489,
+          0.000755606915665373
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.969642819546991,
+        "ci95_environment_bootstrap": [
+          0.6936166378020964,
+          1.2448968376371041
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.33728347368790895,
+        "ci95_environment_bootstrap": [
+          0.2464554792352052,
+          0.4282514921589366
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.010800110641866924,
+        "ci95_environment_bootstrap": [
+          -0.010898500173438894,
+          -0.01067099128547987
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010840644439061489,
+        "ci95_environment_bootstrap": [
+          0.001078099229683479,
+          0.001090367557480932
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_raw": {
+      "height_MAE_m": {
+        "mean": 0.0022614067232962602,
+        "ci95_environment_bootstrap": [
+          0.002006332815289443,
+          0.0025325390920641535
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.002820273649784722,
+        "ci95_environment_bootstrap": [
+          0.002445409373832663,
+          0.0032054092335100873
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.3705943451742086,
+        "ci95_environment_bootstrap": [
+          0.34346042358396967,
+          0.3979736635726665
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.18281837547635424,
+        "ci95_environment_bootstrap": [
+          0.16258518467556357,
+          0.20442524997095662
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.4096126325336504,
+        "ci95_environment_bootstrap": [
+          0.37979436091496127,
+          0.43995472704984034
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.00039647323055423504,
+        "ci95_environment_bootstrap": [
+          0.0003707396189629771,
+          0.0004226406694821587
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.3384768381990768,
+        "ci95_environment_bootstrap": [
+          0.31219472412778826,
+          0.3673619285067198
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.16027287501100615,
+        "ci95_environment_bootstrap": [
+          0.13892861574334142,
+          0.18595776481608323
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7683403521388588,
+        "ci95_environment_bootstrap": [
+          0.6989822161435042,
+          0.8311938951635021
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.8939814814814815,
+        "ci95_environment_bootstrap": [
+          0.8828645833333333,
+          0.9053240740740739
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.68511967416163e-06,
+        "ci95_environment_bootstrap": [
+          2.1894785782529244e-06,
+          1.4067095859597112e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.051467304635379046,
+        "ci95_environment_bootstrap": [
+          0.047856418754801976,
+          0.054550860628175234
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_visuotactile_raw_minus_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0019592436140297696,
+        "ci95_environment_bootstrap": [
+          -0.002330043826679531,
+          -0.0016003056606028814
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.004113116086244288,
+        "ci95_environment_bootstrap": [
+          -0.004800126122385253,
+          -0.003395289567580771
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": -0.0005644806802518101,
+        "ci95_environment_bootstrap": [
+          -0.013296044820559367,
+          0.011034719738879291
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.01050586186165999,
+        "ci95_environment_bootstrap": [
+          -0.0011648648082364559,
+          0.01993348604262775
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": -0.006884491204479602,
+        "ci95_environment_bootstrap": [
+          -0.023681054200992417,
+          0.009065375054262772
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": -0.000467792222089311,
+        "ci95_environment_bootstrap": [
+          -0.0004913121304731181,
+          -0.0004454269799225586
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": -0.0741622979166331,
+        "ci95_environment_bootstrap": [
+          -0.08706499169546146,
+          -0.061893934990382884
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": -0.024415161629479005,
+        "ci95_environment_bootstrap": [
+          -0.029091082943944014,
+          -0.020063214705436493
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.010797921274961146,
+        "ci95_environment_bootstrap": [
+          -0.010897305267604273,
+          -0.0106687070750114
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010826810159617,
+        "ci95_environment_bootstrap": [
+          0.00107553891527156,
+          0.0010898879030719396
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_visuotactile_raw_minus_normal_force_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0019592436140297696,
+        "ci95_environment_bootstrap": [
+          -0.002330043826679531,
+          -0.0016003056606028814
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.004113116086244288,
+        "ci95_environment_bootstrap": [
+          -0.004800126122385253,
+          -0.003395289567580771
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": -0.0005005720834182631,
+        "ci95_environment_bootstrap": [
+          -0.013202873882166889,
+          0.011075728543930572
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.01050586186165999,
+        "ci95_environment_bootstrap": [
+          -0.0011648648082364559,
+          0.01993348604262775
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": -0.006884491204479602,
+        "ci95_environment_bootstrap": [
+          -0.023681054200992417,
+          0.009065375054262772
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": -0.000467792222089311,
+        "ci95_environment_bootstrap": [
+          -0.0004913121304731181,
+          -0.0004454269799225586
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": -0.0741622979166331,
+        "ci95_environment_bootstrap": [
+          -0.08706499169546146,
+          -0.061893934990382884
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": -0.024415161629479005,
+        "ci95_environment_bootstrap": [
+          -0.029091082943944014,
+          -0.020063214705436493
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.010797921274961146,
+        "ci95_environment_bootstrap": [
+          -0.010897305267604273,
+          -0.0106687070750114
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010826810159617,
+        "ci95_environment_bootstrap": [
+          0.00107553891527156,
+          0.0010898879030719396
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "wm_visuotactile_anchored": {
+      "height_MAE_m": {
+        "mean": 0.0022614067232962602,
+        "ci95_environment_bootstrap": [
+          0.002006332815289443,
+          0.0025325390920641535
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": 0.002820273649784722,
+        "ci95_environment_bootstrap": [
+          0.002445409373832663,
+          0.0032054092335100873
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": 0.36404657425213255,
+        "ci95_environment_bootstrap": [
+          0.3330717055616065,
+          0.39424782093905614
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.17651328541328795,
+        "ci95_environment_bootstrap": [
+          0.15708619113096678,
+          0.19832898051981107
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": 0.3906973623444514,
+        "ci95_environment_bootstrap": [
+          0.3628340299531756,
+          0.419835736753396
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": 0.00039647323055423504,
+        "ci95_environment_bootstrap": [
+          0.0003707396189629771,
+          0.0004226406694821587
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": 0.3362047189639674,
+        "ci95_environment_bootstrap": [
+          0.3101196762126077,
+          0.3649681351326958
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": 0.1593830202339997,
+        "ci95_environment_bootstrap": [
+          0.13809244705614865,
+          0.18507354267476847
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.7683403521388588,
+        "ci95_environment_bootstrap": [
+          0.6989822161435042,
+          0.8311938951635021
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.8891203703703704,
+        "ci95_environment_bootstrap": [
+          0.8791608796296294,
+          0.8995428240740742
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 6.68511967416163e-06,
+        "ci95_environment_bootstrap": [
+          2.1894785782529244e-06,
+          1.4067095859597112e-05
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.051467304635379046,
+        "ci95_environment_bootstrap": [
+          0.047856418754801976,
+          0.054550860628175234
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.35778698542465764,
+        "ci95_environment_bootstrap": [
+          0.3523731151518102,
+          0.3631732443347573
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_visuotactile_anchored_minus_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0019592436140297696,
+        "ci95_environment_bootstrap": [
+          -0.002330043826679531,
+          -0.0016003056606028814
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.004113116086244288,
+        "ci95_environment_bootstrap": [
+          -0.004800126122385253,
+          -0.003395289567580771
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": -0.007112251602327868,
+        "ci95_environment_bootstrap": [
+          -0.0231244838895437,
+          0.011883168232477728
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.004200771798593674,
+        "ci95_environment_bootstrap": [
+          -0.007009872248571731,
+          0.013044256500577153
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": -0.02579976139367854,
+        "ci95_environment_bootstrap": [
+          -0.042350570167196386,
+          -0.009120642272563892
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": -0.000467792222089311,
+        "ci95_environment_bootstrap": [
+          -0.0004913121304731181,
+          -0.0004454269799225586
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": -0.0764344171517425,
+        "ci95_environment_bootstrap": [
+          -0.08935432573297511,
+          -0.06404102051837575
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": -0.02530501640648546,
+        "ci95_environment_bootstrap": [
+          -0.030003848509399918,
+          -0.020945587920862475
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.010797921274961146,
+        "ci95_environment_bootstrap": [
+          -0.010897305267604273,
+          -0.0106687070750114
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010826810159617,
+        "ci95_environment_bootstrap": [
+          0.00107553891527156,
+          0.0010898879030719396
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_wm_visuotactile_anchored_minus_normal_force_persistence": {
+      "height_MAE_m": {
+        "mean": -0.0019592436140297696,
+        "ci95_environment_bootstrap": [
+          -0.002330043826679531,
+          -0.0016003056606028814
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.004113116086244288,
+        "ci95_environment_bootstrap": [
+          -0.004800126122385253,
+          -0.003395289567580771
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": -0.0070483430054943215,
+        "ci95_environment_bootstrap": [
+          -0.023051075759523924,
+          0.011915988536712545
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": 0.004200771798593674,
+        "ci95_environment_bootstrap": [
+          -0.007009872248571731,
+          0.013044256500577153
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": -0.02579976139367854,
+        "ci95_environment_bootstrap": [
+          -0.042350570167196386,
+          -0.009120642272563892
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": -0.000467792222089311,
+        "ci95_environment_bootstrap": [
+          -0.0004913121304731181,
+          -0.0004454269799225586
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": -0.0764344171517425,
+        "ci95_environment_bootstrap": [
+          -0.08935432573297511,
+          -0.06404102051837575
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": -0.02530501640648546,
+        "ci95_environment_bootstrap": [
+          -0.030003848509399918,
+          -0.020945587920862475
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "peak_rank_correlation": {
+        "mean": null,
+        "ci95_environment_bootstrap": [
+          null,
+          null
+        ],
+        "environments_with_defined_value": 0
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.7777777777777778,
+        "ci95_environment_bootstrap": [
+          0.6944444444444445,
+          0.8611111111111112
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.6666666666666666,
+        "ci95_environment_bootstrap": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": -0.010797921274961146,
+        "ci95_environment_bootstrap": [
+          -0.010897305267604273,
+          -0.0106687070750114
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 0.0010826810159617,
+        "ci95_environment_bootstrap": [
+          0.00107553891527156,
+          0.0010898879030719396
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_visuotactile_minus_vision_raw": {
+      "height_MAE_m": {
+        "mean": -0.001723583813761585,
+        "ci95_environment_bootstrap": [
+          -0.0029510372051027864,
+          -0.0007082085918991577
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.0018064738506975355,
+        "ci95_environment_bootstrap": [
+          -0.003061810257445677,
+          -0.0007500056459283628
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": -1.2578167810852146,
+        "ci95_environment_bootstrap": [
+          -1.5165679237356893,
+          -0.983975777873164
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": -0.5052255114454944,
+        "ci95_environment_bootstrap": [
+          -0.5949970640098026,
+          -0.41386100910712137
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": -1.175270619829005,
+        "ci95_environment_bootstrap": [
+          -1.4171620693122164,
+          -0.9179489645901532
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": -0.0010548153527081552,
+        "ci95_environment_bootstrap": [
+          -0.001213090942058241,
+          -0.0008960388459172466
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": -1.0694337500190294,
+        "ci95_environment_bootstrap": [
+          -1.3469700844882537,
+          -0.7843637712886217
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": -0.37100244789883585,
+        "ci95_environment_bootstrap": [
+          -0.46292022928676774,
+          -0.2766202634602736
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.308930669705012,
+        "ci95_environment_bootstrap": [
+          0.23664695328024188,
+          0.3874554869599004
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.3696759259259259,
+        "ci95_environment_bootstrap": [
+          0.26573495370370365,
+          0.49516782407407384
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 2.124967674414317e-06,
+        "ci95_environment_bootstrap": [
+          4.3906771612388143e-07,
+          4.6144722512474715e-06
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": 2.899569355779147e-05,
+        "ci95_environment_bootstrap": [
+          -6.153243335170956e-05,
+          0.00011949027474555608
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": -0.009259259259259259,
+        "ci95_environment_bootstrap": [
+          -0.027777777777777776,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    },
+    "paired_visuotactile_minus_vision_anchored": {
+      "height_MAE_m": {
+        "mean": -0.001723583813761585,
+        "ci95_environment_bootstrap": [
+          -0.0029510372051027864,
+          -0.0007082085918991577
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_MAE_m": {
+        "mean": -0.0018064738506975355,
+        "ci95_environment_bootstrap": [
+          -0.003061810257445677,
+          -0.0007500056459283628
+        ],
+        "environments_with_defined_value": 12
+      },
+      "interval_peak_MAE_N": {
+        "mean": -1.0776126072239975,
+        "ci95_environment_bootstrap": [
+          -1.3395426093231992,
+          -0.8370524692044827
+        ],
+        "environments_with_defined_value": 12
+      },
+      "tactile_MAE_N": {
+        "mean": -0.46408796764652976,
+        "ci95_environment_bootstrap": [
+          -0.5626968193501787,
+          -0.3755608093320591
+        ],
+        "environments_with_defined_value": 12
+      },
+      "normal_tactile_MAE_N": {
+        "mean": -1.051857988432111,
+        "ci95_environment_bootstrap": [
+          -1.3203641123677232,
+          -0.8061935105600965
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_height_MAE_m": {
+        "mean": -0.0010548153527081552,
+        "ci95_environment_bootstrap": [
+          -0.001213090942058241,
+          -0.0008960388459172466
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_interval_peak_MAE_N": {
+        "mean": -1.0460772366987334,
+        "ci95_environment_bootstrap": [
+          -1.3241033681282015,
+          -0.7677162798818341
+        ],
+        "environments_with_defined_value": 12
+      },
+      "action_effect_tactile_MAE_N": {
+        "mean": -0.3625884900943943,
+        "ci95_environment_bootstrap": [
+          -0.4546439970572833,
+          -0.269646467899408
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_correlation": {
+        "mean": 0.308930669705012,
+        "ci95_environment_bootstrap": [
+          0.23664695328024188,
+          0.3874554869599004
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_correlation": {
+        "mean": 0.3696937167145172,
+        "ci95_environment_bootstrap": [
+          0.2701335466215667,
+          0.49122817106876154
+        ],
+        "environments_with_defined_value": 12
+      },
+      "terminal_height_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "peak_rank_defined_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "constraint_aware_selection_regret": {
+        "mean": 2.189366905777543e-06,
+        "ci95_environment_bootstrap": [
+          7.200667082711502e-07,
+          4.605121082729764e-06
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_force_violation_rate": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "selected_terminal_height_m": {
+        "mean": -1.38342794444903e-06,
+        "ci95_environment_bootstrap": [
+          -3.7729817753048524e-06,
+          -8.028776695368531e-08
+        ],
+        "environments_with_defined_value": 12
+      },
+      "no_predicted_feasible_candidate_fraction": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      },
+      "oracle_constraint_aware_utility": {
+        "mean": 0.0,
+        "ci95_environment_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "environments_with_defined_value": 12
+      }
+    }
+  },
+  "definitions": {
+    "persistence": "Current tactile and height held constant; previous measured interval peak held constant.",
+    "normal_force_persistence": "Same, except peak forecast holds current endpoint normal force constant.",
+    "action_effect": "Predicted and actual candidate-minus-center differences, center index4 excluded from the averaged error; all5horizons retained.",
+    "rank": "Spearman correlation with exact midranks for ties; constant rankings are undefined, reported with defined fraction.",
+    "selection": "Among predicted peak<=8N candidates maximize clipped terminal height/0.10; exactties choosecenter thenindex. Ifnone predictedfeasible chooseminimum predictedpeak.",
+    "regret": "Oracle minus selected executed utility over9branches; utility=clip(terminalheight/.10,0,1) if all branchsubsteps peak<=8N else0. Prefix forces are excluded from this local diagnostic.",
+    "paired_difference": "Model metric minus each named persistence baseline within each environment, then bootstrap whole environments. Both previous-interval-peak and current-endpoint-normal baselines are retained.",
+    "branching": "Everybranch independently reset and replayed; no partial-state restoration."
+  },
+  "limitations": [
+    "Local five-step decisions do not measure sustained lifting or closed-loop safety.",
+    "Diagnostic prefix policy uses common privileged scripted approach/vertical reference; learned model sees only RGB,tactile,proprio.",
+    "Vision raw forecasts exclude tactile input; vision anchored forecasts additionally use the identical measured-tactile offset correction, so they are not vision-only predictions.",
+    "Averaging over fixed clipping duplicates is retained by protocol; unique candidate counts are reported.",
+    "Rank means are conditional on defined rankings; see defined fractions.",
+    "Diagnostic outcomes must not tune model weights, gains, or choose primary evaluation cohorts."
+  ],
+  "max_prefix_replay_difference": 0.0,
+  "unique_candidates_per_environment": [
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ],
+    [
+      6,
+      9,
+      9
+    ]
+  ]
+}

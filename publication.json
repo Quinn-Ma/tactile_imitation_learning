@@ -6,9 +6,41 @@
   ],
   "project_url": "https://compact-visuotactile-world-models.thumbnodirosving.chatgpt.site/",
   "code_url": "https://github.com/Quinn-Ma/compact-visuotactile-world-models",
-  "manuscript_url": "https://github.com/Quinn-Ma/compact-visuotactile-world-models/blob/main/paper/preprint.pdf",
+  "manuscript_url": "https://github.com/Quinn-Ma/compact-visuotactile-world-models/blob/main/paper/revision_v2/preprint.pdf",
   "arxiv_status": "submitted",
   "arxiv_id": null,
   "arxiv_url": null,
-  "updated_on": "2026-09-09"
+  "updated_on": "2026-09-10",
+  "simulation_video_url": "https://github.com/Quinn-Ma/compact-visuotactile-world-models/blob/main/paper/revision_v2/simulation_video.mp4",
+  "simulation_video_kind": "Anonymous review version; MuJoCo simulation only",
+  "revision": "revision_v2",
+  "revision_v2": {
+    "collection_episodes": 336,
+    "train_episodes": 240,
+    "validation_episodes": 48,
+    "calibration_episodes": 48,
+    "main_control_executions": 4080,
+    "main_configurations": 34,
+    "main_method_groups": 14,
+    "main_environment_count": 120,
+    "environments_per_domain": 30,
+    "counterfactual_branches": 324,
+    "counterfactual_environments": 12,
+    "counterfactual_inference_device": "cpu",
+    "sensor_stress_executions": 330,
+    "sensor_stress_configurations": 11,
+    "sensor_stress_environments": 30,
+    "sensor_stress_reuses_main_id_environments": true,
+    "world_model_parameters": 652157,
+    "world_model_initialization": "random",
+    "physical_robot_control_demonstrated": false,
+    "all_analysis_complete": true,
+    "anonymous_review_pdf_published": false
+  },
+  "historical_v1": {
+    "control_executions": 680,
+    "environment_count": 40,
+    "manuscript_url": "https://github.com/Quinn-Ma/compact-visuotactile-world-models/blob/main/paper/preprint.pdf",
+    "pooled_with_revision_v2": false
+  }
 }

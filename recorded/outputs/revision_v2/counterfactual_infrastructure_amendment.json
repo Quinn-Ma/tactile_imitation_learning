@@ -1,0 +1,70 @@
+{
+  "recorded_at_utc": "2026-09-10T00:08:07.282543+00:00",
+  "stage": "After failed bridge initialization, before any actual counterfactual branch outcome",
+  "authorization": "Experiment owner approved CPU diagnostic inference and explicit runtime/baseline provenance after sixth CUDA bridge failed during concurrent GPU work",
+  "reason": "CUDA context out-of-memory while initializing sixth persistent forecasting server; simulator branch collection had not started",
+  "failed_manifest": "outputs/revision_v2/counterfactual/failed_initialization_manifest.json",
+  "failed_manifest_sha256": "2ec2ee2eaca148b689fa94cf60a31fba04a78c68d2a80b5a1410df99a4ea28b0",
+  "failed_logs": [
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed0_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed1_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed2_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed0_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed1_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed2_stderr.log",
+      "sha256": "f70c85523bff6e6bc4ad8c525e5a63baf941f81a747b4f337b6a7e877c8868c1"
+    },
+    {
+      "path": "outputs/revision_v2/counterfactual/failed_initialization_logs/counterfactual_console.log",
+      "sha256": "4c5792aa2c1a6bc1291d0298123950e08cec4dd4cf6c67520fb4b560466fa5be"
+    }
+  ],
+  "previous_counterfactual_source_sha256": "66a8e3733f1eb6a783566fcd81ec876140d725652006e8635063cb17a09c6acf",
+  "new_counterfactual_source_sha256": "a7cc697a9d7d0ce5574a6397c7a59537866cbfb32dcaa31558101c4866619f23",
+  "synthetic_test_source_sha256": "107acf980a48f09362f9608a888a58bd33a1b33cfddb02416577e699a8159b01",
+  "base_protocol_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+  "model_sha256_unchanged": [
+    "a1d8cd5d8c2c050237930c78cba88a2b0e62b1b70a2c71644632f5aa43f6b45f",
+    "a60da3d6e913f995aa679b55d9ce30f306d23052a17d16f69a3d04b14893d910",
+    "cf2f44623d8b9458c71b82ff1c7927e6885ad07739d2635f99fd486db723eef3",
+    "6fc892f9fce27db3b7a6f9d2f7205a5a721a1eec7f023ffc7aa5d89e55dda877",
+    "4e2dc3ae9c7864ba2a55b5b3ffd0f9ed0f4a95cba84b42ddebe8fe3f57471768",
+    "733e6fda4659ea30b7209e3d657f92d13a28c2906b4226b10e741b11f0b039b3"
+  ],
+  "changes": [
+    "Run the six frozen forecast models on CPU using explicit --device cpu; training and primary control evaluation remain on GPU",
+    "Record requested/resolved inference device, interpreter and library versions, CPU threads, OS, and per-bridge readiness metadata",
+    "Add paired model-minus-current-endpoint-normal-force-persistence statistics, retaining previous-interval-peak persistence contrasts"
+  ],
+  "unchanged": [
+    "All six frozen model checkpoints and all controller weights/gains",
+    "12 diagnostic environments, 3 prefix states, 9 branches and 5-step horizon",
+    "Physics, candidate actions, strict replay checks, existing metrics and bootstrap unit/resamples",
+    "Primary control experiment, research hypotheses and predeclared comparisons"
+  ],
+  "outcome_assertions": {
+    "environment_npz_count": 0,
+    "completed_jsonl_exists": false,
+    "summary_exists": false
+  },
+  "baseline_note": "Both persistence baselines already had absolute metrics; the added paired bootstrap contrast makes the endpoint-normal baseline comparison explicit without replacing or selecting a baseline using outcomes",
+  "numerical_note": "CPU and CUDA floating-point forecasts may differ slightly; validation comparison is recorded separately and cannot tune weights or primary controllers",
+  "validation_plan": "Rerun validation seed 20320000, prefix 44, both modalities seed 0 with original checkpoints; compare identical actual branches and forecasts with preserved GPU validation smoke",
+  "public_preregistration": false
+}

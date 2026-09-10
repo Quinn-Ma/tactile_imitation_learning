@@ -1,0 +1,722 @@
+[
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350000,
+    "donor_seed": 20350001,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350001,
+    "donor_seed": 20350002,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350002,
+    "donor_seed": 20350003,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350003,
+    "donor_seed": 20350004,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350004,
+    "donor_seed": 20350005,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350005,
+    "donor_seed": 20350006,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350006,
+    "donor_seed": 20350007,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350007,
+    "donor_seed": 20350008,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350008,
+    "donor_seed": 20350009,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350009,
+    "donor_seed": 20350010,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350010,
+    "donor_seed": 20350011,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350011,
+    "donor_seed": 20350012,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350012,
+    "donor_seed": 20350013,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350013,
+    "donor_seed": 20350014,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350014,
+    "donor_seed": 20350015,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350015,
+    "donor_seed": 20350016,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350016,
+    "donor_seed": 20350017,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350017,
+    "donor_seed": 20350018,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350018,
+    "donor_seed": 20350019,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350019,
+    "donor_seed": 20350020,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350020,
+    "donor_seed": 20350021,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350021,
+    "donor_seed": 20350022,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350022,
+    "donor_seed": 20350023,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350023,
+    "donor_seed": 20350024,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350024,
+    "donor_seed": 20350025,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350025,
+    "donor_seed": 20350026,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350026,
+    "donor_seed": 20350027,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350027,
+    "donor_seed": 20350028,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350028,
+    "donor_seed": 20350029,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_id",
+    "recipient_seed": 20350029,
+    "donor_seed": 20350000,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351000,
+    "donor_seed": 20351001,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351001,
+    "donor_seed": 20351002,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351002,
+    "donor_seed": 20351003,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351003,
+    "donor_seed": 20351004,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351004,
+    "donor_seed": 20351005,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351005,
+    "donor_seed": 20351006,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351006,
+    "donor_seed": 20351007,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351007,
+    "donor_seed": 20351008,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351008,
+    "donor_seed": 20351009,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351009,
+    "donor_seed": 20351010,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351010,
+    "donor_seed": 20351011,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351011,
+    "donor_seed": 20351012,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351012,
+    "donor_seed": 20351013,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351013,
+    "donor_seed": 20351014,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351014,
+    "donor_seed": 20351015,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351015,
+    "donor_seed": 20351016,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351016,
+    "donor_seed": 20351017,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351017,
+    "donor_seed": 20351018,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351018,
+    "donor_seed": 20351019,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351019,
+    "donor_seed": 20351020,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351020,
+    "donor_seed": 20351021,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351021,
+    "donor_seed": 20351022,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351022,
+    "donor_seed": 20351023,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351023,
+    "donor_seed": 20351024,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351024,
+    "donor_seed": 20351025,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351025,
+    "donor_seed": 20351026,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351026,
+    "donor_seed": 20351027,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351027,
+    "donor_seed": 20351028,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351028,
+    "donor_seed": 20351029,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_geometry_ood",
+    "recipient_seed": 20351029,
+    "donor_seed": 20351000,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352000,
+    "donor_seed": 20352001,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352001,
+    "donor_seed": 20352002,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352002,
+    "donor_seed": 20352003,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352003,
+    "donor_seed": 20352004,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352004,
+    "donor_seed": 20352005,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352005,
+    "donor_seed": 20352006,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352006,
+    "donor_seed": 20352007,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352007,
+    "donor_seed": 20352008,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352008,
+    "donor_seed": 20352009,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352009,
+    "donor_seed": 20352010,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352010,
+    "donor_seed": 20352011,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352011,
+    "donor_seed": 20352012,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352012,
+    "donor_seed": 20352013,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352013,
+    "donor_seed": 20352014,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352014,
+    "donor_seed": 20352015,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352015,
+    "donor_seed": 20352016,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352016,
+    "donor_seed": 20352017,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352017,
+    "donor_seed": 20352018,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352018,
+    "donor_seed": 20352019,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352019,
+    "donor_seed": 20352020,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352020,
+    "donor_seed": 20352021,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352021,
+    "donor_seed": 20352022,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352022,
+    "donor_seed": 20352023,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352023,
+    "donor_seed": 20352024,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352024,
+    "donor_seed": 20352025,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352025,
+    "donor_seed": 20352026,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352026,
+    "donor_seed": 20352027,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352027,
+    "donor_seed": 20352028,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352028,
+    "donor_seed": 20352029,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_physics_ood",
+    "recipient_seed": 20352029,
+    "donor_seed": 20352000,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353000,
+    "donor_seed": 20353001,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353001,
+    "donor_seed": 20353002,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353002,
+    "donor_seed": 20353003,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353003,
+    "donor_seed": 20353004,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353004,
+    "donor_seed": 20353005,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353005,
+    "donor_seed": 20353006,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353006,
+    "donor_seed": 20353007,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353007,
+    "donor_seed": 20353008,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353008,
+    "donor_seed": 20353009,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353009,
+    "donor_seed": 20353010,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353010,
+    "donor_seed": 20353011,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353011,
+    "donor_seed": 20353012,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353012,
+    "donor_seed": 20353013,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353013,
+    "donor_seed": 20353014,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353014,
+    "donor_seed": 20353015,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353015,
+    "donor_seed": 20353016,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353016,
+    "donor_seed": 20353017,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353017,
+    "donor_seed": 20353018,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353018,
+    "donor_seed": 20353019,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353019,
+    "donor_seed": 20353020,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353020,
+    "donor_seed": 20353021,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353021,
+    "donor_seed": 20353022,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353022,
+    "donor_seed": 20353023,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353023,
+    "donor_seed": 20353024,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353024,
+    "donor_seed": 20353025,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353025,
+    "donor_seed": 20353026,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353026,
+    "donor_seed": 20353027,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353027,
+    "donor_seed": 20353028,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353028,
+    "donor_seed": 20353029,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  },
+  {
+    "domain": "test_combined_ood",
+    "recipient_seed": 20353029,
+    "donor_seed": 20353000,
+    "rule": "cyclic next episode within domain, same observation indices; only encoder touch replaced"
+  }
+]

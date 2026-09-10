@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-09T23:48:27.649080+00:00",
+  "old_methods_sha256": "ba0b0e719935e24ea05d7eda2244d83319b478f3b80b890d7040edf87db95eda",
+  "new_methods_logical_sha256": "dcf92902920c58a4c906d2377cb618c7d27af1675be85fe18bb40dbb6720cfa6",
+  "reason": "Independent causal/literature review before test execution: isolate imagination updates from frozen predictive representation.",
+  "addition": "Six frozen-world-model BC policies, paired with the exact corresponding pre-imagination checkpoint.",
+  "main_original_28_retained": true,
+  "test_outcomes_available": false,
+  "collection_and_training_and_test_seed_protocol_unchanged": true,
+  "counterfactual_addition": "Forecast identical independently executed branches with vision and visuotactile models, three seeds each."
+}

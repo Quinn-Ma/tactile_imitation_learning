@@ -1,0 +1,13 @@
+{
+  "episodes": 336,
+  "counts": {
+    "train": 240,
+    "val": 48,
+    "calibration": 48
+  },
+  "protocol_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+  "all_prescribed_parameters_match": true,
+  "all_intervention_actions_are_2D": true,
+  "all_outcomes_retained": true,
+  "test_and_diagnostic_seeds_disjoint": true
+}

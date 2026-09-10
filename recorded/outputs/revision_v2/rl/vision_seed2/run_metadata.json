@@ -1,0 +1,1240 @@
+{
+  "claim_scope": "frozen learned-model imagination RL pilot; simulator evaluation required",
+  "model_sha256": "cf2f44623d8b9458c71b82ff1c7927e6885ad07739d2635f99fd486db723eef3",
+  "replay_states": 10560,
+  "training_episodes": [
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0000.npz",
+      "num_starts": 44,
+      "sha256": "57f7d0556369a91f9d8f2ade47f731c0e091cf2013fcd24f9626df803011643d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0001.npz",
+      "num_starts": 44,
+      "sha256": "3e18f75b8006cc7bb27159989f0580f5485fbd969483d70b3a19c60fc9ae6a70"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0002.npz",
+      "num_starts": 44,
+      "sha256": "752b33a65006dbc060ae914e04b3547ffc988014b62d6b724289a13e048c8bab"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0003.npz",
+      "num_starts": 44,
+      "sha256": "66e2e6ed571a3f3345192aeba04aa53719058ae851167b96778f752629cdb2e2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0004.npz",
+      "num_starts": 44,
+      "sha256": "c2f48410d22070e4d70f54d6e03cb843656ef1f4c6f8059f7b7577a9dc249bae"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0005.npz",
+      "num_starts": 44,
+      "sha256": "cbe83077a30bf5a51afdfa1031aeb1807356d51a7c9923ad87d4ff3cea3b5db3"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0006.npz",
+      "num_starts": 44,
+      "sha256": "2198e3cb698435ab278108886b617848754de0c1c6257636e0748848af80bc49"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0007.npz",
+      "num_starts": 44,
+      "sha256": "2450e0e6cc2f82b419caf12fd15264e50a6f2ffec87874f3bdf8fb149abbff97"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0008.npz",
+      "num_starts": 44,
+      "sha256": "2642c9332b2bac376886d86fb47303c0e30aa05f9e03cdb3a29f67fd7d8bab3e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0009.npz",
+      "num_starts": 44,
+      "sha256": "a2165cfdc498106016d8c2d9e11bfad03a23063b88ee09ff1932e8f45aa7cf1a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0010.npz",
+      "num_starts": 44,
+      "sha256": "98e514f75e6ad0b012806ac8f4b14ac4bc3faa9d385401797cbfea47167f519e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0011.npz",
+      "num_starts": 44,
+      "sha256": "db823737d0c43fb8cbc3a971b73b1498ce62dba9f67dff167e34d56a7a2143df"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0012.npz",
+      "num_starts": 44,
+      "sha256": "63df4e3e4b1c84e76dfd4c106c3eb5bfa5d66eff75b5465a17358023b2b73005"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0013.npz",
+      "num_starts": 44,
+      "sha256": "997a2e3c3a396feb95fcb5d3a924e0b4278a4acae19ca7c14753c69e65fdfdab"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0014.npz",
+      "num_starts": 44,
+      "sha256": "d53191aa5b4570207eec2f0c80d6ecc81f9b5d9055ed11829cb345fddc1876c8"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0015.npz",
+      "num_starts": 44,
+      "sha256": "59bc028379a347024632323ea9c3cc67bc2b35e73a293bb298c6f4418d453515"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0016.npz",
+      "num_starts": 44,
+      "sha256": "0f59a6bd5abead3a7c37b4f5ac1cdeb6dd18f66f105b2b3588eea163ba35fca9"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0017.npz",
+      "num_starts": 44,
+      "sha256": "eada1bc3109dfb1d77344f718dd06bf20b3136c90aebd78d2710834f1675951d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0018.npz",
+      "num_starts": 44,
+      "sha256": "5099edb0c9c217986aa39ba25fbe8b1fe7e52bd300f5cb6baa03ce48d4238a0c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0019.npz",
+      "num_starts": 44,
+      "sha256": "6a036e2f390363bdc3bec4a28886a61bf996bc46e1adb73f95ed2ba1360d0c11"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0020.npz",
+      "num_starts": 44,
+      "sha256": "b6e849a60dec201bd8bd941bb48d678aa99bfa6c619afa093adb2cd801f49550"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0021.npz",
+      "num_starts": 44,
+      "sha256": "cbefa0e5bc655ca27e5ec2f51c269c3c884f608a77625ef052607062c6de1cde"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0022.npz",
+      "num_starts": 44,
+      "sha256": "9e629af370eddf5ad26204e4c90a044f0952a5d3cf55eb7743b8fa0c7702f6dc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0023.npz",
+      "num_starts": 44,
+      "sha256": "51264c3d57396e0ad465b9fea4dc6752bacdf81976714fe955dd61f5bbcb906a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0024.npz",
+      "num_starts": 44,
+      "sha256": "504fc83a5bc10a1a2b3ce41c2ac0f3f853dde6db7f6ca4880f00e4d09e3cdf5d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0025.npz",
+      "num_starts": 44,
+      "sha256": "6d66882fdf571eeefaf1578f2c2df4e8853baa1925f3dbf4c731e842e91f3160"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0026.npz",
+      "num_starts": 44,
+      "sha256": "c508c3bb7b85d0d00b274bb7290d53dc12f6dbe8f9a1a5c2ae01f04d1e25ce20"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0027.npz",
+      "num_starts": 44,
+      "sha256": "274791d37c1d86eb10945837e76c86bb1330e9790f3f8a0fbd05705d4e6f21b2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0028.npz",
+      "num_starts": 44,
+      "sha256": "4b9aff3f6e9ae0e85097c776a8afc7822e2afb3c567c59dbec452aae9948cddc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0029.npz",
+      "num_starts": 44,
+      "sha256": "d0c689757fb5c4f7bcf082b17cff2c2dfb375f679e1237831eb530dc1d0d99de"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0030.npz",
+      "num_starts": 44,
+      "sha256": "8408f212babf605656238f052e812dd8884b1566cd16901adc4a96fb51954691"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0031.npz",
+      "num_starts": 44,
+      "sha256": "221b2200a59eb7b3b6ef2bc0965f3c7fe48f247666916a436b8d6a758ba3d0dd"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0032.npz",
+      "num_starts": 44,
+      "sha256": "1abc6310f9f3882b219163113c19193bd9f7254e96d86a7af890cc150eb5ffa1"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0033.npz",
+      "num_starts": 44,
+      "sha256": "5307d1554a4d0350593e934ee484d03e9f5c1024894a4503795504c8bee779f2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0034.npz",
+      "num_starts": 44,
+      "sha256": "6ee256e13651098eec09280d27f1b450c9f7debb0461a19d8a3d184d6958e56a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0035.npz",
+      "num_starts": 44,
+      "sha256": "80c254415b6057d8012925abbe72ef84e5649b58c54e6fc546e8b1e7d0be52b3"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0036.npz",
+      "num_starts": 44,
+      "sha256": "6269fe315fa024fc952cec8a73a1700cd6563007feb9ea0b18a3e9161f5d378d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0037.npz",
+      "num_starts": 44,
+      "sha256": "52f6a1ff6b7feff0fb07968fea706562b85a2cd05a9c5df747ff06a56a97f89b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0038.npz",
+      "num_starts": 44,
+      "sha256": "23f3d839c80a8fc5d0f26126588bbcfce0ed3be7f5501ede3ed4c80436a91d86"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0039.npz",
+      "num_starts": 44,
+      "sha256": "f33ef015c48a94c8f1c3ffaed540fe1a5a078c390a636f45d53927ad4094a918"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0040.npz",
+      "num_starts": 44,
+      "sha256": "04343bd06b336b9462a4e15bd17d3c2761b77723f481904dee775f8bf9995912"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0041.npz",
+      "num_starts": 44,
+      "sha256": "7a3dec83e8a02559811385e30e6db77b129750cdc068c04dc28f4ec2b7f474cd"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0042.npz",
+      "num_starts": 44,
+      "sha256": "2d0f55d4b8ee8ada3da13b414ae3aa728c451b7a650f4c0e18eca989bc4bffa1"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0043.npz",
+      "num_starts": 44,
+      "sha256": "f70397320abb4dc3a8a457c475caf875d26f438226660a34274ecd0bec821799"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0044.npz",
+      "num_starts": 44,
+      "sha256": "24015c2646105f8bc7abf08702669329065376f740501877f7707e31177e4011"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0045.npz",
+      "num_starts": 44,
+      "sha256": "ff641cdb10c6e9539615bdf068f394833922d6fec00406694eea8a63ec6b0f62"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0046.npz",
+      "num_starts": 44,
+      "sha256": "b4c909c88b5a23cad76a2f26e6593fe65b33f2ed8cd9ffa9432e7d2e2f11a97f"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0047.npz",
+      "num_starts": 44,
+      "sha256": "4561cc808e15487fb9228667b039b635344c04d4a825052c474462869e1d7b2b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0048.npz",
+      "num_starts": 44,
+      "sha256": "06f28609fa3b32f766e69a57c3af7778b523bf052394f0a9611246d0964308ee"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0049.npz",
+      "num_starts": 44,
+      "sha256": "a4adb15412d2df17c64b948db3919a7a73a6fd72a52887ee8b2a76f25b41e0f9"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0050.npz",
+      "num_starts": 44,
+      "sha256": "e979a1f4cf27dee150a324d7392734c809c9378d84bce693fb0b2e0d09b30d6d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0051.npz",
+      "num_starts": 44,
+      "sha256": "4e7d5964551121a7bbe480d9e6e359f40769334b88cebb3f468c9c5c387c68b5"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0052.npz",
+      "num_starts": 44,
+      "sha256": "fb79fee59448296cbf71b34d2953ea957e077d3a3f033dc526d4e463d6826960"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0053.npz",
+      "num_starts": 44,
+      "sha256": "83363a772326b58a7aeaeda9241daf5226284a1b7040c0c282f47e43ebd2c9d4"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0054.npz",
+      "num_starts": 44,
+      "sha256": "f428d2427ff43bfff4560b9a0d64855f1f65b45a8ae4a47816a79e0a82e525d4"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0055.npz",
+      "num_starts": 44,
+      "sha256": "31c89878a6deb4be1ddb8cc97fc1903bc1d05535f11c5700dc42e60da0681d36"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0056.npz",
+      "num_starts": 44,
+      "sha256": "e0c8914b5719b90481d9ae33334b2496f0ca648cc9b1c7a0a4856e5c388262d3"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0057.npz",
+      "num_starts": 44,
+      "sha256": "6513f1611466b1d977370a63de78e203cd8d621b78629e6c54daae42c6221fdc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0058.npz",
+      "num_starts": 44,
+      "sha256": "f88f8533b33691af23891ef5bef8b68618a28ca50d5ebb066d038aa9e897337e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0059.npz",
+      "num_starts": 44,
+      "sha256": "e623d1afceb09d4185d54b2f210e10f938e8d9f6d7c87831dd4408d3e27240c2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0060.npz",
+      "num_starts": 44,
+      "sha256": "8367f63c76d688d9b6b64ae34fb9db470e5f4c9126069ec3b4be3a222b48c482"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0061.npz",
+      "num_starts": 44,
+      "sha256": "f7790abd5b04220e5a88c78278b1d7cf0066c32eb7f07b784e75ede2d3c41f38"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0062.npz",
+      "num_starts": 44,
+      "sha256": "77f69c65f8a3784573c87bf67e5a229b19b69e5918f15e45ef17b9245113c65c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0063.npz",
+      "num_starts": 44,
+      "sha256": "ffd4b5d42fff256ab1eefa422037620743ded58813ea19425291d59ac4a04e1e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0064.npz",
+      "num_starts": 44,
+      "sha256": "eb3f07789b949efcf5dd067799fc1cef3ca16a321c9e61c5100dbcbd60a317f7"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0065.npz",
+      "num_starts": 44,
+      "sha256": "295b29e1e751c589f000152409d57f80bcaca09d25fdb90c7201b6daaff2a096"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0066.npz",
+      "num_starts": 44,
+      "sha256": "bf274293d0b8e627c4d1aa39b779534542e2626c4a5f690596780d54e8b2cbc4"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0067.npz",
+      "num_starts": 44,
+      "sha256": "173662e6b468dc199f9b7dd32f5314869b98e88a539257975e411e0d35fa9d79"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0068.npz",
+      "num_starts": 44,
+      "sha256": "bb83d4bfb6480e8312edccd58a2e68f3b436dafecac2223a1b2c767299a9cc86"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0069.npz",
+      "num_starts": 44,
+      "sha256": "05def209f704ea1fdbdd32949a4b07dafa0b1032a0a4ab01a8586fd95efc57d8"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0070.npz",
+      "num_starts": 44,
+      "sha256": "0b6362a869f40af98a8dc0c59b1c4956ca8f82de5b2a4111c6d1dbef94ef2913"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0071.npz",
+      "num_starts": 44,
+      "sha256": "ab4d35e085e7172d0f2ade787625ba6658473e7a20e6a4069edbfa9f8fc814ef"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0072.npz",
+      "num_starts": 44,
+      "sha256": "f445ef685420574a147c6fe9b692c69d31fd70cd971fa5f0953ed867d33fa848"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0073.npz",
+      "num_starts": 44,
+      "sha256": "50258cf69ac7bb742f21dd7709e0bc9ccaf25f7a63307d65fa8cdff4e4716a1d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0074.npz",
+      "num_starts": 44,
+      "sha256": "2ea7006f3431eab679577595205103c139b3fdedec09f3604974adeea55b8249"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0075.npz",
+      "num_starts": 44,
+      "sha256": "d805e31015191b3c2c4efcd201f62d5e3651de06190a33647876117bef0c7b9d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0076.npz",
+      "num_starts": 44,
+      "sha256": "38c7402e7f9816cd22fb452a15d0c031318f7a25adaaca7be386042cb0f0b31a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0077.npz",
+      "num_starts": 44,
+      "sha256": "d991bed055c16f714323af0c879a84188b552ac8ecf1311684bc72b7dfc447dd"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0078.npz",
+      "num_starts": 44,
+      "sha256": "2d0bbef7241f9d0316a27c4b1bff7b2733c531735498f97ac2cbed4b56111cfc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0079.npz",
+      "num_starts": 44,
+      "sha256": "fe8465a40a3bff7a339e08a32165db6248f8541e888300c04e81d48187a294b2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0080.npz",
+      "num_starts": 44,
+      "sha256": "459173ad1a4710d1c9ddb67f8ee9c1a1efdbafde604f8c58c6a2abff4a6178d7"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0081.npz",
+      "num_starts": 44,
+      "sha256": "d46902f2230bcd46e409b0eaa760e6bbd99e66bee0eebaaad5a8863945311032"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0082.npz",
+      "num_starts": 44,
+      "sha256": "8e1feaab599b08a16b7a4d236b47aa40faf7ff203bcabbe7b4f3ec1c770d2848"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0083.npz",
+      "num_starts": 44,
+      "sha256": "3baa800d8f670e79620039cc22802b9722084da6fb33e949858a3d6f4539df22"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0084.npz",
+      "num_starts": 44,
+      "sha256": "8f30132249ee7ed228cf3a48d9debdffa57bac1d047a77de8336c0a11b63d5ee"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0085.npz",
+      "num_starts": 44,
+      "sha256": "24642fc965b5fa1edbe83b32b4b8854e50f66c021475d2bbf9aa86b21e48236e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0086.npz",
+      "num_starts": 44,
+      "sha256": "94cfc471f8e9d4d522120b518ac95d0c18e85e52effe9e626fecd91838934686"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0087.npz",
+      "num_starts": 44,
+      "sha256": "201eb7b3a70108c0e63d9e9077dc6eeb568d04e2f67bbb748b9d653857227e62"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0088.npz",
+      "num_starts": 44,
+      "sha256": "ca097998fdb0f933b8c0c887cbf4dbd88bb01d1b290d46d34e1f2813d17a9afd"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0089.npz",
+      "num_starts": 44,
+      "sha256": "fa45fce4ae9726bc4e9f7cde98315b28bb76597665332720e9948785e149cc5e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0090.npz",
+      "num_starts": 44,
+      "sha256": "c0baf181e4825455a43b07fe8d2a198bc1dac7fce178305d7dc6783a307ddee1"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0091.npz",
+      "num_starts": 44,
+      "sha256": "ed2453dee889fdb2568858f7b77a0818aafc4388242ae508c2b313f8618f10e0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0092.npz",
+      "num_starts": 44,
+      "sha256": "7d0be1f225f6097116022373f42255f65a64b35af3a79892ec459db9b2fed0f5"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0093.npz",
+      "num_starts": 44,
+      "sha256": "c8625813066c9b7185bbf0cb31824c5c9791be7162fb1f595f89c86e88e96b45"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0094.npz",
+      "num_starts": 44,
+      "sha256": "c20b428487a0f6e91f4a2e07880af685413d381767ae90bcbbca2c100d20a863"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0095.npz",
+      "num_starts": 44,
+      "sha256": "9c6c0c048542cdb62404eac6206ca392f4dac39206706710b3b214eb29e6a449"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0096.npz",
+      "num_starts": 44,
+      "sha256": "c1cbe3855f33d3717fb9a1f05b79db14d09b6f8a8d41270a11fccb95f56e744a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0097.npz",
+      "num_starts": 44,
+      "sha256": "89cd7ed8e0ccfc167d0f4ca7cd50d6b5211160f3379c95b4ba4af72f4655222d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0098.npz",
+      "num_starts": 44,
+      "sha256": "e828e51fa88233aedbd7c34cbf12040d08a04c71ae38e592273164e1e3057323"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0099.npz",
+      "num_starts": 44,
+      "sha256": "315e24b7ab85030dd8499945322272a9455bcf641ee016e4e2417e5a29cce52e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0100.npz",
+      "num_starts": 44,
+      "sha256": "2333a665f3c43cf9c2bc31664e300caab11b334d69d3feadbbd08badb78ea038"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0101.npz",
+      "num_starts": 44,
+      "sha256": "e8005b2c680a487033076e55f21e62e202bc2606276d0ab8111e1e64bc690f5b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0102.npz",
+      "num_starts": 44,
+      "sha256": "7015b1fcbec64fb69cf4e981d21fa0b664d82088baf50cfcd777166f1a43c630"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0103.npz",
+      "num_starts": 44,
+      "sha256": "c218a84a50b0cd090c6fdcee06000cc7b18c493a6c08b46595a2edc316a56622"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0104.npz",
+      "num_starts": 44,
+      "sha256": "43907ff2cea5891e1e20ab66d9e2e6e44cdaee0be15d909ba17fd848972d2a55"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0105.npz",
+      "num_starts": 44,
+      "sha256": "8232747cca857f54892c62ca27c037d4a283dcf86306ca6363c5861b1c186130"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0106.npz",
+      "num_starts": 44,
+      "sha256": "dc636b537b1ea8bbec072dd8a4b010918edbaf6b9fa85d63acd1543bb613f994"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0107.npz",
+      "num_starts": 44,
+      "sha256": "8b8cf859d4078728991453b0fb4101273b3afd28b8e1205b5fe9e9662270fe21"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0108.npz",
+      "num_starts": 44,
+      "sha256": "c7ff7aae618d08495b3cd9699253e9b80096ad18c78fb93c1dd11f96128fd73e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0109.npz",
+      "num_starts": 44,
+      "sha256": "8eae0a6be97ee726c7aec6a4c777714f0e5440c96d803a42948d8b916e6640a3"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0110.npz",
+      "num_starts": 44,
+      "sha256": "7ac3d55ed6ede2cb00eef5f95ebbee4cf436526d36476305f88f7d273a5dbba0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0111.npz",
+      "num_starts": 44,
+      "sha256": "e87fa266f2c9c41c7fb4b6b0fbb65a8c74aafa79bcfd28de16bbba474e4cd268"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0112.npz",
+      "num_starts": 44,
+      "sha256": "77004ca12a139853c7f61e9b25912c5ace13839a5f751f0226b79f1424630896"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0113.npz",
+      "num_starts": 44,
+      "sha256": "dc2031a9324cac9071b78dcdffc65acd1cdbee5714269edf192b0b19b07fe1b6"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0114.npz",
+      "num_starts": 44,
+      "sha256": "38c9c35a1cc9f2e8a755c9c9eac5fe50f53e1d8a66e691ae183a43b7aed95826"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0115.npz",
+      "num_starts": 44,
+      "sha256": "c22f2f380fefa596637ec047378ddac5baa5da50f8e67bdca8c79f3b9eb55ea9"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0116.npz",
+      "num_starts": 44,
+      "sha256": "af01fc08cbde7942f2e1d778236be0ac54be25dcc0cefbe150aa2cd67fffc608"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0117.npz",
+      "num_starts": 44,
+      "sha256": "40b581631a93d118b9924d07fe901e44d4001c2a5961299e4a182ef2262bd3fe"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0118.npz",
+      "num_starts": 44,
+      "sha256": "508c1ea23e466b9311d3d5106b07d80cf6e144eb254a2fd88213c192673692f3"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0119.npz",
+      "num_starts": 44,
+      "sha256": "4a9fdfbaa51da8ad25ee7902424a9f855534e535ed8a59a785eb1ebfd5d21231"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0120.npz",
+      "num_starts": 44,
+      "sha256": "563d51621b9548abee667abde6bdc1030d3eaf1751c07e3be7ad987abddf08aa"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0121.npz",
+      "num_starts": 44,
+      "sha256": "b926a1726ef3a48375e0e536bace8a18ace295963f9921c22523814b81dc6c7d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0122.npz",
+      "num_starts": 44,
+      "sha256": "e5aefdb428eb991beea5e5b0d28d1d0bc50547064475e06662c7d8c01dc7a5bf"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0123.npz",
+      "num_starts": 44,
+      "sha256": "ec2d3ff510684575496f96aa42f0bc63b4bf7fc813823a5754f6688c3b110136"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0124.npz",
+      "num_starts": 44,
+      "sha256": "47e062fb0f54ce671878494ba673885b9bbf9bdcd4e76b482acde964fd2be1c2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0125.npz",
+      "num_starts": 44,
+      "sha256": "9f1dc333315b76d3a5e10f963f094f02a8bc2e5abaccdcbd12d894407fec72a6"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0126.npz",
+      "num_starts": 44,
+      "sha256": "6549f8db5ca6354dfa629192aa8b0f43fae9249f17cd6569d356ed1351d25fb6"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0127.npz",
+      "num_starts": 44,
+      "sha256": "593ec38c2dfb45b2113d5863ba15f6e661ca4ae2980137e2d98698433a7bef8f"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0128.npz",
+      "num_starts": 44,
+      "sha256": "2dfb832f6f6cc2d6b0d1e05a97de600872a7f7de43d762f02c99e57d13c7fb5b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0129.npz",
+      "num_starts": 44,
+      "sha256": "bf4da22320a965649ba083395901cd3479c7a41ed0d37e6c3e724acda7d604bc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0130.npz",
+      "num_starts": 44,
+      "sha256": "b2928b8eb0893d8d33f42767c6080b65bb5fc7e73e4cbe5f443c97e250c4809c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0131.npz",
+      "num_starts": 44,
+      "sha256": "68b4af494696ab16b74c4806116bbdb4165c2b9d6d44cbd790e7f0f67eee62d0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0132.npz",
+      "num_starts": 44,
+      "sha256": "8f6c88c6c70b35785b3d29d665bb46a9bf6b12edb56908ef2a8567a5d82d8957"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0133.npz",
+      "num_starts": 44,
+      "sha256": "f68d539171060c9d59c3dd6ae0758915def361e71a581725fa4c88ae6587af71"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0134.npz",
+      "num_starts": 44,
+      "sha256": "2afefa4a59ec13ea8a5353de65fcc65c8f31a8e63e7da3ad676af66057debd98"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0135.npz",
+      "num_starts": 44,
+      "sha256": "eebdc45e74aa7eeabd2bcb51bc2add6fb31ac9f7b2092d426b6ca9dada114c3c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0136.npz",
+      "num_starts": 44,
+      "sha256": "31e9a366323c23b751295e6e3aad8dbd0b0d839ec6de8142c1000ece8c773bcc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0137.npz",
+      "num_starts": 44,
+      "sha256": "97bd83f77e7ee305b66a898ccd77f6718f064e894538c5bb175cfcd0dfe5b87b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0138.npz",
+      "num_starts": 44,
+      "sha256": "34f103dd30fe72bd3a7c9382590d22c2b6a8587881fa10154fa47601468ed4fc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0139.npz",
+      "num_starts": 44,
+      "sha256": "02e1cd66a3e1b3b4822fb1f4380703d8a41ec5a86c3f28672f7bc374510e2575"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0140.npz",
+      "num_starts": 44,
+      "sha256": "f101bd2335a8951ac5830263e2f4bd16da42446afc261f47251c116a18816b47"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0141.npz",
+      "num_starts": 44,
+      "sha256": "1829f96ac775d38110414dbfe4e86cb06ec1eeb47f68a450f1ea611604abe50c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0142.npz",
+      "num_starts": 44,
+      "sha256": "4238805002383565f134cd6425f05f56a813c1c1eaf6504d0c6a3e4042ee97bf"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0143.npz",
+      "num_starts": 44,
+      "sha256": "303de8bcc5e23cb4c1b5e2619a4a78a170887a6f955a6882b32047333172386c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0144.npz",
+      "num_starts": 44,
+      "sha256": "6a1caa9a76977faab7a24d5fd4b52a682688df5a502d040d8a207246f5849a4c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0145.npz",
+      "num_starts": 44,
+      "sha256": "58310d0a91bd76a7a29f7d64787cf100f6c9e9fb5bea405dfa24536484da7ec4"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0146.npz",
+      "num_starts": 44,
+      "sha256": "30319b9a32102a2dbeba801bfc3e23b9391f25be5934c984f634f7ba590c3b29"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0147.npz",
+      "num_starts": 44,
+      "sha256": "53bd93ea2201260d699b43f181bbce90837388a49599ea3d318324f26f0102cb"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0148.npz",
+      "num_starts": 44,
+      "sha256": "03123564d9be112a61959c8af6e3f677d50b5b13f91ae12947f8632eaef51379"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0149.npz",
+      "num_starts": 44,
+      "sha256": "c6db4543980a8424429f38f81fc4bce074d16d116dad9ea594334906a9ca1101"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0150.npz",
+      "num_starts": 44,
+      "sha256": "32cc084e55131b1f7195701f7391a3a9a9adfb8611314d0c4cb1103e2de397ed"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0151.npz",
+      "num_starts": 44,
+      "sha256": "b35838e3e2b36cdecb228357d7de339d9578a96c40f6a2eadb2ab69f04f7d863"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0152.npz",
+      "num_starts": 44,
+      "sha256": "486ca503b6cc2bf1430fc1bbf1324350eb9383664ed85dd7f97efae8a01fda09"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0153.npz",
+      "num_starts": 44,
+      "sha256": "d6f2fd13eb81f460dbf6ae40c68f628291545e849f263fc136aeae632dbcaf25"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0154.npz",
+      "num_starts": 44,
+      "sha256": "5af24ae316f38699537f2c097494310ac9f1de577be683cd821262c73f811bb8"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0155.npz",
+      "num_starts": 44,
+      "sha256": "1ee29fc05d43678c2949c0709884bf863af710cbeaf5741315ea7d7494200846"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0156.npz",
+      "num_starts": 44,
+      "sha256": "43c2b580c15301970b3a4fc549e3860f081962d6f4d251b55371f748f2fc79e8"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0157.npz",
+      "num_starts": 44,
+      "sha256": "933386441bb063b79c8de95446f71f5d6ce7a96a79a4c786a4387f543d36457b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0158.npz",
+      "num_starts": 44,
+      "sha256": "d217e3c06967522f2814b17a119dd659efac7e7f078d39755f501eb5e09ab3e8"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0159.npz",
+      "num_starts": 44,
+      "sha256": "257cf97a234acc1d2eb37d148800511a1fb5f35f9bccecd012757cafe0086ab2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0160.npz",
+      "num_starts": 44,
+      "sha256": "4ad3390decc12ca0e5f2de2987442699d17f1d3c363e91318978b11ca53796bc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0161.npz",
+      "num_starts": 44,
+      "sha256": "69f60a2071b55d1bf559cc875ae3c6df9529dbf653bcfbbe9d938b55950c28ea"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0162.npz",
+      "num_starts": 44,
+      "sha256": "8075e0ef3d2245ef9c9e77e1388e75e5d5eebecfd2e233dec99275dcb6095cef"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0163.npz",
+      "num_starts": 44,
+      "sha256": "27769f3ea025fddf46727d757999321a080dd1cc9c35e7592b598da5736e2afe"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0164.npz",
+      "num_starts": 44,
+      "sha256": "5dabd07ebd24b9f54250245533df9c71d76d6f2152d846c5621accd522b553bc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0165.npz",
+      "num_starts": 44,
+      "sha256": "311dd8c6a54cb798d4acbcd0ac14afd806657e61582bc0b51a25e233f746216c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0166.npz",
+      "num_starts": 44,
+      "sha256": "d933c8e59c0e4eafaf9afd62df3cbe4ec9cc0a268797a9c47a118e0b8cfe776a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0167.npz",
+      "num_starts": 44,
+      "sha256": "8530e3219f2a776a880253682b184c8cf68380b0659fde9e00cadd2be9aff002"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0168.npz",
+      "num_starts": 44,
+      "sha256": "7b5bdfd773e1eae219b2e02005fe0dae452da2a7d115ac9dfa6bf187ecab6643"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0169.npz",
+      "num_starts": 44,
+      "sha256": "c76141b011df20fde5228e19408e5e6ed74cbe9d1a37b4a5ba947b6c95d7312d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0170.npz",
+      "num_starts": 44,
+      "sha256": "a3d3a30945ba3259c8cb804d9bc5cfa403fe8069c55e0e8a35051c08375d3fdc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0171.npz",
+      "num_starts": 44,
+      "sha256": "70cece92d2815029b00702597be19d79cacae5f6687f717ba232183e7f5e2483"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0172.npz",
+      "num_starts": 44,
+      "sha256": "aeca255dbdf81d96a899353701b3024e88aef69f8bf7230fb2d2a327621a1476"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0173.npz",
+      "num_starts": 44,
+      "sha256": "5b78a2ceb94fa71c3cb8fa5bf81fbf1d64983b8f8e68a3e1fbc711848461b6be"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0174.npz",
+      "num_starts": 44,
+      "sha256": "763a7cd735ef44677a45a0de93dc874f89c0c6e9c633b63da60369051cf6af44"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0175.npz",
+      "num_starts": 44,
+      "sha256": "0140279f8158ca5bc998807869505c65844abed89c4c533a7db90f9d6a768a34"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0176.npz",
+      "num_starts": 44,
+      "sha256": "785eb3fdf357b183f9cd65c756ada6852eddad993a1a491013f609afbacaf5cb"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0177.npz",
+      "num_starts": 44,
+      "sha256": "4ed76bfc80a600d590fdc4fda37594aad65a3e6e5a78bd54f20c59b5a65d4ac1"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0178.npz",
+      "num_starts": 44,
+      "sha256": "ad30ae9c272bc7f226940cc486d67d82ccdfd75074fd0a41112d0f7bc9391e0d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0179.npz",
+      "num_starts": 44,
+      "sha256": "723e07722620298ad2ca330bfcf2be032d708aa408d448b747334d392a8f0b3d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0180.npz",
+      "num_starts": 44,
+      "sha256": "13c6d5089fcbfeb49655043c43a72611b42514f1487090808379482042b19d88"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0181.npz",
+      "num_starts": 44,
+      "sha256": "54d65e7ba22619641e381d59e835594801614bf5951081d08474aa3d314b8b31"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0182.npz",
+      "num_starts": 44,
+      "sha256": "df730b209550ae193ca12c4524ac98b8d3ac26e648c48453cbca0d04e85b165a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0183.npz",
+      "num_starts": 44,
+      "sha256": "e6390126d6fc340d61f56b40775caa2a6d58fd1d58c9003332f787aa80de8c4c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0184.npz",
+      "num_starts": 44,
+      "sha256": "d57cf17db75ff8bdfa9461f09aa234fba8e646a2ef727d3f9b6be2268a3c7ce9"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0185.npz",
+      "num_starts": 44,
+      "sha256": "6e5a9060dff25679a6a2bc50c6264617c73590c9b92e5618b362bead12080c1d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0186.npz",
+      "num_starts": 44,
+      "sha256": "4a5b0ac2a204501630d4efcdabd7925fb662cbd0586f65bdc77d8547422c11d0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0187.npz",
+      "num_starts": 44,
+      "sha256": "6e1aa47993e8a787ad7f9b3d7684e98fd32f4f538f893a4c3bd604462a694bf5"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0188.npz",
+      "num_starts": 44,
+      "sha256": "164e71ea1b8ea1644d8b9205673e89aa9cca1b636f3e9ea13f4f6218c060b8d2"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0189.npz",
+      "num_starts": 44,
+      "sha256": "1c860eaf142bf419c1321f121b149168a47a07d61538738bc1e8a89918fedeae"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0190.npz",
+      "num_starts": 44,
+      "sha256": "a4929f5ddd70b96904ae87f439b60c84eb945cb426736ccb78375387f6bc6917"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0191.npz",
+      "num_starts": 44,
+      "sha256": "5a9ec4cc88b510bf367a8d9ce7d3f4b3f7653b51a50e82a88ba405bb80c4b2dd"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0192.npz",
+      "num_starts": 44,
+      "sha256": "98b8e0fa56a13f19a4fb664397f8cab4377f836ffd82e0ffd4afa826f5f6c65b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0193.npz",
+      "num_starts": 44,
+      "sha256": "6629face94eb9b38234d3aa00cef3f956d71114b8e6462432291ad06b388dbc0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0194.npz",
+      "num_starts": 44,
+      "sha256": "de7a8649afd819fdd95e34659f70de88def711d1973508295fb61ca2d068a00c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0195.npz",
+      "num_starts": 44,
+      "sha256": "e7142152c96fd504a6b89ff4e89363f3e6cd36e09574052e23c2c7b30e0e64ba"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0196.npz",
+      "num_starts": 44,
+      "sha256": "4b1c481a8dede1372d1f36940ae195c381fa4e9d2857fb61ae28b3bc563bb0c0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0197.npz",
+      "num_starts": 44,
+      "sha256": "c9dc489467755e95d78c769f1d38bd2772b6d1b36487beb31cafb579b75d3578"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0198.npz",
+      "num_starts": 44,
+      "sha256": "136237ed7d710b104a6d518921d78c56d62d6cdd3f7c99ed8d3b6a9e3ceac06a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0199.npz",
+      "num_starts": 44,
+      "sha256": "2c94ac5154ef301be2dfa43ef540034dd2d989813954a0bca66507c7c8536fa5"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0200.npz",
+      "num_starts": 44,
+      "sha256": "8cf087830ed4c87d4185534a6263a5bce199702468b870333b44bf6df7da370b"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0201.npz",
+      "num_starts": 44,
+      "sha256": "5f2c0c6940c4bc47b2c1558452edcf41b0dac3dfa1b05ad71a76007b89d56654"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0202.npz",
+      "num_starts": 44,
+      "sha256": "2973c929e707199b8d0c035068704cdf920e1c70e8482cb3431c125dde0e8e2e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0203.npz",
+      "num_starts": 44,
+      "sha256": "42a60ace18ee68e10bd903b2fee29863c92ed29e702b7de710a8b789aa12307a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0204.npz",
+      "num_starts": 44,
+      "sha256": "ebd97bc039e9685b53da04df01c8c26dfb0b2a7bb891f737d7615b61183e7e70"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0205.npz",
+      "num_starts": 44,
+      "sha256": "01a96b7f1ec1ec90e96a6fd3f13eaca97e82e954e7b697d13a44c36c698b93d0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0206.npz",
+      "num_starts": 44,
+      "sha256": "fb0b50e60fed24b06ff26a113c84d9936fc277d10e21d7c7b507a1c72bfb368e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0207.npz",
+      "num_starts": 44,
+      "sha256": "c65dd56271fdd5623c620630f19bc81b3dff6a01f5c4dc14c7b21617108e4325"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0208.npz",
+      "num_starts": 44,
+      "sha256": "db8e25a09aca1775da5f8c0076f7b3bb4f29b40081add2152f9e674ae2fff70a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0209.npz",
+      "num_starts": 44,
+      "sha256": "725cf51c19589c78ad2ac825be1a075a98c86b9d6885aed4a0266442a9cada2e"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0210.npz",
+      "num_starts": 44,
+      "sha256": "d8a107fb0f96b03569507e12deb8b88f7212b9c836b1d704ce2492ab77c54de0"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0211.npz",
+      "num_starts": 44,
+      "sha256": "d4040f3ff8d50c6574a02b33ab88227c6a3a3e80c1c474aacbf87bca7fc899ea"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0212.npz",
+      "num_starts": 44,
+      "sha256": "2a7f6e4d613fc13b626cbde5d92afbc86beadb3aa8c53f9680a046e67552c7b8"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0213.npz",
+      "num_starts": 44,
+      "sha256": "c797e9f480c151bdf7335f95bf52a2921e2b35b52df22c819939281835f7768d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0214.npz",
+      "num_starts": 44,
+      "sha256": "13c5ddfe8df5d8435e9ad7908835fb53bda044b22ab1dfc6af93c7883b438067"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0215.npz",
+      "num_starts": 44,
+      "sha256": "8a9d59f307fbe624485d28e3e6b61b288bd894c51537e9c58e21e343d4f20334"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0216.npz",
+      "num_starts": 44,
+      "sha256": "b6c57a0ee2ee73cd43539d1d595dff9d467517f569f04b27b61fbd90ca740a53"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0217.npz",
+      "num_starts": 44,
+      "sha256": "bb9b9da06f92b7528e197ba1cda1809f056e590998e6c390c49e5c31980138ba"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0218.npz",
+      "num_starts": 44,
+      "sha256": "1b0f4baa9194b734477ec1c1a559be9799ce81c1f804af4be3923f36de0ef25a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0219.npz",
+      "num_starts": 44,
+      "sha256": "1b09db77c20ebf2425734aed12f9c149a14147432787f847b430330c0e70c8ff"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0220.npz",
+      "num_starts": 44,
+      "sha256": "78152029527c5e12dc6c7055c5ec834a5bd6620e338ddfd94a0c16a9eddc549f"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0221.npz",
+      "num_starts": 44,
+      "sha256": "65179e38ff9ae3f015349c351063bcd4f8bb8758f9b343e51612e6c1c954cd6c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0222.npz",
+      "num_starts": 44,
+      "sha256": "e7ec2f65bc6f04a6017c6c783cd2959f3b1cfa39782963d165af772aeb9e5987"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0223.npz",
+      "num_starts": 44,
+      "sha256": "1bb070e48cdecccc781ea1f1d342da3813793710d98724cff7c2fb22ffffab72"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0224.npz",
+      "num_starts": 44,
+      "sha256": "90cc13accdda9d0d6928ac7b5cc13a67dda1f76917715026b8566540dd4dac19"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0225.npz",
+      "num_starts": 44,
+      "sha256": "f56b8262235fc487212f8d8d41951b56594c48a8e3d5fa5ec5caa828b0e0d924"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0226.npz",
+      "num_starts": 44,
+      "sha256": "97f9e8e57a6ad77f6083d18ed1f9908f4117e3e7d15fd5178149b34f2283f30f"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0227.npz",
+      "num_starts": 44,
+      "sha256": "cafb502ab040d122a185072cdbff9cf36152e848a98a6a5553b214dcc043244c"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0228.npz",
+      "num_starts": 44,
+      "sha256": "c680f586778d29ce513eb0c5b3234ccc7fd75271c9e4f9039c48c177a8186716"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0229.npz",
+      "num_starts": 44,
+      "sha256": "242df3bdbb669de644262c5fc2dea6092334feb086eb29471c24c75abb51b2bc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0230.npz",
+      "num_starts": 44,
+      "sha256": "cde7b590b7f5f7771618757498f5b906bd3424097431a33f0d4ca820d0ef673f"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0231.npz",
+      "num_starts": 44,
+      "sha256": "f654b1e3342410904b4c38f957fb7bc8051647317e15a8ccf775be886fe2f78d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0232.npz",
+      "num_starts": 44,
+      "sha256": "9a5a1e055ed354d96de06b34923d7d4e949f0d46be8f22b6af116c12d52879bc"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0233.npz",
+      "num_starts": 44,
+      "sha256": "70086f9d4a897628da7519ce328327e5e97ecb72d3ff186f145b30d31f984773"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0234.npz",
+      "num_starts": 44,
+      "sha256": "7c3f7a97fc81aea42420a520b50c3777d8d146ba070788f61be2c240f487f201"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0235.npz",
+      "num_starts": 44,
+      "sha256": "e5c7cf2a6a64ccd28b526149d48029a639d3849e42bc172f59fd362df99310b3"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0236.npz",
+      "num_starts": 44,
+      "sha256": "d7c583c88592932a927d7379f1d783b5950593e72fcd76cf04ff41c1eef8594d"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0237.npz",
+      "num_starts": 44,
+      "sha256": "df94f9909e6b09b7ecc7407c6468897b25739615839285df15663d9d5ddcd414"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0238.npz",
+      "num_starts": 44,
+      "sha256": "b82df72229726527c8f99e013898c320e76321b2940b541af808fd579f4fb61a"
+    },
+    {
+      "file": "outputs\\revision_v2\\dataset\\episodes\\train_0239.npz",
+      "num_starts": 44,
+      "sha256": "f600477bd10e0b68ebee812c1ef4ec1984c7a83d00e8a2abdf5c9e087cbd4ee7"
+    }
+  ],
+  "action_low": [
+    -0.011692238971590996,
+    -0.20000000298023224
+  ],
+  "action_high": [
+    0.4303542375564575,
+    1.0
+  ],
+  "actor_parameters": 33282,
+  "gpu": "NVIDIA GeForce RTX 5090 Laptop GPU",
+  "elapsed_seconds": 53.7231541000001,
+  "python": "<PYTHON_EXECUTABLE>",
+  "torch": "2.14.0+cu130",
+  "arguments": {
+    "model": "outputs\\revision_v2\\world_models\\vision_seed2\\best.pt",
+    "data": "outputs\\revision_v2\\dataset\\episodes",
+    "splits": "outputs\\revision_v2\\world_models\\data_manifest.json",
+    "out": "outputs\\revision_v2\\rl\\vision_seed2",
+    "seed": 2,
+    "start_step": 44,
+    "control_end": 135,
+    "bc_steps": 1000,
+    "rl_steps": 1500,
+    "batch_size": 256,
+    "horizon": 5,
+    "force_cap": 8.0,
+    "force_margin": 0.0,
+    "force_weight": 1.0,
+    "task_reward": "height",
+    "target_height": 0.1,
+    "behavior_weight": 2.0,
+    "device": "cuda"
+  }
+}

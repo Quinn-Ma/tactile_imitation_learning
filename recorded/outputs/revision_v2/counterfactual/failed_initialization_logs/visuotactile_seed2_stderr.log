@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "outputs\revision_v2\adaptive_controller.py", line 328, in <module>
+    main()
+    ~~~~^^
+  File "outputs\revision_v2\adaptive_controller.py", line 285, in main
+    model, _ = load_model(args.model, args.device)
+               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "outputs\world_model\model.py", line 137, in load_model
+    payload = torch.load(checkpoint, map_location=device, weights_only=False)
+  File "<EXTERNAL_PATH>/serialization.py", line 1615, in load
+    return _load(
+        opened_zipfile,
+    ...<4 lines>...
+        **pickle_load_args,
+    )
+  File "<EXTERNAL_PATH>/serialization.py", line 2241, in _load
+    result = unpickler.load()
+  File "<EXTERNAL_PATH>/serialization.py", line 2205, in persistent_load
+    typed_storage = load_tensor(
+        dtype, nbytes, key, _maybe_decode_ascii(location)
+    )
+  File "<EXTERNAL_PATH>/serialization.py", line 2167, in load_tensor
+    wrap_storage = restore_location(storage, location)
+  File "<EXTERNAL_PATH>/serialization.py", line 1964, in restore_location
+    return default_restore_location(storage, map_location)
+  File "<EXTERNAL_PATH>/serialization.py", line 734, in default_restore_location
+    result = fn(storage, location)
+  File "<EXTERNAL_PATH>/serialization.py", line 668, in _deserialize
+    return obj.to(device=device)
+           ~~~~~~^^^^^^^^^^^^^^^
+  File "<EXTERNAL_PATH>/storage.py", line 298, in to
+    return _to(self, device, non_blocking)
+  File "<EXTERNAL_PATH>/_utils.py", line 109, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+The CUDA driver logged these messages, which may provide useful details:
+Returning 2 (CUDA_ERROR_OUT_OF_MEMORY) from cuDevicePrimaryCtxRetain
+
+

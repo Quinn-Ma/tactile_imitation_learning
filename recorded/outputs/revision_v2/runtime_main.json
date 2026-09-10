@@ -1,0 +1,12 @@
+{
+  "kind": "post-execution read-only import-order runtime probe",
+  "mode": "main",
+  "entry_point": "evaluate",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "mujoco": "3.3.7",
+  "robosuite": "1.5.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch_policy_runtime": "separate GPU interpreter, see training metadata",
+  "note": "No simulation, model update, metric recomputation, or source change was performed."
+}

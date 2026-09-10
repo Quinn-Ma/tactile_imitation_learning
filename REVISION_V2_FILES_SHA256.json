@@ -1,0 +1,1855 @@
+{
+  "algorithm": "sha256",
+  "code_only": false,
+  "complete_record_validation": {
+    "collection_episodes": 336,
+    "control_executions": 4080,
+    "counterfactual_branches": 324,
+    "counterfactual_environments": 12,
+    "distinct_control_environments": 120,
+    "forecast_metric_rows": 1440,
+    "policies": 34,
+    "sensor_stress_distinct_environments": 30,
+    "sensor_stress_executions": 330
+  },
+  "files": {
+    "PACKAGING_CHANGES_REVISION_V2.md": "d5e3227e54a0fe0e0df6f6097d4bbabba6f5dd86f90f636170c9e3644e503ad7",
+    "README_REVISION_V2.md": "b7664a7dcb3c91f24520d12e785d8b6c36c1fc33e0e0a02458be4fbf401a6774",
+    "SENSOR_STRESS_DATA_LICENSE.md": "fa1fe9b49d3450e85618f19fe862fad4feec810895cf353ceb0b02f6c4692b18",
+    "outputs/revision_v2/.gitignore": "2f9c03b373e0881355b09811fba28b3247d3724dd478788bcfe498ff1707ec4d",
+    "outputs/revision_v2/RESEARCH_PLAN.md": "2c88da9766a535bd56454bb27963d5572ba7e6177e54567bfd3a380609598b1c",
+    "outputs/revision_v2/adaptive_controller.py": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+    "outputs/revision_v2/analysis_amendment.md": "bf2af04e0efad790e773a328eb8b73a1da906cbeeb4eb6e7c75da64a0c7b9f55",
+    "outputs/revision_v2/analyze_control.py": "6d5245766ff1d0e203b6652f585ec87f568f451394af08b5141544b248329ca4",
+    "outputs/revision_v2/audit_dataset.py": "5374e91ea1800d43dca171c2d9053309a683dccec9032c076392b1f615feed11",
+    "outputs/revision_v2/build_methods.py": "85a1739e9a7feb3d8f4e7061fef006eb447c2dbccd8aba067057c3f9fbf9e26e",
+    "outputs/revision_v2/build_protocol.py": "2eaf6c99c359b845c089739846512ddffa5bd237d9add131d58c79b49e315963",
+    "outputs/revision_v2/counterfactual_amendment.json": "b748a5782aac36eb799b59b38289326fe9a379d42c22d484e62888a9917043d0",
+    "outputs/revision_v2/counterfactual_audit.py": "a7cc697a9d7d0ce5574a6397c7a59537866cbfb32dcaa31558101c4866619f23",
+    "outputs/revision_v2/evaluate.py": "1b1d994ea36950334b1b869d21f07b631411fce016aac86b04cd14575a779eef",
+    "outputs/revision_v2/forecast_eval.py": "ecb6c6a6cf2cebac4f8908a1074a50a8b4200e7bc9500bcf4e21fe388000ad92",
+    "outputs/revision_v2/generate_expanded_data.py": "d204d07b90a7b997afbc4e02d7dcd37b20ed12c39d6229bef296eba37a038f91",
+    "outputs/revision_v2/methods.json": "dcf92902920c58a4c906d2377cb618c7d27af1675be85fe18bb40dbb6720cfa6",
+    "outputs/revision_v2/protocol.json": "0933571b10c3921f6967c0ff4f50940e72466f0542f22b28befa7d0f42d12365",
+    "outputs/revision_v2/protocol_amendment.json": "dbe5d213cc398b14db7a408b35583bea41b46f547f6b01a38f4c2c1653c78e5d",
+    "outputs/revision_v2/reactive.py": "5fc26eec041e5c562baa99cd4bf49af6bbd1a71ed1719d4ab147f62f35341066",
+    "outputs/revision_v2/reactive_server.py": "b813f9f0ecea44a7ef432cbab2ae1ac929ceac13785815329a14915e52eacedf",
+    "outputs/revision_v2/review.md": "64c858d7ee1a7dae5d30505ab24949d3851c5ab65a78707554037d9322b7f30a",
+    "outputs/revision_v2/run_experiments.py": "1982f85d50aff83bc7f6c3117c73513df768e4156b19d7b0e4f4519abc8c5a34",
+    "outputs/revision_v2/sensor_stress.py": "046073514b40fbb94eb87aaaaeeb119884231cce61512b7a07af8f7808ceae01",
+    "outputs/revision_v2/sensor_stress_protocol.json": "1f1751ca532120e20cb222653a7db5369ff68622c882c27525b1bc56796797a5",
+    "outputs/revision_v2/sim_adapter_v2.py": "bd0a03f22f43996e4f6d0bcc7ba2d36d00297ed6d4ce1ecea76a5d8ec2a7d64f",
+    "outputs/revision_v2/test_forecast_eval.py": "2d3bac85e5997037e32db32d6f0422eff76d838009b32a8cf639bc94f989de3f",
+    "outputs/revision_v2/test_reactive.py": "1608b22f656cd491e1da169ad9e281f0d25b45a232c12ab8370ff97148a07bf8",
+    "outputs/revision_v2/train_reactive.py": "bd5f712f566a80ed707df8e08c8bca12b9a91da8de7589cf11d2b3dbaa0725a4",
+    "recorded/outputs/revision_v2/RESEARCH_PLAN.md": "2c88da9766a535bd56454bb27963d5572ba7e6177e54567bfd3a380609598b1c",
+    "recorded/outputs/revision_v2/analysis/README.md": "76c0666e82fc0179f144fab53ff0b7f7e79dfaec864f930ea0c136e6c143b14d",
+    "recorded/outputs/revision_v2/analysis/control_analysis.json": "97e17f216a6f37786826e2735b44a29d6323318b0fe32ccd15e39f45d388285f",
+    "recorded/outputs/revision_v2/analysis/control_contrasts.csv": "d16f0ebab6d8db448b302cbd939b54abbf3491acaede0e850af984c6149f285d",
+    "recorded/outputs/revision_v2/analysis/control_group_stats.csv": "0d2f1b32792b05a4df69ef5f32be5cc9531d641d41a54800c445bc1bc1c14f56",
+    "recorded/outputs/revision_v2/analysis/control_policy_stats.csv": "a3f39a985470e4256946eba7bec3041977eeb111aabc317e9d1a70531d25c7ce",
+    "recorded/outputs/revision_v2/analysis/control_seed_variation.csv": "939c9ab2202524bcf57e20c9611e40b02511ab6f3fb80022597151c93dd12e19",
+    "recorded/outputs/revision_v2/analysis/legacy_visual_contrasts.csv": "09ff0e59d8b0b30d3964d227d89816c9429d3dd8c511e442af3820d9fa072acf",
+    "recorded/outputs/revision_v2/analysis/legacy_visual_group_stats.csv": "df31c0be4ec904d84995219d2afa83d9fa091932190f906a7a2172f2adbdf952",
+    "recorded/outputs/revision_v2/analysis/legacy_visual_policy_stats.csv": "adf10aafa32cd9c4692f7fa648969cba92e9c0e736d5b254e2db41f73874ecda",
+    "recorded/outputs/revision_v2/analysis/legacy_visual_seed_variation.csv": "feda283cbed27722633cba52f1554a6a76495a857fc30f7762b54bb7dcaa1745",
+    "recorded/outputs/revision_v2/analysis_amendment.md": "bf2af04e0efad790e773a328eb8b73a1da906cbeeb4eb6e7c75da64a0c7b9f55",
+    "recorded/outputs/revision_v2/completed_results_review.json": "ac6a2be91b1b875375bb82b5d3569b30fdc58c491f34e2605e68e3ec97e282ab",
+    "recorded/outputs/revision_v2/completed_results_review.md": "4db2b4216668f93da07a185625c674154bdf2b93a63d843bb47c75410cd58fd6",
+    "recorded/outputs/revision_v2/counterfactual/completed.jsonl": "0bc916670b70958a28072ba225bcd7e46f564fbc09aaeb6fadc8539e7f772f00",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/counterfactual_console.log": "928125404c91b16ea7c696fa2ed1930dde65061db332cc5dcd7c168710dd45f0",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed0_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed1_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed2_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed0_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed1_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed2_stderr.log": "234d64cf54fed0c1aa774f2abd3575989bf3e398ea26d30b1ec733567a889d63",
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_manifest.json": "ca9c61dd6615872d025af2e60908ff2824b3dff8a0933f6fa668fe907dc4bb2a",
+    "recorded/outputs/revision_v2/counterfactual/per_environment_metrics.jsonl": "186e59426545ff0fa851aaf6cbc3f26ea8c6f38f300ea582791decb27b75828d",
+    "recorded/outputs/revision_v2/counterfactual/run_manifest.json": "45dadbfeb18e38bc476c96ad71f3b48e39cf1bdd9adebbf92b4fb1f07a40d792",
+    "recorded/outputs/revision_v2/counterfactual/runtime_provenance.json": "b857a7f87643dc4e77c906d2f2920afa3f077638426ad1a3f2dba39cd14a603d",
+    "recorded/outputs/revision_v2/counterfactual/summary.json": "2f48a8748b88717d1f4474e37297b57819434f28e1dbc5b78d84314e22cd24a2",
+    "recorded/outputs/revision_v2/counterfactual_amendment.json": "b748a5782aac36eb799b59b38289326fe9a379d42c22d484e62888a9917043d0",
+    "recorded/outputs/revision_v2/counterfactual_infrastructure_amendment.json": "6c4fe6ae8df5548f5c104f9c0ba28af9b4ffc97e43e2197d1be1d0c5467cee13",
+    "recorded/outputs/revision_v2/dataset/audit.json": "ae0bff4478dcc7fe22c6013e27d5d573461600e3be8eeb758a8d728b0a3ba4b9",
+    "recorded/outputs/revision_v2/dataset/data_manifest.json": "d6a70e60d9e7f323246f5c69efaf8f6aec6a5d51a18a7f5a051a515afcd4adbb",
+    "recorded/outputs/revision_v2/dataset/shard_0.jsonl": "df5f1f5c50de8b65d7c9d6cd9b034f3ac66cf2023ab9c2a2d529404b7cbdc4c0",
+    "recorded/outputs/revision_v2/dataset/shard_1.jsonl": "807ede3bb87ccdd52d13b6db1aaf0d782d24c424018190a128add6ad13c34e3d",
+    "recorded/outputs/revision_v2/dataset/shard_2.jsonl": "9978f889e12fa7c8df13093ef305f4740c5b1f09ef2d067c3096108c17846a24",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed0/complete.json": "0bfdcdc7152a1d644f429d07cf631a0e84e903cc7be9bd5a908ddd801e4b2ba4",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed0/episodes.jsonl": "03ed47b92b498fd05ebb696a888267f363470c7beae4635a9193d7ed49a0b8dc",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed0/inputs.json": "38ba0996a4d69a1d9b7ecdcc732846ec3d0ceffa8d2844f3fa600290329b5867",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed1/complete.json": "fc8cefce89bf0cf422bcf69f78441ad7d3b1a62a619f4a0bfbf93d3624ca44af",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed1/episodes.jsonl": "1bbea1b75f21245880b6c43e4f898eb1883a287181d36e0eab91129121da7855",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed1/inputs.json": "cb2967147b9762992846e65089d76959876b9206cd51d379a4642cae71c73c61",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed2/complete.json": "490cff88e3d97ef1246f818deb238b77fd66e55ec8d0367dfa52d159622e855f",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed2/episodes.jsonl": "e2234611eff6d962b4e02f5b8370457aca10476c0ed653710ac3e47097ce2c58",
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed2/inputs.json": "7c12922390e9096dcc9deb51356b9addddb81cb2d93692814a986f916d9eea93",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed0/complete.json": "b293899039553334e366c692bc8904c98cd88edd474a3474bb3abfc40af56239",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed0/episodes.jsonl": "63a30efa2965058d61ba260cd2fe8400ea26aa5cc3ec94fbe20441f417151702",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed0/inputs.json": "6d62b997e99479c486e8e15b7818fc2c51cd62d794c9a4463e742d360b12b00d",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed1/complete.json": "0e0ca983f4490974d1ad72ddae6b7dd24ec187b8246e6c2970497bb30bb631e1",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed1/episodes.jsonl": "9b29336ed6285a39fbcf896df82b3378a90c7f57d9619c85795849a14669cb20",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed1/inputs.json": "5034a8d1508ad03af44098008524005cc24c743a5a826c98667da6bc98f70372",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed2/complete.json": "681824ea390084b7269847cfbb480d46d1a64fd2195860ee5cabe6ff2fb787c9",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed2/episodes.jsonl": "41dca195b8179f312fc46d2f2462302963abf4f73080699c67353a78c4bc76f3",
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed2/inputs.json": "8731250c32269d266f629b1aa6bf888559a2f092081895f26864497ce7fd564b",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed0/complete.json": "36719f8986ac5358d4e39f1447a5c5002849fcce9664d2cbf8972ed1ed1bc654",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed0/episodes.jsonl": "fbdd0bc804284871030120ff60452e3f4496b9a5538670251c2fd4dd6ae4aae7",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed0/inputs.json": "dcfc348a61e690bc37c0beff976dbb31cce6727b8b8d6ad794e67cf6c8e25236",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed1/complete.json": "e042213709e09d24e8f92ad6fd8e6ce99a765328065c4d783bcb9ac52d66fe7b",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed1/episodes.jsonl": "6c38f909b35c153b99874cb6f2260ec83427c9ca9220b2825e52be95fd92c876",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed1/inputs.json": "8552dcb09cb6f9d7701b6af309dee75a9cf2bf0e0b99386b3d6a9c4c0e96d5e6",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed2/complete.json": "c5fa1c671292629fa3a9acc0c1cb4cabf819483cb9b0908a6b24566f43006542",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed2/episodes.jsonl": "f1ce95bf38c2154766d26aaaf1f7e04412675326f0f519570b9af65070deaa6d",
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed2/inputs.json": "8373bb50bed6e53abed3cda1e9a3c2d31ee9b0601288d4755276211a13c40efd",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed0/complete.json": "226ea40ac4f6a4100e72e12c8cb053c39156bd6fa3ea9f56fa5d49206165eb4a",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed0/episodes.jsonl": "e09c54b4f9ecfa0cda8d06dd5b4aa2f926d7c6ce18a3b10cdc143757375d9368",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed0/inputs.json": "25d417bfb1e9f36f9c0b59b874d392fb6876bd57032462aae605590f63c1d2a7",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed1/complete.json": "004439a44fd597182f7576f9f7526730e80466433c5373e41e60a2dd68d2f09c",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed1/episodes.jsonl": "2451acd13691a01d73dcd1a5f82d402be0b5837658d3032a1fe11cc6fdb49345",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed1/inputs.json": "6b28749e593696efcde984d13ff60610a428b01f4f60b8be507db08c7abdebe5",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed2/complete.json": "50664b7bf472d3a96d0be05cad1dadbbcb95b44993f00415d78a34280767774b",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed2/episodes.jsonl": "4977aa19dc1eb14b4c260ed6cff3ef22bfbb2445e8d438e1382e1726f8de4eeb",
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed2/inputs.json": "8ee6355abd577ca69f5ee536aebe16d82f3dd7d8c0e3132c07c9f2ad0a47c528",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed0/complete.json": "984cccafccf4bebe8b33240c1c84c037b9d323c5838af83f8a988b760890a044",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed0/episodes.jsonl": "7a72d0756da010e6aeecb63c94672d2c3bcb9906a97e3eabbe3db768df6bb8f1",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed0/inputs.json": "104538d5b583caef51ec54ed52ce9823d39ce880e02b4cce75070cf03e177ad1",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed1/complete.json": "d42a8cdc038c851030100f21dd219f761632d11d32927df5c33967a70359d6c4",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed1/episodes.jsonl": "d4322e558cadbf77b9c811a69cb6dfe8b827a091644e14bb63cfdd25d664144f",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed1/inputs.json": "f9e72c7f966ca91e96a5cabbdf7f7dcd09c603e62da3c648134fd55ab108c4f6",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed2/complete.json": "a34d8791ef37673933afc817e9d52bd80f60e1bbb51abce19399d2c33be93815",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed2/episodes.jsonl": "973b879d29c64ff5184f217d04f3ce1d11ce4d3460db7859892a4c515e7669e8",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed2/inputs.json": "720d75b9c619e4e1cdbb30f6153520a1a58dd85c4cd81f6491fb33db2856f68f",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed0/complete.json": "11c975c7adb922ba859fe584a03e1fd435c0a70cf61e8638d53431e640cc8080",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed0/episodes.jsonl": "db68a8b3704324482cc8a44afe86ae244c1b52271f71c23315592ab31e523990",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed0/inputs.json": "07a75f2555568b27132390a5efb534f190f54f8278fc4f5cab01521fb40259c1",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed1/complete.json": "c18eb61ef692954271ffccfb45d16eae0176c6be7bb20efbf1a4edb302f19d4c",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed1/episodes.jsonl": "4638a4e90edef7549ad54f01d77fe783d235aa314b16aab9934b0e1a345ed92d",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed1/inputs.json": "7c8fb2192ac829fdf06388c2920e992b52c44d5c0a401d95fbbec93db3611971",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed2/complete.json": "04016e5c3b35ad777a6566a7a8dd53b5b7611d4639c6d632016dd28277244c76",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed2/episodes.jsonl": "3bca97b9c9d3eeaac42767cdad8b40c26f2c5096e274353561e22e7e1bc66ca0",
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed2/inputs.json": "999e688e28b0c76dc982761e624701b76cdc88075fa5147bde126df9241fb1ce",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed0/complete.json": "275b1b5dd669d85b4a833fe262a8693ca4db7af8f0f46aa91fab3ba9436c8abc",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed0/episodes.jsonl": "5ecd939710a8890ee3479b419eec5a94298e337348adb80231475a79bd59d010",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed0/inputs.json": "eabaa1d5cd186dad85b93c4a12ed6ecdf316269e99215db5d5dddf0ea5e23cad",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed1/complete.json": "2ec264e5166f8b7663c211068f450cc6d68fac68f46a0177a5c92274c33a3fc3",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed1/episodes.jsonl": "c39dddfbe869dcdefb29873cd94fe8e6ebef4f6f1bd9db201054a978fa3622cc",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed1/inputs.json": "891a723d9a5a23ed7abf9b85643ac846ed06855dc2a9e189c38cc4e16133fe2a",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed2/complete.json": "023ae3f6f7d4e67dd2f99b3ffb4cd612e38e10e96d1dcd303a7ac3538d1717d0",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed2/episodes.jsonl": "e543333b4219a555b33169172b6eb3d6e002827c6b6023cdd25b0bd261b2fe68",
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed2/inputs.json": "66255ba4863ccc31595b9784882357d726a58ad90b18771edce5059925fe2602",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed0/complete.json": "ceea7265aa1cc7b493dcbffb1b9de223a6d42d336f24d5702e96a6117957f1cf",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed0/episodes.jsonl": "fb7ec0d73af2a6f4d6e87b92082399c7ac3732110a541aadecad44df6d3796fb",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed0/inputs.json": "006ce94aadbb7c897e42bf035e6bcb53f1ccfc8f01ebc44d48edd0ef61e0e9d2",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed1/complete.json": "e1984b631eaf0f5227fa6675fe93696615acbf35bb95c40ecb28f082f240b32b",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed1/episodes.jsonl": "fee2c1cb0c8fd16f7b68773cf9a63a0a88e71cd16dcf1c357da3b1e1a853e18e",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed1/inputs.json": "99282dff00409ea515af930b681e9ee5b43dfeb8a7164e017009c96c4c753611",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed2/complete.json": "a7281432113a73961caaba4b05ef604aea4de02611a4a50f8978d1f2a06b1716",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed2/episodes.jsonl": "572dd1c924f9c663b12a4bc85fee1f707849b12d929728c81988de312c2d45b8",
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed2/inputs.json": "d81ae55a24d2786dd877ba9f45e7959ed70e3e17fdde1bf9ace824c5ebfa67fe",
+    "recorded/outputs/revision_v2/evaluations/force_feedback/complete.json": "72e14d3ce577a3c5a3d8cb383fb4165f2348f00a6e9ad7d6b89d51bf6ea0041d",
+    "recorded/outputs/revision_v2/evaluations/force_feedback/episodes.jsonl": "5c9d6ca3c635f98af8cf8fbb9ee051844a2086eb7ad283f6cb0453410460d628",
+    "recorded/outputs/revision_v2/evaluations/force_feedback/inputs.json": "d0cda90927b8ec349fb67895dd38d586f61efc9fbaa5ed8b38b2160926650677",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed0/complete.json": "f766e16094a0bdb991d65c4230fb148d1d682ba07a390827e16b8c07f302bf58",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed0/episodes.jsonl": "06918aa9ee3195ec4f2c73e92ba849fb459ff4718bba248442e4c0c156799b59",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed0/inputs.json": "45c4de75814658f581577b86d72fbb850e61c447e6da997522cb2296e49830f3",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed1/complete.json": "e7cae37a28c9e0c91657bc16ca2ca63d26d462b695325545c9b29e25739e5a51",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed1/episodes.jsonl": "b358306759c14772c50815e65f59ca23f92e9cfa39dcc22001475eacd24cff6f",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed1/inputs.json": "643740bc7ba4731a311fb41557056f416b1d3f4d6d1794dcc25c880729b3ece4",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed2/complete.json": "a9b327a5365e0ae7841e26646174b8eccefb224734bc92542215918d09d26c60",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed2/episodes.jsonl": "5fea8091156f45fc64e845e4e7a2299c8c46c259e5be70d66552c26a3dd91d5d",
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed2/inputs.json": "0aca32de2da6c84b44df51b28a15b036d7d2fbb7d10999b707ab1262db66f214",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed0/complete.json": "3d987e3f83af35f5f84fd8f13a6f860802df49b96af73ee84bd12c2b381af8cc",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed0/episodes.jsonl": "c1e0c40745289b0fdad8a68f0d67b4918e2b4a82355ce42f0a3f4e83f0f70888",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed0/inputs.json": "9f9d6494355de5f136ad614e018135bc9522847cd9fce6aed7e1ea010ae20b2b",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed1/complete.json": "142a4b1bac05d346a5f4ae60e7f8dde5dee3b1712c9d8645e35781fb11711c77",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed1/episodes.jsonl": "346a3eb626aa2bf1bf871e47e2d8888c5f746e3b7abbc7334e3837f97c6fec04",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed1/inputs.json": "a2a48dc8e9352e58b17e8222904ff33c1a924e4e4f8f8fba01ab5b970ba91dac",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed2/complete.json": "f8c072edae7c68784d3cd5c80b68c6ec47e9b83e7111a18669c682539c37bff4",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed2/episodes.jsonl": "56847a1194eebdf78cc3d6baf7e205465e6ba8f2a5146efc2ff3299b66f3f73b",
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed2/inputs.json": "bd030ac957f8dd891a2623ba71519b2d2914170285fe1122be7cb26a2384e492",
+    "recorded/outputs/revision_v2/evaluations/reactive_guard/complete.json": "dcff44cc3f4f22161548bc5e476882eb845f340e7da3804049ed709f43902f76",
+    "recorded/outputs/revision_v2/evaluations/reactive_guard/episodes.jsonl": "027f02fd55c9b67527848075450c26deacd80c4b2df5eaca7ca75ac9a2a43c63",
+    "recorded/outputs/revision_v2/evaluations/reactive_guard/inputs.json": "7ca6b4029644bacd5131cf76eeb996f9f624291a5e38f2677309b121a2b531b4",
+    "recorded/outputs/revision_v2/evaluations/reactive_no_guard/complete.json": "d10dcdd30a4b964721af33f1c0c1cfa4ba99dae10716551811e1ff90944b0130",
+    "recorded/outputs/revision_v2/evaluations/reactive_no_guard/episodes.jsonl": "63a480cd019e52f34857ae4737ae56d9384ad47f472084af0ba9ee52abee4ed4",
+    "recorded/outputs/revision_v2/evaluations/reactive_no_guard/inputs.json": "801938fbe649fc04238a206e2e83f1aaa0af36a7f4294a9008c34ada30607861",
+    "recorded/outputs/revision_v2/evaluations/script/complete.json": "385e924c0aba6e3d0c1ab52abd76b87f9b425643d2c7e6cc8f683ce699a933f0",
+    "recorded/outputs/revision_v2/evaluations/script/episodes.jsonl": "340f2af3c505cf89fd7a03d7d81d52e620b345029c288766e6bfa35c016afd01",
+    "recorded/outputs/revision_v2/evaluations/script/inputs.json": "4f1d5c03de126ae33abca7d607000a9109555f76ab63c54899049d901a82b682",
+    "recorded/outputs/revision_v2/executed_source/sim_adapter_v2.py": "2739b610a839e89b1ff2d3c444dab40756e69fe54b75f5b480fb0ea4688f39f3",
+    "recorded/outputs/revision_v2/forecast_analysis/aggregate_metrics.csv": "717d4d373b9d419b6ee3128807896d89e30e65e7678c7e0b4308e701481c8ac4",
+    "recorded/outputs/revision_v2/forecast_analysis/analysis_metadata.json": "19ff6d518413aeb238a73e220f7d202822e02197b1c70565af098baf2a298ec7",
+    "recorded/outputs/revision_v2/forecast_analysis/episode_metrics.csv": "2d1c2346f5352bafea303056745170dec7403d46f37aa2a96ce1e34fbc8fd21b",
+    "recorded/outputs/revision_v2/forecast_analysis/forecast_analysis.json": "7ec6e9827423e91857dd7fd82038d8c20a5ae1dbbb756c924791438c026f43f4",
+    "recorded/outputs/revision_v2/forecast_analysis/locked_inputs.json": "02755379ea82082636f19d45842b24f4390f70b89cb4f29f314ff864c6283083",
+    "recorded/outputs/revision_v2/forecast_analysis/model_metrics.csv": "9456f24ec55351e0e87e31ce55dc55acd5325144294ea724396b19f4815c1ce9",
+    "recorded/outputs/revision_v2/forecast_analysis/original_metric_summaries.json": "c63b8ead02ea51f9dbe4c5fc5a3267e08565b1b6cec12b5dd2d94cb4a34f99f6",
+    "recorded/outputs/revision_v2/forecast_analysis/paired_differences.csv": "0f39897b04d2343277f64db8d6328e7d75a590596308c52e0fe76e001623bd39",
+    "recorded/outputs/revision_v2/forecast_analysis/shuffled_touch_pairs.json": "739bbf28dbf1d6eebaf2fc6e75709771ba609378c0426701caf9481ddb6cc244",
+    "recorded/outputs/revision_v2/forecast_audit.json": "2174c93139ef2e733e533a0783a0a35d49adeb2381fb93ea514ae27f515d078f",
+    "recorded/outputs/revision_v2/forecast_findings.md": "29fc4fe2c59e64687c71bf9ccb326f3ded92de16244aa5dcce45ee5725ef5731",
+    "recorded/outputs/revision_v2/guard_details_audit.json": "15796f21c6a8e6353149fa5fbd7cbc7f4d9e1069f3f8e066e65f6c85535c34ac",
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed0/run_metadata.json": "2fac7348c52c4fd0e578a8e309f6bbc3aa600533db54897aaa4b4c0d2be26678",
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed0/training_log.csv": "cdc534837d2475f2ec2a1c82062d4f467e62baae2ac1807c07926a4443c831ca",
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed1/run_metadata.json": "33ac80f21fc7536aa0b73c440da6e69d17ce2c08fae8adf65c4465e05f862e1b",
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed1/training_log.csv": "9798db471bc537eff8b5f224dd04c59d28728f6d031214fe84af683dcc599c28",
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed2/run_metadata.json": "1ccdac0bf3a200632434e08ffb2f4a3db2c0900fd180c9295b7a6956df0c3ba0",
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed2/training_log.csv": "f2edac17a9c14ff1e46431f396a2d8373cab8cd38582eb60a5e92b747f3440c2",
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed0_rl/episodes.jsonl": "da65fa7e993ea662a64dc49475d3d61eae2baddd02c337d9092bb65be8402d04",
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed0_rl/summary.json": "989ea2b4f690713776096292ca4cbaf71059bdd5e92b97e5b0bb49394ca3c788",
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed1_rl/episodes.jsonl": "111bfa3e452ad6a25f807c6ea22bb770153f9403bbb50cf926f89d16646c3a3f",
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed1_rl/summary.json": "e6935718e66f8fed1f9a66fcd90351c47071af2addb519c9752dd9866ddc8a1e",
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed2_rl/episodes.jsonl": "0454f493a33676d51d54d7af02853e840775db73b73b27ccf7c4e1853d601ce2",
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed2_rl/summary.json": "3f6d343962638f932303f60249278116bf6166fa6724e9fe68fc475389787e63",
+    "recorded/outputs/revision_v2/methods.json": "ba7bf9fda8a7e375e7cfc1675d6aa959e9e563bfbce27b412df622107c2d052c",
+    "recorded/outputs/revision_v2/protocol.json": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+    "recorded/outputs/revision_v2/protocol_amendment.json": "dbe5d213cc398b14db7a408b35583bea41b46f547f6b01a38f4c2c1653c78e5d",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/data_audit.json": "7454d89be02f221a761b23d299ecfc22e6de082fedb341ffc75ee1d87d59a83d",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/fixed_config.json": "07de914cabc4c68b5764593d9c4a263f6287fb0e245fa03052141cbf7e0cba79",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/run_metadata.json": "0dd227b081bc2203bcf2fad7721d5149184b8660d930e6221288c6920451dd51",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/training_log.csv": "50a4f25af59d7385430e2d47800ad19ace3737e7da7ac5b326223306e3b4d5a0",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/data_audit.json": "54f82fe70dc0f03d34fe5ed461e38d1babd1e1ac17bfd1bf8a278041effd6344",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/fixed_config.json": "f56fcff1f4503dff1ca50496f92869af4b5553a73672c8d85b50866619fb52c9",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/run_metadata.json": "65c21572417480899f7c89b6d1085cebe0f37159ba776afecd9962ecb7d17381",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/training_log.csv": "162ccf74a47bc9957307fff34a0d452fd45fec7f5c24070f3cbbca06450e63b5",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/data_audit.json": "3c7141268a123ee400de11af142eccde7d627bbb30d6674a6c205fc0fb232660",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/fixed_config.json": "30b47f4cfe6b6ceda387e97a82fa80d3153b2c37855c40c2398a134975de5be0",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/run_metadata.json": "5245aa5371712aa54ef21e98acbb3ab3e4ef4297cec633a0ab787a7f8dfd2525",
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/training_log.csv": "993efface9c18821d190993acb84c5fb251f64298a72b0892ac8a15395b1e0d6",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/data_audit.json": "7b246cb343368b3f379a687eaa339391051a6da61bc7ff59313c019bf2aa2959",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/fixed_config.json": "20459f753408f586b5dae667dccba6528a2a442c9410edfe9ac4b06bf71d572f",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/run_metadata.json": "bdac12bc03256f42fded6106d3f732836744dc3e885d853208d549bcfdb309f0",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/training_log.csv": "e104f37841fb3f9db6edc3d442e93e9bb2cab23ff5d3620548f8aca2ff6315cc",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/data_audit.json": "f9c13578d806ba45a083cb62c2f9778579069182889ccbd6ec25aaa27e20555d",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/fixed_config.json": "37e7adc7d501686a9839c3be31ed04de476befb4b39619acfa703be2805054ca",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/run_metadata.json": "d64aaca17d670850196c43385b563e42617661545f2443d210ac745b85920f39",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/training_log.csv": "c110ea858f81762bbce95fb0b1ec5e7e1dc838ed275c5709b1f499c2e75b15f0",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/data_audit.json": "39a6d24e55bbc98a771d3a3a9396938e76843455406161f2c5493d04739ebaa3",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/fixed_config.json": "77dd470f5bd35606c2813c6f31409e2ce380b1b9f0ba25f83ed430e89f7d46de",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/run_metadata.json": "b282c579b140116f3c047ec6ad348a8fd3a2595ae224004f6d3809edd62ba92f",
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/training_log.csv": "2f0ec736de62c93dfcdc6eb112d11045c34d8ecd19f474f231fade5e7ff51fbf",
+    "recorded/outputs/revision_v2/review.md": "64c858d7ee1a7dae5d30505ab24949d3851c5ab65a78707554037d9322b7f30a",
+    "recorded/outputs/revision_v2/rl/vision_seed0/run_metadata.json": "18d8910b0a2b7de0d51d7c6f3598f7f438bbae147d098bf7d33daf7b71571764",
+    "recorded/outputs/revision_v2/rl/vision_seed0/training_log.csv": "3d8eb54a33e832d9e3306e8409db04be590da6f916200fa4757453baadb883b7",
+    "recorded/outputs/revision_v2/rl/vision_seed1/run_metadata.json": "cd26a7270df1b26f0680070b07b568745301ff34ddf8051d5e744550f9361699",
+    "recorded/outputs/revision_v2/rl/vision_seed1/training_log.csv": "49b4f567c4c6eab768a12f2e5b1a92da2ef3b0dfa913f43f78092b480a7dab1e",
+    "recorded/outputs/revision_v2/rl/vision_seed2/run_metadata.json": "d916fe556bbbc2b56ba6c1f05439c7973e06760b3d1abe45ba7f3ef55893933a",
+    "recorded/outputs/revision_v2/rl/vision_seed2/training_log.csv": "950040eca56a1c64b259937e185381b1d9ae89082ec5f78b9607bb629703523a",
+    "recorded/outputs/revision_v2/rl/visuotactile_seed0/run_metadata.json": "9d6259d56fecc943d8e535b971be06d7b7ab4e53408272c6dfb6029f19da5f8f",
+    "recorded/outputs/revision_v2/rl/visuotactile_seed0/training_log.csv": "1e978bc73e91eaddc5f3f2a80be08ff0da50c7718036434d1e8d63b14e354e7b",
+    "recorded/outputs/revision_v2/rl/visuotactile_seed1/run_metadata.json": "1f67ca3039936727bffdb849fee15273f9e98473de4aa35078353f7f52aa4744",
+    "recorded/outputs/revision_v2/rl/visuotactile_seed1/training_log.csv": "ebd866b7d230c79d5f9dbeecda9b9bf1e8f0e83edce377ab71d9c150137f9b2a",
+    "recorded/outputs/revision_v2/rl/visuotactile_seed2/run_metadata.json": "0139532611226ac0c746d211795075c0cce56fcce896f92343909f8116c8c48c",
+    "recorded/outputs/revision_v2/rl/visuotactile_seed2/training_log.csv": "94984a6b3d89fd05194494aa8cddebb4f147acef8df5adcdab1e3843f3691846",
+    "recorded/outputs/revision_v2/runtime_branch.json": "9ca2fd42376640886347909c8bec4e69f69f56512eea74cc4fa4ce113d899b36",
+    "recorded/outputs/revision_v2/runtime_main.json": "2ba7629ba3e17ed23591b785c829213efac8c7159cabaf6b3eecb16e922a4fb5",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/README.md": "8d3bcd5f9b72e268d1ff781bb399ac8e2b6fddcc931d14a2276de2cb569c49cd",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/analysis.json": "f150e5d2fa52bf580c976f682591119b8864acb68697add48b7b99150bb06095",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/contrasts.csv": "d629267058ce1b2efc9c02717c7f3af80873781c69a5c3a7ab79f26d99d3af42",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/group_stats.csv": "f39f1928a74c5a6cf2ee21a493863af534de4c4bdc7667da80884ee079149c31",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/paired_change_seed_variation.csv": "1fff1eb369d73b3b3c56b871b78ede082c5274b16ee427433e4941570dc012d5",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/paired_policy_changes.csv": "b1cd27da416219787b3508f14835962650114d892257d07224031252dc3d312a",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/policy_stats.csv": "f390c6a8f9c484bd53be3a61184ab2e66c7cf6a009f0a93317d10fd45dd9c384",
+    "recorded/outputs/revision_v2/sensor_stress_analysis/seed_variation.csv": "b74e8cf2bb9744fee945b3ab110bbe9d0c26d5317d9b2a0cd876c20facbbc73b",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed0/episodes.jsonl": "65c9353939bf63f5226b3fe2d0e0fe43019e52e59c2a42a271e57276403bfb5c",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed0/inputs.json": "cb5cae636abef7d5fd7500b1cb01b143434444dce96a4049346adfd471261e83",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed0/summary.json": "765f391653d8b99396219f53d374595badeae49f9dea55af5085901a3eea8dca",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed1/episodes.jsonl": "6c603094594edce66ebd12ea56911b707f1c74235b24f55f0b869a5832d007f9",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed1/inputs.json": "e870f7ef6ef575b702c583972f31e7c827636c697bf18a1e1ca28335b2d24607",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed1/summary.json": "3762564a34e61447238c635c046b607bfb6068595d756a1a1d8d62559bd74528",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed2/episodes.jsonl": "de862cbd3f76687f14b517c7c53433c2eebb84991e54724cf9382d412e229f7b",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed2/inputs.json": "c6641e0e614373a518d58c7d0442daa25eab67ec7e2a39363d1e0a0fd7c7ee37",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed2/summary.json": "584c968a59093b59a06eb7596888e73c54f4ed1d0da41100963dec0560a71982",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed0/episodes.jsonl": "31f3dc8f0655552ecd812b177a7a89629e4f58857d56015088fcf3f073e435b1",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed0/inputs.json": "1041f0c38a459199578626eadf6499a912e19d5c5b5132f3fbd60a3d09ed0f2b",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed0/summary.json": "7802e1da0f1f3db8b69e253f1c64c1d43abf8f4fe72602211fa5920ec646ac93",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed1/episodes.jsonl": "0d7c7ef29f6b9ea157bcbb6eac92e2a7cd35e236fead178ba245e7c2545d167f",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed1/inputs.json": "556628d5a1b623b13d3359aaf4c634160a7e75382c0197a7ce592c2d09135e89",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed1/summary.json": "d0b3ed7b7df8b05bdb29c9708bb74531ba5981c0269974b4035ab70dc2c97e0d",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed2/episodes.jsonl": "bcffb22ae44867e05760da8928ad1eb7050e4d3fb03691648026a116c8a5735d",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed2/inputs.json": "9783219b6919c3dcdf504ab414093a638ec3852a9ab5d118356cfbcc6f8fe5b8",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed2/summary.json": "2dbe6f010c5f4482947e876956fb76ab77259a5ff6c90dfeacbe3a42aad364df",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/force_feedback/episodes.jsonl": "33295d1b12b2cf144ce75a217356fc08dc8925df347ff482685297bb14623b30",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/force_feedback/inputs.json": "f7dc4ea827aaec5d779c90153e5a0b93e8f915c398aa9f50ded02008cb45fb0c",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/force_feedback/summary.json": "73bc63beb36e30fa843ae3b4011e3a6179cfa0d66eb7f11b3c19102c8118fc82",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed0/episodes.jsonl": "7f05563a4bd8f976f357e8d1be4a3e0f792921125529d6acf7c77955d7ef15d6",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed0/inputs.json": "cf77b2b45afef8606a822c0990a6b76016bfc76063c5e02531874f464cd3fe7a",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed0/summary.json": "5cffb827acfe1c18a8e8548d68d314debffa4a9f85194b202b93050ef24abdba",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed1/episodes.jsonl": "e55479b3f10d50c6b1434bc71c6930ebe305008065103b4f11fa889aed36c666",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed1/inputs.json": "490e016176b87595a1dd6d20388b9724735171ed9dfad2a4461f21198b68891b",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed1/summary.json": "aa6cfd50c9368e79ec8283bd6f83b60416643213661e161fc5a2dfac7d3a8a86",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed2/episodes.jsonl": "610869838bdb38d78ac4df10809edec49c1ebefa80842348a06900ea9eafe5ab",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed2/inputs.json": "83f49c94addff6c568f56de2362c0d803edb069d00a092ac9b53d8c651058507",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed2/summary.json": "79ddcbfa507032828740fd70db6f45893b08a333e861820d6dc465af491d0530",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/reactive_guard/episodes.jsonl": "ef288e1a4f69c8e983e87fec98024890ac903d986b17c9bcec67f218898126bd",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/reactive_guard/inputs.json": "7234f0918e6a836db721f77967beaa6b3787ab22c9b51807926b1f07a50c871f",
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/reactive_guard/summary.json": "3791316e6577c74bdc326a66fd8bfa409c3903739adcda686d7ebbff58a07d3d",
+    "recorded/outputs/revision_v2/sensor_stress_protocol.json": "d893f0799f07b506c405b72a91f195e34ae23b414fe5317bf21a1ae162d61a75",
+    "recorded/outputs/revision_v2/world_models/all_runs.json": "d2a807b9585b10c937e097f2b41ee5987b64af78594e5e136ed625811f31f864",
+    "recorded/outputs/revision_v2/world_models/data_manifest.json": "3fd35b99beb1ac02b7af20eb9ddeabb5a27a2520f4254a6d2b80414e9c3d84b9",
+    "recorded/outputs/revision_v2/world_models/normalization.json": "665bd1f29305f728cf875aa867d6b452a0ec69eb4884698bfbb9eabadcb0b13b",
+    "recorded/outputs/revision_v2/world_models/vision_seed0/calibration.json": "9e7cb5cde9406b4837dc436156d03728b7c55e81d14502eae7a86ef7869b7cdc",
+    "recorded/outputs/revision_v2/world_models/vision_seed0/evaluation.json": "e8fadce0e843f229d51ea98d7ff17ac853fcf278056a8dd9e912a93221bfb5f6",
+    "recorded/outputs/revision_v2/world_models/vision_seed0/summary.json": "2d37f27b9da52e412d5384f46acd9d4a8514699fd25a06db208a7c17b78bb0e0",
+    "recorded/outputs/revision_v2/world_models/vision_seed0/training.jsonl": "5dbc270c02a88470d2435d11dca942ed4a30cddb96bbfd229ad4ed042604b8ac",
+    "recorded/outputs/revision_v2/world_models/vision_seed1/calibration.json": "664c6f82acc04635d42404a635af6bf637e4eef507088aa8e57036ead93a6eeb",
+    "recorded/outputs/revision_v2/world_models/vision_seed1/evaluation.json": "1cb91ce477445777e18e3163d8df0a9b87dfc5d18af8c86337031250a9f130d8",
+    "recorded/outputs/revision_v2/world_models/vision_seed1/summary.json": "93b53930c4a056e1c87a0c81d9b91114ee59eb67ff95413dc197ae7ceb808001",
+    "recorded/outputs/revision_v2/world_models/vision_seed1/training.jsonl": "bcc28478871f33e9e57cffeeac9178add6576608f8205396b1e83b36be25ae07",
+    "recorded/outputs/revision_v2/world_models/vision_seed2/calibration.json": "051ee00b64fd20ac643a7cda274492b9e4888f3d938836a8a6967a2135258e08",
+    "recorded/outputs/revision_v2/world_models/vision_seed2/evaluation.json": "3e94ba764a60b1c5e33913b8584e3c5d26c1371194c6d0ebd1327124e03bd650",
+    "recorded/outputs/revision_v2/world_models/vision_seed2/summary.json": "30a854200b16e866cbf25f7326daab9f73aefd20e4b56431b543edbdcabcac84",
+    "recorded/outputs/revision_v2/world_models/vision_seed2/training.jsonl": "04c77fc67e9dae789bb387b0198d46fd2302773ac30db629851a790161ebcd30",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/calibration.json": "a5467192e587f8d96879c3cbf3c5ef1f9ccc4f4b5d0ec837d0dd061f6d078f77",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/evaluation.json": "6a5725b6ff222870245935cbf1c886dce65ebd553fe38166c312c5d61f89b1ce",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/summary.json": "f8ea16988df006e38b917baa56fd1cad48d56a5c8ea26e8356e5a7e0667aa5bf",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/training.jsonl": "30a6ba940dfa781bbd25078a224affa084915328ebb960d51fb28b322d79ff6d",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/calibration.json": "94ebcc3a75829e6ed87ae0ea426f9abbfe8e86b75a0f3ffa7ea2ea5b39d6a8df",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/evaluation.json": "f4046667d39c1101e171aa78942b85bd90f253f0043b3b29bf35d1a0b697316b",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/summary.json": "2d0ea01222a703d828cd21bd2dad1ec1f625371cbbcd5b433e25abb2ea26ddbf",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/training.jsonl": "532f500116b71312c5ca8be3620ee197c94b23c47132545e588a560f53b847e4",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/calibration.json": "8e18be4804d1da4947be25901c2336aefe6d2d3a4de78b438a0137c8cd996817",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/evaluation.json": "7b289b20b96fa74c1f0e7de1cc238c0c6b8716080c694128538342ccf7636c3c",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/summary.json": "7aa385fabb6191e7c7c9c6a004c7364b0f56796a3a35a2719e22ec7a9747837c",
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/training.jsonl": "52ef8a40b4a019c2fde10d657297b5c92868701b597b586aeff73608d269d128",
+    "verify_revision_v2.py": "1cca8a6702f3409aa1dcaccf844fec555a2977383b61dd6ed5541f7ba54cae8b"
+  },
+  "format_version": 1,
+  "original_to_export_provenance": {
+    "outputs/revision_v2/RESEARCH_PLAN.md": {
+      "adaptation": "text encoding/host-path sanitization only",
+      "exported_sha256": "2c88da9766a535bd56454bb27963d5572ba7e6177e54567bfd3a380609598b1c",
+      "original_record_sha256": "2c88da9766a535bd56454bb27963d5572ba7e6177e54567bfd3a380609598b1c"
+    },
+    "outputs/revision_v2/adaptive_controller.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+      "exported_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913"
+    },
+    "outputs/revision_v2/analysis_amendment.md": {
+      "adaptation": "text encoding/host-path sanitization only",
+      "exported_sha256": "bf2af04e0efad790e773a328eb8b73a1da906cbeeb4eb6e7c75da64a0c7b9f55",
+      "original_record_sha256": "bf2af04e0efad790e773a328eb8b73a1da906cbeeb4eb6e7c75da64a0c7b9f55"
+    },
+    "outputs/revision_v2/analyze_control.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "6d5245766ff1d0e203b6652f585ec87f568f451394af08b5141544b248329ca4",
+      "exported_sha256": "6d5245766ff1d0e203b6652f585ec87f568f451394af08b5141544b248329ca4"
+    },
+    "outputs/revision_v2/audit_dataset.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "5374e91ea1800d43dca171c2d9053309a683dccec9032c076392b1f615feed11",
+      "exported_sha256": "5374e91ea1800d43dca171c2d9053309a683dccec9032c076392b1f615feed11"
+    },
+    "outputs/revision_v2/build_methods.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "85a1739e9a7feb3d8f4e7061fef006eb447c2dbccd8aba067057c3f9fbf9e26e",
+      "exported_sha256": "85a1739e9a7feb3d8f4e7061fef006eb447c2dbccd8aba067057c3f9fbf9e26e"
+    },
+    "outputs/revision_v2/build_protocol.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "2eaf6c99c359b845c089739846512ddffa5bd237d9add131d58c79b49e315963",
+      "exported_sha256": "2eaf6c99c359b845c089739846512ddffa5bd237d9add131d58c79b49e315963"
+    },
+    "outputs/revision_v2/counterfactual_amendment.json": {
+      "adaptation": "text encoding/host-path sanitization only",
+      "exported_sha256": "b748a5782aac36eb799b59b38289326fe9a379d42c22d484e62888a9917043d0",
+      "original_record_sha256": "f0538a7d83d88d049b5ac4d2fbed9c44686e7319d4e487899a67936ab2943378"
+    },
+    "outputs/revision_v2/counterfactual_audit.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "a7cc697a9d7d0ce5574a6397c7a59537866cbfb32dcaa31558101c4866619f23",
+      "exported_sha256": "a7cc697a9d7d0ce5574a6397c7a59537866cbfb32dcaa31558101c4866619f23"
+    },
+    "outputs/revision_v2/evaluate.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "1b1d994ea36950334b1b869d21f07b631411fce016aac86b04cd14575a779eef",
+      "exported_sha256": "1b1d994ea36950334b1b869d21f07b631411fce016aac86b04cd14575a779eef"
+    },
+    "outputs/revision_v2/forecast_eval.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "ecb6c6a6cf2cebac4f8908a1074a50a8b4200e7bc9500bcf4e21fe388000ad92",
+      "exported_sha256": "ecb6c6a6cf2cebac4f8908a1074a50a8b4200e7bc9500bcf4e21fe388000ad92"
+    },
+    "outputs/revision_v2/generate_expanded_data.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "d204d07b90a7b997afbc4e02d7dcd37b20ed12c39d6229bef296eba37a038f91",
+      "exported_sha256": "d204d07b90a7b997afbc4e02d7dcd37b20ed12c39d6229bef296eba37a038f91"
+    },
+    "outputs/revision_v2/methods.json": {
+      "adaptation": "text encoding/host-path sanitization only",
+      "exported_sha256": "dcf92902920c58a4c906d2377cb618c7d27af1675be85fe18bb40dbb6720cfa6",
+      "original_record_sha256": "ba7bf9fda8a7e375e7cfc1675d6aa959e9e563bfbce27b412df622107c2d052c"
+    },
+    "outputs/revision_v2/protocol.json": {
+      "adaptation": "portable adapter source hash only; frozen numeric protocol unchanged",
+      "exported_sha256": "0933571b10c3921f6967c0ff4f50940e72466f0542f22b28befa7d0f42d12365",
+      "original_record_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea"
+    },
+    "outputs/revision_v2/protocol_amendment.json": {
+      "adaptation": "text encoding/host-path sanitization only",
+      "exported_sha256": "dbe5d213cc398b14db7a408b35583bea41b46f547f6b01a38f4c2c1653c78e5d",
+      "original_record_sha256": "91e4f90607e927e101f0002e21f374ad0a950e2100734424202c26a7e71bcf21"
+    },
+    "outputs/revision_v2/reactive.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "5fc26eec041e5c562baa99cd4bf49af6bbd1a71ed1719d4ab147f62f35341066",
+      "exported_sha256": "5fc26eec041e5c562baa99cd4bf49af6bbd1a71ed1719d4ab147f62f35341066"
+    },
+    "outputs/revision_v2/reactive_server.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "b813f9f0ecea44a7ef432cbab2ae1ac929ceac13785815329a14915e52eacedf",
+      "exported_sha256": "b813f9f0ecea44a7ef432cbab2ae1ac929ceac13785815329a14915e52eacedf"
+    },
+    "outputs/revision_v2/review.md": {
+      "adaptation": "text encoding/host-path sanitization only",
+      "exported_sha256": "64c858d7ee1a7dae5d30505ab24949d3851c5ab65a78707554037d9322b7f30a",
+      "original_record_sha256": "64c858d7ee1a7dae5d30505ab24949d3851c5ab65a78707554037d9322b7f30a"
+    },
+    "outputs/revision_v2/sensor_stress.py": {
+      "adaptation": "explicit interpreter argument, packaged frozen protocol digest, optional raw-source availability check; embedded residual hashes unchanged",
+      "executed_source_sha256": "d8f19dda3ddc7c65f210c1cd94faa26310dbdf922dd2323de5bc719ab2610a13",
+      "exported_sha256": "046073514b40fbb94eb87aaaaeeb119884231cce61512b7a07af8f7808ceae01"
+    },
+    "outputs/revision_v2/sensor_stress_protocol.json": {
+      "adaptation": "working main protocol/method and inherited source hashes only; all residuals, draws, cases, methods, limits, and original data provenance unchanged",
+      "exported_sha256": "1f1751ca532120e20cb222653a7db5369ff68622c882c27525b1bc56796797a5",
+      "original_record_sha256": "d893f0799f07b506c405b72a91f195e34ae23b414fe5317bf21a1ae162d61a75"
+    },
+    "outputs/revision_v2/sim_adapter_v2.py": {
+      "adaptation": "audited predecessor import/provenance guard",
+      "executed_source_sha256": "2739b610a839e89b1ff2d3c444dab40756e69fe54b75f5b480fb0ea4688f39f3",
+      "exported_sha256": "bd0a03f22f43996e4f6d0bcc7ba2d36d00297ed6d4ce1ecea76a5d8ec2a7d64f"
+    },
+    "outputs/revision_v2/test_forecast_eval.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "2d3bac85e5997037e32db32d6f0422eff76d838009b32a8cf639bc94f989de3f",
+      "exported_sha256": "2d3bac85e5997037e32db32d6f0422eff76d838009b32a8cf639bc94f989de3f"
+    },
+    "outputs/revision_v2/test_reactive.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "1608b22f656cd491e1da169ad9e281f0d25b45a232c12ab8370ff97148a07bf8",
+      "exported_sha256": "1608b22f656cd491e1da169ad9e281f0d25b45a232c12ab8370ff97148a07bf8"
+    },
+    "outputs/revision_v2/train_reactive.py": {
+      "adaptation": "none; source bytes preserved",
+      "executed_source_sha256": "bd5f712f566a80ed707df8e08c8bca12b9a91da8de7589cf11d2b3dbaa0725a4",
+      "exported_sha256": "bd5f712f566a80ed707df8e08c8bca12b9a91da8de7589cf11d2b3dbaa0725a4"
+    },
+    "recorded/outputs/revision_v2/RESEARCH_PLAN.md": {
+      "adaptation": "none",
+      "exported_sha256": "2c88da9766a535bd56454bb27963d5572ba7e6177e54567bfd3a380609598b1c",
+      "original_record_sha256": "2c88da9766a535bd56454bb27963d5572ba7e6177e54567bfd3a380609598b1c"
+    },
+    "recorded/outputs/revision_v2/analysis/README.md": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "76c0666e82fc0179f144fab53ff0b7f7e79dfaec864f930ea0c136e6c143b14d",
+      "original_record_sha256": "311f318d13cb21812af4a470da0b32a0a674a1b193493bce2f8f90593403926b"
+    },
+    "recorded/outputs/revision_v2/analysis/control_analysis.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "97e17f216a6f37786826e2735b44a29d6323318b0fe32ccd15e39f45d388285f",
+      "original_record_sha256": "cceee46c114f7e46af5af9082ffcf7e7c5ae4aad2df8ae923530ef4060c40d63"
+    },
+    "recorded/outputs/revision_v2/analysis/control_contrasts.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d16f0ebab6d8db448b302cbd939b54abbf3491acaede0e850af984c6149f285d",
+      "original_record_sha256": "1c032e0c647fcb4dfaf2bd54b3ce3dad733d620e957e2a72463f8027763ac4df"
+    },
+    "recorded/outputs/revision_v2/analysis/control_group_stats.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0d2f1b32792b05a4df69ef5f32be5cc9531d641d41a54800c445bc1bc1c14f56",
+      "original_record_sha256": "97673be9390a991ab1f9611c343e6bd4ead0714c5a2a254dfc03ee283e337f4a"
+    },
+    "recorded/outputs/revision_v2/analysis/control_policy_stats.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "a3f39a985470e4256946eba7bec3041977eeb111aabc317e9d1a70531d25c7ce",
+      "original_record_sha256": "fddea51d78d4eb18a4791dcd74686f9144f05a3fb13b81138b3fa1a2abffa166"
+    },
+    "recorded/outputs/revision_v2/analysis/control_seed_variation.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "939c9ab2202524bcf57e20c9611e40b02511ab6f3fb80022597151c93dd12e19",
+      "original_record_sha256": "63aa0b89c63eb91310e02d3b37060bac6f0416013b183402ea41adc6139adcf7"
+    },
+    "recorded/outputs/revision_v2/analysis/legacy_visual_contrasts.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "09ff0e59d8b0b30d3964d227d89816c9429d3dd8c511e442af3820d9fa072acf",
+      "original_record_sha256": "6b50616c9f4f413c587c763fe6f02cf56fd2231259a8faf197ea8d28c391e033"
+    },
+    "recorded/outputs/revision_v2/analysis/legacy_visual_group_stats.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "df31c0be4ec904d84995219d2afa83d9fa091932190f906a7a2172f2adbdf952",
+      "original_record_sha256": "da5d4aa0daae9f13bf3fa025994a5827a39282bef836ab685215f9937ee48f23"
+    },
+    "recorded/outputs/revision_v2/analysis/legacy_visual_policy_stats.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "adf10aafa32cd9c4692f7fa648969cba92e9c0e736d5b254e2db41f73874ecda",
+      "original_record_sha256": "87d479911bb7cb827bc7ff2fe1e378289fc39ac109bf5b8945ebdc284cd38ef6"
+    },
+    "recorded/outputs/revision_v2/analysis/legacy_visual_seed_variation.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "feda283cbed27722633cba52f1554a6a76495a857fc30f7762b54bb7dcaa1745",
+      "original_record_sha256": "bb878734742b2fc39eb11d4f6bdcd370c6f417ec53dc319622b43fd835582ed6"
+    },
+    "recorded/outputs/revision_v2/analysis_amendment.md": {
+      "adaptation": "none",
+      "exported_sha256": "bf2af04e0efad790e773a328eb8b73a1da906cbeeb4eb6e7c75da64a0c7b9f55",
+      "original_record_sha256": "bf2af04e0efad790e773a328eb8b73a1da906cbeeb4eb6e7c75da64a0c7b9f55"
+    },
+    "recorded/outputs/revision_v2/completed_results_review.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "ac6a2be91b1b875375bb82b5d3569b30fdc58c491f34e2605e68e3ec97e282ab",
+      "original_record_sha256": "cea713467bf58270e2b5e2b8ac5210d6a78f24253c74e9ae90fceec3dbd98d86"
+    },
+    "recorded/outputs/revision_v2/completed_results_review.md": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "4db2b4216668f93da07a185625c674154bdf2b93a63d843bb47c75410cd58fd6",
+      "original_record_sha256": "c0c40f566742ba40e8dea911d59bdf7e1ee7f96bd38f1a90ff964807b00240c9"
+    },
+    "recorded/outputs/revision_v2/counterfactual/completed.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0bc916670b70958a28072ba225bcd7e46f564fbc09aaeb6fadc8539e7f772f00",
+      "original_record_sha256": "f058066036adc4e24820c5182a6f21f61a6d0ee873f682362b88d40b014f4cac"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/counterfactual_console.log": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "928125404c91b16ea7c696fa2ed1930dde65061db332cc5dcd7c168710dd45f0",
+      "original_record_sha256": "4c5792aa2c1a6bc1291d0298123950e08cec4dd4cf6c67520fb4b560466fa5be"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed0_stderr.log": {
+      "adaptation": "none",
+      "exported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_record_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed1_stderr.log": {
+      "adaptation": "none",
+      "exported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_record_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/vision_seed2_stderr.log": {
+      "adaptation": "none",
+      "exported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_record_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed0_stderr.log": {
+      "adaptation": "none",
+      "exported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_record_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed1_stderr.log": {
+      "adaptation": "none",
+      "exported_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_record_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_logs/visuotactile_seed2_stderr.log": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "234d64cf54fed0c1aa774f2abd3575989bf3e398ea26d30b1ec733567a889d63",
+      "original_record_sha256": "f70c85523bff6e6bc4ad8c525e5a63baf941f81a747b4f337b6a7e877c8868c1"
+    },
+    "recorded/outputs/revision_v2/counterfactual/failed_initialization_manifest.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "ca9c61dd6615872d025af2e60908ff2824b3dff8a0933f6fa668fe907dc4bb2a",
+      "original_record_sha256": "2ec2ee2eaca148b689fa94cf60a31fba04a78c68d2a80b5a1410df99a4ea28b0"
+    },
+    "recorded/outputs/revision_v2/counterfactual/per_environment_metrics.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "186e59426545ff0fa851aaf6cbc3f26ea8c6f38f300ea582791decb27b75828d",
+      "original_record_sha256": "54250d363fd8dd646ee01b22b4de25e4b48451ab7a48490213b0695355120f79"
+    },
+    "recorded/outputs/revision_v2/counterfactual/run_manifest.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "45dadbfeb18e38bc476c96ad71f3b48e39cf1bdd9adebbf92b4fb1f07a40d792",
+      "original_record_sha256": "0ce4f79e3ee5efd38de791d958d985ac889d3d6ed4f0853e84b04e168d30b6cf"
+    },
+    "recorded/outputs/revision_v2/counterfactual/runtime_provenance.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b857a7f87643dc4e77c906d2f2920afa3f077638426ad1a3f2dba39cd14a603d",
+      "original_record_sha256": "23c03dbe54a4bb7d4086b008020b7e74a4a5c44ee5fbf4aeed5fa8468f8fb24e"
+    },
+    "recorded/outputs/revision_v2/counterfactual/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2f48a8748b88717d1f4474e37297b57819434f28e1dbc5b78d84314e22cd24a2",
+      "original_record_sha256": "46008dded81f13c220f8060e22e5ab6ae2ed6ba7dce305ec6c9ea056ad3e11a8"
+    },
+    "recorded/outputs/revision_v2/counterfactual_amendment.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b748a5782aac36eb799b59b38289326fe9a379d42c22d484e62888a9917043d0",
+      "original_record_sha256": "f0538a7d83d88d049b5ac4d2fbed9c44686e7319d4e487899a67936ab2943378"
+    },
+    "recorded/outputs/revision_v2/counterfactual_infrastructure_amendment.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "6c4fe6ae8df5548f5c104f9c0ba28af9b4ffc97e43e2197d1be1d0c5467cee13",
+      "original_record_sha256": "da37050d981c4a4bf1522e9a7270a6433e3ef796967bd36f3c826a2846e92ba6"
+    },
+    "recorded/outputs/revision_v2/dataset/audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "ae0bff4478dcc7fe22c6013e27d5d573461600e3be8eeb758a8d728b0a3ba4b9",
+      "original_record_sha256": "3890a9bd0369bf2ef80c3d42ff7f15ff23e9695df528b396935c9c90c46ba639"
+    },
+    "recorded/outputs/revision_v2/dataset/data_manifest.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d6a70e60d9e7f323246f5c69efaf8f6aec6a5d51a18a7f5a051a515afcd4adbb",
+      "original_record_sha256": "c67953d40f55d4ccf524ae140a063d3fa5e2a9e2fb257be75a5eff4c8359bb4b"
+    },
+    "recorded/outputs/revision_v2/dataset/shard_0.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "df5f1f5c50de8b65d7c9d6cd9b034f3ac66cf2023ab9c2a2d529404b7cbdc4c0",
+      "original_record_sha256": "b5040e80d14659b2192874b2d49122cfa86e06a877984a1259bf2906040bcf98"
+    },
+    "recorded/outputs/revision_v2/dataset/shard_1.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "807ede3bb87ccdd52d13b6db1aaf0d782d24c424018190a128add6ad13c34e3d",
+      "original_record_sha256": "5de810680bbc0e61694eba6daf7e6e37af57dfc93f4e7a423b81099b26aea4a3"
+    },
+    "recorded/outputs/revision_v2/dataset/shard_2.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9978f889e12fa7c8df13093ef305f4740c5b1f09ef2d067c3096108c17846a24",
+      "original_record_sha256": "e8206d8e9d4f155d20a0f15f5afc5bdc2f5fa15d7bfb3857e860877974397514"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0bfdcdc7152a1d644f429d07cf631a0e84e903cc7be9bd5a908ddd801e4b2ba4",
+      "original_record_sha256": "08adb290fd78afe519c8160cdccd4fe457c1b6ebe03a97c7743fa2f20e8c0d30"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "03ed47b92b498fd05ebb696a888267f363470c7beae4635a9193d7ed49a0b8dc",
+      "original_record_sha256": "fda814e27b8f951b00e8db3bb251b52aca5e389fe72b9a1998195ccd4b351008"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "38ba0996a4d69a1d9b7ecdcc732846ec3d0ceffa8d2844f3fa600290329b5867",
+      "original_record_sha256": "222ab3eb68f92094cd881fa59fb1db1adfa8a24c28adbe4e9d486c9cd53b748d"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "fc8cefce89bf0cf422bcf69f78441ad7d3b1a62a619f4a0bfbf93d3624ca44af",
+      "original_record_sha256": "9743024dfcdeb64cde3274520245663d76e46fa0ba2fd314b0a80af23b013557"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1bbea1b75f21245880b6c43e4f898eb1883a287181d36e0eab91129121da7855",
+      "original_record_sha256": "05e8afca38fe87dba930efbfa9debc617a755585a2ffb8588424f5eed9837774"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "cb2967147b9762992846e65089d76959876b9206cd51d379a4642cae71c73c61",
+      "original_record_sha256": "8c7035d66e1efcb79dc84192a5955ed5a324b6f9cc2f23865f01f0652cdd3261"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "490cff88e3d97ef1246f818deb238b77fd66e55ec8d0367dfa52d159622e855f",
+      "original_record_sha256": "f89ef55472678b6e4db12e0f975074802bd66a9e455aafe3f2614bae9b20246e"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e2234611eff6d962b4e02f5b8370457aca10476c0ed653710ac3e47097ce2c58",
+      "original_record_sha256": "3b33d6f4e288154dc22ec579ba06d5f974b7dfb4e6bf3651acc3c1d794b3c880"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_vision_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7c12922390e9096dcc9deb51356b9addddb81cb2d93692814a986f916d9eea93",
+      "original_record_sha256": "25322dda55ed0aebedf20ffb1bba2101f5799655d085fe43aafecca3bbfd06e3"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b293899039553334e366c692bc8904c98cd88edd474a3474bb3abfc40af56239",
+      "original_record_sha256": "fd74a0546e3d013b70bd97eeba7da18c6a49efdd5d4146c7ecf0f316472d08af"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "63a30efa2965058d61ba260cd2fe8400ea26aa5cc3ec94fbe20441f417151702",
+      "original_record_sha256": "f9d0fae43df39e7b5c4c5f39d6ef55c3b7493227f01a4ed6b38d3f763329a814"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "6d62b997e99479c486e8e15b7818fc2c51cd62d794c9a4463e742d360b12b00d",
+      "original_record_sha256": "a68b99e6cbef9507149e4fef24c5465260853cae64fcf663a8bbbda349aa063f"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0e0ca983f4490974d1ad72ddae6b7dd24ec187b8246e6c2970497bb30bb631e1",
+      "original_record_sha256": "792afa50c3b40b034dd2451a137b67b4c1ec4d3f3c54224e977b378c3b996643"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9b29336ed6285a39fbcf896df82b3378a90c7f57d9619c85795849a14669cb20",
+      "original_record_sha256": "473d66be9953eabeaf91adb03206ce68101fda2e8ac18591ae1ef78363addfe2"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5034a8d1508ad03af44098008524005cc24c743a5a826c98667da6bc98f70372",
+      "original_record_sha256": "374d12a28b95daaae32441d269d03f2eb0e4b9d4d883d681054b6722bb8c5939"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "681824ea390084b7269847cfbb480d46d1a64fd2195860ee5cabe6ff2fb787c9",
+      "original_record_sha256": "e18e7ac79d1a3185ef87abb5b9a2e93587610502336eba7c624f1e7d7af29d81"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "41dca195b8179f312fc46d2f2462302963abf4f73080699c67353a78c4bc76f3",
+      "original_record_sha256": "06f1e66b650a5965e2332f76ca04f8d3fd8323f27e98f432c83637349c7180f2"
+    },
+    "recorded/outputs/revision_v2/evaluations/BC_visuotactile_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "8731250c32269d266f629b1aa6bf888559a2f092081895f26864497ce7fd564b",
+      "original_record_sha256": "230dedc7dae45ae88cb8b38e4ce04de1bf5bf01b2f3f3d2f5d5ee925d94a5c36"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "36719f8986ac5358d4e39f1447a5c5002849fcce9664d2cbf8972ed1ed1bc654",
+      "original_record_sha256": "6f3c04e04de4fb72da957b0c5a9f3fd870585e2ae97258e7b789ca9d9cefffe2"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "fbdd0bc804284871030120ff60452e3f4496b9a5538670251c2fd4dd6ae4aae7",
+      "original_record_sha256": "a32aeaeb36e6d086194d19d2e1397bf2b62bd9e9ba78053c749489cf965b3103"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "dcfc348a61e690bc37c0beff976dbb31cce6727b8b8d6ad794e67cf6c8e25236",
+      "original_record_sha256": "63945e06ebb23acf012eac80993d54c20e8c24e26e2dbcf15d60b48b539e141d"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e042213709e09d24e8f92ad6fd8e6ce99a765328065c4d783bcb9ac52d66fe7b",
+      "original_record_sha256": "aebbb0e72f11f807a4923eeb3e5d9debcf786ada1e86a512ba5ccbd5d587d199"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "6c38f909b35c153b99874cb6f2260ec83427c9ca9220b2825e52be95fd92c876",
+      "original_record_sha256": "ae60122b414f11285c91477af5ac230b378d08cb7d2a72d2b57d071c085b8e9d"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "8552dcb09cb6f9d7701b6af309dee75a9cf2bf0e0b99386b3d6a9c4c0e96d5e6",
+      "original_record_sha256": "e42697001713b5ab8a03a725208b12fa737c04c7bb915c6edde971d6e7573039"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c5fa1c671292629fa3a9acc0c1cb4cabf819483cb9b0908a6b24566f43006542",
+      "original_record_sha256": "1c8ea7e2dbba654e7aea46b355677a7e0ee4ca44c8697411290cab6fea053304"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f1ce95bf38c2154766d26aaaf1f7e04412675326f0f519570b9af65070deaa6d",
+      "original_record_sha256": "4bfc3991cf123532dba922967d4ef9a4e420a53bd8eff9e484a507a75cabaae9"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_vision_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "8373bb50bed6e53abed3cda1e9a3c2d31ee9b0601288d4755276211a13c40efd",
+      "original_record_sha256": "545e1f3f343b51800b35417e738ad209cebb626edc286a5dcf041e9af69eb2fe"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "226ea40ac4f6a4100e72e12c8cb053c39156bd6fa3ea9f56fa5d49206165eb4a",
+      "original_record_sha256": "f9abbea97f53a22c367110bf0f072db9ad163c440b350f96d60ff6ad6d8f12bd"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e09c54b4f9ecfa0cda8d06dd5b4aa2f926d7c6ce18a3b10cdc143757375d9368",
+      "original_record_sha256": "6e3d1d032c05ca495bf2dbbfb46c0a581bc4fea91f0f92a3c9e289d81eb1a0d3"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "25d417bfb1e9f36f9c0b59b874d392fb6876bd57032462aae605590f63c1d2a7",
+      "original_record_sha256": "e2da73ade41d10b39cbb2cfc4415e0e789d4bbbdfc2ddb859837d3c6363f84ad"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "004439a44fd597182f7576f9f7526730e80466433c5373e41e60a2dd68d2f09c",
+      "original_record_sha256": "a61ca3b312de9cfc7461d831921ff5ec84f27fab360e4a11339f740b26359a88"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2451acd13691a01d73dcd1a5f82d402be0b5837658d3032a1fe11cc6fdb49345",
+      "original_record_sha256": "9477556821887dae4313484929fad1879a9b1c333ffa91bf7ba092b50f1a9ce1"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "6b28749e593696efcde984d13ff60610a428b01f4f60b8be507db08c7abdebe5",
+      "original_record_sha256": "e37c309674178dd5139156bc98b31254184e4fa29581503f3d8d48e4a73b889d"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "50664b7bf472d3a96d0be05cad1dadbbcb95b44993f00415d78a34280767774b",
+      "original_record_sha256": "a7260743b53bd2d62ff0ae5dbef67a257b058202de683790ab4d16400afaa98c"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "4977aa19dc1eb14b4c260ed6cff3ef22bfbb2445e8d438e1382e1726f8de4eeb",
+      "original_record_sha256": "96c0ea972301ebf399828341415caa7bedbec42b144a738abac45d9dd5d43435"
+    },
+    "recorded/outputs/revision_v2/evaluations/IQL_visuotactile_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "8ee6355abd577ca69f5ee536aebe16d82f3dd7d8c0e3132c07c9f2ad0a47c528",
+      "original_record_sha256": "c60686f97e9bd40f1cccc23cf9c8ea4b79a38769c712cb3586d647bde60dca90"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "984cccafccf4bebe8b33240c1c84c037b9d323c5838af83f8a988b760890a044",
+      "original_record_sha256": "4edd5b4a491ad1e21b332ce119790ef592750d5a08fba16f3758e3d51105f08e"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7a72d0756da010e6aeecb63c94672d2c3bcb9906a97e3eabbe3db768df6bb8f1",
+      "original_record_sha256": "fc43ed030ffe783b08b09d64e700e220425620810eccc6a60906f87613cb2392"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "104538d5b583caef51ec54ed52ce9823d39ce880e02b4cce75070cf03e177ad1",
+      "original_record_sha256": "7d8fa0756f55ed8da76c2f0c8ac40d2f931cda7867ffaec0024a2cecb87c7d7c"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d42a8cdc038c851030100f21dd219f761632d11d32927df5c33967a70359d6c4",
+      "original_record_sha256": "645777b7cb2f4c44e31e2cb9bc748caebc9465933050b75a41c991c85386480c"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d4322e558cadbf77b9c811a69cb6dfe8b827a091644e14bb63cfdd25d664144f",
+      "original_record_sha256": "3e795947c506e483c33936c4ef250cfe4b63ebba50ed4e4134d7aab271665d89"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f9e72c7f966ca91e96a5cabbdf7f7dcd09c603e62da3c648134fd55ab108c4f6",
+      "original_record_sha256": "da027ecb542eda4272701a49faeb5884525c19e6ec339407d9a7bb58af513139"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "a34d8791ef37673933afc817e9d52bd80f60e1bbb51abce19399d2c33be93815",
+      "original_record_sha256": "4fb658165b65296ae6f5f5d2a0a51a907ee280faabf175828e9c89c61ae132e7"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "973b879d29c64ff5184f217d04f3ce1d11ce4d3460db7859892a4c515e7669e8",
+      "original_record_sha256": "388b2c160cc1cb00d582f2f466dbae1fe2a8957581b8204b705c5aff98ab2549"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_vision_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "720d75b9c619e4e1cdbb30f6153520a1a58dd85c4cd81f6491fb33db2856f68f",
+      "original_record_sha256": "126963c393d1e50841a5f1852524ddda1625904e4f495ee542d2de2f66156031"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "11c975c7adb922ba859fe584a03e1fd435c0a70cf61e8638d53431e640cc8080",
+      "original_record_sha256": "c8db5972c246588737121644aaf21392e9c13ee63cc70be31426e3937665e947"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "db68a8b3704324482cc8a44afe86ae244c1b52271f71c23315592ab31e523990",
+      "original_record_sha256": "626d4f19d5e6a3562c9f3ca5d8d34aaef374d68c0ffdcaa830e04b8555c1cbdf"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "07a75f2555568b27132390a5efb534f190f54f8278fc4f5cab01521fb40259c1",
+      "original_record_sha256": "a17e8917e87bd9c11a76d1e630f017c4ea74cb0c9f9848cb0414bd753e2da7ef"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c18eb61ef692954271ffccfb45d16eae0176c6be7bb20efbf1a4edb302f19d4c",
+      "original_record_sha256": "82b2383a186c9e314f7e61dd4e9f04b9c6395f1c6090132ec7f31b601e9c414e"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "4638a4e90edef7549ad54f01d77fe783d235aa314b16aab9934b0e1a345ed92d",
+      "original_record_sha256": "86a9d92d25270cd53b8be78c26b10d226e854a37cbf70efc6fe1976f520443a1"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7c8fb2192ac829fdf06388c2920e992b52c44d5c0a401d95fbbec93db3611971",
+      "original_record_sha256": "3c363274c4284f3364c90f7e2a450d19639e90e74eea6ea040da29a2b7d56df0"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "04016e5c3b35ad777a6566a7a8dd53b5b7611d4639c6d632016dd28277244c76",
+      "original_record_sha256": "6215c71f185624b3ae41263656fae1624deca5d7f45616d85f0a134ac53aecbb"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3bca97b9c9d3eeaac42767cdad8b40c26f2c5096e274353561e22e7e1bc66ca0",
+      "original_record_sha256": "d7a26bb836e419a6d65806aaed43d2bfcd977aa43a0d7f1e874d348699f70899"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_BC_visuotactile_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "999e688e28b0c76dc982761e624701b76cdc88075fa5147bde126df9241fb1ce",
+      "original_record_sha256": "d7058019702d51e1fbb6dd29141b6a24d41a8b20a738cf5a887dd68966ed6f8f"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "275b1b5dd669d85b4a833fe262a8693ca4db7af8f0f46aa91fab3ba9436c8abc",
+      "original_record_sha256": "6287252a15f47c4cabadb0cc4dbc421b086c6836801f3b5fce2deec7874b04a4"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5ecd939710a8890ee3479b419eec5a94298e337348adb80231475a79bd59d010",
+      "original_record_sha256": "3b46789e915d86309e2822f859d28029cb321744b227fabe55b579221ce3832d"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "eabaa1d5cd186dad85b93c4a12ed6ecdf316269e99215db5d5dddf0ea5e23cad",
+      "original_record_sha256": "daeec363942ef91e034ec1b7f37fd5532b0b0f7f3b65604998ff9adeca3460f7"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2ec264e5166f8b7663c211068f450cc6d68fac68f46a0177a5c92274c33a3fc3",
+      "original_record_sha256": "e290739042f69ae54646b7f26f3147fe1aecdda6f6f6c251a68247b65a5e918a"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c39dddfbe869dcdefb29873cd94fe8e6ebef4f6f1bd9db201054a978fa3622cc",
+      "original_record_sha256": "32b68e980a5d569890d5edcf5c6060a73e334520cb89ef73f5ad8f81fe0f9b12"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "891a723d9a5a23ed7abf9b85643ac846ed06855dc2a9e189c38cc4e16133fe2a",
+      "original_record_sha256": "9e725c2d37056cc5542e5b6b0790d30f764340d031c7d53bbf9426db175b9404"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "023ae3f6f7d4e67dd2f99b3ffb4cd612e38e10e96d1dcd303a7ac3538d1717d0",
+      "original_record_sha256": "2d7a65c015c2ac64e494f89c47a3480bef1c0e150c633f28a346a60bc6ff4efc"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e543333b4219a555b33169172b6eb3d6e002827c6b6023cdd25b0bd261b2fe68",
+      "original_record_sha256": "f6e18705d84bbece921f7817024ec88feb8f25b7d1280568a6fe44805e99c486"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_vision_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "66255ba4863ccc31595b9784882357d726a58ad90b18771edce5059925fe2602",
+      "original_record_sha256": "eb15ab299b893104fc0f7bf9ee43adea5416b5e8e4f79cc6420ee3cfb310b4b7"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "ceea7265aa1cc7b493dcbffb1b9de223a6d42d336f24d5702e96a6117957f1cf",
+      "original_record_sha256": "21cbccbfa294a5d2950be9c626f4bdf1d0b438b63e04f6febd7d5b36ed28aa2b"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "fb7ec0d73af2a6f4d6e87b92082399c7ac3732110a541aadecad44df6d3796fb",
+      "original_record_sha256": "505482c6166c621a658844c4c414a509af159192155e5f66d2ff5e94353b1546"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "006ce94aadbb7c897e42bf035e6bcb53f1ccfc8f01ebc44d48edd0ef61e0e9d2",
+      "original_record_sha256": "1da0b811866dcebdf12354b91e3f09d37edf5832d6c983db8488bccfc5f86ffc"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e1984b631eaf0f5227fa6675fe93696615acbf35bb95c40ecb28f082f240b32b",
+      "original_record_sha256": "2d710c3c52651bbffb3b2b650bce31b98140d0f18db6b8e02391e101c0ae0fe9"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "fee2c1cb0c8fd16f7b68773cf9a63a0a88e71cd16dcf1c357da3b1e1a853e18e",
+      "original_record_sha256": "36f8aea3a2d2c5d73ecb06b7d543d2e836cf3bf3c8647d7b57211e23c390bb6a"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "99282dff00409ea515af930b681e9ee5b43dfeb8a7164e017009c96c4c753611",
+      "original_record_sha256": "ceaf2dd68aff1f0d1492af21cbab18edf2c37d0249b2a8148a66842d0540575e"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "a7281432113a73961caaba4b05ef604aea4de02611a4a50f8978d1f2a06b1716",
+      "original_record_sha256": "63dd2d51523a3fd9531a08f8367e87f45a1a7a80814695fc1add5e125f65a6c9"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "572dd1c924f9c663b12a4bc85fee1f707849b12d929728c81988de312c2d45b8",
+      "original_record_sha256": "234a4f0648c5cd521c34d50ba07377df4ff6bbe43ad5b7afe1a6097318cd437c"
+    },
+    "recorded/outputs/revision_v2/evaluations/WM_visuotactile_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d81ae55a24d2786dd877ba9f45e7959ed70e3e17fdde1bf9ace824c5ebfa67fe",
+      "original_record_sha256": "090ff56140ee7050951962405bad8051a1e03926bbdd47fd33fbe1c6f4e6b1a5"
+    },
+    "recorded/outputs/revision_v2/evaluations/force_feedback/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "72e14d3ce577a3c5a3d8cb383fb4165f2348f00a6e9ad7d6b89d51bf6ea0041d",
+      "original_record_sha256": "fec1aa5eea6fbd499ff75432aad2c85905c26c23294c24676bb54dc39c4a03fe"
+    },
+    "recorded/outputs/revision_v2/evaluations/force_feedback/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5c9d6ca3c635f98af8cf8fbb9ee051844a2086eb7ad283f6cb0453410460d628",
+      "original_record_sha256": "489429cb9de71796b8daa4ebbfcfc54ff7fbfc7e675e505ee9fc78f130213db6"
+    },
+    "recorded/outputs/revision_v2/evaluations/force_feedback/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d0cda90927b8ec349fb67895dd38d586f61efc9fbaa5ed8b38b2160926650677",
+      "original_record_sha256": "d82794a1488ac12d3735a0efda69aaa997d096ffd96da9a0ed2f591c6bd5ff48"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f766e16094a0bdb991d65c4230fb148d1d682ba07a390827e16b8c07f302bf58",
+      "original_record_sha256": "80b7ae466fd314bcca5e8284ab4a74ac972b4d5324e2fcb3a5a0cbb2d73ca17c"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "06918aa9ee3195ec4f2c73e92ba849fb459ff4718bba248442e4c0c156799b59",
+      "original_record_sha256": "daf8067a21f47e9211f9d8293646cf91ce9b0b7089b1d9b5dffba28ced7e494e"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "45c4de75814658f581577b86d72fbb850e61c447e6da997522cb2296e49830f3",
+      "original_record_sha256": "0ee017f5ce7f289cfcc15cb15db5a31c9c25bc526e7b94ca63c9f49e58d8ddeb"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e7cae37a28c9e0c91657bc16ca2ca63d26d462b695325545c9b29e25739e5a51",
+      "original_record_sha256": "aa2f62fd11d96503ecf65a9d6ed401cfdf02a33e165cf67f53f65de133fc1b6f"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b358306759c14772c50815e65f59ca23f92e9cfa39dcc22001475eacd24cff6f",
+      "original_record_sha256": "3edb9c9689967a69eab60ce22d8cfb90fa2f854130933c4d1c52422f90ca72ec"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "643740bc7ba4731a311fb41557056f416b1d3f4d6d1794dcc25c880729b3ece4",
+      "original_record_sha256": "76684c5849cec8f8b7035bd21386b0c20b42cf6e0a6bfd4d05aece0179636713"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "a9b327a5365e0ae7841e26646174b8eccefb224734bc92542215918d09d26c60",
+      "original_record_sha256": "ffd606eb8e6bad05f18dc458359028ecb80f3b5f3ba762000f076d25bd442413"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5fea8091156f45fc64e845e4e7a2299c8c46c259e5be70d66552c26a3dd91d5d",
+      "original_record_sha256": "77c6ff28bb2862464dcedcc13bd9389d60d78847a3b9424d98199f8439b68c3c"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_guard_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0aca32de2da6c84b44df51b28a15b036d7d2fbb7d10999b707ab1262db66f214",
+      "original_record_sha256": "6e4da35c8ae6974d2417b81cc1fa1b1b78d589543be44e94dc9ce2fbbf644fe8"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed0/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3d987e3f83af35f5f84fd8f13a6f860802df49b96af73ee84bd12c2b381af8cc",
+      "original_record_sha256": "2a9fda8605fc5048430de0b7a3682373b0890388cc8a7350473b88c077e12363"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c1e0c40745289b0fdad8a68f0d67b4918e2b4a82355ce42f0a3f4e83f0f70888",
+      "original_record_sha256": "7190a3edf859e7254623343c4e065e385a24bf6f6dfb2abe3f1ea373f3dd623d"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9f9d6494355de5f136ad614e018135bc9522847cd9fce6aed7e1ea010ae20b2b",
+      "original_record_sha256": "64a330ada51c9730d8df2e978210b155c01b9f9827605e9b2c5c2b9313a1072e"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed1/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "142a4b1bac05d346a5f4ae60e7f8dde5dee3b1712c9d8645e35781fb11711c77",
+      "original_record_sha256": "1dd21ae7d7b3398c6a32f1e4f5bbe5209a2cbee2bdda00b6f950f5b5b576cac9"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "346a3eb626aa2bf1bf871e47e2d8888c5f746e3b7abbc7334e3837f97c6fec04",
+      "original_record_sha256": "1b6cc0cbfbb629267412f8ab810261ba8a3ecc000249c1ec7ad6968c015823d0"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "a2a48dc8e9352e58b17e8222904ff33c1a924e4e4f8f8fba01ab5b970ba91dac",
+      "original_record_sha256": "ef0e7a25e85ee53f740f7b2ba7be9a7f19cdba8a28fea130c18c9eba2d3f2880"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed2/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f8c072edae7c68784d3cd5c80b68c6ec47e9b83e7111a18669c682539c37bff4",
+      "original_record_sha256": "3ec6dc556cbeee86848444ccd43924436dd70485a9ad30ba0e09d9c86402e535"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "56847a1194eebdf78cc3d6baf7e205465e6ba8f2a5146efc2ff3299b66f3f73b",
+      "original_record_sha256": "125011a79713f5da654c523dca40f7ceb6fe49ee5b46bce52be47513fe092c5a"
+    },
+    "recorded/outputs/revision_v2/evaluations/model_no_guard_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "bd030ac957f8dd891a2623ba71519b2d2914170285fe1122be7cb26a2384e492",
+      "original_record_sha256": "b41ac1309da4106ce4c5ce0612d39cd56755d4cd4411b44d3b21fc1a90cc4862"
+    },
+    "recorded/outputs/revision_v2/evaluations/reactive_guard/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "dcff44cc3f4f22161548bc5e476882eb845f340e7da3804049ed709f43902f76",
+      "original_record_sha256": "4c8eb160db36d96f70043a0d4e1ae9176f763db749573cd9279b5905c22e7b18"
+    },
+    "recorded/outputs/revision_v2/evaluations/reactive_guard/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "027f02fd55c9b67527848075450c26deacd80c4b2df5eaca7ca75ac9a2a43c63",
+      "original_record_sha256": "740e5d8e9669687281ff8fb1e409d2c0bab83aa6b2f9ecd8df997b84a35e2120"
+    },
+    "recorded/outputs/revision_v2/evaluations/reactive_guard/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7ca6b4029644bacd5131cf76eeb996f9f624291a5e38f2677309b121a2b531b4",
+      "original_record_sha256": "40fbb6e63cd89b423025c323edb14860d8a51eb9ae3ca385f738249beedd555e"
+    },
+    "recorded/outputs/revision_v2/evaluations/reactive_no_guard/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d10dcdd30a4b964721af33f1c0c1cfa4ba99dae10716551811e1ff90944b0130",
+      "original_record_sha256": "0538f6a76d67e0daad3b45309227ce622824c9371ac3a68b26d83e39c77a92f1"
+    },
+    "recorded/outputs/revision_v2/evaluations/reactive_no_guard/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "63a480cd019e52f34857ae4737ae56d9384ad47f472084af0ba9ee52abee4ed4",
+      "original_record_sha256": "a13c66c1a0a0c11f47b5f6ed07d5b6c1a12aa1eab25382e4b4b28b2ee4e021ad"
+    },
+    "recorded/outputs/revision_v2/evaluations/reactive_no_guard/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "801938fbe649fc04238a206e2e83f1aaa0af36a7f4294a9008c34ada30607861",
+      "original_record_sha256": "756dc7067af79978f67929f48a3918cb4ef0ff6ce1bed080636680f73a6835f6"
+    },
+    "recorded/outputs/revision_v2/evaluations/script/complete.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "385e924c0aba6e3d0c1ab52abd76b87f9b425643d2c7e6cc8f683ce699a933f0",
+      "original_record_sha256": "d8f48933dcfac3b1d921b1098630ac78b9332918888487d0df96cf7f656191f7"
+    },
+    "recorded/outputs/revision_v2/evaluations/script/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "340f2af3c505cf89fd7a03d7d81d52e620b345029c288766e6bfa35c016afd01",
+      "original_record_sha256": "934796973584bcf0201c372b1a507e4c85767ccb5908ce5f1527748aed1bf8ee"
+    },
+    "recorded/outputs/revision_v2/evaluations/script/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "4f1d5c03de126ae33abca7d607000a9109555f76ab63c54899049d901a82b682",
+      "original_record_sha256": "69f11e560d2c1ffd156ab7c7c6c498560cc9b4dfa81dbb59e244ebf4ad838b70"
+    },
+    "recorded/outputs/revision_v2/executed_source/sim_adapter_v2.py": {
+      "adaptation": "none",
+      "executed_source_sha256": "2739b610a839e89b1ff2d3c444dab40756e69fe54b75f5b480fb0ea4688f39f3",
+      "exported_sha256": "2739b610a839e89b1ff2d3c444dab40756e69fe54b75f5b480fb0ea4688f39f3"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/aggregate_metrics.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "717d4d373b9d419b6ee3128807896d89e30e65e7678c7e0b4308e701481c8ac4",
+      "original_record_sha256": "d8a46615050c309221b4107e359965ee577a491d7461dcc8497c75389f7aa39c"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/analysis_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "19ff6d518413aeb238a73e220f7d202822e02197b1c70565af098baf2a298ec7",
+      "original_record_sha256": "fa69fec881a562d61e39482b66dfb083d3bd893d4a49f68296ffc79ebd3a8195"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/episode_metrics.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2d1c2346f5352bafea303056745170dec7403d46f37aa2a96ce1e34fbc8fd21b",
+      "original_record_sha256": "ae5d0a1de37c3076f7b591649479a4463dd5f00af86a63c30b30ec0eb8029bed"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/forecast_analysis.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7ec6e9827423e91857dd7fd82038d8c20a5ae1dbbb756c924791438c026f43f4",
+      "original_record_sha256": "45fff2efc787af18f14b9c41d22313f4344d2a03d9bcb9cdecc6ceef637e25e7"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/locked_inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "02755379ea82082636f19d45842b24f4390f70b89cb4f29f314ff864c6283083",
+      "original_record_sha256": "017519d1e43b1c4abfa4a4f15c973942759bf04bd89c2afc740686f171da12c1"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/model_metrics.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9456f24ec55351e0e87e31ce55dc55acd5325144294ea724396b19f4815c1ce9",
+      "original_record_sha256": "116983b2e4581e6990bfee70824c5fb007930129d4f0e0755e37e2c13ee7cee3"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/original_metric_summaries.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c63b8ead02ea51f9dbe4c5fc5a3267e08565b1b6cec12b5dd2d94cb4a34f99f6",
+      "original_record_sha256": "75c1071cadb66eb2e202abfa6f86accb48875c38063011f70cd24b65f5535c24"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/paired_differences.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0f39897b04d2343277f64db8d6328e7d75a590596308c52e0fe76e001623bd39",
+      "original_record_sha256": "168a53888b6d0d6cdfa2cbe98f441bb67af350d9fa0e22cabcaa47c47bfb8755"
+    },
+    "recorded/outputs/revision_v2/forecast_analysis/shuffled_touch_pairs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "739bbf28dbf1d6eebaf2fc6e75709771ba609378c0426701caf9481ddb6cc244",
+      "original_record_sha256": "da65d1f6cdeb0af28ef0bee92296ca0a10dfbb67405718d0d88a35848f4f85de"
+    },
+    "recorded/outputs/revision_v2/forecast_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2174c93139ef2e733e533a0783a0a35d49adeb2381fb93ea514ae27f515d078f",
+      "original_record_sha256": "ef6452353766d735aad052e3f2dcc4a64028f7b8974448914d6442a48bbdf2c4"
+    },
+    "recorded/outputs/revision_v2/forecast_findings.md": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "29fc4fe2c59e64687c71bf9ccb326f3ded92de16244aa5dcce45ee5725ef5731",
+      "original_record_sha256": "7f88d86d51aa765038c8baafd3b347187732e99da29882df5c79f44920832065"
+    },
+    "recorded/outputs/revision_v2/guard_details_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "15796f21c6a8e6353149fa5fbd7cbc7f4d9e1069f3f8e066e65f6c85535c34ac",
+      "original_record_sha256": "e83273f32baaebc3df406b3f000a86e0cf74793b6e9e98ed1eee213284090549"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed0/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2fac7348c52c4fd0e578a8e309f6bbc3aa600533db54897aaa4b4c0d2be26678",
+      "original_record_sha256": "93c9804fb5970b170bdbd9397e66d025491c4b748bffa3b9ed2fa1ab3e2a0e61"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed0/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "cdc534837d2475f2ec2a1c82062d4f467e62baae2ac1807c07926a4443c831ca",
+      "original_record_sha256": "33a2d334a061bca9a9f45701e0da72f962c7172d20bb85a27268b7e4a9f5719f"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed1/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "33ac80f21fc7536aa0b73c440da6e69d17ce2c08fae8adf65c4465e05f862e1b",
+      "original_record_sha256": "e8c71b2d6f9664aaa870be2a6e086c84ff594a10bfb1a6808ce52f9d90f245f6"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed1/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9798db471bc537eff8b5f224dd04c59d28728f6d031214fe84af683dcc599c28",
+      "original_record_sha256": "eb2bdfe2039a64a6f000c9d2f1ecf469f035560ebc5492ebe0395d077c4a9272"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed2/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1ccdac0bf3a200632434e08ffb2f4a3db2c0900fd180c9295b7a6956df0c3ba0",
+      "original_record_sha256": "424caf5ce3f827a489c298036a911ae3ca4d38ffca1b4da53203b071b220cbde"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_ablation/vision_seed2/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f2edac17a9c14ff1e46431f396a2d8373cab8cd38582eb60a5e92b747f3440c2",
+      "original_record_sha256": "2716d41a4dce29ecfb30b475351396fc4a0fa7d9ace9e5ff76499101139e94ab"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed0_rl/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "da65fa7e993ea662a64dc49475d3d61eae2baddd02c337d9092bb65be8402d04",
+      "original_record_sha256": "3c82f3641a08dbe5f0248c51c65e0cb20caf1c22840070c466a2f40bf8feca08"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed0_rl/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "989ea2b4f690713776096292ca4cbaf71059bdd5e92b97e5b0bb49394ca3c788",
+      "original_record_sha256": "a13d2997beddec5b752babc23e1e3f9880e30fe9afff4e671362ee2317296b5f"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed1_rl/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "111bfa3e452ad6a25f807c6ea22bb770153f9403bbb50cf926f89d16646c3a3f",
+      "original_record_sha256": "f79c535a52ddb9c86c9205503b55e78a4b79c877d113cc3be371e0a2751f2dfd"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed1_rl/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e6935718e66f8fed1f9a66fcd90351c47071af2addb519c9752dd9866ddc8a1e",
+      "original_record_sha256": "e9ef840a745f9560a27aaf6c20ba3865c9688da25d2261ca1bb955ec036a9b25"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed2_rl/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0454f493a33676d51d54d7af02853e840775db73b73b27ccf7c4e1853d601ce2",
+      "original_record_sha256": "0c58bdedf2c229b8c2839fa06a487588bf9430f53882d605bfd50e03fc27da12"
+    },
+    "recorded/outputs/revision_v2/legacy_visual_evaluation/vision_height_seed2_rl/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3f6d343962638f932303f60249278116bf6166fa6724e9fe68fc475389787e63",
+      "original_record_sha256": "fd447b045dd0a2f18c97ed5f383ef016a698981228e00f7418cd88cc0440ec8b"
+    },
+    "recorded/outputs/revision_v2/methods.json": {
+      "adaptation": "none",
+      "exported_sha256": "ba7bf9fda8a7e375e7cfc1675d6aa959e9e563bfbce27b412df622107c2d052c",
+      "original_record_sha256": "ba7bf9fda8a7e375e7cfc1675d6aa959e9e563bfbce27b412df622107c2d052c"
+    },
+    "recorded/outputs/revision_v2/protocol.json": {
+      "adaptation": "none",
+      "exported_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+      "original_record_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea"
+    },
+    "recorded/outputs/revision_v2/protocol_amendment.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "dbe5d213cc398b14db7a408b35583bea41b46f547f6b01a38f4c2c1653c78e5d",
+      "original_record_sha256": "91e4f90607e927e101f0002e21f374ad0a950e2100734424202c26a7e71bcf21"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/data_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7454d89be02f221a761b23d299ecfc22e6de082fedb341ffc75ee1d87d59a83d",
+      "original_record_sha256": "826af491f8a7c855476464c340008c8d56e1b7eb0fedacf2007328dc4aacd7a7"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/fixed_config.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "07de914cabc4c68b5764593d9c4a263f6287fb0e245fa03052141cbf7e0cba79",
+      "original_record_sha256": "a67913dae511803be0b37de6d7a947a938407abe4da4fff12b32ff4d77ce9f69"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0dd227b081bc2203bcf2fad7721d5149184b8660d930e6221288c6920451dd51",
+      "original_record_sha256": "fb1e13f92a4feaf626fba23b4055ded8211264e3d7ab5da71a40057937e16b42"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed0/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "50a4f25af59d7385430e2d47800ad19ace3737e7da7ac5b326223306e3b4d5a0",
+      "original_record_sha256": "8c459c0d712ace66d028d554331a7c2531abec99a681b8cc56aeb3937ad72c5d"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/data_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "54f82fe70dc0f03d34fe5ed461e38d1babd1e1ac17bfd1bf8a278041effd6344",
+      "original_record_sha256": "3b5a3b6f62bc6172eee5aada3461b02b8537776de8681a990010ae1e9def9db9"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/fixed_config.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f56fcff1f4503dff1ca50496f92869af4b5553a73672c8d85b50866619fb52c9",
+      "original_record_sha256": "bd3d32ce35c2b464533ffc29f7f0e40a6cf94f91833f4776cbe71ffecdc67d85"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "65c21572417480899f7c89b6d1085cebe0f37159ba776afecd9962ecb7d17381",
+      "original_record_sha256": "8a9351ee5322a506f126c7007ed0f5c96a49842ab64e623744cef1879fbee7c1"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed1/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "162ccf74a47bc9957307fff34a0d452fd45fec7f5c24070f3cbbca06450e63b5",
+      "original_record_sha256": "a901baa0287171fb02f82c7c0e2a2c43818d479b36020a38a0f6deee5edb3e9d"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/data_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3c7141268a123ee400de11af142eccde7d627bbb30d6674a6c205fc0fb232660",
+      "original_record_sha256": "ac7d6ca3a6561370f936de35fa0a0c712675ad557ac79c3bf5af675a6989a33f"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/fixed_config.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "30b47f4cfe6b6ceda387e97a82fa80d3153b2c37855c40c2398a134975de5be0",
+      "original_record_sha256": "e016a801de6091e755e0e282041abb05be46c80702ca0d20e149ae89cdcde571"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5245aa5371712aa54ef21e98acbb3ab3e4ef4297cec633a0ab787a7f8dfd2525",
+      "original_record_sha256": "d892cd8b058b23857f6b1a69758a2cab7f53db8ee25d6574e851daa77a1375a6"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/vision_seed2/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "993efface9c18821d190993acb84c5fb251f64298a72b0892ac8a15395b1e0d6",
+      "original_record_sha256": "1a863acebfa6dfbb43432fbba6ce31e43d6bb3ed526167788ab16a16bec5d0a8"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/data_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7b246cb343368b3f379a687eaa339391051a6da61bc7ff59313c019bf2aa2959",
+      "original_record_sha256": "dabb2a182d7cb3afd4a0673fb4e1168eb67e9a8343c794a189a8de42aed3349a"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/fixed_config.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "20459f753408f586b5dae667dccba6528a2a442c9410edfe9ac4b06bf71d572f",
+      "original_record_sha256": "95dcea8117e67180781ee140564140dbee44ed3ef86cb04591c10b898415a51c"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "bdac12bc03256f42fded6106d3f732836744dc3e885d853208d549bcfdb309f0",
+      "original_record_sha256": "a5d901232d860d8c85078985597a0c36a88fb6aff709ee18e81e182a1d9e4e4d"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed0/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e104f37841fb3f9db6edc3d442e93e9bb2cab23ff5d3620548f8aca2ff6315cc",
+      "original_record_sha256": "7e0ba0b05bc540456f0da96d949482458c94b296f497f803f4af836bc89e684c"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/data_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f9c13578d806ba45a083cb62c2f9778579069182889ccbd6ec25aaa27e20555d",
+      "original_record_sha256": "dbd31b7e9f9dd83ee09e23db22dd7bad6e7b4c0d6c5051b00361a1b86d3bde35"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/fixed_config.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "37e7adc7d501686a9839c3be31ed04de476befb4b39619acfa703be2805054ca",
+      "original_record_sha256": "4e88674de2260f798deca3847c688ae19628c6b29da2c2aa1c5bee80e33c83ed"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d64aaca17d670850196c43385b563e42617661545f2443d210ac745b85920f39",
+      "original_record_sha256": "af1ef788709774dac2d8ed47defe3e1211e5e1dbdaaf859cb0690df1eecb6423"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed1/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c110ea858f81762bbce95fb0b1ec5e7e1dc838ed275c5709b1f499c2e75b15f0",
+      "original_record_sha256": "accea49c9a30948f63fb57f7a9df51573e7c42f3d9092bb8c0390788f4376ad1"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/data_audit.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "39a6d24e55bbc98a771d3a3a9396938e76843455406161f2c5493d04739ebaa3",
+      "original_record_sha256": "a5c7e0e3538577947e87ccc07f35aa294949ba6b99f1d1cb751895827a82e207"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/fixed_config.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "77dd470f5bd35606c2813c6f31409e2ce380b1b9f0ba25f83ed430e89f7d46de",
+      "original_record_sha256": "3912998855054498d2022be26d8335bd6bc40333dce748ad20e4bec5df123d4b"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b282c579b140116f3c047ec6ad348a8fd3a2595ae224004f6d3809edd62ba92f",
+      "original_record_sha256": "a29488f960c4a8c8601188d00216e99b69bb0746302f47e164922f54e610ceff"
+    },
+    "recorded/outputs/revision_v2/reactive_runs/visuotactile_seed2/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2f0ec736de62c93dfcdc6eb112d11045c34d8ecd19f474f231fade5e7ff51fbf",
+      "original_record_sha256": "dc8109af919c935f72915fd0e955959d72c88814f9f3b3f8c3fc99ce5ef3ceab"
+    },
+    "recorded/outputs/revision_v2/review.md": {
+      "adaptation": "none",
+      "exported_sha256": "64c858d7ee1a7dae5d30505ab24949d3851c5ab65a78707554037d9322b7f30a",
+      "original_record_sha256": "64c858d7ee1a7dae5d30505ab24949d3851c5ab65a78707554037d9322b7f30a"
+    },
+    "recorded/outputs/revision_v2/rl/vision_seed0/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "18d8910b0a2b7de0d51d7c6f3598f7f438bbae147d098bf7d33daf7b71571764",
+      "original_record_sha256": "41ab31fc3239ece2368f583409cc4c140c7fc5e363d7cabdf71b576882e22b13"
+    },
+    "recorded/outputs/revision_v2/rl/vision_seed0/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3d8eb54a33e832d9e3306e8409db04be590da6f916200fa4757453baadb883b7",
+      "original_record_sha256": "dcc59ad9a84045cd6d1bef2ef8a84842257e72591124173fa277947e3cb2f5c1"
+    },
+    "recorded/outputs/revision_v2/rl/vision_seed1/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "cd26a7270df1b26f0680070b07b568745301ff34ddf8051d5e744550f9361699",
+      "original_record_sha256": "6d0ff1dbdfb22f223a0c0dd6a85fe39b34731c611a7a8167a7c30a954af827e0"
+    },
+    "recorded/outputs/revision_v2/rl/vision_seed1/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "49b4f567c4c6eab768a12f2e5b1a92da2ef3b0dfa913f43f78092b480a7dab1e",
+      "original_record_sha256": "aab23a57edd9e82af1c8badf29d127f79280755dd05226af4dde0607d40c0fd5"
+    },
+    "recorded/outputs/revision_v2/rl/vision_seed2/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d916fe556bbbc2b56ba6c1f05439c7973e06760b3d1abe45ba7f3ef55893933a",
+      "original_record_sha256": "1e928493d3b2bfc5a591eb293bd631e3ef954121d4501a118850f27f873d973c"
+    },
+    "recorded/outputs/revision_v2/rl/vision_seed2/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "950040eca56a1c64b259937e185381b1d9ae89082ec5f78b9607bb629703523a",
+      "original_record_sha256": "6e53012972eaea0612d3b1a6397890879523ca9d5b625b9400e7bef261b510d5"
+    },
+    "recorded/outputs/revision_v2/rl/visuotactile_seed0/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9d6259d56fecc943d8e535b971be06d7b7ab4e53408272c6dfb6029f19da5f8f",
+      "original_record_sha256": "5972bebbda30114fe12c0feff4a6e57f7c79971606127b13e64aad538a1d3181"
+    },
+    "recorded/outputs/revision_v2/rl/visuotactile_seed0/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1e978bc73e91eaddc5f3f2a80be08ff0da50c7718036434d1e8d63b14e354e7b",
+      "original_record_sha256": "bb29b16949447c2fcb0b1286f7b48bfdcc7f2ddf4ba95a6e8987304a6c85f4e6"
+    },
+    "recorded/outputs/revision_v2/rl/visuotactile_seed1/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1f67ca3039936727bffdb849fee15273f9e98473de4aa35078353f7f52aa4744",
+      "original_record_sha256": "f5062ace4843f432b056e62fc5a714ca0461495a723cfcdc6e309c95148b0df1"
+    },
+    "recorded/outputs/revision_v2/rl/visuotactile_seed1/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "ebd866b7d230c79d5f9dbeecda9b9bf1e8f0e83edce377ab71d9c150137f9b2a",
+      "original_record_sha256": "7f6c123028f99809b81cdce2c6a4cd5d85a107abe2cde15a64a10461c06e2133"
+    },
+    "recorded/outputs/revision_v2/rl/visuotactile_seed2/run_metadata.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0139532611226ac0c746d211795075c0cce56fcce896f92343909f8116c8c48c",
+      "original_record_sha256": "6b801909f8190c8f7d22361fae755521b033ebcdf90f4e450647a1322c456f32"
+    },
+    "recorded/outputs/revision_v2/rl/visuotactile_seed2/training_log.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "94984a6b3d89fd05194494aa8cddebb4f147acef8df5adcdab1e3843f3691846",
+      "original_record_sha256": "65808a1344d7917a3391566bc231ddeef9d3fb6cdb20578bd5f405c22042dedf"
+    },
+    "recorded/outputs/revision_v2/runtime_branch.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9ca2fd42376640886347909c8bec4e69f69f56512eea74cc4fa4ce113d899b36",
+      "original_record_sha256": "48489863d37e33196b681ec7fd34f29404130d03355fff7ad0bf3371fea8c128"
+    },
+    "recorded/outputs/revision_v2/runtime_main.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2ba7629ba3e17ed23591b785c829213efac8c7159cabaf6b3eecb16e922a4fb5",
+      "original_record_sha256": "fce122ad4c7f9c919df37db0bfd49619e7a2002acb1ca789c4750c111bc8c25d"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/README.md": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "8d3bcd5f9b72e268d1ff781bb399ac8e2b6fddcc931d14a2276de2cb569c49cd",
+      "original_record_sha256": "4dd830d0c44ef2a0d875ecd57854c87ce38be8776dc6883ab2d2ee622cf66f0c"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/analysis.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f150e5d2fa52bf580c976f682591119b8864acb68697add48b7b99150bb06095",
+      "original_record_sha256": "1e2434d4e53b8a8829aa2b4e36c7835dfe038d07dd4c34f159dbe2f14f7806a6"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/contrasts.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d629267058ce1b2efc9c02717c7f3af80873781c69a5c3a7ab79f26d99d3af42",
+      "original_record_sha256": "9589b7a0c83b81f1f821144a066654a9be273918c710f223033971d5c2311263"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/group_stats.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f39f1928a74c5a6cf2ee21a493863af534de4c4bdc7667da80884ee079149c31",
+      "original_record_sha256": "341ef5ee83a3af4dcb4ea07c53d966e1262829d3651eae3b712e01ebcbf62c8c"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/paired_change_seed_variation.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1fff1eb369d73b3b3c56b871b78ede082c5274b16ee427433e4941570dc012d5",
+      "original_record_sha256": "82fde8ca72d606c74bb408bd4c120b52a0b9b541ddb390f91ed6eb27d5fae836"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/paired_policy_changes.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b1cd27da416219787b3508f14835962650114d892257d07224031252dc3d312a",
+      "original_record_sha256": "86b90881dfaf861c29cac227af4a728336f302d79dafb54c4329358a2a8f3951"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/policy_stats.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f390c6a8f9c484bd53be3a61184ab2e66c7cf6a009f0a93317d10fd45dd9c384",
+      "original_record_sha256": "e9885141c41ed5783530a817a4eea9b75d500789dbf1552af8aa948b68f8277a"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_analysis/seed_variation.csv": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "b74e8cf2bb9744fee945b3ab110bbe9d0c26d5317d9b2a0cd876c20facbbc73b",
+      "original_record_sha256": "c14d5a8c47486dbbeb12350f07b0a92d696a40437431407c14b65fb587f16d3f"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "65c9353939bf63f5226b3fe2d0e0fe43019e52e59c2a42a271e57276403bfb5c",
+      "original_record_sha256": "cf13fce304644e2ed63bb5986873113ee0c4fbfbc7ccf52d168777c97620c7cc"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "cb5cae636abef7d5fd7500b1cb01b143434444dce96a4049346adfd471261e83",
+      "original_record_sha256": "c901a38f19bbe482e76b827ca202d59b672d56b333f2bc557c88d831e17228f3"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed0/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "765f391653d8b99396219f53d374595badeae49f9dea55af5085901a3eea8dca",
+      "original_record_sha256": "59b4f52bf9a3b00bfd99deec2fd281ed4c649bf0f475e661a63d256f3e8feed6"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "6c603094594edce66ebd12ea56911b707f1c74235b24f55f0b869a5832d007f9",
+      "original_record_sha256": "48e3d3a314223453002bfb44f918682f2762abf5db1e3ab449a6fe8193f92eb1"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e870f7ef6ef575b702c583972f31e7c827636c697bf18a1e1ca28335b2d24607",
+      "original_record_sha256": "f602715123d1188f81d5659f474b294a034de65a348a4f2ce7997d3af744a482"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed1/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3762564a34e61447238c635c046b607bfb6068595d756a1a1d8d62559bd74528",
+      "original_record_sha256": "eb185d6f75119b5605deee5873ebfca3f52293f52be414c5128ac5a816aae6d6"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "de862cbd3f76687f14b517c7c53433c2eebb84991e54724cf9382d412e229f7b",
+      "original_record_sha256": "8eb7439f663cb2b2cbb50ecf7c6c0bbb3cb6776183ad5f31c9bddc850c61ba0d"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "c6641e0e614373a518d58c7d0442daa25eab67ec7e2a39363d1e0a0fd7c7ee37",
+      "original_record_sha256": "c3a5ee8e9ade1831a53d864958623028912d5cfcb5ddec8552a150d3c1627e00"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/IQL_visuotactile_seed2/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "584c968a59093b59a06eb7596888e73c54f4ed1d0da41100963dec0560a71982",
+      "original_record_sha256": "be784fa065ce35d2d5c6a9d10ff56ee6f0c448bd9c4c43b930df141e540934de"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "31f3dc8f0655552ecd812b177a7a89629e4f58857d56015088fcf3f073e435b1",
+      "original_record_sha256": "54a700b793dc90c951b2e18eda52ef61d0e596acd0bb79e5d85659833c595923"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1041f0c38a459199578626eadf6499a912e19d5c5b5132f3fbd60a3d09ed0f2b",
+      "original_record_sha256": "501106339f0c6ca93809cb59a668b7460d9ec58d9cc64e5531b253f0aee06f97"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed0/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7802e1da0f1f3db8b69e253f1c64c1d43abf8f4fe72602211fa5920ec646ac93",
+      "original_record_sha256": "914f0ae03c7939b505307b9aefcd67e58cc19b6ca5ce79be8f9f368ce9e60b1a"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "0d7c7ef29f6b9ea157bcbb6eac92e2a7cd35e236fead178ba245e7c2545d167f",
+      "original_record_sha256": "0a646c5cfbe43328bf2009147579ba06c622f45ea8bda779b6fba9fe86cc065f"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "556628d5a1b623b13d3359aaf4c634160a7e75382c0197a7ce592c2d09135e89",
+      "original_record_sha256": "dd048888c913d150a6e3e360dbb6a3d01255ed6f53c2d30557c04942581cba78"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed1/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d0b3ed7b7df8b05bdb29c9708bb74531ba5981c0269974b4035ab70dc2c97e0d",
+      "original_record_sha256": "2acb8fac5f16718b2d381491c1b76e1081f3acff484bed3ebb1443f7acbe2c4b"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "bcffb22ae44867e05760da8928ad1eb7050e4d3fb03691648026a116c8a5735d",
+      "original_record_sha256": "f36b1e1607aedf5db7c618b36b449ae21d289850514b5a3bd52ea2ac9a911fa0"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9783219b6919c3dcdf504ab414093a638ec3852a9ab5d118356cfbcc6f8fe5b8",
+      "original_record_sha256": "ab03ff226fdc2d69aaf9062684b0c79217b975f918db1512fb07e3532832f05f"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/WM_visuotactile_seed2/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2dbe6f010c5f4482947e876956fb76ab77259a5ff6c90dfeacbe3a42aad364df",
+      "original_record_sha256": "c8ca727ed8674c72d2f99e7d39e017906cfff488954fc19abb0b7fb0baae916b"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/force_feedback/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "33295d1b12b2cf144ce75a217356fc08dc8925df347ff482685297bb14623b30",
+      "original_record_sha256": "eca272a5e7bef8b94d0df0fd31d95bcb61af1bd166f0411529bbd7bd236e8e6f"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/force_feedback/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f7dc4ea827aaec5d779c90153e5a0b93e8f915c398aa9f50ded02008cb45fb0c",
+      "original_record_sha256": "c3a00622487b329f71cabbdbed93424c48a1848e64e1c4686cda667b1c36a9f1"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/force_feedback/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "73bc63beb36e30fa843ae3b4011e3a6179cfa0d66eb7f11b3c19102c8118fc82",
+      "original_record_sha256": "ac85095e7d434a34a0e2130ecc35f9f2538d1f93e4f123d8fbfeb1af4ea44d84"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed0/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7f05563a4bd8f976f357e8d1be4a3e0f792921125529d6acf7c77955d7ef15d6",
+      "original_record_sha256": "69c62ec0b94edb2ad60eca9435ae4b29e86aff13d7b2d106ae5085cd112f6e91"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed0/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "cf77b2b45afef8606a822c0990a6b76016bfc76063c5e02531874f464cd3fe7a",
+      "original_record_sha256": "8ecd695c278fc45eecf00abd5f4b1e1d88f83a2b67f9ba64228c4c1c5f819f35"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed0/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5cffb827acfe1c18a8e8548d68d314debffa4a9f85194b202b93050ef24abdba",
+      "original_record_sha256": "98ae09a1c30d37b3c8389e869dcd0ac51e8bfff99420316004b39c05ce97eee1"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed1/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e55479b3f10d50c6b1434bc71c6930ebe305008065103b4f11fa889aed36c666",
+      "original_record_sha256": "ecb6013eb78f7a6eb18a150a151f6b7c81c719e319fc9d1fcd2dfd472c96c950"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed1/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "490e016176b87595a1dd6d20388b9724735171ed9dfad2a4461f21198b68891b",
+      "original_record_sha256": "c7feba8b9da27c7739216cbe72a1fe8dcbe968367333010d610a17d5eff70512"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed1/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "aa6cfd50c9368e79ec8283bd6f83b60416643213661e161fc5a2dfac7d3a8a86",
+      "original_record_sha256": "4fbc88ece2e56afdc3aaaccbd2d5a24d4eba9bd00d35d6da873aca487a390351"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed2/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "610869838bdb38d78ac4df10809edec49c1ebefa80842348a06900ea9eafe5ab",
+      "original_record_sha256": "c89ff9eb159d11a1598d2c6a9a46c19f52015108fdfb74dc99c1667f3298182a"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed2/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "83f49c94addff6c568f56de2362c0d803edb069d00a092ac9b53d8c651058507",
+      "original_record_sha256": "7e30427289ed8a48b125eba5c7121d455b652dea520bacdd8aa94f72c6446bf0"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/model_guard_seed2/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "79ddcbfa507032828740fd70db6f45893b08a333e861820d6dc465af491d0530",
+      "original_record_sha256": "8d968a256df9684fa66d4453f52a7e2d42a8bbc975d09f88f7f9dd8ab67afe44"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/reactive_guard/episodes.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "ef288e1a4f69c8e983e87fec98024890ac903d986b17c9bcec67f218898126bd",
+      "original_record_sha256": "80dcae0ec224a5e9efda0b428e912c64bd716d5c5bf1e344f287f724f3a9160a"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/reactive_guard/inputs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7234f0918e6a836db721f77967beaa6b3787ab22c9b51807926b1f07a50c871f",
+      "original_record_sha256": "1ae6f40d4f5537a3e849b8303a195fe17f82ef78bb0a74eef7cf377eb9d63eb4"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_evaluations/reactive_guard/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3791316e6577c74bdc326a66fd8bfa409c3903739adcda686d7ebbff58a07d3d",
+      "original_record_sha256": "5bf240fbfe0c0400a69a11701e362582047f0ce5f010263ce402fb1dedc01049"
+    },
+    "recorded/outputs/revision_v2/sensor_stress_protocol.json": {
+      "adaptation": "none",
+      "exported_sha256": "d893f0799f07b506c405b72a91f195e34ae23b414fe5317bf21a1ae162d61a75",
+      "original_record_sha256": "d893f0799f07b506c405b72a91f195e34ae23b414fe5317bf21a1ae162d61a75"
+    },
+    "recorded/outputs/revision_v2/world_models/all_runs.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "d2a807b9585b10c937e097f2b41ee5987b64af78594e5e136ed625811f31f864",
+      "original_record_sha256": "6738dfdf6236cf7a7f6fd2f5236a380bb8431f89e7cda1cb284205815295ee7d"
+    },
+    "recorded/outputs/revision_v2/world_models/data_manifest.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3fd35b99beb1ac02b7af20eb9ddeabb5a27a2520f4254a6d2b80414e9c3d84b9",
+      "original_record_sha256": "9bbd6cea33bd0aded708f22b5887e372b10b8d1e877713d31aec5d528c252df4"
+    },
+    "recorded/outputs/revision_v2/world_models/normalization.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "665bd1f29305f728cf875aa867d6b452a0ec69eb4884698bfbb9eabadcb0b13b",
+      "original_record_sha256": "b418cca8a8f851824f71b71d7b7afc6cd70475400b375535c3d6fe48bd68afb9"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed0/calibration.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "9e7cb5cde9406b4837dc436156d03728b7c55e81d14502eae7a86ef7869b7cdc",
+      "original_record_sha256": "083c23d92709a0582aab815147bbefd2ef19d39733f7dd47e6acb1870962d922"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed0/evaluation.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "e8fadce0e843f229d51ea98d7ff17ac853fcf278056a8dd9e912a93221bfb5f6",
+      "original_record_sha256": "c6c59ffe2a9256a7006ca01c9651668eb9b7744bafdca49087ce38ae46a44d83"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed0/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2d37f27b9da52e412d5384f46acd9d4a8514699fd25a06db208a7c17b78bb0e0",
+      "original_record_sha256": "5bf4f25fac60753e6fbeb67be9f2c11f19c71119f7ec39e66c88204313eccd68"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed0/training.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "5dbc270c02a88470d2435d11dca942ed4a30cddb96bbfd229ad4ed042604b8ac",
+      "original_record_sha256": "2a4777568585d17f72792bced780055d65425f73d3e1bf0566c6ab9fbf731d2b"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed1/calibration.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "664c6f82acc04635d42404a635af6bf637e4eef507088aa8e57036ead93a6eeb",
+      "original_record_sha256": "9f258303b948e2347da0dbfd77b6210228cf9551a6a0f9e7baea625e6c9e0fa4"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed1/evaluation.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "1cb91ce477445777e18e3163d8df0a9b87dfc5d18af8c86337031250a9f130d8",
+      "original_record_sha256": "f1b16c4081ffe5af48aec11fb767417cc11f408243d36e3ffafa9ce50b2978f7"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed1/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "93b53930c4a056e1c87a0c81d9b91114ee59eb67ff95413dc197ae7ceb808001",
+      "original_record_sha256": "b823b4e1df943d84ea8a3cb58e220dce7357141dfa9021405ea4b1104e72a83d"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed1/training.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "bcc28478871f33e9e57cffeeac9178add6576608f8205396b1e83b36be25ae07",
+      "original_record_sha256": "4c43f74155d9c85778ebe69f31ccd08a069e59cf5c48d5005a180eb90afee4e0"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed2/calibration.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "051ee00b64fd20ac643a7cda274492b9e4888f3d938836a8a6967a2135258e08",
+      "original_record_sha256": "14ddc9a649620c42beff28b79443a5bd9fd62a8557ea052efd3189798844df7c"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed2/evaluation.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "3e94ba764a60b1c5e33913b8584e3c5d26c1371194c6d0ebd1327124e03bd650",
+      "original_record_sha256": "d2988a5c21661efba9f206b5ff68a75c8406402004e557071503a9e7a3c1621b"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed2/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "30a854200b16e866cbf25f7326daab9f73aefd20e4b56431b543edbdcabcac84",
+      "original_record_sha256": "876ab8667623b963b19b156acc5073a317f8925d210f48bd93c9dee90893f474"
+    },
+    "recorded/outputs/revision_v2/world_models/vision_seed2/training.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "04c77fc67e9dae789bb387b0198d46fd2302773ac30db629851a790161ebcd30",
+      "original_record_sha256": "60379223b70378051a4ba4ba12374c77bae060422ffc41654bd1c1d7a22bf3b6"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/calibration.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "a5467192e587f8d96879c3cbf3c5ef1f9ccc4f4b5d0ec837d0dd061f6d078f77",
+      "original_record_sha256": "e62021160e46c66da0ddd87168246753f096594e094f8f3fe63e2a077190259f"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/evaluation.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "6a5725b6ff222870245935cbf1c886dce65ebd553fe38166c312c5d61f89b1ce",
+      "original_record_sha256": "a58155ad2de96b89c5be09e09c05bab8487f40a8ebbfcb5acb023dc351530c97"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f8ea16988df006e38b917baa56fd1cad48d56a5c8ea26e8356e5a7e0667aa5bf",
+      "original_record_sha256": "daf4f040436c16aa2a11a8e2b82b8799751b5241c18bbb7ceb3c6fa1d5f7b11d"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed0/training.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "30a6ba940dfa781bbd25078a224affa084915328ebb960d51fb28b322d79ff6d",
+      "original_record_sha256": "4b85b96965824f7d487852c3394a32eaa221d6dc3dc31dc4ae97be6df212bd4a"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/calibration.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "94ebcc3a75829e6ed87ae0ea426f9abbfe8e86b75a0f3ffa7ea2ea5b39d6a8df",
+      "original_record_sha256": "6e1200988baf98dc74d1e003cb7f0b0cfabc4170100f325cbea009519a60e077"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/evaluation.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "f4046667d39c1101e171aa78942b85bd90f253f0043b3b29bf35d1a0b697316b",
+      "original_record_sha256": "21844a40a15eacf5fc07f47834761784da11e50612e1896fdb368e2b38f5cf31"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "2d0ea01222a703d828cd21bd2dad1ec1f625371cbbcd5b433e25abb2ea26ddbf",
+      "original_record_sha256": "b622c54e2a2d1cc3f9a7aadbafdf23406ea129b76af4e37e17c6b3c9844271d9"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed1/training.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "532f500116b71312c5ca8be3620ee197c94b23c47132545e588a560f53b847e4",
+      "original_record_sha256": "231b34e5bd12a14103d2ad5c9c91810f6ca33ec882d3f99f78a250bd197b66d1"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/calibration.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "8e18be4804d1da4947be25901c2336aefe6d2d3a4de78b438a0137c8cd996817",
+      "original_record_sha256": "d0a5e955a21f59fc68976622b0452928d9a1dce57d3c68af03613cfa840514a0"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/evaluation.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7b289b20b96fa74c1f0e7de1cc238c0c6b8716080c694128538342ccf7636c3c",
+      "original_record_sha256": "2bd096f693079a0fefd6590822660b05fd80c7300c6d18c0cfda76b0a15f917d"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/summary.json": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "7aa385fabb6191e7c7c9c6a004c7364b0f56796a3a35a2719e22ec7a9747837c",
+      "original_record_sha256": "fcb8f80438ac772d0e3c266930959f211fb21e20a7189b5c794b8d3be1f0c6c7"
+    },
+    "recorded/outputs/revision_v2/world_models/visuotactile_seed2/training.jsonl": {
+      "adaptation": "JSON/CSV text normalization and host-path sanitization only; numeric values and provenance hashes retained",
+      "exported_sha256": "52ef8a40b4a019c2fde10d657297b5c92868701b597b586aeff73608d269d128",
+      "original_record_sha256": "464a2ff119db9972248c60dcc267a68991def2d45291542cc7c8214271c9e97b"
+    }
+  },
+  "predecessor_index_sha256": "43f6d3f454ff38a9cd371d18a5c3f957fdf643d7a6186257041a267a4afc0379",
+  "reused_source_audit": [
+    {
+      "difference": "module docstring and line endings only",
+      "executed_source_sha256": "6d8189ac2c7fd27d0c67074e6ca9a06fc042f8be88993411df85ed0d8f8a5847",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/simulation/sim_adapter.py",
+      "portable_source_sha256": "407a7ba79fd2b4ec29219740e185a34b497ddf643b6565ab290b823e9591c321"
+    },
+    {
+      "difference": "line endings only",
+      "executed_source_sha256": "a875e616d64c64dcece4c57a4b619fd621f2c56b8b0da7a6109e013e9619322b",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/world_model/model.py",
+      "portable_source_sha256": "9a1101eacb6c79f480131f536f3a4e24a25b2acc77cfc914eda5f71cf0b2873b"
+    },
+    {
+      "difference": "line endings only",
+      "executed_source_sha256": "6ee5d678ce8339d409c1ae9e137bd09be83c4c46bdc40e17b7f92725f110d05d",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/world_model/data.py",
+      "portable_source_sha256": "42ad941192674d2d857ed46d601ee97e04b1cbde562fe609665b0d25dfdfb834"
+    },
+    {
+      "difference": "line endings only",
+      "executed_source_sha256": "1b117e63e52a277e5a938701ed84d18f598633f45824491c7a38002cb5a5c736",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/world_model/train.py",
+      "portable_source_sha256": "6dd371f4daa3f106f08a68d8141cd531fef54db9aece524724645cad21a581df"
+    },
+    {
+      "difference": "line endings only",
+      "executed_source_sha256": "1387694675078e0842e0515541f8ea9b6a38624dc293ee739689f6912f803324",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/world_model/train_imagination_rl.py",
+      "portable_source_sha256": "ced01089c8005bd8a12ea7947a49aaba128c6c08b1c04917272f58a7fee3f766"
+    },
+    {
+      "difference": "line endings only",
+      "executed_source_sha256": "fb80e01c96c79af12d0bd1e083396d62b06f20022b60070d2e58468f1a275078",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/world_model/controller_server.py",
+      "portable_source_sha256": "89de207a5471fc3737b52d69029227571a6aa6a807299bf5061b9ba805fb6325"
+    },
+    {
+      "difference": "line endings only",
+      "executed_source_sha256": "0d59a2513aaabd52edd31d7842299a853065dce14c9bf4a09831e58e2006da8b",
+      "non_docstring_ast_identical": true,
+      "path": "outputs/world_model/tdmpc2_layers.py",
+      "portable_source_sha256": "68d2ea8e332235559bbb8baa64b4452230fa68b9b0610c5dd757ce7b81b86a1f"
+    }
+  ],
+  "sanitized_path_strings": 6134
+}

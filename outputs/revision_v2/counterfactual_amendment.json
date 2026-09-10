@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-09-09T23:49:15.793644+00:00",
+  "stage": "Prospective amendment before any primary counterfactual execution or outcomes",
+  "authorization": "Parent researcher approved adding vision models after read-only causal design review, before primary control evaluation.",
+  "previous_counterfactual_source_sha256": "5ecbcdfa38f9fc058a1e6a93afb648e43b4c0d3d24a6ff15d23c03edb8405c9f",
+  "new_counterfactual_source_sha256": "66a8e3733f1eb6a783566fcd81ec876140d725652006e8635063cb17a09c6acf",
+  "base_protocol_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+  "rationale": "VT-only action branching could assess model action sensitivity but could not attribute it to tactile observations. Forecasting both matched modalities on identical executed branches enables a direct modality contrast.",
+  "change": "Forecast all fixed candidate sequences using vision and visuotactile world models, each seeds0,1,2; six frozen models total.",
+  "unchanged": [
+    "12 diagnostic environments20364000..20364011",
+    "Prefix lengths44,78,112",
+    "Nine fixed constant-action five-step branches per prefix",
+    "Exact independent reset/replay",
+    "Three separate bootstrap units are not created by training seeds",
+    "Metrics, ranking tie handling, force threshold8N, clipped height utility, environment-bootstrap2000 resamples"
+  ],
+  "analysis_addition": "Per-modality/per-seed raw and anchored metrics; paired VT-minus-vision differences averaged within environment before bootstrapping.",
+  "modality_caveat": "The raw vision model ignores tactile inputs. Anchored vision additionally receives current measured force through the common correction; use raw modality comparisons to isolate tactile input to the learned model.",
+  "test_outcome_assertions": {
+    "actual_environment_npz_count": 0,
+    "actual_summary_exists": false,
+    "actual_run_manifest_exists": false
+  },
+  "preserved_validation_smoke": "work/revision_v2/counterfactual_smoke uses validation seed20320000 and original VTseed0; its files are unchanged.",
+  "synthetic_test": "Updated6model modality contrast and4metric contract checks passed; no primary outcomes accessed.",
+  "public_preregistration": false
+}

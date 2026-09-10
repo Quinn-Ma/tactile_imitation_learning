@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\vspace*{5pt}
+\centering
+\caption{Executed outcomes (\%): joint force-budgeted success / strict lift / force violation (J/L/V). Every domain contains the same fixed 30 environments across methods. $n$ counts policies: learned groups average seeds 0, 1, 2 within each environment; single controllers have $n=1$. V/VT denote vision/visuotactile; FFB is force feedback. All setup and lowering failures and force peaks are included.}
+\label{tab:control}
+\begingroup
+\fontsize{8}{9.2}\selectfont
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcrrrr@{}}
+\toprule
+Method & $n$ & ID & Geometry OOD & Physics OOD & Combined OOD \\
+ & & J/L/V & J/L/V & J/L/V & J/L/V \\
+\midrule
+WM-BC V & 3 & 27.8/56.7/28.9 & 5.6/21.1/15.6 & 14.4/38.9/34.4 & 4.4/11.1/11.1 \\
+WM-BC VT & 3 & 23.3/45.6/35.6 & 7.8/31.1/32.2 & 6.7/25.6/40.0 & 4.4/15.6/32.2 \\
+WM-RL V & 3 & 20.0/76.7/75.6 & 23.3/54.4/50.0 & 1.1/80.0/97.8 & 1.1/47.8/76.7 \\
+WM-RL VT & 3 & 27.8/83.3/57.8 & 18.9/70.0/66.7 & 1.1/50.0/85.6 & 0.0/45.6/93.3 \\
+\addlinespace[2pt]
+BC V & 3 & 15.6/56.7/57.8 & 5.6/11.1/27.8 & 2.2/13.3/63.3 & 1.1/8.9/42.2 \\
+BC VT & 3 & 15.6/46.7/41.1 & 11.1/26.7/17.8 & 6.7/45.6/53.3 & 4.4/16.7/28.9 \\
+IQL V & 3 & 27.8/72.2/54.4 & 15.6/42.2/34.4 & 15.6/36.7/60.0 & 5.6/31.1/51.1 \\
+IQL VT & 3 & 35.6/82.2/56.7 & 33.3/72.2/41.1 & 17.8/61.1/63.3 & 13.3/61.1/52.2 \\
+\addlinespace[2pt]
+Script & 1 & 16.7/73.3/56.7 & 23.3/76.7/53.3 & 6.7/90.0/83.3 & 3.3/53.3/50.0 \\
+FFB & 1 & 73.3/100.0/26.7 & 56.7/100.0/43.3 & 60.0/96.7/40.0 & 56.7/83.3/40.0 \\
+\addlinespace[2pt]
+Model+guard & 3 & 93.3/100.0/6.7 & 73.3/100.0/26.7 & 55.6/67.8/38.9 & 53.3/56.7/38.9 \\
+Model & 3 & 93.3/100.0/6.7 & 73.3/100.0/26.7 & 55.6/67.8/38.9 & 53.3/56.7/38.9 \\
+Reactive+guard & 1 & 73.3/100.0/26.7 & 56.7/100.0/43.3 & 60.0/96.7/40.0 & 70.0/93.3/26.7 \\
+Reactive & 1 & 73.3/100.0/26.7 & 56.7/100.0/43.3 & 60.0/96.7/40.0 & 70.0/93.3/26.7 \\
+\bottomrule
+\end{tabular*}
+\endgroup
+\end{table*}

@@ -1,0 +1,2354 @@
+[
+  {
+    "episode_id": "calibration_0000",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0000.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0001",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0001.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0002",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0002.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0003",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0003.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0004",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0004.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0005",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0005.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0006",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0006.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0007",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0007.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0008",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0008.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0009",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0009.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0010",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0010.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0011",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0011.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0012",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0012.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0013",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0013.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0014",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0014.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0015",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0015.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0016",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0016.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0017",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0017.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0018",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0018.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0019",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0019.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0020",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0020.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0021",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0021.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0022",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0022.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0023",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0023.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0024",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0024.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0025",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0025.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0026",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0026.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0027",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0027.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0028",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0028.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0029",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0029.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0030",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0030.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0031",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0031.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0032",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0032.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0033",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0033.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0034",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0034.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0035",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0035.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0036",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0036.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0037",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0037.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0038",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0038.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0039",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0039.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0040",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0040.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0041",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0041.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0042",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0042.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0043",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0043.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0044",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0044.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0045",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0045.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0046",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0046.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "calibration_0047",
+    "split": "calibration",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\calibration_0047.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0000",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0000.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0001",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0001.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0002",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0002.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0003",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0003.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0004",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0004.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0005",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0005.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0006",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0006.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0007",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0007.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0008",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0008.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0009",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0009.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0010",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0010.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0011",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0011.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0012",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0012.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0013",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0013.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0014",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0014.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0015",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0015.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0016",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0016.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0017",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0017.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0018",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0018.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0019",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0019.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0020",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0020.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0021",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0021.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0022",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0022.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0023",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0023.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0024",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0024.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0025",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0025.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0026",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0026.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0027",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0027.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0028",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0028.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0029",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0029.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0030",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0030.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0031",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0031.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0032",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0032.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0033",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0033.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0034",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0034.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0035",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0035.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0036",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0036.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0037",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0037.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0038",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0038.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0039",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0039.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0040",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0040.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0041",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0041.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0042",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0042.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0043",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0043.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0044",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0044.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0045",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0045.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0046",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0046.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0047",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0047.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0048",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0048.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0049",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0049.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0050",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0050.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0051",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0051.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0052",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0052.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0053",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0053.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0054",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0054.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0055",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0055.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0056",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0056.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0057",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0057.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0058",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0058.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0059",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0059.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0060",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0060.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0061",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0061.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0062",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0062.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0063",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0063.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0064",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0064.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0065",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0065.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0066",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0066.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0067",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0067.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0068",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0068.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0069",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0069.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0070",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0070.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0071",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0071.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0072",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0072.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0073",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0073.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0074",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0074.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0075",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0075.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0076",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0076.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0077",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0077.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0078",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0078.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0079",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0079.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0080",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0080.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0081",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0081.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0082",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0082.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0083",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0083.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0084",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0084.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0085",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0085.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0086",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0086.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0087",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0087.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0088",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0088.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0089",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0089.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0090",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0090.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0091",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0091.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0092",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0092.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0093",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0093.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0094",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0094.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0095",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0095.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0096",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0096.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0097",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0097.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0098",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0098.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0099",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0099.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0100",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0100.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0101",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0101.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0102",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0102.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0103",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0103.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0104",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0104.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0105",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0105.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0106",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0106.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0107",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0107.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0108",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0108.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0109",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0109.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0110",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0110.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0111",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0111.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0112",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0112.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0113",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0113.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0114",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0114.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0115",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0115.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0116",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0116.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0117",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0117.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0118",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0118.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0119",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0119.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0120",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0120.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0121",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0121.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0122",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0122.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0123",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0123.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0124",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0124.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0125",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0125.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0126",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0126.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0127",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0127.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0128",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0128.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0129",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0129.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0130",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0130.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0131",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0131.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0132",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0132.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0133",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0133.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0134",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0134.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0135",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0135.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0136",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0136.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0137",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0137.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0138",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0138.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0139",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0139.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0140",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0140.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0141",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0141.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0142",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0142.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0143",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0143.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0144",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0144.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0145",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0145.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0146",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0146.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0147",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0147.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0148",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0148.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0149",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0149.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0150",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0150.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0151",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0151.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0152",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0152.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0153",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0153.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0154",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0154.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0155",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0155.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0156",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0156.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0157",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0157.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0158",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0158.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0159",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0159.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0160",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0160.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0161",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0161.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0162",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0162.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0163",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0163.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0164",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0164.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0165",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0165.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0166",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0166.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0167",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0167.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0168",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0168.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0169",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0169.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0170",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0170.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0171",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0171.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0172",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0172.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0173",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0173.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0174",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0174.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0175",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0175.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0176",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0176.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0177",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0177.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0178",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0178.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0179",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0179.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0180",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0180.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0181",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0181.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0182",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0182.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0183",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0183.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0184",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0184.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0185",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0185.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0186",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0186.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0187",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0187.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0188",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0188.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0189",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0189.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0190",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0190.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0191",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0191.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0192",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0192.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0193",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0193.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0194",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0194.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0195",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0195.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0196",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0196.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0197",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0197.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0198",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0198.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0199",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0199.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0200",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0200.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0201",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0201.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0202",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0202.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0203",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0203.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0204",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0204.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0205",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0205.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0206",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0206.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0207",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0207.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0208",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0208.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0209",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0209.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0210",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0210.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0211",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0211.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0212",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0212.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0213",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0213.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0214",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0214.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0215",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0215.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0216",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0216.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0217",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0217.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0218",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0218.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0219",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0219.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0220",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0220.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0221",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0221.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0222",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0222.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0223",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0223.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0224",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0224.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0225",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0225.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0226",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0226.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0227",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0227.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0228",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0228.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0229",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0229.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0230",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0230.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0231",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0231.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0232",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0232.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0233",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0233.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0234",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0234.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0235",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0235.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0236",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0236.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0237",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0237.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0238",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0238.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "train_0239",
+    "split": "train",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\train_0239.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0000",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0000.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0001",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0001.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0002",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0002.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0003",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0003.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0004",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0004.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0005",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0005.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0006",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0006.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0007",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0007.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0008",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0008.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0009",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0009.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0010",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0010.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0011",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0011.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0012",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0012.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0013",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0013.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0014",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0014.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0015",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0015.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0016",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0016.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0017",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0017.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0018",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0018.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0019",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0019.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0020",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0020.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0021",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0021.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0022",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0022.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0023",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0023.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0024",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0024.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0025",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0025.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0026",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0026.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0027",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0027.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0028",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0028.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0029",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0029.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0030",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0030.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0031",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0031.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0032",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0032.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0033",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0033.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0034",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0034.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0035",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0035.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0036",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0036.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0037",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0037.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0038",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0038.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0039",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0039.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0040",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0040.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0041",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0041.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0042",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0042.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0043",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0043.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0044",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0044.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0045",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0045.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0046",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0046.npz",
+    "steps": 150,
+    "has_reward": true
+  },
+  {
+    "episode_id": "val_0047",
+    "split": "val",
+    "path": "outputs\\revision_v2\\dataset\\episodes\\val_0047.npz",
+    "steps": 150,
+    "has_reward": true
+  }
+]

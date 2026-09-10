@@ -1,0 +1,2738 @@
+{
+  "algorithm": "Independent pixel-reactive BC plus task-specific offline IQL",
+  "claim_scope": "IQL objective adaptation; not official benchmark reproduction",
+  "primary_source": "https://arxiv.org/abs/2110.06169",
+  "official_implementation_reference": "https://github.com/ikostrikov/implicit_q_learning",
+  "arguments": {
+    "data": "outputs\\revision_v2\\dataset\\episodes",
+    "splits": "outputs\\revision_v2\\dataset\\data_manifest.json",
+    "out": "outputs\\revision_v2\\reactive_runs\\visuotactile_seed2",
+    "variant": "visuotactile",
+    "seed": 2,
+    "expected_train_episodes": 240,
+    "expected_val_episodes": 48,
+    "start_step": 44,
+    "control_end": 135,
+    "train_stride": 1,
+    "bc_steps": 2000,
+    "iql_steps": 10000,
+    "batch_size": 256,
+    "eval_every": 250,
+    "learning_rate": 0.0003,
+    "discount": 0.95,
+    "expectile": 0.7,
+    "beta": 3.0,
+    "weight_cap": 100.0,
+    "ema": 0.005,
+    "gradient_clip": 10.0,
+    "target_height": 0.1,
+    "force_cap": 8.0,
+    "force_weight": 1.0,
+    "action_weight": 0.005,
+    "action_low": null,
+    "action_high": null,
+    "allow_action_projection": false,
+    "device": "cuda"
+  },
+  "config": {
+    "history": 3,
+    "tactile_dim": 6,
+    "proprio_dim": 9,
+    "feature_dim": 128,
+    "channels": 16,
+    "variant": "visuotactile"
+  },
+  "normalization": {
+    "tactile_mean": [
+      4.416516206126093,
+      0.3167740243152044,
+      -0.043024571588123325,
+      4.419296437304541,
+      0.3551341586902576,
+      0.043333861658509144
+    ],
+    "tactile_std": [
+      5.490097374755008,
+      0.614540480973988,
+      0.2397550497289995,
+      5.489390002748337,
+      0.625986425529524,
+      0.2404007004445349
+    ],
+    "proprio_mean": [
+      -0.009145371479559633,
+      0.0008547323948997021,
+      0.8912595717898399,
+      0.9975416429554653,
+      0.0004448961743195488,
+      0.06995638234224212,
+      -5.492513670401371e-05,
+      0.026651184377311905,
+      -0.02664968301243998
+    ],
+    "proprio_std": [
+      0.02150558698893455,
+      0.01,
+      0.06041154067261653,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+    ]
+  },
+  "normalization_source": "explicit training episodes only",
+  "parameters": {
+    "actor_inference": 184692,
+    "twin_critic": 350578,
+    "value": 250481,
+    "target_critic_nontrainable": 350578,
+    "total_trainable_iql": 785751
+  },
+  "train_transitions": 21840,
+  "validation_transitions": 4368,
+  "train_terminal_transitions": 240,
+  "action_low": [
+    -0.011692238971590996,
+    -0.20000000298023224
+  ],
+  "action_high": [
+    0.4303542375564575,
+    1.0
+  ],
+  "reward_equation": "clip(h[t+1]/0.10,0,1)-mean((relu(peak[t+1]-8)/8)^2)-0.005*mean(action[t,[2,6]]^2), configurable recorded coefficients",
+  "terminal_rule": "no bootstrap at first recorded terminal or intervention end; success is not terminal",
+  "observation_inputs": [
+    "three RGB observations",
+    "three tactile observations (masked for vision)",
+    "three proprioceptive observations"
+  ],
+  "no_world_model": true,
+  "random_initialization": true,
+  "encoder_sharing": "none between actor, critic, and value",
+  "data_augmentation": "none",
+  "sources": {
+    "train": [
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0000.npz",
+        "episode_id": "train_0000",
+        "split": "train",
+        "sha256": "57f7d0556369a91f9d8f2ade47f731c0e091cf2013fcd24f9626df803011643d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0001.npz",
+        "episode_id": "train_0001",
+        "split": "train",
+        "sha256": "3e18f75b8006cc7bb27159989f0580f5485fbd969483d70b3a19c60fc9ae6a70",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0002.npz",
+        "episode_id": "train_0002",
+        "split": "train",
+        "sha256": "752b33a65006dbc060ae914e04b3547ffc988014b62d6b724289a13e048c8bab",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0003.npz",
+        "episode_id": "train_0003",
+        "split": "train",
+        "sha256": "66e2e6ed571a3f3345192aeba04aa53719058ae851167b96778f752629cdb2e2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0004.npz",
+        "episode_id": "train_0004",
+        "split": "train",
+        "sha256": "c2f48410d22070e4d70f54d6e03cb843656ef1f4c6f8059f7b7577a9dc249bae",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0005.npz",
+        "episode_id": "train_0005",
+        "split": "train",
+        "sha256": "cbe83077a30bf5a51afdfa1031aeb1807356d51a7c9923ad87d4ff3cea3b5db3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0006.npz",
+        "episode_id": "train_0006",
+        "split": "train",
+        "sha256": "2198e3cb698435ab278108886b617848754de0c1c6257636e0748848af80bc49",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0007.npz",
+        "episode_id": "train_0007",
+        "split": "train",
+        "sha256": "2450e0e6cc2f82b419caf12fd15264e50a6f2ffec87874f3bdf8fb149abbff97",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0008.npz",
+        "episode_id": "train_0008",
+        "split": "train",
+        "sha256": "2642c9332b2bac376886d86fb47303c0e30aa05f9e03cdb3a29f67fd7d8bab3e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0009.npz",
+        "episode_id": "train_0009",
+        "split": "train",
+        "sha256": "a2165cfdc498106016d8c2d9e11bfad03a23063b88ee09ff1932e8f45aa7cf1a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0010.npz",
+        "episode_id": "train_0010",
+        "split": "train",
+        "sha256": "98e514f75e6ad0b012806ac8f4b14ac4bc3faa9d385401797cbfea47167f519e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0011.npz",
+        "episode_id": "train_0011",
+        "split": "train",
+        "sha256": "db823737d0c43fb8cbc3a971b73b1498ce62dba9f67dff167e34d56a7a2143df",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0012.npz",
+        "episode_id": "train_0012",
+        "split": "train",
+        "sha256": "63df4e3e4b1c84e76dfd4c106c3eb5bfa5d66eff75b5465a17358023b2b73005",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0013.npz",
+        "episode_id": "train_0013",
+        "split": "train",
+        "sha256": "997a2e3c3a396feb95fcb5d3a924e0b4278a4acae19ca7c14753c69e65fdfdab",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0014.npz",
+        "episode_id": "train_0014",
+        "split": "train",
+        "sha256": "d53191aa5b4570207eec2f0c80d6ecc81f9b5d9055ed11829cb345fddc1876c8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0015.npz",
+        "episode_id": "train_0015",
+        "split": "train",
+        "sha256": "59bc028379a347024632323ea9c3cc67bc2b35e73a293bb298c6f4418d453515",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0016.npz",
+        "episode_id": "train_0016",
+        "split": "train",
+        "sha256": "0f59a6bd5abead3a7c37b4f5ac1cdeb6dd18f66f105b2b3588eea163ba35fca9",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0017.npz",
+        "episode_id": "train_0017",
+        "split": "train",
+        "sha256": "eada1bc3109dfb1d77344f718dd06bf20b3136c90aebd78d2710834f1675951d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0018.npz",
+        "episode_id": "train_0018",
+        "split": "train",
+        "sha256": "5099edb0c9c217986aa39ba25fbe8b1fe7e52bd300f5cb6baa03ce48d4238a0c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0019.npz",
+        "episode_id": "train_0019",
+        "split": "train",
+        "sha256": "6a036e2f390363bdc3bec4a28886a61bf996bc46e1adb73f95ed2ba1360d0c11",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0020.npz",
+        "episode_id": "train_0020",
+        "split": "train",
+        "sha256": "b6e849a60dec201bd8bd941bb48d678aa99bfa6c619afa093adb2cd801f49550",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0021.npz",
+        "episode_id": "train_0021",
+        "split": "train",
+        "sha256": "cbefa0e5bc655ca27e5ec2f51c269c3c884f608a77625ef052607062c6de1cde",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0022.npz",
+        "episode_id": "train_0022",
+        "split": "train",
+        "sha256": "9e629af370eddf5ad26204e4c90a044f0952a5d3cf55eb7743b8fa0c7702f6dc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0023.npz",
+        "episode_id": "train_0023",
+        "split": "train",
+        "sha256": "51264c3d57396e0ad465b9fea4dc6752bacdf81976714fe955dd61f5bbcb906a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0024.npz",
+        "episode_id": "train_0024",
+        "split": "train",
+        "sha256": "504fc83a5bc10a1a2b3ce41c2ac0f3f853dde6db7f6ca4880f00e4d09e3cdf5d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0025.npz",
+        "episode_id": "train_0025",
+        "split": "train",
+        "sha256": "6d66882fdf571eeefaf1578f2c2df4e8853baa1925f3dbf4c731e842e91f3160",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0026.npz",
+        "episode_id": "train_0026",
+        "split": "train",
+        "sha256": "c508c3bb7b85d0d00b274bb7290d53dc12f6dbe8f9a1a5c2ae01f04d1e25ce20",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0027.npz",
+        "episode_id": "train_0027",
+        "split": "train",
+        "sha256": "274791d37c1d86eb10945837e76c86bb1330e9790f3f8a0fbd05705d4e6f21b2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0028.npz",
+        "episode_id": "train_0028",
+        "split": "train",
+        "sha256": "4b9aff3f6e9ae0e85097c776a8afc7822e2afb3c567c59dbec452aae9948cddc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0029.npz",
+        "episode_id": "train_0029",
+        "split": "train",
+        "sha256": "d0c689757fb5c4f7bcf082b17cff2c2dfb375f679e1237831eb530dc1d0d99de",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0030.npz",
+        "episode_id": "train_0030",
+        "split": "train",
+        "sha256": "8408f212babf605656238f052e812dd8884b1566cd16901adc4a96fb51954691",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0031.npz",
+        "episode_id": "train_0031",
+        "split": "train",
+        "sha256": "221b2200a59eb7b3b6ef2bc0965f3c7fe48f247666916a436b8d6a758ba3d0dd",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0032.npz",
+        "episode_id": "train_0032",
+        "split": "train",
+        "sha256": "1abc6310f9f3882b219163113c19193bd9f7254e96d86a7af890cc150eb5ffa1",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0033.npz",
+        "episode_id": "train_0033",
+        "split": "train",
+        "sha256": "5307d1554a4d0350593e934ee484d03e9f5c1024894a4503795504c8bee779f2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0034.npz",
+        "episode_id": "train_0034",
+        "split": "train",
+        "sha256": "6ee256e13651098eec09280d27f1b450c9f7debb0461a19d8a3d184d6958e56a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0035.npz",
+        "episode_id": "train_0035",
+        "split": "train",
+        "sha256": "80c254415b6057d8012925abbe72ef84e5649b58c54e6fc546e8b1e7d0be52b3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0036.npz",
+        "episode_id": "train_0036",
+        "split": "train",
+        "sha256": "6269fe315fa024fc952cec8a73a1700cd6563007feb9ea0b18a3e9161f5d378d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0037.npz",
+        "episode_id": "train_0037",
+        "split": "train",
+        "sha256": "52f6a1ff6b7feff0fb07968fea706562b85a2cd05a9c5df747ff06a56a97f89b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0038.npz",
+        "episode_id": "train_0038",
+        "split": "train",
+        "sha256": "23f3d839c80a8fc5d0f26126588bbcfce0ed3be7f5501ede3ed4c80436a91d86",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0039.npz",
+        "episode_id": "train_0039",
+        "split": "train",
+        "sha256": "f33ef015c48a94c8f1c3ffaed540fe1a5a078c390a636f45d53927ad4094a918",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0040.npz",
+        "episode_id": "train_0040",
+        "split": "train",
+        "sha256": "04343bd06b336b9462a4e15bd17d3c2761b77723f481904dee775f8bf9995912",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0041.npz",
+        "episode_id": "train_0041",
+        "split": "train",
+        "sha256": "7a3dec83e8a02559811385e30e6db77b129750cdc068c04dc28f4ec2b7f474cd",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0042.npz",
+        "episode_id": "train_0042",
+        "split": "train",
+        "sha256": "2d0f55d4b8ee8ada3da13b414ae3aa728c451b7a650f4c0e18eca989bc4bffa1",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0043.npz",
+        "episode_id": "train_0043",
+        "split": "train",
+        "sha256": "f70397320abb4dc3a8a457c475caf875d26f438226660a34274ecd0bec821799",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0044.npz",
+        "episode_id": "train_0044",
+        "split": "train",
+        "sha256": "24015c2646105f8bc7abf08702669329065376f740501877f7707e31177e4011",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0045.npz",
+        "episode_id": "train_0045",
+        "split": "train",
+        "sha256": "ff641cdb10c6e9539615bdf068f394833922d6fec00406694eea8a63ec6b0f62",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0046.npz",
+        "episode_id": "train_0046",
+        "split": "train",
+        "sha256": "b4c909c88b5a23cad76a2f26e6593fe65b33f2ed8cd9ffa9432e7d2e2f11a97f",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0047.npz",
+        "episode_id": "train_0047",
+        "split": "train",
+        "sha256": "4561cc808e15487fb9228667b039b635344c04d4a825052c474462869e1d7b2b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0048.npz",
+        "episode_id": "train_0048",
+        "split": "train",
+        "sha256": "06f28609fa3b32f766e69a57c3af7778b523bf052394f0a9611246d0964308ee",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0049.npz",
+        "episode_id": "train_0049",
+        "split": "train",
+        "sha256": "a4adb15412d2df17c64b948db3919a7a73a6fd72a52887ee8b2a76f25b41e0f9",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0050.npz",
+        "episode_id": "train_0050",
+        "split": "train",
+        "sha256": "e979a1f4cf27dee150a324d7392734c809c9378d84bce693fb0b2e0d09b30d6d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0051.npz",
+        "episode_id": "train_0051",
+        "split": "train",
+        "sha256": "4e7d5964551121a7bbe480d9e6e359f40769334b88cebb3f468c9c5c387c68b5",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0052.npz",
+        "episode_id": "train_0052",
+        "split": "train",
+        "sha256": "fb79fee59448296cbf71b34d2953ea957e077d3a3f033dc526d4e463d6826960",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0053.npz",
+        "episode_id": "train_0053",
+        "split": "train",
+        "sha256": "83363a772326b58a7aeaeda9241daf5226284a1b7040c0c282f47e43ebd2c9d4",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0054.npz",
+        "episode_id": "train_0054",
+        "split": "train",
+        "sha256": "f428d2427ff43bfff4560b9a0d64855f1f65b45a8ae4a47816a79e0a82e525d4",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0055.npz",
+        "episode_id": "train_0055",
+        "split": "train",
+        "sha256": "31c89878a6deb4be1ddb8cc97fc1903bc1d05535f11c5700dc42e60da0681d36",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0056.npz",
+        "episode_id": "train_0056",
+        "split": "train",
+        "sha256": "e0c8914b5719b90481d9ae33334b2496f0ca648cc9b1c7a0a4856e5c388262d3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0057.npz",
+        "episode_id": "train_0057",
+        "split": "train",
+        "sha256": "6513f1611466b1d977370a63de78e203cd8d621b78629e6c54daae42c6221fdc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0058.npz",
+        "episode_id": "train_0058",
+        "split": "train",
+        "sha256": "f88f8533b33691af23891ef5bef8b68618a28ca50d5ebb066d038aa9e897337e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0059.npz",
+        "episode_id": "train_0059",
+        "split": "train",
+        "sha256": "e623d1afceb09d4185d54b2f210e10f938e8d9f6d7c87831dd4408d3e27240c2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0060.npz",
+        "episode_id": "train_0060",
+        "split": "train",
+        "sha256": "8367f63c76d688d9b6b64ae34fb9db470e5f4c9126069ec3b4be3a222b48c482",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0061.npz",
+        "episode_id": "train_0061",
+        "split": "train",
+        "sha256": "f7790abd5b04220e5a88c78278b1d7cf0066c32eb7f07b784e75ede2d3c41f38",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0062.npz",
+        "episode_id": "train_0062",
+        "split": "train",
+        "sha256": "77f69c65f8a3784573c87bf67e5a229b19b69e5918f15e45ef17b9245113c65c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0063.npz",
+        "episode_id": "train_0063",
+        "split": "train",
+        "sha256": "ffd4b5d42fff256ab1eefa422037620743ded58813ea19425291d59ac4a04e1e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0064.npz",
+        "episode_id": "train_0064",
+        "split": "train",
+        "sha256": "eb3f07789b949efcf5dd067799fc1cef3ca16a321c9e61c5100dbcbd60a317f7",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0065.npz",
+        "episode_id": "train_0065",
+        "split": "train",
+        "sha256": "295b29e1e751c589f000152409d57f80bcaca09d25fdb90c7201b6daaff2a096",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0066.npz",
+        "episode_id": "train_0066",
+        "split": "train",
+        "sha256": "bf274293d0b8e627c4d1aa39b779534542e2626c4a5f690596780d54e8b2cbc4",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0067.npz",
+        "episode_id": "train_0067",
+        "split": "train",
+        "sha256": "173662e6b468dc199f9b7dd32f5314869b98e88a539257975e411e0d35fa9d79",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0068.npz",
+        "episode_id": "train_0068",
+        "split": "train",
+        "sha256": "bb83d4bfb6480e8312edccd58a2e68f3b436dafecac2223a1b2c767299a9cc86",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0069.npz",
+        "episode_id": "train_0069",
+        "split": "train",
+        "sha256": "05def209f704ea1fdbdd32949a4b07dafa0b1032a0a4ab01a8586fd95efc57d8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0070.npz",
+        "episode_id": "train_0070",
+        "split": "train",
+        "sha256": "0b6362a869f40af98a8dc0c59b1c4956ca8f82de5b2a4111c6d1dbef94ef2913",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0071.npz",
+        "episode_id": "train_0071",
+        "split": "train",
+        "sha256": "ab4d35e085e7172d0f2ade787625ba6658473e7a20e6a4069edbfa9f8fc814ef",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0072.npz",
+        "episode_id": "train_0072",
+        "split": "train",
+        "sha256": "f445ef685420574a147c6fe9b692c69d31fd70cd971fa5f0953ed867d33fa848",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0073.npz",
+        "episode_id": "train_0073",
+        "split": "train",
+        "sha256": "50258cf69ac7bb742f21dd7709e0bc9ccaf25f7a63307d65fa8cdff4e4716a1d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0074.npz",
+        "episode_id": "train_0074",
+        "split": "train",
+        "sha256": "2ea7006f3431eab679577595205103c139b3fdedec09f3604974adeea55b8249",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0075.npz",
+        "episode_id": "train_0075",
+        "split": "train",
+        "sha256": "d805e31015191b3c2c4efcd201f62d5e3651de06190a33647876117bef0c7b9d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0076.npz",
+        "episode_id": "train_0076",
+        "split": "train",
+        "sha256": "38c7402e7f9816cd22fb452a15d0c031318f7a25adaaca7be386042cb0f0b31a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0077.npz",
+        "episode_id": "train_0077",
+        "split": "train",
+        "sha256": "d991bed055c16f714323af0c879a84188b552ac8ecf1311684bc72b7dfc447dd",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0078.npz",
+        "episode_id": "train_0078",
+        "split": "train",
+        "sha256": "2d0bbef7241f9d0316a27c4b1bff7b2733c531735498f97ac2cbed4b56111cfc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0079.npz",
+        "episode_id": "train_0079",
+        "split": "train",
+        "sha256": "fe8465a40a3bff7a339e08a32165db6248f8541e888300c04e81d48187a294b2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0080.npz",
+        "episode_id": "train_0080",
+        "split": "train",
+        "sha256": "459173ad1a4710d1c9ddb67f8ee9c1a1efdbafde604f8c58c6a2abff4a6178d7",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0081.npz",
+        "episode_id": "train_0081",
+        "split": "train",
+        "sha256": "d46902f2230bcd46e409b0eaa760e6bbd99e66bee0eebaaad5a8863945311032",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0082.npz",
+        "episode_id": "train_0082",
+        "split": "train",
+        "sha256": "8e1feaab599b08a16b7a4d236b47aa40faf7ff203bcabbe7b4f3ec1c770d2848",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0083.npz",
+        "episode_id": "train_0083",
+        "split": "train",
+        "sha256": "3baa800d8f670e79620039cc22802b9722084da6fb33e949858a3d6f4539df22",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0084.npz",
+        "episode_id": "train_0084",
+        "split": "train",
+        "sha256": "8f30132249ee7ed228cf3a48d9debdffa57bac1d047a77de8336c0a11b63d5ee",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0085.npz",
+        "episode_id": "train_0085",
+        "split": "train",
+        "sha256": "24642fc965b5fa1edbe83b32b4b8854e50f66c021475d2bbf9aa86b21e48236e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0086.npz",
+        "episode_id": "train_0086",
+        "split": "train",
+        "sha256": "94cfc471f8e9d4d522120b518ac95d0c18e85e52effe9e626fecd91838934686",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0087.npz",
+        "episode_id": "train_0087",
+        "split": "train",
+        "sha256": "201eb7b3a70108c0e63d9e9077dc6eeb568d04e2f67bbb748b9d653857227e62",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0088.npz",
+        "episode_id": "train_0088",
+        "split": "train",
+        "sha256": "ca097998fdb0f933b8c0c887cbf4dbd88bb01d1b290d46d34e1f2813d17a9afd",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0089.npz",
+        "episode_id": "train_0089",
+        "split": "train",
+        "sha256": "fa45fce4ae9726bc4e9f7cde98315b28bb76597665332720e9948785e149cc5e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0090.npz",
+        "episode_id": "train_0090",
+        "split": "train",
+        "sha256": "c0baf181e4825455a43b07fe8d2a198bc1dac7fce178305d7dc6783a307ddee1",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0091.npz",
+        "episode_id": "train_0091",
+        "split": "train",
+        "sha256": "ed2453dee889fdb2568858f7b77a0818aafc4388242ae508c2b313f8618f10e0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0092.npz",
+        "episode_id": "train_0092",
+        "split": "train",
+        "sha256": "7d0be1f225f6097116022373f42255f65a64b35af3a79892ec459db9b2fed0f5",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0093.npz",
+        "episode_id": "train_0093",
+        "split": "train",
+        "sha256": "c8625813066c9b7185bbf0cb31824c5c9791be7162fb1f595f89c86e88e96b45",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0094.npz",
+        "episode_id": "train_0094",
+        "split": "train",
+        "sha256": "c20b428487a0f6e91f4a2e07880af685413d381767ae90bcbbca2c100d20a863",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0095.npz",
+        "episode_id": "train_0095",
+        "split": "train",
+        "sha256": "9c6c0c048542cdb62404eac6206ca392f4dac39206706710b3b214eb29e6a449",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0096.npz",
+        "episode_id": "train_0096",
+        "split": "train",
+        "sha256": "c1cbe3855f33d3717fb9a1f05b79db14d09b6f8a8d41270a11fccb95f56e744a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0097.npz",
+        "episode_id": "train_0097",
+        "split": "train",
+        "sha256": "89cd7ed8e0ccfc167d0f4ca7cd50d6b5211160f3379c95b4ba4af72f4655222d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0098.npz",
+        "episode_id": "train_0098",
+        "split": "train",
+        "sha256": "e828e51fa88233aedbd7c34cbf12040d08a04c71ae38e592273164e1e3057323",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0099.npz",
+        "episode_id": "train_0099",
+        "split": "train",
+        "sha256": "315e24b7ab85030dd8499945322272a9455bcf641ee016e4e2417e5a29cce52e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0100.npz",
+        "episode_id": "train_0100",
+        "split": "train",
+        "sha256": "2333a665f3c43cf9c2bc31664e300caab11b334d69d3feadbbd08badb78ea038",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0101.npz",
+        "episode_id": "train_0101",
+        "split": "train",
+        "sha256": "e8005b2c680a487033076e55f21e62e202bc2606276d0ab8111e1e64bc690f5b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0102.npz",
+        "episode_id": "train_0102",
+        "split": "train",
+        "sha256": "7015b1fcbec64fb69cf4e981d21fa0b664d82088baf50cfcd777166f1a43c630",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0103.npz",
+        "episode_id": "train_0103",
+        "split": "train",
+        "sha256": "c218a84a50b0cd090c6fdcee06000cc7b18c493a6c08b46595a2edc316a56622",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0104.npz",
+        "episode_id": "train_0104",
+        "split": "train",
+        "sha256": "43907ff2cea5891e1e20ab66d9e2e6e44cdaee0be15d909ba17fd848972d2a55",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0105.npz",
+        "episode_id": "train_0105",
+        "split": "train",
+        "sha256": "8232747cca857f54892c62ca27c037d4a283dcf86306ca6363c5861b1c186130",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0106.npz",
+        "episode_id": "train_0106",
+        "split": "train",
+        "sha256": "dc636b537b1ea8bbec072dd8a4b010918edbaf6b9fa85d63acd1543bb613f994",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0107.npz",
+        "episode_id": "train_0107",
+        "split": "train",
+        "sha256": "8b8cf859d4078728991453b0fb4101273b3afd28b8e1205b5fe9e9662270fe21",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0108.npz",
+        "episode_id": "train_0108",
+        "split": "train",
+        "sha256": "c7ff7aae618d08495b3cd9699253e9b80096ad18c78fb93c1dd11f96128fd73e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0109.npz",
+        "episode_id": "train_0109",
+        "split": "train",
+        "sha256": "8eae0a6be97ee726c7aec6a4c777714f0e5440c96d803a42948d8b916e6640a3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0110.npz",
+        "episode_id": "train_0110",
+        "split": "train",
+        "sha256": "7ac3d55ed6ede2cb00eef5f95ebbee4cf436526d36476305f88f7d273a5dbba0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0111.npz",
+        "episode_id": "train_0111",
+        "split": "train",
+        "sha256": "e87fa266f2c9c41c7fb4b6b0fbb65a8c74aafa79bcfd28de16bbba474e4cd268",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0112.npz",
+        "episode_id": "train_0112",
+        "split": "train",
+        "sha256": "77004ca12a139853c7f61e9b25912c5ace13839a5f751f0226b79f1424630896",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0113.npz",
+        "episode_id": "train_0113",
+        "split": "train",
+        "sha256": "dc2031a9324cac9071b78dcdffc65acd1cdbee5714269edf192b0b19b07fe1b6",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0114.npz",
+        "episode_id": "train_0114",
+        "split": "train",
+        "sha256": "38c9c35a1cc9f2e8a755c9c9eac5fe50f53e1d8a66e691ae183a43b7aed95826",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0115.npz",
+        "episode_id": "train_0115",
+        "split": "train",
+        "sha256": "c22f2f380fefa596637ec047378ddac5baa5da50f8e67bdca8c79f3b9eb55ea9",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0116.npz",
+        "episode_id": "train_0116",
+        "split": "train",
+        "sha256": "af01fc08cbde7942f2e1d778236be0ac54be25dcc0cefbe150aa2cd67fffc608",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0117.npz",
+        "episode_id": "train_0117",
+        "split": "train",
+        "sha256": "40b581631a93d118b9924d07fe901e44d4001c2a5961299e4a182ef2262bd3fe",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0118.npz",
+        "episode_id": "train_0118",
+        "split": "train",
+        "sha256": "508c1ea23e466b9311d3d5106b07d80cf6e144eb254a2fd88213c192673692f3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0119.npz",
+        "episode_id": "train_0119",
+        "split": "train",
+        "sha256": "4a9fdfbaa51da8ad25ee7902424a9f855534e535ed8a59a785eb1ebfd5d21231",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0120.npz",
+        "episode_id": "train_0120",
+        "split": "train",
+        "sha256": "563d51621b9548abee667abde6bdc1030d3eaf1751c07e3be7ad987abddf08aa",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0121.npz",
+        "episode_id": "train_0121",
+        "split": "train",
+        "sha256": "b926a1726ef3a48375e0e536bace8a18ace295963f9921c22523814b81dc6c7d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0122.npz",
+        "episode_id": "train_0122",
+        "split": "train",
+        "sha256": "e5aefdb428eb991beea5e5b0d28d1d0bc50547064475e06662c7d8c01dc7a5bf",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0123.npz",
+        "episode_id": "train_0123",
+        "split": "train",
+        "sha256": "ec2d3ff510684575496f96aa42f0bc63b4bf7fc813823a5754f6688c3b110136",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0124.npz",
+        "episode_id": "train_0124",
+        "split": "train",
+        "sha256": "47e062fb0f54ce671878494ba673885b9bbf9bdcd4e76b482acde964fd2be1c2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0125.npz",
+        "episode_id": "train_0125",
+        "split": "train",
+        "sha256": "9f1dc333315b76d3a5e10f963f094f02a8bc2e5abaccdcbd12d894407fec72a6",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0126.npz",
+        "episode_id": "train_0126",
+        "split": "train",
+        "sha256": "6549f8db5ca6354dfa629192aa8b0f43fae9249f17cd6569d356ed1351d25fb6",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0127.npz",
+        "episode_id": "train_0127",
+        "split": "train",
+        "sha256": "593ec38c2dfb45b2113d5863ba15f6e661ca4ae2980137e2d98698433a7bef8f",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0128.npz",
+        "episode_id": "train_0128",
+        "split": "train",
+        "sha256": "2dfb832f6f6cc2d6b0d1e05a97de600872a7f7de43d762f02c99e57d13c7fb5b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0129.npz",
+        "episode_id": "train_0129",
+        "split": "train",
+        "sha256": "bf4da22320a965649ba083395901cd3479c7a41ed0d37e6c3e724acda7d604bc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0130.npz",
+        "episode_id": "train_0130",
+        "split": "train",
+        "sha256": "b2928b8eb0893d8d33f42767c6080b65bb5fc7e73e4cbe5f443c97e250c4809c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0131.npz",
+        "episode_id": "train_0131",
+        "split": "train",
+        "sha256": "68b4af494696ab16b74c4806116bbdb4165c2b9d6d44cbd790e7f0f67eee62d0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0132.npz",
+        "episode_id": "train_0132",
+        "split": "train",
+        "sha256": "8f6c88c6c70b35785b3d29d665bb46a9bf6b12edb56908ef2a8567a5d82d8957",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0133.npz",
+        "episode_id": "train_0133",
+        "split": "train",
+        "sha256": "f68d539171060c9d59c3dd6ae0758915def361e71a581725fa4c88ae6587af71",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0134.npz",
+        "episode_id": "train_0134",
+        "split": "train",
+        "sha256": "2afefa4a59ec13ea8a5353de65fcc65c8f31a8e63e7da3ad676af66057debd98",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0135.npz",
+        "episode_id": "train_0135",
+        "split": "train",
+        "sha256": "eebdc45e74aa7eeabd2bcb51bc2add6fb31ac9f7b2092d426b6ca9dada114c3c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0136.npz",
+        "episode_id": "train_0136",
+        "split": "train",
+        "sha256": "31e9a366323c23b751295e6e3aad8dbd0b0d839ec6de8142c1000ece8c773bcc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0137.npz",
+        "episode_id": "train_0137",
+        "split": "train",
+        "sha256": "97bd83f77e7ee305b66a898ccd77f6718f064e894538c5bb175cfcd0dfe5b87b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0138.npz",
+        "episode_id": "train_0138",
+        "split": "train",
+        "sha256": "34f103dd30fe72bd3a7c9382590d22c2b6a8587881fa10154fa47601468ed4fc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0139.npz",
+        "episode_id": "train_0139",
+        "split": "train",
+        "sha256": "02e1cd66a3e1b3b4822fb1f4380703d8a41ec5a86c3f28672f7bc374510e2575",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0140.npz",
+        "episode_id": "train_0140",
+        "split": "train",
+        "sha256": "f101bd2335a8951ac5830263e2f4bd16da42446afc261f47251c116a18816b47",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0141.npz",
+        "episode_id": "train_0141",
+        "split": "train",
+        "sha256": "1829f96ac775d38110414dbfe4e86cb06ec1eeb47f68a450f1ea611604abe50c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0142.npz",
+        "episode_id": "train_0142",
+        "split": "train",
+        "sha256": "4238805002383565f134cd6425f05f56a813c1c1eaf6504d0c6a3e4042ee97bf",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0143.npz",
+        "episode_id": "train_0143",
+        "split": "train",
+        "sha256": "303de8bcc5e23cb4c1b5e2619a4a78a170887a6f955a6882b32047333172386c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0144.npz",
+        "episode_id": "train_0144",
+        "split": "train",
+        "sha256": "6a1caa9a76977faab7a24d5fd4b52a682688df5a502d040d8a207246f5849a4c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0145.npz",
+        "episode_id": "train_0145",
+        "split": "train",
+        "sha256": "58310d0a91bd76a7a29f7d64787cf100f6c9e9fb5bea405dfa24536484da7ec4",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0146.npz",
+        "episode_id": "train_0146",
+        "split": "train",
+        "sha256": "30319b9a32102a2dbeba801bfc3e23b9391f25be5934c984f634f7ba590c3b29",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0147.npz",
+        "episode_id": "train_0147",
+        "split": "train",
+        "sha256": "53bd93ea2201260d699b43f181bbce90837388a49599ea3d318324f26f0102cb",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0148.npz",
+        "episode_id": "train_0148",
+        "split": "train",
+        "sha256": "03123564d9be112a61959c8af6e3f677d50b5b13f91ae12947f8632eaef51379",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0149.npz",
+        "episode_id": "train_0149",
+        "split": "train",
+        "sha256": "c6db4543980a8424429f38f81fc4bce074d16d116dad9ea594334906a9ca1101",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0150.npz",
+        "episode_id": "train_0150",
+        "split": "train",
+        "sha256": "32cc084e55131b1f7195701f7391a3a9a9adfb8611314d0c4cb1103e2de397ed",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0151.npz",
+        "episode_id": "train_0151",
+        "split": "train",
+        "sha256": "b35838e3e2b36cdecb228357d7de339d9578a96c40f6a2eadb2ab69f04f7d863",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0152.npz",
+        "episode_id": "train_0152",
+        "split": "train",
+        "sha256": "486ca503b6cc2bf1430fc1bbf1324350eb9383664ed85dd7f97efae8a01fda09",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0153.npz",
+        "episode_id": "train_0153",
+        "split": "train",
+        "sha256": "d6f2fd13eb81f460dbf6ae40c68f628291545e849f263fc136aeae632dbcaf25",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0154.npz",
+        "episode_id": "train_0154",
+        "split": "train",
+        "sha256": "5af24ae316f38699537f2c097494310ac9f1de577be683cd821262c73f811bb8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0155.npz",
+        "episode_id": "train_0155",
+        "split": "train",
+        "sha256": "1ee29fc05d43678c2949c0709884bf863af710cbeaf5741315ea7d7494200846",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0156.npz",
+        "episode_id": "train_0156",
+        "split": "train",
+        "sha256": "43c2b580c15301970b3a4fc549e3860f081962d6f4d251b55371f748f2fc79e8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0157.npz",
+        "episode_id": "train_0157",
+        "split": "train",
+        "sha256": "933386441bb063b79c8de95446f71f5d6ce7a96a79a4c786a4387f543d36457b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0158.npz",
+        "episode_id": "train_0158",
+        "split": "train",
+        "sha256": "d217e3c06967522f2814b17a119dd659efac7e7f078d39755f501eb5e09ab3e8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0159.npz",
+        "episode_id": "train_0159",
+        "split": "train",
+        "sha256": "257cf97a234acc1d2eb37d148800511a1fb5f35f9bccecd012757cafe0086ab2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0160.npz",
+        "episode_id": "train_0160",
+        "split": "train",
+        "sha256": "4ad3390decc12ca0e5f2de2987442699d17f1d3c363e91318978b11ca53796bc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0161.npz",
+        "episode_id": "train_0161",
+        "split": "train",
+        "sha256": "69f60a2071b55d1bf559cc875ae3c6df9529dbf653bcfbbe9d938b55950c28ea",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0162.npz",
+        "episode_id": "train_0162",
+        "split": "train",
+        "sha256": "8075e0ef3d2245ef9c9e77e1388e75e5d5eebecfd2e233dec99275dcb6095cef",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0163.npz",
+        "episode_id": "train_0163",
+        "split": "train",
+        "sha256": "27769f3ea025fddf46727d757999321a080dd1cc9c35e7592b598da5736e2afe",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0164.npz",
+        "episode_id": "train_0164",
+        "split": "train",
+        "sha256": "5dabd07ebd24b9f54250245533df9c71d76d6f2152d846c5621accd522b553bc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0165.npz",
+        "episode_id": "train_0165",
+        "split": "train",
+        "sha256": "311dd8c6a54cb798d4acbcd0ac14afd806657e61582bc0b51a25e233f746216c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0166.npz",
+        "episode_id": "train_0166",
+        "split": "train",
+        "sha256": "d933c8e59c0e4eafaf9afd62df3cbe4ec9cc0a268797a9c47a118e0b8cfe776a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0167.npz",
+        "episode_id": "train_0167",
+        "split": "train",
+        "sha256": "8530e3219f2a776a880253682b184c8cf68380b0659fde9e00cadd2be9aff002",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0168.npz",
+        "episode_id": "train_0168",
+        "split": "train",
+        "sha256": "7b5bdfd773e1eae219b2e02005fe0dae452da2a7d115ac9dfa6bf187ecab6643",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0169.npz",
+        "episode_id": "train_0169",
+        "split": "train",
+        "sha256": "c76141b011df20fde5228e19408e5e6ed74cbe9d1a37b4a5ba947b6c95d7312d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0170.npz",
+        "episode_id": "train_0170",
+        "split": "train",
+        "sha256": "a3d3a30945ba3259c8cb804d9bc5cfa403fe8069c55e0e8a35051c08375d3fdc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0171.npz",
+        "episode_id": "train_0171",
+        "split": "train",
+        "sha256": "70cece92d2815029b00702597be19d79cacae5f6687f717ba232183e7f5e2483",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0172.npz",
+        "episode_id": "train_0172",
+        "split": "train",
+        "sha256": "aeca255dbdf81d96a899353701b3024e88aef69f8bf7230fb2d2a327621a1476",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0173.npz",
+        "episode_id": "train_0173",
+        "split": "train",
+        "sha256": "5b78a2ceb94fa71c3cb8fa5bf81fbf1d64983b8f8e68a3e1fbc711848461b6be",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0174.npz",
+        "episode_id": "train_0174",
+        "split": "train",
+        "sha256": "763a7cd735ef44677a45a0de93dc874f89c0c6e9c633b63da60369051cf6af44",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0175.npz",
+        "episode_id": "train_0175",
+        "split": "train",
+        "sha256": "0140279f8158ca5bc998807869505c65844abed89c4c533a7db90f9d6a768a34",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0176.npz",
+        "episode_id": "train_0176",
+        "split": "train",
+        "sha256": "785eb3fdf357b183f9cd65c756ada6852eddad993a1a491013f609afbacaf5cb",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0177.npz",
+        "episode_id": "train_0177",
+        "split": "train",
+        "sha256": "4ed76bfc80a600d590fdc4fda37594aad65a3e6e5a78bd54f20c59b5a65d4ac1",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0178.npz",
+        "episode_id": "train_0178",
+        "split": "train",
+        "sha256": "ad30ae9c272bc7f226940cc486d67d82ccdfd75074fd0a41112d0f7bc9391e0d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0179.npz",
+        "episode_id": "train_0179",
+        "split": "train",
+        "sha256": "723e07722620298ad2ca330bfcf2be032d708aa408d448b747334d392a8f0b3d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0180.npz",
+        "episode_id": "train_0180",
+        "split": "train",
+        "sha256": "13c6d5089fcbfeb49655043c43a72611b42514f1487090808379482042b19d88",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0181.npz",
+        "episode_id": "train_0181",
+        "split": "train",
+        "sha256": "54d65e7ba22619641e381d59e835594801614bf5951081d08474aa3d314b8b31",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0182.npz",
+        "episode_id": "train_0182",
+        "split": "train",
+        "sha256": "df730b209550ae193ca12c4524ac98b8d3ac26e648c48453cbca0d04e85b165a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0183.npz",
+        "episode_id": "train_0183",
+        "split": "train",
+        "sha256": "e6390126d6fc340d61f56b40775caa2a6d58fd1d58c9003332f787aa80de8c4c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0184.npz",
+        "episode_id": "train_0184",
+        "split": "train",
+        "sha256": "d57cf17db75ff8bdfa9461f09aa234fba8e646a2ef727d3f9b6be2268a3c7ce9",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0185.npz",
+        "episode_id": "train_0185",
+        "split": "train",
+        "sha256": "6e5a9060dff25679a6a2bc50c6264617c73590c9b92e5618b362bead12080c1d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0186.npz",
+        "episode_id": "train_0186",
+        "split": "train",
+        "sha256": "4a5b0ac2a204501630d4efcdabd7925fb662cbd0586f65bdc77d8547422c11d0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0187.npz",
+        "episode_id": "train_0187",
+        "split": "train",
+        "sha256": "6e1aa47993e8a787ad7f9b3d7684e98fd32f4f538f893a4c3bd604462a694bf5",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0188.npz",
+        "episode_id": "train_0188",
+        "split": "train",
+        "sha256": "164e71ea1b8ea1644d8b9205673e89aa9cca1b636f3e9ea13f4f6218c060b8d2",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0189.npz",
+        "episode_id": "train_0189",
+        "split": "train",
+        "sha256": "1c860eaf142bf419c1321f121b149168a47a07d61538738bc1e8a89918fedeae",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0190.npz",
+        "episode_id": "train_0190",
+        "split": "train",
+        "sha256": "a4929f5ddd70b96904ae87f439b60c84eb945cb426736ccb78375387f6bc6917",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0191.npz",
+        "episode_id": "train_0191",
+        "split": "train",
+        "sha256": "5a9ec4cc88b510bf367a8d9ce7d3f4b3f7653b51a50e82a88ba405bb80c4b2dd",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0192.npz",
+        "episode_id": "train_0192",
+        "split": "train",
+        "sha256": "98b8e0fa56a13f19a4fb664397f8cab4377f836ffd82e0ffd4afa826f5f6c65b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0193.npz",
+        "episode_id": "train_0193",
+        "split": "train",
+        "sha256": "6629face94eb9b38234d3aa00cef3f956d71114b8e6462432291ad06b388dbc0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0194.npz",
+        "episode_id": "train_0194",
+        "split": "train",
+        "sha256": "de7a8649afd819fdd95e34659f70de88def711d1973508295fb61ca2d068a00c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0195.npz",
+        "episode_id": "train_0195",
+        "split": "train",
+        "sha256": "e7142152c96fd504a6b89ff4e89363f3e6cd36e09574052e23c2c7b30e0e64ba",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0196.npz",
+        "episode_id": "train_0196",
+        "split": "train",
+        "sha256": "4b1c481a8dede1372d1f36940ae195c381fa4e9d2857fb61ae28b3bc563bb0c0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0197.npz",
+        "episode_id": "train_0197",
+        "split": "train",
+        "sha256": "c9dc489467755e95d78c769f1d38bd2772b6d1b36487beb31cafb579b75d3578",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0198.npz",
+        "episode_id": "train_0198",
+        "split": "train",
+        "sha256": "136237ed7d710b104a6d518921d78c56d62d6cdd3f7c99ed8d3b6a9e3ceac06a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0199.npz",
+        "episode_id": "train_0199",
+        "split": "train",
+        "sha256": "2c94ac5154ef301be2dfa43ef540034dd2d989813954a0bca66507c7c8536fa5",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0200.npz",
+        "episode_id": "train_0200",
+        "split": "train",
+        "sha256": "8cf087830ed4c87d4185534a6263a5bce199702468b870333b44bf6df7da370b",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0201.npz",
+        "episode_id": "train_0201",
+        "split": "train",
+        "sha256": "5f2c0c6940c4bc47b2c1558452edcf41b0dac3dfa1b05ad71a76007b89d56654",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0202.npz",
+        "episode_id": "train_0202",
+        "split": "train",
+        "sha256": "2973c929e707199b8d0c035068704cdf920e1c70e8482cb3431c125dde0e8e2e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0203.npz",
+        "episode_id": "train_0203",
+        "split": "train",
+        "sha256": "42a60ace18ee68e10bd903b2fee29863c92ed29e702b7de710a8b789aa12307a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0204.npz",
+        "episode_id": "train_0204",
+        "split": "train",
+        "sha256": "ebd97bc039e9685b53da04df01c8c26dfb0b2a7bb891f737d7615b61183e7e70",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0205.npz",
+        "episode_id": "train_0205",
+        "split": "train",
+        "sha256": "01a96b7f1ec1ec90e96a6fd3f13eaca97e82e954e7b697d13a44c36c698b93d0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0206.npz",
+        "episode_id": "train_0206",
+        "split": "train",
+        "sha256": "fb0b50e60fed24b06ff26a113c84d9936fc277d10e21d7c7b507a1c72bfb368e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0207.npz",
+        "episode_id": "train_0207",
+        "split": "train",
+        "sha256": "c65dd56271fdd5623c620630f19bc81b3dff6a01f5c4dc14c7b21617108e4325",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0208.npz",
+        "episode_id": "train_0208",
+        "split": "train",
+        "sha256": "db8e25a09aca1775da5f8c0076f7b3bb4f29b40081add2152f9e674ae2fff70a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0209.npz",
+        "episode_id": "train_0209",
+        "split": "train",
+        "sha256": "725cf51c19589c78ad2ac825be1a075a98c86b9d6885aed4a0266442a9cada2e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0210.npz",
+        "episode_id": "train_0210",
+        "split": "train",
+        "sha256": "d8a107fb0f96b03569507e12deb8b88f7212b9c836b1d704ce2492ab77c54de0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0211.npz",
+        "episode_id": "train_0211",
+        "split": "train",
+        "sha256": "d4040f3ff8d50c6574a02b33ab88227c6a3a3e80c1c474aacbf87bca7fc899ea",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0212.npz",
+        "episode_id": "train_0212",
+        "split": "train",
+        "sha256": "2a7f6e4d613fc13b626cbde5d92afbc86beadb3aa8c53f9680a046e67552c7b8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0213.npz",
+        "episode_id": "train_0213",
+        "split": "train",
+        "sha256": "c797e9f480c151bdf7335f95bf52a2921e2b35b52df22c819939281835f7768d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0214.npz",
+        "episode_id": "train_0214",
+        "split": "train",
+        "sha256": "13c5ddfe8df5d8435e9ad7908835fb53bda044b22ab1dfc6af93c7883b438067",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0215.npz",
+        "episode_id": "train_0215",
+        "split": "train",
+        "sha256": "8a9d59f307fbe624485d28e3e6b61b288bd894c51537e9c58e21e343d4f20334",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0216.npz",
+        "episode_id": "train_0216",
+        "split": "train",
+        "sha256": "b6c57a0ee2ee73cd43539d1d595dff9d467517f569f04b27b61fbd90ca740a53",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0217.npz",
+        "episode_id": "train_0217",
+        "split": "train",
+        "sha256": "bb9b9da06f92b7528e197ba1cda1809f056e590998e6c390c49e5c31980138ba",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0218.npz",
+        "episode_id": "train_0218",
+        "split": "train",
+        "sha256": "1b0f4baa9194b734477ec1c1a559be9799ce81c1f804af4be3923f36de0ef25a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0219.npz",
+        "episode_id": "train_0219",
+        "split": "train",
+        "sha256": "1b09db77c20ebf2425734aed12f9c149a14147432787f847b430330c0e70c8ff",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0220.npz",
+        "episode_id": "train_0220",
+        "split": "train",
+        "sha256": "78152029527c5e12dc6c7055c5ec834a5bd6620e338ddfd94a0c16a9eddc549f",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0221.npz",
+        "episode_id": "train_0221",
+        "split": "train",
+        "sha256": "65179e38ff9ae3f015349c351063bcd4f8bb8758f9b343e51612e6c1c954cd6c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0222.npz",
+        "episode_id": "train_0222",
+        "split": "train",
+        "sha256": "e7ec2f65bc6f04a6017c6c783cd2959f3b1cfa39782963d165af772aeb9e5987",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0223.npz",
+        "episode_id": "train_0223",
+        "split": "train",
+        "sha256": "1bb070e48cdecccc781ea1f1d342da3813793710d98724cff7c2fb22ffffab72",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0224.npz",
+        "episode_id": "train_0224",
+        "split": "train",
+        "sha256": "90cc13accdda9d0d6928ac7b5cc13a67dda1f76917715026b8566540dd4dac19",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0225.npz",
+        "episode_id": "train_0225",
+        "split": "train",
+        "sha256": "f56b8262235fc487212f8d8d41951b56594c48a8e3d5fa5ec5caa828b0e0d924",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0226.npz",
+        "episode_id": "train_0226",
+        "split": "train",
+        "sha256": "97f9e8e57a6ad77f6083d18ed1f9908f4117e3e7d15fd5178149b34f2283f30f",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0227.npz",
+        "episode_id": "train_0227",
+        "split": "train",
+        "sha256": "cafb502ab040d122a185072cdbff9cf36152e848a98a6a5553b214dcc043244c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0228.npz",
+        "episode_id": "train_0228",
+        "split": "train",
+        "sha256": "c680f586778d29ce513eb0c5b3234ccc7fd75271c9e4f9039c48c177a8186716",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0229.npz",
+        "episode_id": "train_0229",
+        "split": "train",
+        "sha256": "242df3bdbb669de644262c5fc2dea6092334feb086eb29471c24c75abb51b2bc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0230.npz",
+        "episode_id": "train_0230",
+        "split": "train",
+        "sha256": "cde7b590b7f5f7771618757498f5b906bd3424097431a33f0d4ca820d0ef673f",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0231.npz",
+        "episode_id": "train_0231",
+        "split": "train",
+        "sha256": "f654b1e3342410904b4c38f957fb7bc8051647317e15a8ccf775be886fe2f78d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0232.npz",
+        "episode_id": "train_0232",
+        "split": "train",
+        "sha256": "9a5a1e055ed354d96de06b34923d7d4e949f0d46be8f22b6af116c12d52879bc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0233.npz",
+        "episode_id": "train_0233",
+        "split": "train",
+        "sha256": "70086f9d4a897628da7519ce328327e5e97ecb72d3ff186f145b30d31f984773",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0234.npz",
+        "episode_id": "train_0234",
+        "split": "train",
+        "sha256": "7c3f7a97fc81aea42420a520b50c3777d8d146ba070788f61be2c240f487f201",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0235.npz",
+        "episode_id": "train_0235",
+        "split": "train",
+        "sha256": "e5c7cf2a6a64ccd28b526149d48029a639d3849e42bc172f59fd362df99310b3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0236.npz",
+        "episode_id": "train_0236",
+        "split": "train",
+        "sha256": "d7c583c88592932a927d7379f1d783b5950593e72fcd76cf04ff41c1eef8594d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0237.npz",
+        "episode_id": "train_0237",
+        "split": "train",
+        "sha256": "df94f9909e6b09b7ecc7407c6468897b25739615839285df15663d9d5ddcd414",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0238.npz",
+        "episode_id": "train_0238",
+        "split": "train",
+        "sha256": "b82df72229726527c8f99e013898c320e76321b2940b541af808fd579f4fb61a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\train_0239.npz",
+        "episode_id": "train_0239",
+        "split": "train",
+        "sha256": "f600477bd10e0b68ebee812c1ef4ec1984c7a83d00e8a2abdf5c9e087cbd4ee7",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      }
+    ],
+    "val": [
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0000.npz",
+        "episode_id": "val_0000",
+        "split": "val",
+        "sha256": "7ce1efe3e9c8e205d2d95cfe52e5a5799167077a2bd93a24e6fdbed108552cd4",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0001.npz",
+        "episode_id": "val_0001",
+        "split": "val",
+        "sha256": "49b5d7f5b25afafa843b26ba80476abf788d316454ac3fea6549b5cf6cde26c0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0002.npz",
+        "episode_id": "val_0002",
+        "split": "val",
+        "sha256": "14876429cb067e347b432acb7b19e05fd13fa9a8ba1cdf2c956ac9dc4e072985",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0003.npz",
+        "episode_id": "val_0003",
+        "split": "val",
+        "sha256": "316c2b5ef2322306a411855c93dccb54c567fa3623bdf95ec7be40a5e0b6bbef",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0004.npz",
+        "episode_id": "val_0004",
+        "split": "val",
+        "sha256": "5a4711139a2a2d4c5a69cec2dd4199d0296806405521700371afcbd1a528dc8e",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0005.npz",
+        "episode_id": "val_0005",
+        "split": "val",
+        "sha256": "6ae997bde0bcc4320b7e25254be753bccf318aab9d3dbed275d81a30cace5139",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0006.npz",
+        "episode_id": "val_0006",
+        "split": "val",
+        "sha256": "dcc2ee73faaacc123f738f2a35021c7d9a81b9a3c4290c3fab1fef49f002df79",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0007.npz",
+        "episode_id": "val_0007",
+        "split": "val",
+        "sha256": "0b43577aec2b454b2e59cc6dd492c5c3770340f7abecbf788140d5bab3372f8c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0008.npz",
+        "episode_id": "val_0008",
+        "split": "val",
+        "sha256": "a0648188e7eaa301aecab97c504b6267e4d970e3826aae83adb07daaf4a0945d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0009.npz",
+        "episode_id": "val_0009",
+        "split": "val",
+        "sha256": "59bb653824b91acec9d8e7bb308c35ccf5869db2867fd1b44edd119a97d31c47",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0010.npz",
+        "episode_id": "val_0010",
+        "split": "val",
+        "sha256": "b2bc0be4e7b1f8422f9a82abd105ab6080ca004faf56ae78cff6b88ace6532e4",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0011.npz",
+        "episode_id": "val_0011",
+        "split": "val",
+        "sha256": "f7aa7990bc8f2a6e30342d8fd6c34cfa67302ac31692e83767f12f896c3ed4b7",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0012.npz",
+        "episode_id": "val_0012",
+        "split": "val",
+        "sha256": "114b4114c758f83b0e63cf577bac0066bab8724b7373cde1bf3df85a4aa70f22",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0013.npz",
+        "episode_id": "val_0013",
+        "split": "val",
+        "sha256": "747fc6399228e0269716cd0adc406071d23c0a0292c939293a0dcde50595d0d8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0014.npz",
+        "episode_id": "val_0014",
+        "split": "val",
+        "sha256": "e232f754731c216ccf880ebc626490b078a1f5b9222c8db70c8f13d986c50cdd",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0015.npz",
+        "episode_id": "val_0015",
+        "split": "val",
+        "sha256": "50277cb5680ea64d9d9a0d40b9d562d24bfc40580576e9a8c0a10404096f4ea5",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0016.npz",
+        "episode_id": "val_0016",
+        "split": "val",
+        "sha256": "879628bf2f746acc8c7d3fa4295b134855a9d8d77eaa6c8c2cff8a7c4d6d8400",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0017.npz",
+        "episode_id": "val_0017",
+        "split": "val",
+        "sha256": "2c7b17ab8d34fdbcb1c48e8a06d317cd48e5c2a7de32493ed3a153e10b0db7bc",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0018.npz",
+        "episode_id": "val_0018",
+        "split": "val",
+        "sha256": "6f1d7e78969eb9747e8c976e75268d6d89926d0c8b3d49acc00996c9a8927af3",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0019.npz",
+        "episode_id": "val_0019",
+        "split": "val",
+        "sha256": "82f9930c19c93bef960be3a216aa599d81a5a4e2256dde3773003998af973942",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0020.npz",
+        "episode_id": "val_0020",
+        "split": "val",
+        "sha256": "ca99fdbdea93440b58d8ea43be25f30540d1843eadc95c5b09e36b6f85bc5008",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0021.npz",
+        "episode_id": "val_0021",
+        "split": "val",
+        "sha256": "1bda3761f047fae1037a1aa06e84e41e42499819b3fa8d8f1811bb7f2cd97302",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0022.npz",
+        "episode_id": "val_0022",
+        "split": "val",
+        "sha256": "a6876e8903f877133aaf31f91597a7508b95bd27429970106b0c5afa56a74da8",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0023.npz",
+        "episode_id": "val_0023",
+        "split": "val",
+        "sha256": "56f0f44c20e37a13866ccd44f95947027c8eae8f84a79a71906749a4a383a45d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0024.npz",
+        "episode_id": "val_0024",
+        "split": "val",
+        "sha256": "1c7c2ccfdac68e2db408bfb14dc73fe959919cfac0d7599d5fae01fa36fd9785",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0025.npz",
+        "episode_id": "val_0025",
+        "split": "val",
+        "sha256": "35ffa2fdee39c70ee11262fa3db13a455eb99060e8ca369ba864c71060f765e0",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0026.npz",
+        "episode_id": "val_0026",
+        "split": "val",
+        "sha256": "56532cab3d139603f689dbd01fc3761a3f603d7efcede890f81a7648853dad3f",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0027.npz",
+        "episode_id": "val_0027",
+        "split": "val",
+        "sha256": "6b635a74d417a2a5d1783c5bef8709cca1530e5bee997fcb9e8f68e277cef549",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0028.npz",
+        "episode_id": "val_0028",
+        "split": "val",
+        "sha256": "3d82483f9b94a5f1b8450af9bf3f4d2d3808517473d0874d19f44587c56fb4e5",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0029.npz",
+        "episode_id": "val_0029",
+        "split": "val",
+        "sha256": "8c51a069b853f6af23ae1673de9dac9be60a5938f1dc685eb3e9f9fd00996cf6",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0030.npz",
+        "episode_id": "val_0030",
+        "split": "val",
+        "sha256": "307534e2c34c2b3cf25f6029a4750ce396bc284fd7e77f6415a76a2f8e697c4a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0031.npz",
+        "episode_id": "val_0031",
+        "split": "val",
+        "sha256": "949dcf5d1503d81d6b492d52d005872cb7b303a616243ea17603ccfe3beb006c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0032.npz",
+        "episode_id": "val_0032",
+        "split": "val",
+        "sha256": "11f27c46ac698a0c336595639dd74290d11987e799b563e81eedf9485e80931c",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0033.npz",
+        "episode_id": "val_0033",
+        "split": "val",
+        "sha256": "cc8cf79666713d10587130180c01119b7a12f4852aebd5827bbac1b2a292f328",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0034.npz",
+        "episode_id": "val_0034",
+        "split": "val",
+        "sha256": "54ef88703ed5d2d162df3a03f0afa78bc01f6083396922df3a315cf850cf8076",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0035.npz",
+        "episode_id": "val_0035",
+        "split": "val",
+        "sha256": "0f555545816862572c1230c3cc70846e5fcb6015f4acdac97d9c9ffba6be8069",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0036.npz",
+        "episode_id": "val_0036",
+        "split": "val",
+        "sha256": "30b2b29dc32dd7347d0ac6ab1e20d8c331872c68d91b8bd537162801d3a372eb",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0037.npz",
+        "episode_id": "val_0037",
+        "split": "val",
+        "sha256": "558eb8ff70c0a38c554b27c3422ae62ec342b0513d68f7a4d253364b3991a84a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0038.npz",
+        "episode_id": "val_0038",
+        "split": "val",
+        "sha256": "a54bd525c7b394668bfc1683efeabea91137c13b2f6d4d4ca725d39d357ba77a",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0039.npz",
+        "episode_id": "val_0039",
+        "split": "val",
+        "sha256": "32b0c05ad8f0cf147fbf6b5972f6f99e71d5a3380a75d8ee76dc543b5d723a88",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0040.npz",
+        "episode_id": "val_0040",
+        "split": "val",
+        "sha256": "d3f2b94f8e4791b1790c0e8625958caea47a0b143302bb3a65366a7e69a7b855",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0041.npz",
+        "episode_id": "val_0041",
+        "split": "val",
+        "sha256": "1c00118a30a6de72e42c36e5ab4f5f837881e62168d3c0f43964054507dde091",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0042.npz",
+        "episode_id": "val_0042",
+        "split": "val",
+        "sha256": "19e7fdea58a5c1cce33197ec206a638589cc97329a6aa3c9f16e508f6dda8324",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0043.npz",
+        "episode_id": "val_0043",
+        "split": "val",
+        "sha256": "ff3391abbc3f51d97e30546272fc347f644a46ebb74c1d93e74de64fb8495864",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0044.npz",
+        "episode_id": "val_0044",
+        "split": "val",
+        "sha256": "16469f2a23774518043ac72ffaf29bfa41fb0877143419cf508bd7a501815996",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0045.npz",
+        "episode_id": "val_0045",
+        "split": "val",
+        "sha256": "31e64bfe7349864635b574328c9c13d1a400033a427484cea8d71fa5b8b49dfb",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0046.npz",
+        "episode_id": "val_0046",
+        "split": "val",
+        "sha256": "587d3bf384a41ccdd578e917aa440b1514d4995d8f83ab9bc61163828610138d",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      },
+      {
+        "path": "outputs\\revision_v2\\dataset\\episodes\\val_0047.npz",
+        "episode_id": "val_0047",
+        "split": "val",
+        "sha256": "bbd719d584d664959e7f679d6e112801e2fc300651c11726bdd75df831caa169",
+        "steps": 150,
+        "terminal_observation": 135,
+        "max_noncontrolled_action": 0.0
+      }
+    ]
+  },
+  "split_manifest_sha256": "c67953d40f55d4ccf524ae140a063d3fa5e2a9e2fb257be75a5eff4c8359bb4b",
+  "bc_selection": "minimum validation normalized two-action MSE; earliest checkpoint wins ties",
+  "iql_selection": "fixed final update; validation metrics are diagnostic only",
+  "iql_initialization": "selected reactive BC actor; independent fresh critic/value",
+  "device": "cuda",
+  "torch": "2.14.0+cu130",
+  "numpy": "2.5.2",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "gpu": "NVIDIA GeForce RTX 5090 Laptop GPU",
+  "deterministic_algorithms": true,
+  "train_reward_mean": 0.16923393309116364,
+  "train_reward_min": -2.9158079624176025,
+  "train_reward_max": 0.9999999403953552,
+  "validation_actions_outside_training_bounds_fraction": 0.0,
+  "bc_seconds": 36.23941279999781,
+  "bc_selected_step": 1750,
+  "bc_selected_validation_mse": 0.017660034531104846,
+  "iql_seconds": 666.8803791999999,
+  "elapsed_seconds": 705.4605230000016,
+  "completed_bc_updates": 2000,
+  "completed_iql_updates": 10000,
+  "bc_samples_drawn": 512000,
+  "iql_transition_samples_drawn": 2560000,
+  "bc_policy.pt_sha256": "b058bff4020b6a3228ace0bda8bb36a8409a07fe6fecab2c7732d7ee807eceb6",
+  "iql_policy.pt_sha256": "5f3be1e06628aad8a9c99d48202c70535cdd2afafc0d890ec74ff7d48ccc326d"
+}

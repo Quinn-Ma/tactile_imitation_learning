@@ -1,0 +1,22 @@
+\begin{table}[t]
+\vspace*{5pt}
+\centering
+\caption{Common script-trajectory forecasts: 30 environments per domain, three fixed models. F/P: endpoint/interval-peak MAE (N). Persistence holds observed endpoint forces but current decoded peaks, not measured interval peaks. VT joint coverage (\%) uses fixed 48-episode calibration; coverage is empirical under policy/domain shift.}
+\label{tab:forecast}
+\begingroup
+\fontsize{8}{9.2}\selectfont
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+Domain & Vision & VT & Persistence & VT joint \\
+ & F/P & F/P & F/P & (\%) \\
+\midrule
+ID & 0.939/2.567 & 0.189/0.448 & 0.106/0.444 & 90.0 \\
+Geometry & 1.159/2.508 & 0.631/1.134 & 0.293/1.195 & 55.6 \\
+Physics & 1.230/2.977 & 0.402/0.789 & 0.133/0.788 & 68.9 \\
+Combined & 0.772/1.690 & 0.361/0.668 & 0.132/0.704 & 65.6 \\
+\bottomrule
+\end{tabular*}
+\endgroup
+\end{table}

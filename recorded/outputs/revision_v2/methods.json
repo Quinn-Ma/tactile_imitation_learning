@@ -1,0 +1,252 @@
+[
+  {
+    "name": "WM_vision_seed0",
+    "group": "WM_vision",
+    "kind": "world_model",
+    "seed": 0,
+    "model": "outputs/revision_v2/world_models/vision_seed0/best.pt",
+    "actor": "outputs/revision_v2/rl/vision_seed0/rl_actor.pt"
+  },
+  {
+    "name": "WM_BC_vision_seed0",
+    "group": "WM_BC_vision",
+    "kind": "world_model",
+    "seed": 0,
+    "model": "outputs/revision_v2/world_models/vision_seed0/best.pt",
+    "actor": "outputs/revision_v2/rl/vision_seed0/bc_actor.pt"
+  },
+  {
+    "name": "BC_vision_seed0",
+    "group": "BC_vision",
+    "kind": "reactive",
+    "seed": 0,
+    "checkpoint": "outputs/revision_v2/reactive_runs/vision_seed0/bc_policy.pt"
+  },
+  {
+    "name": "IQL_vision_seed0",
+    "group": "IQL_vision",
+    "kind": "reactive",
+    "seed": 0,
+    "checkpoint": "outputs/revision_v2/reactive_runs/vision_seed0/iql_policy.pt"
+  },
+  {
+    "name": "WM_vision_seed1",
+    "group": "WM_vision",
+    "kind": "world_model",
+    "seed": 1,
+    "model": "outputs/revision_v2/world_models/vision_seed1/best.pt",
+    "actor": "outputs/revision_v2/rl/vision_seed1/rl_actor.pt"
+  },
+  {
+    "name": "WM_BC_vision_seed1",
+    "group": "WM_BC_vision",
+    "kind": "world_model",
+    "seed": 1,
+    "model": "outputs/revision_v2/world_models/vision_seed1/best.pt",
+    "actor": "outputs/revision_v2/rl/vision_seed1/bc_actor.pt"
+  },
+  {
+    "name": "BC_vision_seed1",
+    "group": "BC_vision",
+    "kind": "reactive",
+    "seed": 1,
+    "checkpoint": "outputs/revision_v2/reactive_runs/vision_seed1/bc_policy.pt"
+  },
+  {
+    "name": "IQL_vision_seed1",
+    "group": "IQL_vision",
+    "kind": "reactive",
+    "seed": 1,
+    "checkpoint": "outputs/revision_v2/reactive_runs/vision_seed1/iql_policy.pt"
+  },
+  {
+    "name": "WM_vision_seed2",
+    "group": "WM_vision",
+    "kind": "world_model",
+    "seed": 2,
+    "model": "outputs/revision_v2/world_models/vision_seed2/best.pt",
+    "actor": "outputs/revision_v2/rl/vision_seed2/rl_actor.pt"
+  },
+  {
+    "name": "WM_BC_vision_seed2",
+    "group": "WM_BC_vision",
+    "kind": "world_model",
+    "seed": 2,
+    "model": "outputs/revision_v2/world_models/vision_seed2/best.pt",
+    "actor": "outputs/revision_v2/rl/vision_seed2/bc_actor.pt"
+  },
+  {
+    "name": "BC_vision_seed2",
+    "group": "BC_vision",
+    "kind": "reactive",
+    "seed": 2,
+    "checkpoint": "outputs/revision_v2/reactive_runs/vision_seed2/bc_policy.pt"
+  },
+  {
+    "name": "IQL_vision_seed2",
+    "group": "IQL_vision",
+    "kind": "reactive",
+    "seed": 2,
+    "checkpoint": "outputs/revision_v2/reactive_runs/vision_seed2/iql_policy.pt"
+  },
+  {
+    "name": "WM_visuotactile_seed0",
+    "group": "WM_visuotactile",
+    "kind": "world_model",
+    "seed": 0,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed0/best.pt",
+    "actor": "outputs/revision_v2/rl/visuotactile_seed0/rl_actor.pt"
+  },
+  {
+    "name": "WM_BC_visuotactile_seed0",
+    "group": "WM_BC_visuotactile",
+    "kind": "world_model",
+    "seed": 0,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed0/best.pt",
+    "actor": "outputs/revision_v2/rl/visuotactile_seed0/bc_actor.pt"
+  },
+  {
+    "name": "BC_visuotactile_seed0",
+    "group": "BC_visuotactile",
+    "kind": "reactive",
+    "seed": 0,
+    "checkpoint": "outputs/revision_v2/reactive_runs/visuotactile_seed0/bc_policy.pt"
+  },
+  {
+    "name": "IQL_visuotactile_seed0",
+    "group": "IQL_visuotactile",
+    "kind": "reactive",
+    "seed": 0,
+    "checkpoint": "outputs/revision_v2/reactive_runs/visuotactile_seed0/iql_policy.pt"
+  },
+  {
+    "name": "WM_visuotactile_seed1",
+    "group": "WM_visuotactile",
+    "kind": "world_model",
+    "seed": 1,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed1/best.pt",
+    "actor": "outputs/revision_v2/rl/visuotactile_seed1/rl_actor.pt"
+  },
+  {
+    "name": "WM_BC_visuotactile_seed1",
+    "group": "WM_BC_visuotactile",
+    "kind": "world_model",
+    "seed": 1,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed1/best.pt",
+    "actor": "outputs/revision_v2/rl/visuotactile_seed1/bc_actor.pt"
+  },
+  {
+    "name": "BC_visuotactile_seed1",
+    "group": "BC_visuotactile",
+    "kind": "reactive",
+    "seed": 1,
+    "checkpoint": "outputs/revision_v2/reactive_runs/visuotactile_seed1/bc_policy.pt"
+  },
+  {
+    "name": "IQL_visuotactile_seed1",
+    "group": "IQL_visuotactile",
+    "kind": "reactive",
+    "seed": 1,
+    "checkpoint": "outputs/revision_v2/reactive_runs/visuotactile_seed1/iql_policy.pt"
+  },
+  {
+    "name": "WM_visuotactile_seed2",
+    "group": "WM_visuotactile",
+    "kind": "world_model",
+    "seed": 2,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed2/best.pt",
+    "actor": "outputs/revision_v2/rl/visuotactile_seed2/rl_actor.pt"
+  },
+  {
+    "name": "WM_BC_visuotactile_seed2",
+    "group": "WM_BC_visuotactile",
+    "kind": "world_model",
+    "seed": 2,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed2/best.pt",
+    "actor": "outputs/revision_v2/rl/visuotactile_seed2/bc_actor.pt"
+  },
+  {
+    "name": "BC_visuotactile_seed2",
+    "group": "BC_visuotactile",
+    "kind": "reactive",
+    "seed": 2,
+    "checkpoint": "outputs/revision_v2/reactive_runs/visuotactile_seed2/bc_policy.pt"
+  },
+  {
+    "name": "IQL_visuotactile_seed2",
+    "group": "IQL_visuotactile",
+    "kind": "reactive",
+    "seed": 2,
+    "checkpoint": "outputs/revision_v2/reactive_runs/visuotactile_seed2/iql_policy.pt"
+  },
+  {
+    "name": "script",
+    "group": "script",
+    "kind": "script"
+  },
+  {
+    "name": "force_feedback",
+    "group": "force_feedback",
+    "kind": "force_feedback"
+  },
+  {
+    "name": "model_guard_seed0",
+    "group": "model_guard",
+    "kind": "adaptive",
+    "mode": "model_guard",
+    "seed": 0,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed0/best.pt"
+  },
+  {
+    "name": "model_guard_seed1",
+    "group": "model_guard",
+    "kind": "adaptive",
+    "mode": "model_guard",
+    "seed": 1,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed1/best.pt"
+  },
+  {
+    "name": "model_guard_seed2",
+    "group": "model_guard",
+    "kind": "adaptive",
+    "mode": "model_guard",
+    "seed": 2,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed2/best.pt"
+  },
+  {
+    "name": "model_no_guard_seed0",
+    "group": "model_no_guard",
+    "kind": "adaptive",
+    "mode": "model_no_guard",
+    "seed": 0,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed0/best.pt"
+  },
+  {
+    "name": "model_no_guard_seed1",
+    "group": "model_no_guard",
+    "kind": "adaptive",
+    "mode": "model_no_guard",
+    "seed": 1,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed1/best.pt"
+  },
+  {
+    "name": "model_no_guard_seed2",
+    "group": "model_no_guard",
+    "kind": "adaptive",
+    "mode": "model_no_guard",
+    "seed": 2,
+    "model": "outputs/revision_v2/world_models/visuotactile_seed2/best.pt"
+  },
+  {
+    "name": "reactive_guard",
+    "group": "reactive_guard",
+    "kind": "adaptive",
+    "mode": "reactive_guard"
+  },
+  {
+    "name": "reactive_no_guard",
+    "group": "reactive_no_guard",
+    "kind": "adaptive",
+    "mode": "reactive_no_guard"
+  }
+]

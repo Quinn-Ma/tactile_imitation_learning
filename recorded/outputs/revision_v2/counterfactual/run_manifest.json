@@ -1,0 +1,83 @@
+{
+  "protocol_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+  "source_sha256": "a7cc697a9d7d0ce5574a6397c7a59537866cbfb32dcaa31558101c4866619f23",
+  "adaptive_controller_sha256": "98901ff67f3e2a40707583e1708ac80d8a2c0a12fb283f829a9c9241c14ea913",
+  "adapter_sha256": "2739b610a839e89b1ff2d3c444dab40756e69fe54b75f5b480fb0ea4688f39f3",
+  "model_sha256": [
+    "a1d8cd5d8c2c050237930c78cba88a2b0e62b1b70a2c71644632f5aa43f6b45f",
+    "a60da3d6e913f995aa679b55d9ce30f306d23052a17d16f69a3d04b14893d910",
+    "cf2f44623d8b9458c71b82ff1c7927e6885ad07739d2635f99fd486db723eef3",
+    "6fc892f9fce27db3b7a6f9d2f7205a5a721a1eec7f023ffc7aa5d89e55dda877",
+    "4e2dc3ae9c7864ba2a55b5b3ffd0f9ed0f4a95cba84b42ddebe8fe3f57471768",
+    "733e6fda4659ea30b7209e3d657f92d13a28c2906b4226b10e741b11f0b039b3"
+  ],
+  "model_seeds": [
+    0,
+    1,
+    2,
+    0,
+    1,
+    2
+  ],
+  "model_variants": [
+    "vision",
+    "vision",
+    "vision",
+    "visuotactile",
+    "visuotactile",
+    "visuotactile"
+  ],
+  "environment_seeds": [
+    20364000,
+    20364001,
+    20364002,
+    20364003,
+    20364004,
+    20364005,
+    20364006,
+    20364007,
+    20364008,
+    20364009,
+    20364010,
+    20364011
+  ],
+  "prefixes": [
+    44,
+    78,
+    112
+  ],
+  "horizon": 5,
+  "z_offsets": [
+    -0.06,
+    0.0,
+    0.06
+  ],
+  "grip_offsets": [
+    -0.1,
+    0.0,
+    0.1
+  ],
+  "center_index": 4,
+  "smoke": false,
+  "device": "cpu",
+  "runtime_provenance": {
+    "simulator_python_executable": "<PYTHON_EXECUTABLE>",
+    "simulator_python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "simulator_numpy_version": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "model_inference": {
+      "python_executable": "<PYTHON_EXECUTABLE>",
+      "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+      "torch_version": "2.14.0+cu130",
+      "numpy_version": "2.5.2",
+      "requested_device": "cpu",
+      "resolved_device": "cpu",
+      "torch_num_threads": 4,
+      "cuda_build_version": "13.0",
+      "accelerator_name": null,
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel"
+    }
+  }
+}

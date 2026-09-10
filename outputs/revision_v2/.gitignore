@@ -1,0 +1,18 @@
+# Runtime outputs are regenerated; archived text is under recorded/.
+__pycache__/
+dataset/
+world_models/
+rl/
+reactive_runs/
+evaluations/
+counterfactual/
+forecast_analysis/
+analysis/
+legacy_visual_ablation/
+legacy_visual_evaluation/
+sensor_stress_evaluations/
+sensor_stress_analysis/
+*.pt
+*.pth
+*.npz
+*.npy

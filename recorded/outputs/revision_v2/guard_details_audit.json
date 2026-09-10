@@ -1,0 +1,3309 @@
+{
+  "status": "PASS",
+  "semantics": "Post hoc descriptive phase audit; no new fitted/tuned policy or multiplicity-adjusted causal mediation inference.",
+  "raw_guard_on_off_pairs_verified": 480,
+  "raw_trajectories_verified": 960,
+  "guard_threshold_N": 7.25,
+  "active_action_indices_inclusive": [
+    44,
+    134
+  ],
+  "setup_observation_indices_inclusive": [
+    0,
+    44
+  ],
+  "intervention_observation_indices_inclusive": [
+    45,
+    135
+  ],
+  "lower_observation_indices_inclusive": [
+    136,
+    150
+  ],
+  "phase_tables": {
+    "force_feedback": {
+      "id": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 30,
+        "joint_success_count": 22,
+        "force_violation_count": 8,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 8
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.5324035803476965,
+          "lower": 7.0064038594563804
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.104915618896484,
+          "lower": 10.329792976379395
+        },
+        "violation_overlap_patterns": {
+          "none": 22,
+          "lower": 8
+        }
+      },
+      "geometry_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 30,
+        "joint_success_count": 17,
+        "force_violation_count": 13,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 1,
+          "lower": 13
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.1143364906311035,
+          "lower": 7.689153877894084
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.356856346130371,
+          "lower": 10.815008163452148
+        },
+        "violation_overlap_patterns": {
+          "none": 17,
+          "lower": 12,
+          "intervention+lower": 1
+        }
+      },
+      "physics_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 29,
+        "joint_success_count": 18,
+        "force_violation_count": 12,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 1,
+          "lower": 11
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.39935777982076,
+          "lower": 7.446803013483684
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 9.454846382141113,
+          "lower": 11.07854175567627
+        },
+        "violation_overlap_patterns": {
+          "lower": 11,
+          "none": 18,
+          "intervention": 1
+        }
+      },
+      "combined_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 25,
+        "joint_success_count": 17,
+        "force_violation_count": 12,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 5,
+          "lower": 7
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 7.3585326194763185,
+          "lower": 5.730785942077636
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 15.853533744812012,
+          "lower": 10.793325424194336
+        },
+        "violation_overlap_patterns": {
+          "none": 18,
+          "intervention": 5,
+          "lower": 7
+        }
+      },
+      "all": {
+        "executions": 120,
+        "independent_environments": 120,
+        "strict_lift_count": 114,
+        "joint_success_count": 74,
+        "force_violation_count": 45,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 7,
+          "lower": 39
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.35115761756897,
+          "lower": 6.968286673227946
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 15.853533744812012,
+          "lower": 11.07854175567627
+        },
+        "violation_overlap_patterns": {
+          "none": 75,
+          "lower": 38,
+          "intervention+lower": 1,
+          "intervention": 6
+        }
+      }
+    },
+    "model_guard": {
+      "id": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 90,
+        "joint_success_count": 84,
+        "force_violation_count": 6,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 3,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 6
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.379366853502062,
+          "lower": 6.3534997463226315
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.3525800704956055,
+          "lower": 9.804237365722656
+        },
+        "violation_overlap_patterns": {
+          "none": 84,
+          "lower": 6
+        }
+      },
+      "geometry_ood": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 90,
+        "joint_success_count": 66,
+        "force_violation_count": 24,
+        "guard_interventions": 2,
+        "guard_active_episodes": 2,
+        "model_fallbacks": 45,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 24
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.644518449571398,
+          "lower": 7.022948879665798
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.905903339385986,
+          "lower": 10.019438743591309
+        },
+        "violation_overlap_patterns": {
+          "none": 66,
+          "lower": 24
+        }
+      },
+      "physics_ood": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 61,
+        "joint_success_count": 50,
+        "force_violation_count": 35,
+        "guard_interventions": 7,
+        "guard_active_episodes": 6,
+        "model_fallbacks": 292,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 25,
+          "lower": 11
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 7.6854114214579266,
+          "lower": 4.629430209265815
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 17.966936111450195,
+          "lower": 10.074626922607422
+        },
+        "violation_overlap_patterns": {
+          "none": 55,
+          "intervention": 24,
+          "lower": 10,
+          "intervention+lower": 1
+        }
+      },
+      "combined_ood": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 51,
+        "joint_success_count": 48,
+        "force_violation_count": 35,
+        "guard_interventions": 14,
+        "guard_active_episodes": 13,
+        "model_fallbacks": 274,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 32,
+          "lower": 4
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 7.583985651863946,
+          "lower": 3.7059708966149225
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 15.547307014465332,
+          "lower": 18.98297691345215
+        },
+        "violation_overlap_patterns": {
+          "none": 55,
+          "intervention+lower": 1,
+          "intervention": 31,
+          "lower": 3
+        }
+      },
+      "all": {
+        "executions": 360,
+        "independent_environments": 120,
+        "strict_lift_count": 292,
+        "joint_success_count": 248,
+        "force_violation_count": 100,
+        "guard_interventions": 23,
+        "guard_active_episodes": 21,
+        "model_fallbacks": 614,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 57,
+          "lower": 45
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.573320594098833,
+          "lower": 5.427962432967292
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 17.966936111450195,
+          "lower": 18.98297691345215
+        },
+        "violation_overlap_patterns": {
+          "none": 260,
+          "lower": 43,
+          "intervention": 55,
+          "intervention+lower": 2
+        }
+      }
+    },
+    "model_no_guard": {
+      "id": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 90,
+        "joint_success_count": 84,
+        "force_violation_count": 6,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 3,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 6
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.379366853502062,
+          "lower": 6.3534997463226315
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.3525800704956055,
+          "lower": 9.804237365722656
+        },
+        "violation_overlap_patterns": {
+          "none": 84,
+          "lower": 6
+        }
+      },
+      "geometry_ood": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 90,
+        "joint_success_count": 66,
+        "force_violation_count": 24,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 45,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 24
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.644518449571398,
+          "lower": 7.022888215382894
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.905903339385986,
+          "lower": 10.026805877685547
+        },
+        "violation_overlap_patterns": {
+          "none": 66,
+          "lower": 24
+        }
+      },
+      "physics_ood": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 61,
+        "joint_success_count": 50,
+        "force_violation_count": 35,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 294,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 25,
+          "lower": 11
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 7.78877396053738,
+          "lower": 4.629430209265815
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 17.30265998840332,
+          "lower": 10.074626922607422
+        },
+        "violation_overlap_patterns": {
+          "none": 55,
+          "intervention": 24,
+          "lower": 10,
+          "intervention+lower": 1
+        }
+      },
+      "combined_ood": {
+        "executions": 90,
+        "independent_environments": 30,
+        "strict_lift_count": 51,
+        "joint_success_count": 48,
+        "force_violation_count": 35,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 271,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 32,
+          "lower": 4
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 7.576491149266561,
+          "lower": 3.7059708966149225
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 15.889511108398438,
+          "lower": 18.98297691345215
+        },
+        "violation_overlap_patterns": {
+          "none": 55,
+          "intervention+lower": 1,
+          "intervention": 31,
+          "lower": 3
+        }
+      },
+      "all": {
+        "executions": 360,
+        "independent_environments": 120,
+        "strict_lift_count": 292,
+        "joint_success_count": 248,
+        "force_violation_count": 100,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 613,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 57,
+          "lower": 45
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.597287603219351,
+          "lower": 5.427947266896566
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 17.30265998840332,
+          "lower": 18.98297691345215
+        },
+        "violation_overlap_patterns": {
+          "none": 260,
+          "lower": 43,
+          "intervention": 55,
+          "intervention+lower": 2
+        }
+      }
+    },
+    "reactive_guard": {
+      "id": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 30,
+        "joint_success_count": 22,
+        "force_violation_count": 8,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 8
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.6022850513458256,
+          "lower": 6.987334871292115
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.154399394989014,
+          "lower": 10.624576568603516
+        },
+        "violation_overlap_patterns": {
+          "none": 22,
+          "lower": 8
+        }
+      },
+      "geometry_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 30,
+        "joint_success_count": 17,
+        "force_violation_count": 13,
+        "guard_interventions": 1,
+        "guard_active_episodes": 1,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 13
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.648595825831095,
+          "lower": 7.680231269200643
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.496211528778076,
+          "lower": 10.871201515197754
+        },
+        "violation_overlap_patterns": {
+          "none": 17,
+          "lower": 13
+        }
+      },
+      "physics_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 29,
+        "joint_success_count": 18,
+        "force_violation_count": 12,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 2,
+          "lower": 11
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.437378708521525,
+          "lower": 7.456487194697062
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.937700271606445,
+          "lower": 10.967741012573242
+        },
+        "violation_overlap_patterns": {
+          "lower": 10,
+          "none": 18,
+          "intervention+lower": 1,
+          "intervention": 1
+        }
+      },
+      "combined_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 28,
+        "joint_success_count": 21,
+        "force_violation_count": 8,
+        "guard_interventions": 1,
+        "guard_active_episodes": 1,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 1,
+          "lower": 7
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.397248856226603,
+          "lower": 6.439141527811686
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.163536071777344,
+          "lower": 10.794315338134766
+        },
+        "violation_overlap_patterns": {
+          "none": 22,
+          "lower": 7,
+          "intervention": 1
+        }
+      },
+      "all": {
+        "executions": 120,
+        "independent_environments": 120,
+        "strict_lift_count": 117,
+        "joint_success_count": 78,
+        "force_violation_count": 41,
+        "guard_interventions": 2,
+        "guard_active_episodes": 2,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 3,
+          "lower": 39
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.021377110481263,
+          "lower": 7.1407987157503765
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.937700271606445,
+          "lower": 10.967741012573242
+        },
+        "violation_overlap_patterns": {
+          "none": 79,
+          "lower": 38,
+          "intervention+lower": 1,
+          "intervention": 2
+        }
+      }
+    },
+    "reactive_no_guard": {
+      "id": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 30,
+        "joint_success_count": 22,
+        "force_violation_count": 8,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 8
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.6022850513458256,
+          "lower": 6.987334871292115
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.154399394989014,
+          "lower": 10.624576568603516
+        },
+        "violation_overlap_patterns": {
+          "none": 22,
+          "lower": 8
+        }
+      },
+      "geometry_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 30,
+        "joint_success_count": 17,
+        "force_violation_count": 13,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 0,
+          "lower": 13
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 5.648595825831095,
+          "lower": 7.6806910037994385
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 7.496211528778076,
+          "lower": 10.884993553161621
+        },
+        "violation_overlap_patterns": {
+          "none": 17,
+          "lower": 13
+        }
+      },
+      "physics_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 29,
+        "joint_success_count": 18,
+        "force_violation_count": 12,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 2,
+          "lower": 11
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.437378708521525,
+          "lower": 7.456487194697062
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.937700271606445,
+          "lower": 10.967741012573242
+        },
+        "violation_overlap_patterns": {
+          "lower": 10,
+          "none": 18,
+          "intervention+lower": 1,
+          "intervention": 1
+        }
+      },
+      "combined_ood": {
+        "executions": 30,
+        "independent_environments": 30,
+        "strict_lift_count": 28,
+        "joint_success_count": 21,
+        "force_violation_count": 8,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 1,
+          "lower": 7
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.397248856226603,
+          "lower": 6.439141352971395
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.163536071777344,
+          "lower": 10.794315338134766
+        },
+        "violation_overlap_patterns": {
+          "none": 22,
+          "lower": 7,
+          "intervention": 1
+        }
+      },
+      "all": {
+        "executions": 120,
+        "independent_environments": 120,
+        "strict_lift_count": 117,
+        "joint_success_count": 78,
+        "force_violation_count": 41,
+        "guard_interventions": 0,
+        "guard_active_episodes": 0,
+        "model_fallbacks": 0,
+        "phase_violation_counts": {
+          "setup": 0,
+          "intervention": 3,
+          "lower": 39
+        },
+        "phase_peak_mean_N": {
+          "setup": 0.0,
+          "intervention": 6.021377110481263,
+          "lower": 7.140913605690002
+        },
+        "phase_peak_max_N": {
+          "setup": 0.0,
+          "intervention": 8.937700271606445,
+          "lower": 10.967741012573242
+        },
+        "violation_overlap_patterns": {
+          "none": 79,
+          "lower": 38,
+          "intervention+lower": 1,
+          "intervention": 2
+        }
+      }
+    }
+  },
+  "guard_pairs": {
+    "model_guard_seed0_minus_model_no_guard_seed0": {
+      "pairs": 120,
+      "guard_interventions": 12,
+      "guard_active_episodes": 10,
+      "changed_binary_outcome_pairs": 0,
+      "changed_action_pairs": 10,
+      "changed_array_pairs": {
+        "rgb": 10,
+        "tactile": 8,
+        "proprio": 10,
+        "height": 10,
+        "support": 5,
+        "contact": 7,
+        "cube_pose": 10,
+        "cube_velocity": 10,
+        "support_force": 10,
+        "vertical_contact_force": 8,
+        "slip": 4,
+        "success": 1,
+        "phase": 0,
+        "substep_normal_peak": 10,
+        "time": 0,
+        "action": 10,
+        "reward": 10,
+        "seed": 0,
+        "episode_id": 0,
+        "split": 0,
+        "params_json": 0,
+        "dt": 0
+      },
+      "changed_action_steps": 315,
+      "array_max_absolute_difference": {
+        "rgb": 229.0,
+        "tactile": 11.907675743103027,
+        "proprio": 0.016951382160186768,
+        "height": 0.019032307900488377,
+        "support": 1.0,
+        "contact": 1.0,
+        "cube_pose": 0.08923613269689668,
+        "cube_velocity": 4.520278692245483,
+        "support_force": 20.326173782348633,
+        "vertical_contact_force": 4.96875524520874,
+        "slip": 1.0,
+        "success": 1.0,
+        "phase": 0.0,
+        "substep_normal_peak": 13.927698135375977,
+        "time": 0.0,
+        "action": 0.5999999940395355,
+        "reward": 0.7689653635025024,
+        "seed": 0.0,
+        "dt": 0.0
+      },
+      "changed_cases": [
+        {
+          "seed": 20351011,
+          "domain": "geometry_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 10.019438743591309,
+          "off_peak_N": 10.026805877685547
+        },
+        {
+          "seed": 20352002,
+          "domain": "physics_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            81,
+            82,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 13.927698135375977,
+          "off_peak_N": 15.059816360473633
+        },
+        {
+          "seed": 20352003,
+          "domain": "physics_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            82,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 15.877845764160156,
+          "off_peak_N": 16.567001342773438
+        },
+        {
+          "seed": 20352014,
+          "domain": "physics_ood",
+          "guard_interventions": 2,
+          "changed_action_steps": [
+            80,
+            81,
+            83,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 13.510513305664062,
+          "off_peak_N": 16.563575744628906
+        },
+        {
+          "seed": 20352020,
+          "domain": "physics_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            81,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "proprio",
+            "height",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 17.966936111450195,
+          "off_peak_N": 17.248552322387695
+        },
+        {
+          "seed": 20353006,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            76,
+            78,
+            79,
+            80,
+            81,
+            82,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 12.726546287536621,
+          "off_peak_N": 11.680435180664062
+        },
+        {
+          "seed": 20353011,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "success",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 13.02838134765625,
+          "off_peak_N": 11.455957412719727
+        },
+        {
+          "seed": 20353014,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            75,
+            76,
+            77,
+            78,
+            79,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 9.239445686340332,
+          "off_peak_N": 9.2568359375
+        },
+        {
+          "seed": 20353017,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            87,
+            106,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "proprio",
+            "height",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 15.547307014465332,
+          "off_peak_N": 15.889511108398438
+        },
+        {
+          "seed": 20353023,
+          "domain": "combined_ood",
+          "guard_interventions": 2,
+          "changed_action_steps": [
+            82,
+            83,
+            84,
+            85,
+            100,
+            101,
+            102,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 11.907675743103027,
+          "off_peak_N": 14.611116409301758
+        }
+      ],
+      "active_intervals_with_true_peak_above_8N": 49,
+      "active_intervals_with_true_peak_above_8N_but_pre_action_endpoint_below_7_25N": 43
+    },
+    "model_guard_seed1_minus_model_no_guard_seed1": {
+      "pairs": 120,
+      "guard_interventions": 6,
+      "guard_active_episodes": 6,
+      "changed_binary_outcome_pairs": 0,
+      "changed_action_pairs": 6,
+      "changed_array_pairs": {
+        "rgb": 6,
+        "tactile": 6,
+        "proprio": 6,
+        "height": 6,
+        "support": 5,
+        "contact": 6,
+        "cube_pose": 6,
+        "cube_velocity": 6,
+        "support_force": 6,
+        "vertical_contact_force": 6,
+        "slip": 6,
+        "success": 3,
+        "phase": 0,
+        "substep_normal_peak": 6,
+        "time": 0,
+        "action": 6,
+        "reward": 6,
+        "seed": 0,
+        "episode_id": 0,
+        "split": 0,
+        "params_json": 0,
+        "dt": 0
+      },
+      "changed_action_steps": 217,
+      "array_max_absolute_difference": {
+        "rgb": 229.0,
+        "tactile": 7.31127405166626,
+        "proprio": 0.03745764493942261,
+        "height": 0.048420806298963726,
+        "support": 1.0,
+        "contact": 1.0,
+        "cube_pose": 0.04842078685760498,
+        "cube_velocity": 1.5066099753689741,
+        "support_force": 20.465036869049072,
+        "vertical_contact_force": 4.105652451515198,
+        "slip": 1.0,
+        "success": 1.0,
+        "phase": 0.0,
+        "substep_normal_peak": 9.984354019165039,
+        "time": 0.0,
+        "action": 0.5424281656742096,
+        "reward": 0.7963690012693405,
+        "seed": 0.0,
+        "dt": 0.0
+      },
+      "changed_cases": [
+        {
+          "seed": 20352002,
+          "domain": "physics_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "success",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 9.42414379119873,
+          "off_peak_N": 12.297192573547363
+        },
+        {
+          "seed": 20353011,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            72,
+            73,
+            74,
+            75,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            92,
+            93,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "success",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 12.924576759338379,
+          "off_peak_N": 9.984354019165039
+        },
+        {
+          "seed": 20353017,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            92,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "success",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 11.971628189086914,
+          "off_peak_N": 10.793956756591797
+        },
+        {
+          "seed": 20353018,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            77,
+            81,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 10.903977394104004,
+          "off_peak_N": 13.770267486572266
+        },
+        {
+          "seed": 20353023,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            86,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 8.048379898071289,
+          "off_peak_N": 8.048379898071289
+        },
+        {
+          "seed": 20353026,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            76,
+            78,
+            79,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 8.935739517211914,
+          "off_peak_N": 8.935739517211914
+        }
+      ],
+      "active_intervals_with_true_peak_above_8N": 48,
+      "active_intervals_with_true_peak_above_8N_but_pre_action_endpoint_below_7_25N": 46
+    },
+    "model_guard_seed2_minus_model_no_guard_seed2": {
+      "pairs": 120,
+      "guard_interventions": 5,
+      "guard_active_episodes": 5,
+      "changed_binary_outcome_pairs": 0,
+      "changed_action_pairs": 5,
+      "changed_array_pairs": {
+        "rgb": 5,
+        "tactile": 5,
+        "proprio": 5,
+        "height": 5,
+        "support": 3,
+        "contact": 4,
+        "cube_pose": 5,
+        "cube_velocity": 5,
+        "support_force": 5,
+        "vertical_contact_force": 5,
+        "slip": 4,
+        "success": 0,
+        "phase": 0,
+        "substep_normal_peak": 5,
+        "time": 0,
+        "action": 5,
+        "reward": 5,
+        "seed": 0,
+        "episode_id": 0,
+        "split": 0,
+        "params_json": 0,
+        "dt": 0
+      },
+      "changed_action_steps": 180,
+      "array_max_absolute_difference": {
+        "rgb": 221.0,
+        "tactile": 5.800105094909668,
+        "proprio": 0.010631799697875977,
+        "height": 0.014705769601278007,
+        "support": 1.0,
+        "contact": 1.0,
+        "cube_pose": 0.08423461765050888,
+        "cube_velocity": 4.433957979083061,
+        "support_force": 8.704968452453613,
+        "vertical_contact_force": 5.046050071716309,
+        "slip": 1.0,
+        "success": 0.0,
+        "phase": 0.0,
+        "substep_normal_peak": 9.188430786132812,
+        "time": 0.0,
+        "action": 0.5379454344511032,
+        "reward": 0.15722879767417908,
+        "seed": 0.0,
+        "dt": 0.0
+      },
+      "changed_cases": [
+        {
+          "seed": 20351011,
+          "domain": "geometry_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 9.957402229309082,
+          "off_peak_N": 9.944575309753418
+        },
+        {
+          "seed": 20352012,
+          "domain": "physics_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            94,
+            95,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 9.280766487121582,
+          "off_peak_N": 11.554393768310547
+        },
+        {
+          "seed": 20353001,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            80,
+            81,
+            82,
+            83,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 11.170578956604004,
+          "off_peak_N": 11.690732955932617
+        },
+        {
+          "seed": 20353011,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            96,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 13.059516906738281,
+          "off_peak_N": 13.059516906738281
+        },
+        {
+          "seed": 20353024,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            73,
+            75,
+            76,
+            77,
+            78,
+            79,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "contact",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "slip",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 10.750380516052246,
+          "off_peak_N": 10.362825393676758
+        }
+      ],
+      "active_intervals_with_true_peak_above_8N": 53,
+      "active_intervals_with_true_peak_above_8N_but_pre_action_endpoint_below_7_25N": 50
+    },
+    "reactive_guard_minus_reactive_no_guard": {
+      "pairs": 120,
+      "guard_interventions": 2,
+      "guard_active_episodes": 2,
+      "changed_binary_outcome_pairs": 0,
+      "changed_action_pairs": 2,
+      "changed_array_pairs": {
+        "rgb": 2,
+        "tactile": 2,
+        "proprio": 2,
+        "height": 2,
+        "support": 2,
+        "contact": 0,
+        "cube_pose": 2,
+        "cube_velocity": 2,
+        "support_force": 2,
+        "vertical_contact_force": 2,
+        "slip": 0,
+        "success": 1,
+        "phase": 0,
+        "substep_normal_peak": 2,
+        "time": 0,
+        "action": 2,
+        "reward": 2,
+        "seed": 0,
+        "episode_id": 0,
+        "split": 0,
+        "params_json": 0,
+        "dt": 0
+      },
+      "changed_action_steps": 174,
+      "array_max_absolute_difference": {
+        "rgb": 112.0,
+        "tactile": 1.7271212041378021,
+        "proprio": 0.00014317035675048828,
+        "height": 0.0005924180150032043,
+        "support": 1.0,
+        "contact": 0.0,
+        "cube_pose": 0.003711641998961568,
+        "cube_velocity": 0.05243733897805214,
+        "support_force": 3.084336042404175,
+        "vertical_contact_force": 1.7265343964099884,
+        "slip": 0.0,
+        "success": 1.0,
+        "phase": 0.0,
+        "substep_normal_peak": 0.5533525943756104,
+        "time": 0.0,
+        "action": 0.13574745506048203,
+        "reward": 0.4871475100517273,
+        "seed": 0.0,
+        "dt": 0.0
+      },
+      "changed_cases": [
+        {
+          "seed": 20351011,
+          "domain": "geometry_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 10.871201515197754,
+          "off_peak_N": 10.884993553161621
+        },
+        {
+          "seed": 20353017,
+          "domain": "combined_ood",
+          "guard_interventions": 1,
+          "changed_action_steps": [
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "changed_array_fields": [
+            "rgb",
+            "tactile",
+            "proprio",
+            "height",
+            "support",
+            "cube_pose",
+            "cube_velocity",
+            "support_force",
+            "vertical_contact_force",
+            "success",
+            "substep_normal_peak",
+            "action",
+            "reward"
+          ],
+          "on_peak_N": 7.784425735473633,
+          "off_peak_N": 7.784425735473633
+        }
+      ],
+      "active_intervals_with_true_peak_above_8N": 4,
+      "active_intervals_with_true_peak_above_8N_but_pre_action_endpoint_below_7_25N": 4
+    }
+  },
+  "model_minus_matched_reactive_joint_decomposition": {
+    "id": {
+      "execution_pairs": 90,
+      "independent_environments": 30,
+      "joint_gains": [
+        {
+          "seed": 20350002,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350011,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350016,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350023,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350025,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350026,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350002,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350011,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350016,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350023,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350025,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350026,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350002,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350011,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350016,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350023,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350025,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20350026,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        }
+      ],
+      "joint_losses": [],
+      "both_strict": 90
+    },
+    "geometry_ood": {
+      "execution_pairs": 90,
+      "independent_environments": 30,
+      "joint_gains": [
+        {
+          "seed": 20351003,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351012,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351018,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351021,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351026,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351003,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351012,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351018,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351021,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351026,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351003,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351012,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351018,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351021,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20351026,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        }
+      ],
+      "joint_losses": [],
+      "both_strict": 90
+    },
+    "physics_ood": {
+      "execution_pairs": 90,
+      "independent_environments": 30,
+      "joint_gains": [
+        {
+          "seed": 20352000,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20352023,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20352000,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20352010,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20352023,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20352023,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        }
+      ],
+      "joint_losses": [
+        {
+          "seed": 20352002,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352015,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352021,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352002,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352004,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352015,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352021,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352002,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352015,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20352021,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        }
+      ],
+      "both_strict": 61
+    },
+    "combined_ood": {
+      "execution_pairs": 90,
+      "independent_environments": 30,
+      "joint_gains": [
+        {
+          "seed": 20353009,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353012,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353016,
+          "policy_seed": 0,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353009,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353012,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353016,
+          "policy_seed": 1,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353009,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353012,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        },
+        {
+          "seed": 20353016,
+          "policy_seed": 2,
+          "model_strict": true,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": [
+            "lower"
+          ]
+        }
+      ],
+      "joint_losses": [
+        {
+          "seed": 20353001,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention",
+            "lower"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353010,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353011,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353017,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353018,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353023,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353024,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353025,
+          "policy_seed": 0,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353001,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353010,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353011,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353017,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353018,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353023,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353024,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353025,
+          "policy_seed": 1,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353001,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353010,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353011,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353017,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353018,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353023,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353024,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        },
+        {
+          "seed": 20353025,
+          "policy_seed": 2,
+          "model_strict": false,
+          "reactive_strict": true,
+          "model_violating_phases": [
+            "intervention"
+          ],
+          "reactive_violating_phases": []
+        }
+      ],
+      "both_strict": 51
+    }
+  }
+}

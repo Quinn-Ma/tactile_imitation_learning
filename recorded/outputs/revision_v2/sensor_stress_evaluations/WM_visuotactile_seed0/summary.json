@@ -1,0 +1,67 @@
+{
+  "completed": 30,
+  "inputs": {
+    "method": {
+      "actor": "outputs/revision_v2/rl/visuotactile_seed0/rl_actor.pt",
+      "group": "WM_visuotactile",
+      "kind": "world_model",
+      "model": "outputs/revision_v2/world_models/visuotactile_seed0/best.pt",
+      "name": "WM_visuotactile_seed0",
+      "seed": 0
+    },
+    "smoke": false,
+    "sensor_protocol_sha256": "d893f0799f07b506c405b72a91f195e34ae23b414fe5317bf21a1ae162d61a75",
+    "protocol_sha256": "894e3222540ad5293bc7b8e998557dfc624783fae44d0d2da89ad07f6c1876ea",
+    "main_evaluator_sha256": "1b1d994ea36950334b1b869d21f07b631411fce016aac86b04cd14575a779eef",
+    "sensor_evaluator_sha256": "d8f19dda3ddc7c65f210c1cd94faa26310dbdf922dd2323de5bc719ab2610a13",
+    "adapter_sha256": "2739b610a839e89b1ff2d3c444dab40756e69fe54b75f5b480fb0ea4688f39f3",
+    "original_adapter_sha256": "6d8189ac2c7fd27d0c67074e6ca9a06fc042f8be88993411df85ed0d8f8a5847",
+    "cases": [
+      20350000,
+      20350001,
+      20350002,
+      20350003,
+      20350004,
+      20350005,
+      20350006,
+      20350007,
+      20350008,
+      20350009,
+      20350010,
+      20350011,
+      20350012,
+      20350013,
+      20350014,
+      20350015,
+      20350016,
+      20350017,
+      20350018,
+      20350019,
+      20350020,
+      20350021,
+      20350022,
+      20350023,
+      20350024,
+      20350025,
+      20350026,
+      20350027,
+      20350028,
+      20350029
+    ],
+    "model_inputs": {
+      "model": "6fc892f9fce27db3b7a6f9d2f7205a5a721a1eec7f023ffc7aa5d89e55dda877",
+      "actor": "c19b8ac081b7bce125f8cf7132ab438a3822fd58763e5e815fecffa0c6677e80"
+    },
+    "completion_marker_hashes": {
+      "model": "daf4f040436c16aa2a11a8e2b82b8799751b5241c18bbb7ceb3c6fa1d5f7b11d",
+      "actor": "5972bebbda30114fe12c0feff4a6e57f7c79971606127b13e64aad538a1d3181"
+    },
+    "residual_source_sha256": "3c24dec7096e3fbdffbf75757ef8f12fb286773607b7b0776217f1a1a0ed8fe9"
+  },
+  "bridge_ready": {
+    "ready": true,
+    "model_parameters": 652157
+  },
+  "elapsed_seconds": 92.32649820000006,
+  "claim_scope": "Appendix diagnostic: index-aligned synthetic application of empirical held-out normal-force regression residuals; no validated sensor or sim-to-real claim"
+}

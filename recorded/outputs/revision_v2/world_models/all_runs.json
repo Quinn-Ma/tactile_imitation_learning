@@ -1,0 +1,680 @@
+[
+  {
+    "variant": "vision",
+    "seed": 0,
+    "parameters": 652157,
+    "best_epoch": 20,
+    "training_seconds": 146.86176419999902,
+    "evaluation": {
+      "calibration": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.7014222145080566,
+          "force_mae_components_N": [
+            1.7769064903259277,
+            0.24022433161735535,
+            0.09739994257688522,
+            1.759110689163208,
+            0.23815695941448212,
+            0.09673507511615753
+          ],
+          "height_mae_m": 0.005036080721765757,
+          "rgb16_mse": 0.0006666028639301658,
+          "substep_peak_mae_N": 1.8160297870635986,
+          "substep_peak_mae_by_horizon_N": [
+            1.8699589967727661,
+            1.7977827787399292,
+            1.7696287631988525,
+            1.8044811487197876,
+            1.838295340538025
+          ],
+          "substep_peak_underprediction_p95_N": 5.86988639831543,
+          "support_accuracy": 0.9813888888888889,
+          "contact_accuracy": 0.9934027777777777,
+          "reward_mae": 0.02771834097802639,
+          "force_mae_by_horizon_N": [
+            0.7135002017021179,
+            0.6956095099449158,
+            0.6871988773345947,
+            0.6996901035308838,
+            0.7111132144927979
+          ],
+          "height_mae_by_horizon_m": [
+            0.0037505330983549356,
+            0.0043160016648471355,
+            0.004973595961928368,
+            0.005705628078430891,
+            0.006434665992856026
+          ],
+          "contact_forecasts": 4017,
+          "contact_phase_force_mae_N": 1.2252376079559326,
+          "contact_phase_height_mae_m": 0.008780242875218391
+        }
+      },
+      "val": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.6373340487480164,
+          "force_mae_components_N": [
+            1.600959300994873,
+            0.2165025770664215,
+            0.09203607589006424,
+            1.604586124420166,
+            0.21862341463565826,
+            0.09129787236452103
+          ],
+          "height_mae_m": 0.004191516898572445,
+          "rgb16_mse": 0.0006667799898423254,
+          "substep_peak_mae_N": 1.6840720176696777,
+          "substep_peak_mae_by_horizon_N": [
+            1.7609460353851318,
+            1.68125319480896,
+            1.6486448049545288,
+            1.6623109579086304,
+            1.6672061681747437
+          ],
+          "substep_peak_underprediction_p95_N": 7.108245849609375,
+          "support_accuracy": 0.9841666666666666,
+          "contact_accuracy": 0.9939583333333334,
+          "reward_mae": 0.02567467652261257,
+          "force_mae_by_horizon_N": [
+            0.6570162177085876,
+            0.6315983533859253,
+            0.6262196898460388,
+            0.6333290338516235,
+            0.6385079026222229
+          ],
+          "height_mae_by_horizon_m": [
+            0.0030577543657273054,
+            0.003518319223076105,
+            0.004133755806833506,
+            0.004792558029294014,
+            0.005455193109810352
+          ],
+          "contact_forecasts": 3633,
+          "contact_phase_force_mae_N": 1.2243032455444336,
+          "contact_phase_height_mae_m": 0.00794251449406147
+        }
+      }
+    },
+    "calibration": {
+      "available": true,
+      "alpha_joint": 0.1,
+      "calibration_episodes": 48,
+      "order_statistic_rank": 47,
+      "peak_radius_N": 15.478721618652344,
+      "height_radius_m": 0.056772276759147644,
+      "force_target": "per-finger maximum normal force over each control interval physical substeps",
+      "infinite_radius": false,
+      "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+      "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+    }
+  },
+  {
+    "variant": "visuotactile",
+    "seed": 0,
+    "parameters": 652157,
+    "best_epoch": 22,
+    "training_seconds": 168.66664669999955,
+    "evaluation": {
+      "calibration": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.15886200964450836,
+          "force_mae_components_N": [
+            0.3238356411457062,
+            0.08993018418550491,
+            0.05245273560285568,
+            0.3322659432888031,
+            0.09914057701826096,
+            0.05554713308811188
+          ],
+          "height_mae_m": 0.001983901020139456,
+          "rgb16_mse": 0.0005300086340866983,
+          "substep_peak_mae_N": 0.341867059469223,
+          "substep_peak_mae_by_horizon_N": [
+            0.2734692394733429,
+            0.30082347989082336,
+            0.33691132068634033,
+            0.3752610981464386,
+            0.4228695034980774
+          ],
+          "substep_peak_underprediction_p95_N": 0.7255461812019348,
+          "support_accuracy": 0.9947222222222222,
+          "contact_accuracy": 0.9950694444444445,
+          "reward_mae": 0.018260115757584572,
+          "force_mae_by_horizon_N": [
+            0.12486596405506134,
+            0.14240510761737823,
+            0.15777280926704407,
+            0.17507894337177277,
+            0.19418758153915405
+          ],
+          "height_mae_by_horizon_m": [
+            0.0016520306235179305,
+            0.001792467781342566,
+            0.0019283149158582091,
+            0.0021494782995432615,
+            0.0023972124326974154
+          ],
+          "contact_forecasts": 4017,
+          "contact_phase_force_mae_N": 0.2576674520969391,
+          "contact_phase_height_mae_m": 0.003286168910562992
+        }
+      },
+      "val": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.1314825862646103,
+          "force_mae_components_N": [
+            0.25849053263664246,
+            0.07583607733249664,
+            0.05462675914168358,
+            0.263592004776001,
+            0.08059213310480118,
+            0.055757712572813034
+          ],
+          "height_mae_m": 0.001713366829790175,
+          "rgb16_mse": 0.000531444267835468,
+          "substep_peak_mae_N": 0.27745649218559265,
+          "substep_peak_mae_by_horizon_N": [
+            0.23643943667411804,
+            0.2480708211660385,
+            0.2754640579223633,
+            0.29869574308395386,
+            0.328612357378006
+          ],
+          "substep_peak_underprediction_p95_N": 0.621501624584198,
+          "support_accuracy": 0.9951388888888889,
+          "contact_accuracy": 0.995625,
+          "reward_mae": 0.017570389434695244,
+          "force_mae_by_horizon_N": [
+            0.10817193984985352,
+            0.1158403679728508,
+            0.13095128536224365,
+            0.1433756798505783,
+            0.15907371044158936
+          ],
+          "height_mae_by_horizon_m": [
+            0.0014371467987075448,
+            0.0015157691668719053,
+            0.0016449459362775087,
+            0.0018575466237962246,
+            0.0021114263217896223
+          ],
+          "contact_forecasts": 3633,
+          "contact_phase_force_mae_N": 0.22724579274654388,
+          "contact_phase_height_mae_m": 0.003004680387675762
+        }
+      }
+    },
+    "calibration": {
+      "available": true,
+      "alpha_joint": 0.1,
+      "calibration_episodes": 48,
+      "order_statistic_rank": 47,
+      "peak_radius_N": 6.854743003845215,
+      "height_radius_m": 0.01679474115371704,
+      "force_target": "per-finger maximum normal force over each control interval physical substeps",
+      "infinite_radius": false,
+      "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+      "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+    }
+  },
+  {
+    "variant": "vision",
+    "seed": 1,
+    "parameters": 652157,
+    "best_epoch": 21,
+    "training_seconds": 171.81031630000143,
+    "evaluation": {
+      "calibration": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.7596921920776367,
+          "force_mae_components_N": [
+            1.9105256795883179,
+            0.23810963332653046,
+            0.09503062069416046,
+            1.9499179124832153,
+            0.26981621980667114,
+            0.09474833309650421
+          ],
+          "height_mae_m": 0.0036557726562023163,
+          "rgb16_mse": 0.0005603751633316278,
+          "substep_peak_mae_N": 1.9785183668136597,
+          "substep_peak_mae_by_horizon_N": [
+            2.1061360836029053,
+            2.000020742416382,
+            1.9439010620117188,
+            1.9251844882965088,
+            1.9173460006713867
+          ],
+          "substep_peak_underprediction_p95_N": 8.699362754821777,
+          "support_accuracy": 0.975,
+          "contact_accuracy": 0.99375,
+          "reward_mae": 0.029603660106658936,
+          "force_mae_by_horizon_N": [
+            0.79770827293396,
+            0.7635698318481445,
+            0.7488946318626404,
+            0.7448888421058655,
+            0.7433974146842957
+          ],
+          "height_mae_by_horizon_m": [
+            0.0027282920200377703,
+            0.0031367510091513395,
+            0.0035849702544510365,
+            0.004123917780816555,
+            0.004704934544861317
+          ],
+          "contact_forecasts": 4017,
+          "contact_phase_force_mae_N": 1.3057998418807983,
+          "contact_phase_height_mae_m": 0.006159621756523848
+        }
+      },
+      "val": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.6670224666595459,
+          "force_mae_components_N": [
+            1.6717458963394165,
+            0.2325691431760788,
+            0.08929762989282608,
+            1.699668526649475,
+            0.21842628717422485,
+            0.09042936563491821
+          ],
+          "height_mae_m": 0.002876771381124854,
+          "rgb16_mse": 0.0005666594952344894,
+          "substep_peak_mae_N": 1.7646082639694214,
+          "substep_peak_mae_by_horizon_N": [
+            1.8304322957992554,
+            1.7564284801483154,
+            1.735638976097107,
+            1.7501271963119507,
+            1.7504124641418457
+          ],
+          "substep_peak_underprediction_p95_N": 9.67953872680664,
+          "support_accuracy": 0.9797222222222223,
+          "contact_accuracy": 0.9952083333333334,
+          "reward_mae": 0.027844123542308807,
+          "force_mae_by_horizon_N": [
+            0.6862242817878723,
+            0.6626543402671814,
+            0.6573458313941956,
+            0.6631389260292053,
+            0.6657484769821167
+          ],
+          "height_mae_by_horizon_m": [
+            0.0023277655709534883,
+            0.0024639926850795746,
+            0.002765515586361289,
+            0.003196469973772764,
+            0.0036301088985055685
+          ],
+          "contact_forecasts": 3633,
+          "contact_phase_force_mae_N": 1.2498650550842285,
+          "contact_phase_height_mae_m": 0.005176974926143885
+        }
+      }
+    },
+    "calibration": {
+      "available": true,
+      "alpha_joint": 0.1,
+      "calibration_episodes": 48,
+      "order_statistic_rank": 47,
+      "peak_radius_N": 15.406089782714844,
+      "height_radius_m": 0.04953451454639435,
+      "force_target": "per-finger maximum normal force over each control interval physical substeps",
+      "infinite_radius": false,
+      "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+      "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+    }
+  },
+  {
+    "variant": "visuotactile",
+    "seed": 1,
+    "parameters": 652157,
+    "best_epoch": 24,
+    "training_seconds": 176.7531213000002,
+    "evaluation": {
+      "calibration": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.16410784423351288,
+          "force_mae_components_N": [
+            0.323286235332489,
+            0.09574287384748459,
+            0.061926279217004776,
+            0.3343527019023895,
+            0.10557705909013748,
+            0.06376104056835175
+          ],
+          "height_mae_m": 0.0026853804010897875,
+          "rgb16_mse": 0.0005828881403431296,
+          "substep_peak_mae_N": 0.35518234968185425,
+          "substep_peak_mae_by_horizon_N": [
+            0.2709737718105316,
+            0.3042290210723877,
+            0.35201409459114075,
+            0.3965854346752167,
+            0.45210936665534973
+          ],
+          "substep_peak_underprediction_p95_N": 0.9675989151000977,
+          "support_accuracy": 0.9947222222222222,
+          "contact_accuracy": 0.9953472222222223,
+          "reward_mae": 0.020296962931752205,
+          "force_mae_by_horizon_N": [
+            0.12712474167346954,
+            0.14531825482845306,
+            0.1630934774875641,
+            0.18112516403198242,
+            0.2038774937391281
+          ],
+          "height_mae_by_horizon_m": [
+            0.0019572710152715445,
+            0.002314552664756775,
+            0.0026547671295702457,
+            0.0030280500650405884,
+            0.0034722585696727037
+          ],
+          "contact_forecasts": 4017,
+          "contact_phase_force_mae_N": 0.26646262407302856,
+          "contact_phase_height_mae_m": 0.004123199265450239
+        }
+      },
+      "val": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.13573528826236725,
+          "force_mae_components_N": [
+            0.25689178705215454,
+            0.08115069568157196,
+            0.05678505077958107,
+            0.278144508600235,
+            0.0836387574672699,
+            0.05780106782913208
+          ],
+          "height_mae_m": 0.002658948302268982,
+          "rgb16_mse": 0.000558143830858171,
+          "substep_peak_mae_N": 0.3015866279602051,
+          "substep_peak_mae_by_horizon_N": [
+            0.2554393410682678,
+            0.2659985423088074,
+            0.2967209219932556,
+            0.3253718912601471,
+            0.364402174949646
+          ],
+          "substep_peak_underprediction_p95_N": 0.8217416405677795,
+          "support_accuracy": 0.9947222222222222,
+          "contact_accuracy": 0.995625,
+          "reward_mae": 0.020614927634596825,
+          "force_mae_by_horizon_N": [
+            0.11094584316015244,
+            0.11894087493419647,
+            0.13442224264144897,
+            0.14716395735740662,
+            0.16720366477966309
+          ],
+          "height_mae_by_horizon_m": [
+            0.0019339253194630146,
+            0.002313244389370084,
+            0.002654372714459896,
+            0.0029933082405477762,
+            0.003399892710149288
+          ],
+          "contact_forecasts": 3633,
+          "contact_phase_force_mae_N": 0.23229078948497772,
+          "contact_phase_height_mae_m": 0.004406208638101816
+        }
+      }
+    },
+    "calibration": {
+      "available": true,
+      "alpha_joint": 0.1,
+      "calibration_episodes": 48,
+      "order_statistic_rank": 47,
+      "peak_radius_N": 8.698554992675781,
+      "height_radius_m": 0.023261502385139465,
+      "force_target": "per-finger maximum normal force over each control interval physical substeps",
+      "infinite_radius": false,
+      "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+      "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+    }
+  },
+  {
+    "variant": "vision",
+    "seed": 2,
+    "parameters": 652157,
+    "best_epoch": 19,
+    "training_seconds": 174.75102400000105,
+    "evaluation": {
+      "calibration": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.7581631541252136,
+          "force_mae_components_N": [
+            1.911133885383606,
+            0.27150237560272217,
+            0.09788282960653305,
+            1.898138403892517,
+            0.26802656054496765,
+            0.10229238867759705
+          ],
+          "height_mae_m": 0.0033809030428528786,
+          "rgb16_mse": 0.0004954974283464253,
+          "substep_peak_mae_N": 1.95287024974823,
+          "substep_peak_mae_by_horizon_N": [
+            2.0399954319000244,
+            1.9365965127944946,
+            1.919094204902649,
+            1.9288285970687866,
+            1.9398324489593506
+          ],
+          "substep_peak_underprediction_p95_N": 7.023240566253662,
+          "support_accuracy": 0.9815277777777778,
+          "contact_accuracy": 0.9930555555555556,
+          "reward_mae": 0.03264902904629707,
+          "force_mae_by_horizon_N": [
+            0.7816849946975708,
+            0.7502226829528809,
+            0.7467460632324219,
+            0.7528559565544128,
+            0.7593056559562683
+          ],
+          "height_mae_by_horizon_m": [
+            0.002903680084273219,
+            0.003081119153648615,
+            0.0033334060572087765,
+            0.0036076463293284178,
+            0.003978667315095663
+          ],
+          "contact_forecasts": 4017,
+          "contact_phase_force_mae_N": 1.32010018825531,
+          "contact_phase_height_mae_m": 0.0056421952322125435
+        }
+      },
+      "val": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.6730793118476868,
+          "force_mae_components_N": [
+            1.69411039352417,
+            0.24467405676841736,
+            0.0916709154844284,
+            1.6862999200820923,
+            0.2254064381122589,
+            0.09631161391735077
+          ],
+          "height_mae_m": 0.002957595745101571,
+          "rgb16_mse": 0.0005245812353678048,
+          "substep_peak_mae_N": 1.7722933292388916,
+          "substep_peak_mae_by_horizon_N": [
+            1.8024826049804688,
+            1.7402026653289795,
+            1.7460131645202637,
+            1.7757405042648315,
+            1.7970267534255981
+          ],
+          "substep_peak_underprediction_p95_N": 8.55925178527832,
+          "support_accuracy": 0.98375,
+          "contact_accuracy": 0.9938194444444445,
+          "reward_mae": 0.031572166830301285,
+          "force_mae_by_horizon_N": [
+            0.683426558971405,
+            0.6599849462509155,
+            0.662883460521698,
+            0.6738792061805725,
+            0.6852222084999084
+          ],
+          "height_mae_by_horizon_m": [
+            0.002699807519093156,
+            0.002724436344578862,
+            0.0028925391379743814,
+            0.003106189426034689,
+            0.003365006996318698
+          ],
+          "contact_forecasts": 3633,
+          "contact_phase_force_mae_N": 1.2817538976669312,
+          "contact_phase_height_mae_m": 0.005264819134026766
+        }
+      }
+    },
+    "calibration": {
+      "available": true,
+      "alpha_joint": 0.1,
+      "calibration_episodes": 48,
+      "order_statistic_rank": 47,
+      "peak_radius_N": 14.679380416870117,
+      "height_radius_m": 0.030187271535396576,
+      "force_target": "per-finger maximum normal force over each control interval physical substeps",
+      "infinite_radius": false,
+      "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+      "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+    }
+  },
+  {
+    "variant": "visuotactile",
+    "seed": 2,
+    "parameters": 652157,
+    "best_epoch": 24,
+    "training_seconds": 211.55719790000148,
+    "evaluation": {
+      "calibration": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.15079247951507568,
+          "force_mae_components_N": [
+            0.298820436000824,
+            0.09399760514497757,
+            0.051909975707530975,
+            0.3041793406009674,
+            0.10208585113286972,
+            0.053762227296829224
+          ],
+          "height_mae_m": 0.0020964699797332287,
+          "rgb16_mse": 0.0005356079200282693,
+          "substep_peak_mae_N": 0.33383893966674805,
+          "substep_peak_mae_by_horizon_N": [
+            0.27118805050849915,
+            0.2923361361026764,
+            0.3262593150138855,
+            0.3649066090583801,
+            0.4145042300224304
+          ],
+          "substep_peak_underprediction_p95_N": 0.9396757483482361,
+          "support_accuracy": 0.9948611111111111,
+          "contact_accuracy": 0.9945138888888889,
+          "reward_mae": 0.02178235724568367,
+          "force_mae_by_horizon_N": [
+            0.11322446167469025,
+            0.12905089557170868,
+            0.14912699162960052,
+            0.1687718778848648,
+            0.19378824532032013
+          ],
+          "height_mae_by_horizon_m": [
+            0.0016474983422085643,
+            0.0018047717167064548,
+            0.002073000418022275,
+            0.002326606074348092,
+            0.0026304738130420446
+          ],
+          "contact_forecasts": 4017,
+          "contact_phase_force_mae_N": 0.2445862591266632,
+          "contact_phase_height_mae_m": 0.0033940027933567762
+        }
+      },
+      "val": {
+        "world_model": {
+          "windows": 1440,
+          "episodes": 48,
+          "force_mae_N": 0.12881521880626678,
+          "force_mae_components_N": [
+            0.25762811303138733,
+            0.07487157732248306,
+            0.04936901107430458,
+            0.257753849029541,
+            0.08341411501169205,
+            0.049853742122650146
+          ],
+          "height_mae_m": 0.0018034656532108784,
+          "rgb16_mse": 0.0005210647941567004,
+          "substep_peak_mae_N": 0.2989628314971924,
+          "substep_peak_mae_by_horizon_N": [
+            0.2660197615623474,
+            0.2666448950767517,
+            0.29238587617874146,
+            0.31704896688461304,
+            0.3527147173881531
+          ],
+          "substep_peak_underprediction_p95_N": 0.8355764150619507,
+          "support_accuracy": 0.9947222222222222,
+          "contact_accuracy": 0.9954861111111111,
+          "reward_mae": 0.02019573003053665,
+          "force_mae_by_horizon_N": [
+            0.10298700630664825,
+            0.10873494297266006,
+            0.1276644468307495,
+            0.14123113453388214,
+            0.16345863044261932
+          ],
+          "height_mae_by_horizon_m": [
+            0.0014395827893167734,
+            0.0015524352202191949,
+            0.0017707954393699765,
+            0.0019930412527173758,
+            0.002261472400277853
+          ],
+          "contact_forecasts": 3633,
+          "contact_phase_force_mae_N": 0.22345010936260223,
+          "contact_phase_height_mae_m": 0.0030856202356517315
+        }
+      }
+    },
+    "calibration": {
+      "available": true,
+      "alpha_joint": 0.1,
+      "calibration_episodes": 48,
+      "order_statistic_rank": 47,
+      "peak_radius_N": 8.11725902557373,
+      "height_radius_m": 0.017373286187648773,
+      "force_target": "per-finger maximum normal force over each control interval physical substeps",
+      "infinite_radius": false,
+      "scope": "simulator recording distribution; episode-exchangeable evaluated forecast windows only",
+      "not_guaranteed": "OOD domains, adaptive candidate selection, changed closed-loop policy"
+    }
+  }
+]

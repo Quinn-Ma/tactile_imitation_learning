@@ -1,0 +1,5327 @@
+{
+  "status": "COMPLETE",
+  "primary_metric": "joint_success",
+  "claim_scope": "Appendix diagnostic: index-aligned synthetic application of empirical held-out normal-force regression residuals; no validated sensor or sim-to-real claim",
+  "protocol_sha256": "d893f0799f07b506c405b72a91f195e34ae23b414fe5317bf21a1ae162d61a75",
+  "source_sha256": "d8f19dda3ddc7c65f210c1cd94faa26310dbdf922dd2323de5bc719ab2610a13",
+  "limitations": [
+    "Source normal labels approximately0.073–1.888N; simulator budget8N is outside observed load range.",
+    "Single-sensor trajectory errors mapped to separately drawn finger blocks; cross-finger error correlation is not measured.",
+    "One source index per20Hz simulator observation is imposed; no real acquisition frequency/latency is assumed.",
+    "Regression residual includes estimator, target measurement, preprocessing and alignment error, not identified electronics noise.",
+    "Only normal observations are perturbed; shear, images, proprioception and ground-truth outcomes remain unchanged.",
+    "Reuses existing held-out public predictions as perturbation library; not a new public-dataset model evaluation.",
+    "Long-trajectory-conditioned subset and fixed additive error transport; not physical sensor validation or sim-to-real."
+  ],
+  "input_sources": [
+    {
+      "condition": "clean",
+      "method": "WM_visuotactile_seed0",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\WM_visuotactile_seed0\\episodes.jsonl",
+      "episodes_sha256": "505482c6166c621a658844c4c414a509af159192155e5f66d2ff5e94353b1546",
+      "inputs_sha256": "1da0b811866dcebdf12354b91e3f09d37edf5832d6c983db8488bccfc5f86ffc"
+    },
+    {
+      "condition": "stress",
+      "method": "WM_visuotactile_seed0",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\WM_visuotactile_seed0\\episodes.jsonl",
+      "episodes_sha256": "54a700b793dc90c951b2e18eda52ef61d0e596acd0bb79e5d85659833c595923",
+      "inputs_sha256": "501106339f0c6ca93809cb59a668b7460d9ec58d9cc64e5531b253f0aee06f97"
+    },
+    {
+      "condition": "clean",
+      "method": "IQL_visuotactile_seed0",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\IQL_visuotactile_seed0\\episodes.jsonl",
+      "episodes_sha256": "6e3d1d032c05ca495bf2dbbfb46c0a581bc4fea91f0f92a3c9e289d81eb1a0d3",
+      "inputs_sha256": "e2da73ade41d10b39cbb2cfc4415e0e789d4bbbdfc2ddb859837d3c6363f84ad"
+    },
+    {
+      "condition": "stress",
+      "method": "IQL_visuotactile_seed0",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\IQL_visuotactile_seed0\\episodes.jsonl",
+      "episodes_sha256": "cf13fce304644e2ed63bb5986873113ee0c4fbfbc7ccf52d168777c97620c7cc",
+      "inputs_sha256": "c901a38f19bbe482e76b827ca202d59b672d56b333f2bc557c88d831e17228f3"
+    },
+    {
+      "condition": "clean",
+      "method": "WM_visuotactile_seed1",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\WM_visuotactile_seed1\\episodes.jsonl",
+      "episodes_sha256": "36f8aea3a2d2c5d73ecb06b7d543d2e836cf3bf3c8647d7b57211e23c390bb6a",
+      "inputs_sha256": "ceaf2dd68aff1f0d1492af21cbab18edf2c37d0249b2a8148a66842d0540575e"
+    },
+    {
+      "condition": "stress",
+      "method": "WM_visuotactile_seed1",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\WM_visuotactile_seed1\\episodes.jsonl",
+      "episodes_sha256": "0a646c5cfbe43328bf2009147579ba06c622f45ea8bda779b6fba9fe86cc065f",
+      "inputs_sha256": "dd048888c913d150a6e3e360dbb6a3d01255ed6f53c2d30557c04942581cba78"
+    },
+    {
+      "condition": "clean",
+      "method": "IQL_visuotactile_seed1",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\IQL_visuotactile_seed1\\episodes.jsonl",
+      "episodes_sha256": "9477556821887dae4313484929fad1879a9b1c333ffa91bf7ba092b50f1a9ce1",
+      "inputs_sha256": "e37c309674178dd5139156bc98b31254184e4fa29581503f3d8d48e4a73b889d"
+    },
+    {
+      "condition": "stress",
+      "method": "IQL_visuotactile_seed1",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\IQL_visuotactile_seed1\\episodes.jsonl",
+      "episodes_sha256": "48e3d3a314223453002bfb44f918682f2762abf5db1e3ab449a6fe8193f92eb1",
+      "inputs_sha256": "f602715123d1188f81d5659f474b294a034de65a348a4f2ce7997d3af744a482"
+    },
+    {
+      "condition": "clean",
+      "method": "WM_visuotactile_seed2",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\WM_visuotactile_seed2\\episodes.jsonl",
+      "episodes_sha256": "234a4f0648c5cd521c34d50ba07377df4ff6bbe43ad5b7afe1a6097318cd437c",
+      "inputs_sha256": "090ff56140ee7050951962405bad8051a1e03926bbdd47fd33fbe1c6f4e6b1a5"
+    },
+    {
+      "condition": "stress",
+      "method": "WM_visuotactile_seed2",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\WM_visuotactile_seed2\\episodes.jsonl",
+      "episodes_sha256": "f36b1e1607aedf5db7c618b36b449ae21d289850514b5a3bd52ea2ac9a911fa0",
+      "inputs_sha256": "ab03ff226fdc2d69aaf9062684b0c79217b975f918db1512fb07e3532832f05f"
+    },
+    {
+      "condition": "clean",
+      "method": "IQL_visuotactile_seed2",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\IQL_visuotactile_seed2\\episodes.jsonl",
+      "episodes_sha256": "96c0ea972301ebf399828341415caa7bedbec42b144a738abac45d9dd5d43435",
+      "inputs_sha256": "c60686f97e9bd40f1cccc23cf9c8ea4b79a38769c712cb3586d647bde60dca90"
+    },
+    {
+      "condition": "stress",
+      "method": "IQL_visuotactile_seed2",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\IQL_visuotactile_seed2\\episodes.jsonl",
+      "episodes_sha256": "8eb7439f663cb2b2cbb50ecf7c6c0bbb3cb6776183ad5f31c9bddc850c61ba0d",
+      "inputs_sha256": "c3a5ee8e9ade1831a53d864958623028912d5cfcb5ddec8552a150d3c1627e00"
+    },
+    {
+      "condition": "clean",
+      "method": "force_feedback",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\force_feedback\\episodes.jsonl",
+      "episodes_sha256": "489429cb9de71796b8daa4ebbfcfc54ff7fbfc7e675e505ee9fc78f130213db6",
+      "inputs_sha256": "d82794a1488ac12d3735a0efda69aaa997d096ffd96da9a0ed2f591c6bd5ff48"
+    },
+    {
+      "condition": "stress",
+      "method": "force_feedback",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\force_feedback\\episodes.jsonl",
+      "episodes_sha256": "eca272a5e7bef8b94d0df0fd31d95bcb61af1bd166f0411529bbd7bd236e8e6f",
+      "inputs_sha256": "c3a00622487b329f71cabbdbed93424c48a1848e64e1c4686cda667b1c36a9f1"
+    },
+    {
+      "condition": "clean",
+      "method": "model_guard_seed0",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\model_guard_seed0\\episodes.jsonl",
+      "episodes_sha256": "daf8067a21f47e9211f9d8293646cf91ce9b0b7089b1d9b5dffba28ced7e494e",
+      "inputs_sha256": "0ee017f5ce7f289cfcc15cb15db5a31c9c25bc526e7b94ca63c9f49e58d8ddeb"
+    },
+    {
+      "condition": "stress",
+      "method": "model_guard_seed0",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\model_guard_seed0\\episodes.jsonl",
+      "episodes_sha256": "69c62ec0b94edb2ad60eca9435ae4b29e86aff13d7b2d106ae5085cd112f6e91",
+      "inputs_sha256": "8ecd695c278fc45eecf00abd5f4b1e1d88f83a2b67f9ba64228c4c1c5f819f35"
+    },
+    {
+      "condition": "clean",
+      "method": "model_guard_seed1",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\model_guard_seed1\\episodes.jsonl",
+      "episodes_sha256": "3edb9c9689967a69eab60ce22d8cfb90fa2f854130933c4d1c52422f90ca72ec",
+      "inputs_sha256": "76684c5849cec8f8b7035bd21386b0c20b42cf6e0a6bfd4d05aece0179636713"
+    },
+    {
+      "condition": "stress",
+      "method": "model_guard_seed1",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\model_guard_seed1\\episodes.jsonl",
+      "episodes_sha256": "ecb6013eb78f7a6eb18a150a151f6b7c81c719e319fc9d1fcd2dfd472c96c950",
+      "inputs_sha256": "c7feba8b9da27c7739216cbe72a1fe8dcbe968367333010d610a17d5eff70512"
+    },
+    {
+      "condition": "clean",
+      "method": "model_guard_seed2",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\model_guard_seed2\\episodes.jsonl",
+      "episodes_sha256": "77c6ff28bb2862464dcedcc13bd9389d60d78847a3b9424d98199f8439b68c3c",
+      "inputs_sha256": "6e4da35c8ae6974d2417b81cc1fa1b1b78d589543be44e94dc9ce2fbbf644fe8"
+    },
+    {
+      "condition": "stress",
+      "method": "model_guard_seed2",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\model_guard_seed2\\episodes.jsonl",
+      "episodes_sha256": "c89ff9eb159d11a1598d2c6a9a46c19f52015108fdfb74dc99c1667f3298182a",
+      "inputs_sha256": "7e30427289ed8a48b125eba5c7121d455b652dea520bacdd8aa94f72c6446bf0"
+    },
+    {
+      "condition": "clean",
+      "method": "reactive_guard",
+      "episodes_path": "outputs\\revision_v2\\evaluations\\reactive_guard\\episodes.jsonl",
+      "episodes_sha256": "740e5d8e9669687281ff8fb1e409d2c0bab83aa6b2f9ecd8df997b84a35e2120",
+      "inputs_sha256": "40fbb6e63cd89b423025c323edb14860d8a51eb9ae3ca385f738249beedd555e"
+    },
+    {
+      "condition": "stress",
+      "method": "reactive_guard",
+      "episodes_path": "outputs\\revision_v2\\sensor_stress_evaluations\\reactive_guard\\episodes.jsonl",
+      "episodes_sha256": "80dcae0ec224a5e9efda0b428e912c64bd716d5c5bf1e344f287f724f3a9160a",
+      "inputs_sha256": "1ae6f40d4f5537a3e849b8303a195fe17f82ef78bb0a74eef7cf377eb9d63eb4"
+    }
+  ],
+  "results": {
+    "group_stats": [
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 0.8333333333333334,
+        "ci_low": 0.7666666666666667,
+        "ci_high": 0.9,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.2777777777777778,
+        "ci_low": 0.14444444444444443,
+        "ci_high": 0.41111111111111115,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.5777777777777777,
+        "ci_low": 0.43333333333333335,
+        "ci_high": 0.7113888888888873,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 8.095116627216338,
+        "ci_low": 7.236226275281774,
+        "ci_high": 8.950472759985262,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.10793972859715319,
+        "ci_low": 0.0993803934442662,
+        "ci_high": 0.11594692252424363,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 51.27777777777778,
+        "ci_low": 46.83305555555556,
+        "ci_high": 55.41166666666666,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 0.8333333333333334,
+        "ci_low": 0.7666666666666667,
+        "ci_high": 0.9,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.26666666666666666,
+        "ci_low": 0.13333333333333333,
+        "ci_high": 0.4111111111111111,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.5888888888888889,
+        "ci_low": 0.4444444444444444,
+        "ci_high": 0.7224999999999985,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 8.13408510155148,
+        "ci_low": 7.282367614408334,
+        "ci_high": 8.995297630081573,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.10804789545784135,
+        "ci_low": 0.09941606925072849,
+        "ci_high": 0.11588535410231594,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 51.27777777777778,
+        "ci_low": 46.86611111111111,
+        "ci_high": 55.38999999999999,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 0.8222222222222223,
+        "ci_low": 0.7333333333333333,
+        "ci_high": 0.9111111111111111,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.3555555555555555,
+        "ci_low": 0.23333333333333334,
+        "ci_high": 0.4888888888888889,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.5666666666666667,
+        "ci_low": 0.4111111111111111,
+        "ci_high": 0.711111111111111,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 11.047757577896117,
+        "ci_low": 9.32030062072807,
+        "ci_high": 12.809137773712475,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.14447409220867688,
+        "ci_low": 0.13631252354010942,
+        "ci_high": 0.1522514996015363,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 29.522222222222222,
+        "ci_low": 25.855555555555554,
+        "ci_high": 33.05555555555556,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 0.8222222222222223,
+        "ci_low": 0.7219444444444445,
+        "ci_high": 0.9222222222222223,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.36666666666666664,
+        "ci_low": 0.24444444444444444,
+        "ci_high": 0.5111111111111111,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.5555555555555556,
+        "ci_low": 0.4,
+        "ci_high": 0.7,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 11.089698934555054,
+        "ci_low": 9.341063819660082,
+        "ci_high": 12.872260201705828,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.1438698792209228,
+        "ci_low": 0.13427345314270092,
+        "ci_high": 0.15284935027567878,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 28.455555555555556,
+        "ci_low": 24.4,
+        "ci_high": 32.41111111111111,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.7333333333333333,
+        "ci_low": 0.5666666666666667,
+        "ci_high": 0.8674999999999955,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.26666666666666666,
+        "ci_low": 0.13250000000000006,
+        "ci_high": 0.43333333333333335,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 7.058604383468628,
+        "ci_low": 6.623288344144822,
+        "ci_high": 7.532308255036671,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.14356718560059864,
+        "ci_low": 0.13717126217360298,
+        "ci_high": 0.1495214101547996,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 28.733333333333334,
+        "ci_low": 27.7,
+        "ci_high": 29.7,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.7333333333333333,
+        "ci_low": 0.5666666666666667,
+        "ci_high": 0.8674999999999955,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.26666666666666666,
+        "ci_low": 0.13250000000000006,
+        "ci_high": 0.43333333333333335,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 7.109813292821248,
+        "ci_low": 6.6668196996053055,
+        "ci_high": 7.597456915775934,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.14356713940699894,
+        "ci_low": 0.1371712032519281,
+        "ci_high": 0.14952142516771952,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 28.733333333333334,
+        "ci_low": 27.7,
+        "ci_high": 29.7,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.9333333333333333,
+        "ci_low": 0.8333333333333334,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.06666666666666667,
+        "ci_low": 0.0,
+        "ci_high": 0.16666666666666666,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 6.560633076561822,
+        "ci_low": 6.189146357907189,
+        "ci_high": 6.970973405043284,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.14371884630786047,
+        "ci_low": 0.1429855388899644,
+        "ci_high": 0.14445547364238237,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 32.24444444444445,
+        "ci_low": 32.03333333333333,
+        "ci_high": 32.455555555555556,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.9333333333333333,
+        "ci_low": 0.8333333333333334,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.06666666666666667,
+        "ci_low": 0.0,
+        "ci_high": 0.16666666666666666,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 6.556603866153293,
+        "ci_low": 6.183342740933101,
+        "ci_high": 6.9674053464995485,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.14371997018655142,
+        "ci_low": 0.14298905410286453,
+        "ci_high": 0.14445656778911747,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 32.24444444444445,
+        "ci_low": 32.03333333333333,
+        "ci_high": 32.455555555555556,
+        "n_environments": 30,
+        "n_policies": 3,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.7333333333333333,
+        "ci_low": 0.5666666666666667,
+        "ci_high": 0.8674999999999955,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.26666666666666666,
+        "ci_low": 0.13250000000000006,
+        "ci_high": 0.43333333333333335,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 7.0737260182698565,
+        "ci_low": 6.6264984663327535,
+        "ci_high": 7.5607263513406116,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.13946805745363236,
+        "ci_low": 0.13848912071436642,
+        "ci_high": 0.14045878099898498,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 30.766666666666666,
+        "ci_low": 30.6,
+        "ci_high": 30.9,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "metric_type": "rate",
+        "estimate": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "metric_type": "rate",
+        "estimate": 0.7333333333333333,
+        "ci_low": 0.5666666666666667,
+        "ci_high": 0.8674999999999955,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "metric_type": "rate",
+        "estimate": 0.26666666666666666,
+        "ci_low": 0.13250000000000006,
+        "ci_high": 0.43333333333333335,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "metric_type": "mean",
+        "estimate": 7.079643042882283,
+        "ci_low": 6.63387985666593,
+        "ci_high": 7.576563471953074,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "metric_type": "mean",
+        "estimate": 0.1394679655631383,
+        "ci_low": 0.13848903687049946,
+        "ci_high": 0.14045870214700698,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "metric_type": "mean",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "metric_type": "mean",
+        "estimate": 30.766666666666666,
+        "ci_low": 30.6,
+        "ci_high": 30.9,
+        "n_environments": 30,
+        "n_policies": 1,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate_difference": -0.011111111111111127,
+        "ci_low": -0.033333333333333354,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": -1.1111111111111127,
+        "percentage_point_ci_low": -3.3333333333333353,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate_difference": 0.011111111111111183,
+        "ci_low": 0.0,
+        "ci_high": 0.033333333333333326,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 1.1111111111111183,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 3.3333333333333326,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate_difference": 0.03896847433514239,
+        "ci_low": -0.032893410755529075,
+        "ci_high": 0.1331998002529132,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate_difference": 0.00010816686068816639,
+        "ci_low": -0.0002756923734058385,
+        "ci_high": 0.0005206366490892884,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:WM_visuotactile - clean:WM_visuotactile",
+        "first": "stress:WM_visuotactile",
+        "second": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate_difference": 0.0,
+        "ci_low": -0.08888888888888857,
+        "ci_high": 0.07777777777777573,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate_difference": 0.0,
+        "ci_low": -0.04444444444444451,
+        "ci_high": 0.04444444444444451,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": -4.444444444444451,
+        "percentage_point_ci_high": 4.444444444444451,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate_difference": 0.011111111111111127,
+        "ci_low": -0.022222222222222254,
+        "ci_high": 0.055555555555555525,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 1.1111111111111127,
+        "percentage_point_ci_low": -2.2222222222222254,
+        "percentage_point_ci_high": 5.555555555555553,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate_difference": -0.011111111111111072,
+        "ci_low": -0.033333333333333326,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": -1.1111111111111072,
+        "percentage_point_ci_low": -3.3333333333333326,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate_difference": 0.04194135665893661,
+        "ci_low": -0.012532976865769551,
+        "ci_high": 0.11098748213714928,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate_difference": -0.0006042129877540936,
+        "ci_low": -0.004713739158792654,
+        "ci_high": 0.003985094046220166,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:IQL_visuotactile - clean:IQL_visuotactile",
+        "first": "stress:IQL_visuotactile",
+        "second": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate_difference": -1.0666666666666664,
+        "ci_low": -2.5444444444444443,
+        "ci_high": 0.2777777777777787,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate_difference": -0.004029210408528883,
+        "ci_low": -0.017272657950720038,
+        "ci_high": 0.006379358371098618,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate_difference": 1.1238786909451015e-06,
+        "ci_low": -2.669791388659747e-09,
+        "ci_high": 3.044990201772623e-06,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:model_guard - clean:model_guard",
+        "first": "stress:model_guard",
+        "second": "clean:model_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate_difference": 0.05120890935261979,
+        "ci_low": 0.005263655980427774,
+        "ci_high": 0.10759490450223247,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate_difference": -4.619359969537662e-08,
+        "ci_low": -1.0655572017584381e-07,
+        "ci_high": 2.558653553474951e-08,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:force_feedback - clean:force_feedback",
+        "first": "stress:force_feedback",
+        "second": "clean:force_feedback",
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "proportion_difference",
+        "percentage_point_difference": 0.0,
+        "percentage_point_ci_low": 0.0,
+        "percentage_point_ci_high": 0.0,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate_difference": 0.0059170246124269354,
+        "ci_low": -0.002495508988698725,
+        "ci_high": 0.01423315723737115,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate_difference": -9.189049404723093e-08,
+        "ci_low": -1.768395304746484e-07,
+        "ci_high": -2.482285103994071e-08,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      },
+      {
+        "contrast": "stress:reactive_guard - clean:reactive_guard",
+        "first": "stress:reactive_guard",
+        "second": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate_difference": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "unit": "native_metric_difference",
+        "percentage_point_difference": null,
+        "percentage_point_ci_low": null,
+        "percentage_point_ci_high": null,
+        "n_environments": 30,
+        "ci_method": "paired_environment_percentile_bootstrap_95pct"
+      }
+    ],
+    "seed_variation": [
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean": 0.8333333333333334,
+        "sample_sd": 0.2603416558635552,
+        "minimum": 0.5333333333333333,
+        "maximum": 1.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          1.0,
+          0.9666666666666667,
+          0.5333333333333333
+        ]
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean": 0.27777777777777773,
+        "sample_sd": 0.06938886664887108,
+        "minimum": 0.2,
+        "maximum": 0.3333333333333333,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.3333333333333333,
+          0.3,
+          0.2
+        ]
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean": 0.5777777777777778,
+        "sample_sd": 0.15396007178390017,
+        "minimum": 0.4,
+        "maximum": 0.6666666666666666,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.4
+        ]
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean": 8.09511662721634,
+        "sample_sd": 1.9214528494824963,
+        "minimum": 5.876745148499807,
+        "maximum": 9.237499348322551,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          9.237499348322551,
+          9.17110538482666,
+          5.876745148499807
+        ]
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean": 0.10793972859715319,
+        "sample_sd": 0.02863842366950657,
+        "minimum": 0.07567688052658923,
+        "maximum": 0.13035532211263975,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.13035532211263975,
+          0.11778698315223059,
+          0.07567688052658923
+        ]
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean": 51.27777777777778,
+        "sample_sd": 16.562820926310742,
+        "minimum": 32.86666666666667,
+        "maximum": 64.96666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          64.96666666666667,
+          56.0,
+          32.86666666666667
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean": 0.8333333333333334,
+        "sample_sd": 0.2603416558635552,
+        "minimum": 0.5333333333333333,
+        "maximum": 1.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          1.0,
+          0.9666666666666667,
+          0.5333333333333333
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean": 0.26666666666666666,
+        "sample_sd": 0.08819171036881968,
+        "minimum": 0.16666666666666666,
+        "maximum": 0.3333333333333333,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.3333333333333333,
+          0.3,
+          0.16666666666666666
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean": 0.5888888888888889,
+        "sample_sd": 0.13471506281091264,
+        "minimum": 0.43333333333333335,
+        "maximum": 0.6666666666666666,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.43333333333333335
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean": 8.134085101551479,
+        "sample_sd": 1.8738461330992784,
+        "minimum": 5.97054218451182,
+        "maximum": 9.24057224591573,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          9.24057224591573,
+          9.191140874226887,
+          5.97054218451182
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean": 0.10804789545784134,
+        "sample_sd": 0.028274771765349618,
+        "minimum": 0.07618734387506265,
+        "maximum": 0.13015406454602876,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.13015406454602876,
+          0.11780227795243263,
+          0.07618734387506265
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean": 51.27777777777778,
+        "sample_sd": 16.539559759468723,
+        "minimum": 32.9,
+        "maximum": 64.96666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          64.96666666666667,
+          55.96666666666667,
+          32.9
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean": 0.8222222222222223,
+        "sample_sd": 0.03849001794597504,
+        "minimum": 0.8,
+        "maximum": 0.8666666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.8,
+          0.8666666666666667,
+          0.8
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean": 0.35555555555555557,
+        "sample_sd": 0.13471506281091267,
+        "minimum": 0.23333333333333334,
+        "maximum": 0.5,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.3333333333333333,
+          0.5,
+          0.23333333333333334
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean": 0.5666666666666667,
+        "sample_sd": 0.12018504251546629,
+        "minimum": 0.43333333333333335,
+        "maximum": 0.6666666666666666,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.6,
+          0.43333333333333335,
+          0.6666666666666666
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean": 11.04775757789612,
+        "sample_sd": 1.359277126836571,
+        "minimum": 9.582794706026712,
+        "maximum": 12.26813976764679,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          11.292338260014851,
+          9.582794706026712,
+          12.26813976764679
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean": 0.14447409220867688,
+        "sample_sd": 0.002561908579862063,
+        "minimum": 0.14152075697978336,
+        "maximum": 0.14609818384051323,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.14580333580573399,
+          0.14609818384051323,
+          0.14152075697978336
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean": 29.522222222222222,
+        "sample_sd": 2.4820093413140847,
+        "minimum": 27.633333333333333,
+        "maximum": 32.333333333333336,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          27.633333333333333,
+          32.333333333333336,
+          28.6
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean": 0.8222222222222223,
+        "sample_sd": 0.01924500897298752,
+        "minimum": 0.8,
+        "maximum": 0.8333333333333334,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.8333333333333334,
+          0.8,
+          0.8333333333333334
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean": 0.3666666666666667,
+        "sample_sd": 0.1,
+        "minimum": 0.26666666666666666,
+        "maximum": 0.4666666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.36666666666666664,
+          0.4666666666666667,
+          0.26666666666666666
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean": 0.5555555555555555,
+        "sample_sd": 0.11706281947614151,
+        "minimum": 0.43333333333333335,
+        "maximum": 0.6666666666666666,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.5666666666666667,
+          0.43333333333333335,
+          0.6666666666666666
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean": 11.089698934555054,
+        "sample_sd": 1.3622104714240586,
+        "minimum": 9.62969426314036,
+        "maximum": 12.326561347643535,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          11.312841192881267,
+          9.62969426314036,
+          12.326561347643535
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean": 0.1438698792209228,
+        "sample_sd": 0.004150084567225812,
+        "minimum": 0.1391973964869976,
+        "maximum": 0.14712760349114737,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.14712760349114737,
+          0.1391973964869976,
+          0.1452846376846234
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean": 28.45555555555556,
+        "sample_sd": 1.4284153353875648,
+        "minimum": 26.866666666666667,
+        "maximum": 29.633333333333333,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          26.866666666666667,
+          29.633333333333333,
+          28.866666666666667
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 1,
+        "mean": 1.0,
+        "sample_sd": null,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          1.0
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 1,
+        "mean": 0.7333333333333333,
+        "sample_sd": null,
+        "minimum": 0.7333333333333333,
+        "maximum": 0.7333333333333333,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.7333333333333333
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 1,
+        "mean": 0.26666666666666666,
+        "sample_sd": null,
+        "minimum": 0.26666666666666666,
+        "maximum": 0.26666666666666666,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.26666666666666666
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 1,
+        "mean": 7.058604383468628,
+        "sample_sd": null,
+        "minimum": 7.058604383468628,
+        "maximum": 7.058604383468628,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          7.058604383468628
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 1,
+        "mean": 0.14356718560059864,
+        "sample_sd": null,
+        "minimum": 0.14356718560059864,
+        "maximum": 0.14356718560059864,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.14356718560059864
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 1,
+        "mean": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.0
+        ]
+      },
+      {
+        "group": "clean:force_feedback",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 1,
+        "mean": 28.733333333333334,
+        "sample_sd": null,
+        "minimum": 28.733333333333334,
+        "maximum": 28.733333333333334,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          28.733333333333334
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 1,
+        "mean": 1.0,
+        "sample_sd": null,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          1.0
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 1,
+        "mean": 0.7333333333333333,
+        "sample_sd": null,
+        "minimum": 0.7333333333333333,
+        "maximum": 0.7333333333333333,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.7333333333333333
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 1,
+        "mean": 0.26666666666666666,
+        "sample_sd": null,
+        "minimum": 0.26666666666666666,
+        "maximum": 0.26666666666666666,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.26666666666666666
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 1,
+        "mean": 7.109813292821248,
+        "sample_sd": null,
+        "minimum": 7.109813292821248,
+        "maximum": 7.109813292821248,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          7.109813292821248
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 1,
+        "mean": 0.14356713940699894,
+        "sample_sd": null,
+        "minimum": 0.14356713940699894,
+        "maximum": 0.14356713940699894,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.14356713940699894
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 1,
+        "mean": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.0
+        ]
+      },
+      {
+        "group": "stress:force_feedback",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 1,
+        "mean": 28.733333333333334,
+        "sample_sd": null,
+        "minimum": 28.733333333333334,
+        "maximum": 28.733333333333334,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          28.733333333333334
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean": 1.0,
+        "sample_sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean": 0.9333333333333332,
+        "sample_sd": 0.0,
+        "minimum": 0.9333333333333333,
+        "maximum": 0.9333333333333333,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.9333333333333333,
+          0.9333333333333333,
+          0.9333333333333333
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean": 0.06666666666666667,
+        "sample_sd": 0.0,
+        "minimum": 0.06666666666666667,
+        "maximum": 0.06666666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.06666666666666667,
+          0.06666666666666667,
+          0.06666666666666667
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean": 6.560633076561821,
+        "sample_sd": 0.09159124215400052,
+        "minimum": 6.458650557200114,
+        "maximum": 6.635886033376058,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          6.458650557200114,
+          6.587362639109293,
+          6.635886033376058
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean": 0.14371884630786047,
+        "sample_sd": 0.00019032660472854891,
+        "minimum": 0.14349940319856008,
+        "maximum": 0.1438389485081037,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.1438389485081037,
+          0.14381818721691766,
+          0.14349940319856008
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "group": "clean:model_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean": 32.24444444444445,
+        "sample_sd": 0.15752718754175143,
+        "minimum": 32.06666666666667,
+        "maximum": 32.36666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          32.36666666666667,
+          32.3,
+          32.06666666666667
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean": 1.0,
+        "sample_sd": 0.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean": 0.9333333333333332,
+        "sample_sd": 0.0,
+        "minimum": 0.9333333333333333,
+        "maximum": 0.9333333333333333,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.9333333333333333,
+          0.9333333333333333,
+          0.9333333333333333
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean": 0.06666666666666667,
+        "sample_sd": 0.0,
+        "minimum": 0.06666666666666667,
+        "maximum": 0.06666666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.06666666666666667,
+          0.06666666666666667,
+          0.06666666666666667
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean": 6.556603866153293,
+        "sample_sd": 0.08539903695668576,
+        "minimum": 6.45914576848348,
+        "maximum": 6.6183496316274,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          6.45914576848348,
+          6.592316198348999,
+          6.6183496316274
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean": 0.14371997018655142,
+        "sample_sd": 0.00019264895395358867,
+        "minimum": 0.14349783857663473,
+        "maximum": 0.14384136945009232,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.14384136945009232,
+          0.1438207025329272,
+          0.14349783857663473
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "group": "stress:model_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean": 32.24444444444445,
+        "sample_sd": 0.15752718754175143,
+        "minimum": 32.06666666666667,
+        "maximum": 32.36666666666667,
+        "training_seeds": [
+          0,
+          1,
+          2
+        ],
+        "policy_estimates": [
+          32.36666666666667,
+          32.3,
+          32.06666666666667
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 1,
+        "mean": 1.0,
+        "sample_sd": null,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          1.0
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 1,
+        "mean": 0.7333333333333333,
+        "sample_sd": null,
+        "minimum": 0.7333333333333333,
+        "maximum": 0.7333333333333333,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.7333333333333333
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 1,
+        "mean": 0.26666666666666666,
+        "sample_sd": null,
+        "minimum": 0.26666666666666666,
+        "maximum": 0.26666666666666666,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.26666666666666666
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 1,
+        "mean": 7.0737260182698565,
+        "sample_sd": null,
+        "minimum": 7.0737260182698565,
+        "maximum": 7.0737260182698565,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          7.0737260182698565
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 1,
+        "mean": 0.13946805745363236,
+        "sample_sd": null,
+        "minimum": 0.13946805745363236,
+        "maximum": 0.13946805745363236,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.13946805745363236
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 1,
+        "mean": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.0
+        ]
+      },
+      {
+        "group": "clean:reactive_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 1,
+        "mean": 30.766666666666666,
+        "sample_sd": null,
+        "minimum": 30.766666666666666,
+        "maximum": 30.766666666666666,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          30.766666666666666
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "strict_lift",
+        "n_policies": 1,
+        "mean": 1.0,
+        "sample_sd": null,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          1.0
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "joint_success",
+        "n_policies": 1,
+        "mean": 0.7333333333333333,
+        "sample_sd": null,
+        "minimum": 0.7333333333333333,
+        "maximum": 0.7333333333333333,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.7333333333333333
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "force_violation",
+        "n_policies": 1,
+        "mean": 0.26666666666666666,
+        "sample_sd": null,
+        "minimum": 0.26666666666666666,
+        "maximum": 0.26666666666666666,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.26666666666666666
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "peak_N",
+        "n_policies": 1,
+        "mean": 7.079643042882283,
+        "sample_sd": null,
+        "minimum": 7.079643042882283,
+        "maximum": 7.079643042882283,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          7.079643042882283
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "max_height_m",
+        "n_policies": 1,
+        "mean": 0.1394679655631383,
+        "sample_sd": null,
+        "minimum": 0.1394679655631383,
+        "maximum": 0.1394679655631383,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.1394679655631383
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "n_policies": 1,
+        "mean": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          0.0
+        ]
+      },
+      {
+        "group": "stress:reactive_guard",
+        "domain": "id",
+        "metric": "strict_longest",
+        "n_policies": 1,
+        "mean": 30.766666666666666,
+        "sample_sd": null,
+        "minimum": 30.766666666666666,
+        "maximum": 30.766666666666666,
+        "training_seeds": [
+          null
+        ],
+        "policy_estimates": [
+          30.766666666666666
+        ]
+      }
+    ],
+    "policy_stats": [
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.9666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.5333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.3333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.3,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.2,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.4,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 9.237499348322551,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 9.17110538482666,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 5.876745148499807,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.13035532211263975,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.11778698315223059,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.07567688052658923,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 64.96666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 56.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:WM_visuotactile",
+        "method": "clean/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.86666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.9666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.5333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.3333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.3,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.16666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.43333333333333335,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 9.24057224591573,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 9.191140874226887,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 5.97054218451182,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.13015406454602876,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.11780227795243263,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.07618734387506265,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 64.96666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 55.96666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:WM_visuotactile",
+        "method": "stress/WM_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.9,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.8,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.8666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.8,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.3333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.5,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.23333333333333334,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.43333333333333335,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 11.292338260014851,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 9.582794706026712,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 12.26813976764679,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14580333580573399,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14609818384051323,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14152075697978336,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 27.633333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.333333333333336,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:IQL_visuotactile",
+        "method": "clean/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 28.6,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.8333333333333334,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.8,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 0.8333333333333334,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.36666666666666664,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.4666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.26666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.5666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.43333333333333335,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.6666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 11.312841192881267,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 9.62969426314036,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 12.326561347643535,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14712760349114737,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.1391973964869976,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.1452846376846234,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 26.866666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 29.633333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:IQL_visuotactile",
+        "method": "stress/IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 28.866666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.7333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.26666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 7.058604383468628,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14356718560059864,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:force_feedback",
+        "method": "clean/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 28.733333333333334,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.7333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.26666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 7.109813292821248,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14356713940699894,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:force_feedback",
+        "method": "stress/force_feedback",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 28.733333333333334,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.9333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.9333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.9333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 6.458650557200114,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 6.587362639109293,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 6.635886033376058,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.1438389485081037,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14381818721691766,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14349940319856008,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.36666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.3,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:model_guard",
+        "method": "clean/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.06666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.9333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.9333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.9333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 6.45914576848348,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 6.592316198348999,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 6.6183496316274,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14384136945009232,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.1438207025329272,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.14349783857663473,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed0",
+        "training_seed": 0,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.36666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed1",
+        "training_seed": 1,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.3,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:model_guard",
+        "method": "stress/model_guard_seed2",
+        "training_seed": 2,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 32.06666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.7333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.26666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 7.0737260182698565,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.13946805745363236,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "clean:reactive_guard",
+        "method": "clean/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 30.766666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_lift",
+        "estimate": 1.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "joint_success",
+        "estimate": 0.7333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "force_violation",
+        "estimate": 0.26666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "peak_N",
+        "estimate": 7.079643042882283,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "max_height_m",
+        "estimate": 0.1394679655631383,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "setup_peak_N",
+        "estimate": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "stress:reactive_guard",
+        "method": "stress/reactive_guard",
+        "training_seed": null,
+        "domain": "id",
+        "metric": "strict_longest",
+        "estimate": 30.766666666666666,
+        "n_environments": 30
+      }
+    ],
+    "bootstrap": {
+      "resamples": 2000,
+      "seed": 20401010,
+      "rng": "Python random.Random MT19937",
+      "same_resamples_across_groups_metrics": true,
+      "sampling_unit": "environment",
+      "policy_aggregation": "equal-weight average within each environment before resampling",
+      "pooled_domain_aggregation": "environment-count-weighted, stratified resampling",
+      "interval": "pointwise 95% percentile; no multiplicity correction",
+      "training_seed_resampled": false,
+      "environment_order": {
+        "id": [
+          [
+            "id",
+            20350000
+          ],
+          [
+            "id",
+            20350001
+          ],
+          [
+            "id",
+            20350002
+          ],
+          [
+            "id",
+            20350003
+          ],
+          [
+            "id",
+            20350004
+          ],
+          [
+            "id",
+            20350005
+          ],
+          [
+            "id",
+            20350006
+          ],
+          [
+            "id",
+            20350007
+          ],
+          [
+            "id",
+            20350008
+          ],
+          [
+            "id",
+            20350009
+          ],
+          [
+            "id",
+            20350010
+          ],
+          [
+            "id",
+            20350011
+          ],
+          [
+            "id",
+            20350012
+          ],
+          [
+            "id",
+            20350013
+          ],
+          [
+            "id",
+            20350014
+          ],
+          [
+            "id",
+            20350015
+          ],
+          [
+            "id",
+            20350016
+          ],
+          [
+            "id",
+            20350017
+          ],
+          [
+            "id",
+            20350018
+          ],
+          [
+            "id",
+            20350019
+          ],
+          [
+            "id",
+            20350020
+          ],
+          [
+            "id",
+            20350021
+          ],
+          [
+            "id",
+            20350022
+          ],
+          [
+            "id",
+            20350023
+          ],
+          [
+            "id",
+            20350024
+          ],
+          [
+            "id",
+            20350025
+          ],
+          [
+            "id",
+            20350026
+          ],
+          [
+            "id",
+            20350027
+          ],
+          [
+            "id",
+            20350028
+          ],
+          [
+            "id",
+            20350029
+          ]
+        ]
+      },
+      "resample_indices_sha256": "fc5051705ea3ca24fc00eed6a32d917fd33719046d547781ef9ff10054af715e"
+    },
+    "paired_policy_changes": [
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "joint_success",
+        "stress_minus_clean": -0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.0030728975931803384,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.020035489400227865,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.09379703601201375,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "max_height_m",
+        "stress_minus_clean": -0.00020125756661097208,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "max_height_m",
+        "stress_minus_clean": 1.52948002020518e-05,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "max_height_m",
+        "stress_minus_clean": 0.0005104633484734223,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "strict_longest",
+        "stress_minus_clean": -0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "WM_visuotactile",
+        "method": "WM_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "strict_lift",
+        "stress_minus_clean": -0.06666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "joint_success",
+        "stress_minus_clean": -0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "force_violation",
+        "stress_minus_clean": -0.03333333333333333,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.02050293286641439,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.04689955711364746,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.05842157999674479,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "max_height_m",
+        "stress_minus_clean": 0.0013242676854133607,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "max_height_m",
+        "stress_minus_clean": -0.006900787353515625,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "max_height_m",
+        "stress_minus_clean": 0.0037638807048400243,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed0",
+        "training_seed": 0,
+        "metric": "strict_longest",
+        "stress_minus_clean": -0.7666666666666667,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed1",
+        "training_seed": 1,
+        "metric": "strict_longest",
+        "stress_minus_clean": -2.7,
+        "n_environments": 30
+      },
+      {
+        "group": "IQL_visuotactile",
+        "method": "IQL_visuotactile_seed2",
+        "training_seed": 2,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.26666666666666666,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.0004952112833658854,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.004953559239705404,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "peak_N",
+        "stress_minus_clean": -0.017536401748657227,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "max_height_m",
+        "stress_minus_clean": 2.420941988627116e-06,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "max_height_m",
+        "stress_minus_clean": 2.5153160095214845e-06,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "max_height_m",
+        "stress_minus_clean": -1.564621925354004e-06,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed0",
+        "training_seed": 0,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed1",
+        "training_seed": 1,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "model_guard",
+        "method": "model_guard_seed2",
+        "training_seed": 2,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.051208909352620444,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "max_height_m",
+        "stress_minus_clean": -4.6193599700927736e-08,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "force_feedback",
+        "method": "force_feedback",
+        "training_seed": null,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "strict_lift",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "joint_success",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "force_violation",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "peak_N",
+        "stress_minus_clean": 0.005917024612426758,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "max_height_m",
+        "stress_minus_clean": -9.189049402872722e-08,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "setup_peak_N",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      },
+      {
+        "group": "reactive_guard",
+        "method": "reactive_guard",
+        "training_seed": null,
+        "metric": "strict_longest",
+        "stress_minus_clean": 0.0,
+        "n_environments": 30
+      }
+    ],
+    "paired_change_seed_variation": [
+      {
+        "group": "WM_visuotactile",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "WM_visuotactile",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean_change": -0.011111111111111112,
+        "sample_sd": 0.019245008972987525,
+        "minimum": -0.03333333333333333,
+        "maximum": 0.0
+      },
+      {
+        "group": "WM_visuotactile",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean_change": 0.011111111111111112,
+        "sample_sd": 0.019245008972987525,
+        "minimum": 0.0,
+        "maximum": 0.03333333333333333
+      },
+      {
+        "group": "WM_visuotactile",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean_change": 0.03896847433514065,
+        "sample_sd": 0.0482344354364093,
+        "minimum": 0.0030728975931803384,
+        "maximum": 0.09379703601201375
+      },
+      {
+        "group": "WM_visuotactile",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean_change": 0.00010816686068816732,
+        "sample_sd": 0.00036483637422321866,
+        "minimum": -0.00020125756661097208,
+        "maximum": 0.0005104633484734223
+      },
+      {
+        "group": "WM_visuotactile",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "WM_visuotactile",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.03333333333333333,
+        "minimum": -0.03333333333333333,
+        "maximum": 0.03333333333333333
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.057735026918962574,
+        "minimum": -0.06666666666666667,
+        "maximum": 0.03333333333333333
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean_change": 0.011111111111111112,
+        "sample_sd": 0.03849001794597505,
+        "minimum": -0.03333333333333333,
+        "maximum": 0.03333333333333333
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean_change": -0.011111111111111112,
+        "sample_sd": 0.019245008972987525,
+        "minimum": -0.03333333333333333,
+        "maximum": 0.0
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean_change": 0.04194135665893555,
+        "sample_sd": 0.019439489804530818,
+        "minimum": 0.02050293286641439,
+        "maximum": 0.05842157999674479
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean_change": -0.00060421298775408,
+        "sample_sd": 0.005587760238128786,
+        "minimum": -0.006900787353515625,
+        "maximum": 0.0037638807048400243
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "IQL_visuotactile",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean_change": -1.0666666666666667,
+        "sample_sd": 1.5059142664102023,
+        "minimum": -2.7,
+        "maximum": 0.26666666666666666
+      },
+      {
+        "group": "model_guard",
+        "metric": "strict_lift",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "model_guard",
+        "metric": "joint_success",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "model_guard",
+        "metric": "force_violation",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "model_guard",
+        "metric": "peak_N",
+        "n_policies": 3,
+        "mean_change": -0.004029210408528646,
+        "sample_sd": 0.011908080451906704,
+        "minimum": -0.017536401748657227,
+        "maximum": 0.004953559239705404
+      },
+      {
+        "group": "model_guard",
+        "metric": "max_height_m",
+        "n_policies": 3,
+        "mean_change": 1.1238786909315323e-06,
+        "sample_sd": 2.3287879437125064e-06,
+        "minimum": -1.564621925354004e-06,
+        "maximum": 2.5153160095214845e-06
+      },
+      {
+        "group": "model_guard",
+        "metric": "setup_peak_N",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "model_guard",
+        "metric": "strict_longest",
+        "n_policies": 3,
+        "mean_change": 0.0,
+        "sample_sd": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "force_feedback",
+        "metric": "strict_lift",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "force_feedback",
+        "metric": "joint_success",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "force_feedback",
+        "metric": "force_violation",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "force_feedback",
+        "metric": "peak_N",
+        "n_policies": 1,
+        "mean_change": 0.051208909352620444,
+        "sample_sd": null,
+        "minimum": 0.051208909352620444,
+        "maximum": 0.051208909352620444
+      },
+      {
+        "group": "force_feedback",
+        "metric": "max_height_m",
+        "n_policies": 1,
+        "mean_change": -4.6193599700927736e-08,
+        "sample_sd": null,
+        "minimum": -4.6193599700927736e-08,
+        "maximum": -4.6193599700927736e-08
+      },
+      {
+        "group": "force_feedback",
+        "metric": "setup_peak_N",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "force_feedback",
+        "metric": "strict_longest",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "strict_lift",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "joint_success",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "force_violation",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "peak_N",
+        "n_policies": 1,
+        "mean_change": 0.005917024612426758,
+        "sample_sd": null,
+        "minimum": 0.005917024612426758,
+        "maximum": 0.005917024612426758
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "max_height_m",
+        "n_policies": 1,
+        "mean_change": -9.189049402872722e-08,
+        "sample_sd": null,
+        "minimum": -9.189049402872722e-08,
+        "maximum": -9.189049402872722e-08
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "setup_peak_N",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      {
+        "group": "reactive_guard",
+        "metric": "strict_longest",
+        "n_policies": 1,
+        "mean_change": 0.0,
+        "sample_sd": null,
+        "minimum": 0.0,
+        "maximum": 0.0
+      }
+    ]
+  }
+}
